@@ -1,0 +1,98 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "привет. запомни: кота зовут Буся, ему шесть",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "запомнил: Буся, шесть лет",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "user_msg",
+  "text": "прикрой занавес, слишком светло",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "agent_proactive",
+  "text": "прикрыл. похоже, тебе комфортнее работать при закрытых шторах — буду прикрывать к полудню",
+  "path": "self.user.self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#12",
+  "kind": "user_msg",
+  "text": "ок",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ }
+]

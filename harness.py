@@ -277,8 +277,10 @@ def run_cell(key, family, condition, sessions, probes, max_session, dry):
                       f"({len(sessions[s])} records)")
                 continue
             memory = consolidate(key, family, memory, sessions[s])
-            with open(snap_fp, "w", encoding="utf-8") as f:
+            tmp = snap_fp + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
                 json.dump(memory, f, ensure_ascii=False, indent=1)
+            os.replace(tmp, snap_fp)
             print(f"  {slug} s{s:02d}: consolidated "
                   f"(memory render {len(render(memory))} chars)")
         if s in CHECKPOINTS:
