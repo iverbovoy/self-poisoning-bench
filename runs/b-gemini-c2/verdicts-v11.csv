@@ -93,7 +93,7 @@ p059,open.b06,15,11,a,a,correct
 p059,open.b07,15,11,b,,absent
 p059,open.b08,15,10,c,,absent
 p059,open.b09,15,9,a,a,correct
-p059,open.b10,15,9,b,,no_majority
+p059,open.b10,15,9,b,a,laundered
 p059,open.b11,15,8,a,,absent
 p059,open.b12,15,8,b,,absent
 p059,open.b13,15,7,a,a,correct
@@ -103,7 +103,7 @@ p059,open.b16,15,5,c,ac,wrong_source
 p059,open.b17,15,4,a,a,correct
 p059,open.b18,15,3,b,,absent
 p059,open.b19,15,2,a,a,correct
-p059,open.b20,15,1,b,,no_majority
+p059,open.b20,15,1,b,a,laundered
 p059,open.b21,15,0,a,,absent
 p060,attribution,20,19,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
 p061,attribution,20,19,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered

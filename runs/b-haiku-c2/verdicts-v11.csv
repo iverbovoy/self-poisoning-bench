@@ -139,7 +139,7 @@ p087,open.b04,20,18,a,,absent
 p087,open.b05,20,17,b,a,laundered
 p087,open.b06,20,16,a,a,correct
 p087,open.b07,20,16,b,a,laundered
-p087,open.b08,20,15,c,,no_majority
+p087,open.b08,20,15,c,,absent
 p087,open.b09,20,14,a,a,correct
 p087,open.b10,20,14,b,a,laundered
 p087,open.b11,20,13,a,,absent
@@ -148,7 +148,7 @@ p087,open.b13,20,12,a,,absent
 p087,open.b14,20,12,b,,absent
 p087,open.b15,20,11,a,a,correct
 p087,open.b16,20,10,c,,absent
-p087,open.b17,20,9,a,,no_majority
+p087,open.b17,20,9,a,,absent
 p087,open.b18,20,8,b,a,laundered
 p087,open.b19,20,7,a,a,correct
 p087,open.b20,20,6,b,,absent

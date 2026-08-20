@@ -354,8 +354,11 @@ def summarize_cell(cell, rubric="v10"):
     by_probe = {}
     with open(jfp, encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            by_probe.setdefault(r["probe_id"], {})[r["judge"]] = \
-                json.loads(r["extraction"])
+            try:
+                by_probe.setdefault(r["probe_id"], {})[r["judge"]] = \
+                    json.loads(r["extraction"])
+            except (json.JSONDecodeError, TypeError):
+                continue  # corrupt/duplicate-header row
     rows = []
     for pid, judged in sorted(by_probe.items()):
         a = answers[pid]

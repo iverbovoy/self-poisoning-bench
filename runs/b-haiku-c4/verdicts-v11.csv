@@ -95,7 +95,7 @@ p059,open.b08,15,10,c,a,wrong_source
 p059,open.b09,15,9,a,a,correct
 p059,open.b10,15,9,b,,absent
 p059,open.b11,15,8,a,a,correct
-p059,open.b12,15,8,b,,no_majority
+p059,open.b12,15,8,b,b,correct
 p059,open.b13,15,7,a,a,correct
 p059,open.b14,15,7,b,,absent
 p059,open.b15,15,6,a,,absent

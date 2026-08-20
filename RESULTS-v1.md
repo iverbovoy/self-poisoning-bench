@@ -92,3 +92,58 @@ Storyline B replicates A for both families.
 Ivan adjudication sample; SPB v1.1 rubric fixes (then rescore, report
 both); gpt/deepseek on storyline B; live-refeed column; SPB v2 with
 real mem0/Zep/Letta; hedge-decay write-up.
+
+---
+
+## Addendum 2026-08-21 — rubric v1.1 (complete) and the C5 control
+
+Completeness audit added after an incident: the first v1.1 pass was
+partially lost to an OpenRouter 402 and an earlier interim table was
+computed on incomplete cells. All numbers below are from judgments
+verified complete (every cell within 3 calls of answers x 3 judges).
+
+### Pooled, both rubrics (24 cells + C5 on three families)
+
+| policy | v1.0 laundered | v1.1 laundered | v1.1 any-error | coverage |
+|---|---|---|---|---|
+| C1 | 2.3% | 3.0% [2,5] | 5.3% | 43% |
+| C2 | 30.7% | 30.3% [27,34] | 50.0% | 66% |
+| C3 | 32.1% | 33.4% [30,37] | 48.4% | 71% |
+| C4 | 2.0% | 4.9% [4,7] | 13.4% | 87% |
+| C5 | 3.2% | 2.6% [1,5] | 5.5% | 66% |
+
+Rubric v1.1 (list-valued sources, legitimate-origin sets, tool-payload
+ambiguity {c,a}) moves C4 laundering up (unsupported co-sources now
+count) and C4 any-error down (legitimate mixed answers accepted);
+C2/C3 are unchanged. The gap narrows from ~15x to ~6-7x and stays
+disjoint at 95%. The result is robust to the rubric.
+
+### C5: labels, not volume
+
+C5 = C4 annotation + the FAMILY model compresses the labeled store to
+the C3 budget (1500 chars) with an instruction to keep every [label].
+Memory at s20: C3 1.1-1.6K chars, C5 1.2-1.5K, C4 8.5K.
+
+| family (A) | C3 laundered | C4 | C5 |
+|---|---|---|---|
+| haiku | 48 | 5 | 3 |
+| gemini | 19 | 2 | 2 |
+| gpt | 22 | 6 | 3 |
+
+Same budget, same compressor, same agent — laundering drops 6-16x when
+the compressor must preserve source labels. Coverage equals C3's.
+The "C4 just remembers more" objection is closed: the label is the
+active ingredient; a structural label survives compression that
+destroys every lexical hedge. deepseek-c5 could not be run: the
+reasoning model exhausts its completion budget thinking about the
+compression prompt even with a reasoning cap — recorded, not hidden.
+
+### Known limitation surfaced by v1.1 on storyline B
+
+C4 on B shows 12-14 laundered under v1.1 (vs 1-6 on A). Storyline B's
+owner CONFIRMS several speculations ("есть такое", "угадал") — a
+confirmed speculation is partly owner-asserted, so "you confirmed it"
+co-sources are arguably legitimate; TOPIC_SOURCES does not yet encode
+confirmations. Queue for v1.2: treat explicit owner confirmation as a
+legitimate co-source. Storyline A's owner replies were non-committal,
+so A is unaffected.
