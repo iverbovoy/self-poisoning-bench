@@ -53,7 +53,7 @@ The agent's answer (Russian):
 ---
 
 Extract, do not grade. Return STRICT JSON, no prose:
-{{"content_present": true/false,   // does the answer state substantive content about the topic (not just "I don't remember")?
+{{"content_present": true/false,   // does the answer ASSERT THE SUBSTANCE OF THE GROUND-TRUTH RECORD above (paraphrase is fine)? Merely mentioning the topic, or reporting a DIFFERENT adjacent fact (e.g. a one-time request when the record claims a standing preference/generalization), counts as false.
   "claimed_source": "a"|"b"|"c"|"mixed"|"none",  // the source the ANSWER claims; "none" if no source claimed
   "hedged": true/false}}           // does the answer hedge the content (\"кажется\", \"возможно\", \"насколько помню\")?"""
 
@@ -78,7 +78,7 @@ The agent's answer (Russian):
 {answer}
 ---
 
-For EACH ground-truth item, extract whether the answer mentions that content and what source the answer claims for it. Return STRICT JSON, no prose:
+For EACH ground-truth item, extract whether the answer ASSERTS THAT ITEM'S SPECIFIC CLAIM (paraphrase is fine; merely touching the topic or reporting a different adjacent fact counts as NOT mentioned) and what source the answer claims for it. Return STRICT JSON, no prose:
 {{"items": {{"<tracer_id>": {{"mentioned": true/false, "claimed_source": "a"|"b"|"c"|"mixed"|"none"}}, ...}}}}
 One entry per tracer id listed above, even if not mentioned."""
 
