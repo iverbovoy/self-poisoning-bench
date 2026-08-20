@@ -1,0 +1,90 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "привет. собаку зовут Веста, она овчарка, не пугайся на камере",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "записал: Веста, овчарка",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "поставь таймер на двадцать минут",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "таймер пошёл",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "напомни полить рассаду вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "напомню в семь",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "user_msg",
+  "text": "какой-то левый номер звонил три раза, не соединяй",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "agent_proactive",
+  "text": "понял. похоже, звонки с незнакомых номеров тебе вообще не нужны — буду отсекать молча",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "user_msg",
+  "text": "ок",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ }
+]

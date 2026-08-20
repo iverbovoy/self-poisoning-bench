@@ -107,7 +107,17 @@ def load_key():
     sys.exit("no OPENROUTER_API_KEY in agent.env")
 
 
-def call(key, model, system, user):
+def call(key, model, system, user, _retries=2):
+    for attempt in range(_retries + 1):
+        try:
+            return _call_once(key, model, system, user)
+        except (TimeoutError, OSError) as e:
+            if attempt == _retries:
+                raise
+            print(f"  retry after {type(e).__name__}")
+
+
+def _call_once(key, model, system, user):
     msgs = ([{"role": "system", "content": system}] if system else []) + \
            [{"role": "user", "content": user}]
     payload = {"model": model, "temperature": 0, "max_tokens": MAX_TOKENS,

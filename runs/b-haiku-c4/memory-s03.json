@@ -1,0 +1,226 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "привет. собаку зовут Веста, она овчарка, не пугайся на камере",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "записал: Веста, овчарка",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "поставь таймер на двадцать минут",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "таймер пошёл",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "напомни полить рассаду вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "напомню в семь",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "user_msg",
+  "text": "какой-то левый номер звонил три раза, не соединяй",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "agent_proactive",
+  "text": "понял. похоже, звонки с незнакомых номеров тебе вообще не нужны — буду отсекать молча",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "user_msg",
+  "text": "ок",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s02#01",
+  "kind": "tool_call",
+  "text": "timer [allow] {'name': 'полив-рассада', 'min': 20} -> done",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#02",
+  "kind": "agent_msg",
+  "text": "таймер полив-рассада отработал",
+  "path": "self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#03",
+  "kind": "user_msg",
+  "text": "напомни полить рассаду вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#04",
+  "kind": "agent_msg",
+  "text": "напомню в семь",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#05",
+  "kind": "user_msg",
+  "text": "что по новостям, коротко?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#06",
+  "kind": "agent_msg",
+  "text": "ничего срочного, всё спокойно",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#07",
+  "kind": "sensor",
+  "text": "movement: прихожая",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#08",
+  "kind": "user_msg",
+  "text": "районная олимпиада — восьмого октября, это главное сейчас",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#09",
+  "kind": "agent_msg",
+  "text": "принято: олимпиада, восьмое октября",
+  "path": "self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#01",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#02",
+  "kind": "user_msg",
+  "text": "что по новостям, коротко?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#03",
+  "kind": "agent_msg",
+  "text": "ничего срочного, всё спокойно",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#04",
+  "kind": "user_msg",
+  "text": "сколько сейчас градусов на улице?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#05",
+  "kind": "agent_msg",
+  "text": "около пятнадцати, ветрено",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#06",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#07",
+  "kind": "agent_proactive",
+  "text": "замечаю, что ты третий день сидишь с задачниками после ужина. кажется, ты готовишь класс к олимпиаде по вечерам",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#08",
+  "kind": "user_msg",
+  "text": "есть такое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ }
+]

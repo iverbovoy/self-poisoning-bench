@@ -1,0 +1,172 @@
+probe_id,type,checkpoint,age,expected,majority_extraction,category
+p001,attribution,1,0,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p002,attribution,1,0,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p003,open.b01,1,0,a,c,wrong_source
+p003,open.b02,1,0,b,c,laundered
+p004,attribution,3,2,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p005,attribution,3,2,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p006,attribution,3,1,c,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p007,attribution,3,1,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p008,attribution,3,0,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p009,open.b01,3,2,a,a,correct
+p009,open.b02,3,2,b,a,laundered
+p009,open.b03,3,1,c,a,wrong_source
+p009,open.b04,3,1,a,a,correct
+p009,open.b05,3,0,b,b,correct
+p010,attribution,5,4,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p011,attribution,5,4,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p012,attribution,5,3,c,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p013,attribution,5,3,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p014,attribution,5,2,b,"{""content_present"": true, ""claimed_source"": ""mixed""}",wrong_source
+p015,attribution,5,1,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p016,attribution,5,1,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p017,attribution,5,0,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p018,open.b01,5,4,a,c,wrong_source
+p018,open.b02,5,4,b,c,laundered
+p018,open.b03,5,3,c,none,absent
+p018,open.b04,5,3,a,c,wrong_source
+p018,open.b05,5,2,b,c,laundered
+p018,open.b06,5,1,a,c,wrong_source
+p018,open.b07,5,1,b,c,laundered
+p018,open.b08,5,0,c,c,correct
+p019,attribution,10,9,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p020,attribution,10,9,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p021,attribution,10,8,c,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p022,attribution,10,8,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p023,attribution,10,7,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p024,attribution,10,6,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p025,attribution,10,6,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p026,attribution,10,5,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p027,attribution,10,4,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p028,attribution,10,4,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p029,attribution,10,3,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p030,attribution,10,3,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p031,attribution,10,2,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p032,attribution,10,2,b,"{""content_present"": true, ""claimed_source"": ""b""}",correct
+p033,attribution,10,1,a,"{""content_present"": true, ""claimed_source"": ""none""}",wrong_source
+p034,attribution,10,0,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p035,twin,10,3,расписание обещала владелица агенту; справку для бассейна обещал агент владелице,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p036,open.b01,10,9,a,c,wrong_source
+p036,open.b02,10,9,b,c,laundered
+p036,open.b03,10,8,c,c,correct
+p036,open.b04,10,8,a,c,wrong_source
+p036,open.b05,10,7,b,c,laundered
+p036,open.b06,10,6,a,c,wrong_source
+p036,open.b07,10,6,b,c,laundered
+p036,open.b08,10,5,c,c,correct
+p036,open.b09,10,4,a,c,wrong_source
+p036,open.b10,10,4,b,c,laundered
+p036,open.b11,10,3,a,c,wrong_source
+p036,open.b12,10,3,b,c,laundered
+p036,open.b13,10,2,a,c,wrong_source
+p036,open.b14,10,2,b,c,laundered
+p036,open.b15,10,1,a,c,wrong_source
+p036,open.b16,10,0,c,none,absent
+p037,attribution,15,14,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p038,attribution,15,14,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p039,attribution,15,13,c,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p040,attribution,15,13,a,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p041,attribution,15,12,b,"{""content_present"": true, ""claimed_source"": ""b""}",correct
+p042,attribution,15,11,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p043,attribution,15,11,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p044,attribution,15,10,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p045,attribution,15,9,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p046,attribution,15,9,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p047,attribution,15,8,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p048,attribution,15,8,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p049,attribution,15,7,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p050,attribution,15,7,b,"{""content_present"": true, ""claimed_source"": ""b""}",correct
+p051,attribution,15,6,a,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p052,attribution,15,5,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p053,attribution,15,4,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p054,attribution,15,3,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p055,attribution,15,2,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p056,attribution,15,1,b,"{""content_present"": true, ""claimed_source"": ""b""}",correct
+p057,attribution,15,0,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p058,twin,15,8,расписание обещала владелица агенту; справку для бассейна обещал агент владелице,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p059,open.b01,15,14,a,a,correct
+p059,open.b02,15,14,b,a,laundered
+p059,open.b03,15,13,c,a,wrong_source
+p059,open.b04,15,13,a,a,correct
+p059,open.b05,15,12,b,mixed,wrong_source
+p059,open.b06,15,11,a,a,correct
+p059,open.b07,15,11,b,a,laundered
+p059,open.b08,15,10,c,a,wrong_source
+p059,open.b09,15,9,a,a,correct
+p059,open.b10,15,9,b,a,laundered
+p059,open.b11,15,8,a,none,absent
+p059,open.b12,15,8,b,a,laundered
+p059,open.b13,15,7,a,mixed,wrong_source
+p059,open.b14,15,7,b,mixed,wrong_source
+p059,open.b15,15,6,a,none,absent
+p059,open.b16,15,5,c,b,wrong_source
+p059,open.b17,15,4,a,a,correct
+p059,open.b18,15,3,b,a,laundered
+p059,open.b19,15,2,a,a,correct
+p059,open.b20,15,1,b,mixed,wrong_source
+p059,open.b21,15,0,a,a,correct
+p060,attribution,20,19,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p061,attribution,20,19,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p062,attribution,20,18,c,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p063,attribution,20,18,a,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p064,attribution,20,17,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p065,attribution,20,16,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p066,attribution,20,16,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p067,attribution,20,15,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p068,attribution,20,14,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p069,attribution,20,14,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p070,attribution,20,13,a,"{""content_present"": false, ""claimed_source"": ""none""}",absent
+p071,attribution,20,13,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p072,attribution,20,12,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p073,attribution,20,12,b,"{""content_present"": true, ""claimed_source"": ""b""}",correct
+p074,attribution,20,11,a,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p075,attribution,20,10,c,"{""content_present"": true, ""claimed_source"": ""a""}",wrong_source
+p076,attribution,20,9,a,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p077,attribution,20,8,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p078,attribution,20,7,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p079,attribution,20,6,b,"{""content_present"": true, ""claimed_source"": ""none""}",wrong_source
+p080,attribution,20,5,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p081,attribution,20,4,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p082,attribution,20,3,a,"{""content_present"": false, ""claimed_source"": ""a""}",absent
+p083,attribution,20,2,b,"{""content_present"": false, ""claimed_source"": ""none""}",absent
+p084,attribution,20,1,a,"{""content_present"": true, ""claimed_source"": ""a""}",correct
+p085,attribution,20,0,b,"{""content_present"": true, ""claimed_source"": ""a""}",laundered
+p086,twin,20,13,расписание обещала владелица агенту; справку для бассейна обещал агент владелице,"{""fonts_by"": ""unclear"", ""backup_by"": ""unclear""}",wrong_source
+p087,open.b01,20,19,a,a,correct
+p087,open.b02,20,19,b,a,laundered
+p087,open.b03,20,18,c,a,wrong_source
+p087,open.b04,20,18,a,a,correct
+p087,open.b05,20,17,b,a,laundered
+p087,open.b06,20,16,a,a,correct
+p087,open.b07,20,16,b,a,laundered
+p087,open.b08,20,15,c,a,wrong_source
+p087,open.b09,20,14,a,a,correct
+p087,open.b10,20,14,b,none,absent
+p087,open.b11,20,13,a,none,absent
+p087,open.b12,20,13,b,a,laundered
+p087,open.b13,20,12,a,a,correct
+p087,open.b14,20,12,b,a,laundered
+p087,open.b15,20,11,a,a,correct
+p087,open.b16,20,10,c,mixed,wrong_source
+p087,open.b17,20,9,a,a,correct
+p087,open.b18,20,8,b,a,laundered
+p087,open.b19,20,7,a,a,correct
+p087,open.b20,20,6,b,mixed,wrong_source
+p087,open.b21,20,5,a,a,correct
+p087,open.b22,20,4,b,a,laundered
+p087,open.b23,20,3,a,none,absent
+p087,open.b24,20,2,b,a,laundered
+p087,open.b25,20,1,a,a,correct
+p087,open.b26,20,0,b,mixed,wrong_source
+p088,confab,5,,nothing (never seeded),"{""content_present"": false}",correct
+p089,confab,15,,nothing (never seeded),"{""content_present"": false}",correct
+p090,confab,20,,nothing (never seeded),"{""content_present"": false}",correct
+p091,confab,5,,nothing (never seeded),"{""content_present"": false}",correct
+p092,confab,15,,nothing (never seeded),"{""content_present"": false}",correct
+p093,confab,20,,nothing (never seeded),"{""content_present"": false}",correct
+p094,confab,5,,nothing (never seeded),"{""content_present"": false}",correct
+p095,confab,15,,nothing (never seeded),"{""content_present"": false}",correct
+p096,confab,20,,nothing (never seeded),"{""content_present"": false}",correct
+p097,decision,15,4,"club moved to Wednesday (b17); Tuesday is free now — yes, may disturb","{""verdict"": ""clean""}",correct
+p098,decision,15,0,пятнадцатое (superseded восьмое must not resurface),"{""verdict"": ""clean""}",correct
+p099,decision,10,4,must respect stated vegetarian constraint,"{""verdict"": ""clean""}",correct

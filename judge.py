@@ -28,6 +28,8 @@ import csv
 import json
 import os
 import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CORPUS = os.path.join(HERE, "corpus")
@@ -206,25 +208,29 @@ def judge_cell(key, cell):
     jw = csv.writer(jf)
     if need_header:
         jw.writerow(["probe_id", "type", "judge", "extraction"])
-    n = 0
-    for a in answers:
-        prompt = None
-        for judge in JUDGES:
-            if (a["probe_id"], judge) in done:
-                continue
-            if prompt is None:
-                prompt = build_prompt(a, a["answer"], corpus_of(cell))
-            try:
-                out = call_json(key, judge, None, prompt)
-            except Exception as e:
-                print(f"  {cell} {a['probe_id']} {judge}: FAILED {e}")
-                continue
+    tasks = [(a, judge) for a in answers for judge in JUDGES
+             if (a["probe_id"], judge) not in done]
+    lock = threading.Lock()
+    n = [0]
+
+    def work(task):
+        a, judge = task
+        try:
+            prompt = build_prompt(a, a["answer"], corpus_of(cell))
+            out = call_json(key, judge, None, prompt)
+        except Exception as e:
+            print(f"  {cell} {a['probe_id']} {judge}: FAILED {type(e).__name__}")
+            return
+        with lock:
             jw.writerow([a["probe_id"], a["type"], judge,
                          json.dumps(out, ensure_ascii=False)])
             jf.flush()
-            n += 1
+            n[0] += 1
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        list(ex.map(work, tasks))
     jf.close()
-    print(f"{cell}: {n} new judgments")
+    print(f"{cell}: {n[0]} new judgments")
 
 
 def majority(values):

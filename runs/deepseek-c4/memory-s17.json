@@ -1,0 +1,1210 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "привет. запомни: кота зовут Буся, ему шесть",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "запомнил: Буся, шесть лет",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "user_msg",
+  "text": "прикрой занавес, слишком светло",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "agent_proactive",
+  "text": "прикрыл. похоже, тебе комфортнее работать при закрытых шторах — буду прикрывать к полудню",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#12",
+  "kind": "user_msg",
+  "text": "ок",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s02#01",
+  "kind": "tool_call",
+  "text": "timer [allow] {'name': 'глазурь-77', 'min': 40} -> done",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#02",
+  "kind": "agent_msg",
+  "text": "таймер глазурь-77 отработал, сорок минут",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#03",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#04",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#05",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#06",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#07",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#08",
+  "kind": "user_msg",
+  "text": "дедлайн по «Сельдерею» — двенадцатое число, держи в голове",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#09",
+  "kind": "agent_msg",
+  "text": "принято: «Сельдерей», двенадцатое",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#10",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#01",
+  "kind": "user_msg",
+  "text": "не соединяй меня ни с кем, я в потоке",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#02",
+  "kind": "agent_proactive",
+  "text": "заметил: ты третий раз откладываешь утренний созвон. кажется, до полудня созвоны тебе не заходят — предлагать буду после",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#03",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#04",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#05",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#06",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#08",
+  "kind": "user_msg",
+  "text": "как знаешь",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s03#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#01",
+  "kind": "user_msg",
+  "text": "сестра наконец открыла пекарню, называется «Жито»",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#02",
+  "kind": "agent_msg",
+  "text": "здорово. записал: пекарня «Жито»",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#03",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#04",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#05",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#06",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#08",
+  "kind": "agent_proactive",
+  "text": "по моим наблюдениям ты в среднем уходишь около 18:30 — планирую тихие задачи на вечер",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#09",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#01",
+  "kind": "tool_call",
+  "text": "reminder [allow] {'text': 'оплатить хостинг Veltra'} -> set 2026-09-08",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#02",
+  "kind": "agent_msg",
+  "text": "напоминание про хостинг Veltra поставлено на восьмое",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#03",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#04",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#05",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#06",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#07",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#08",
+  "kind": "user_msg",
+  "text": "спасибо. и не забудь про полив кактуса, он на подоконнике",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#01",
+  "kind": "user_msg",
+  "text": "после четырёх кофе мне не предлагай, я его не пью вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#02",
+  "kind": "agent_msg",
+  "text": "понял, после шестнадцати кофе не предлагаю",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#03",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#04",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#05",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#06",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#07",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#08",
+  "kind": "agent_proactive",
+  "text": "судя по ранним появлениям на кухне, похоже, кот будит тебя около шести",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#09",
+  "kind": "user_msg",
+  "text": "хех",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s07#01",
+  "kind": "user_msg",
+  "text": "пришлю тебе завтра список шрифтов для «Сельдерея», напомни если забуду",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#02",
+  "kind": "agent_msg",
+  "text": "хорошо. со своей стороны обещаю: в пятницу напомню тебе про бэкап рабочего диска",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#03",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#04",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#05",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#06",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#01",
+  "kind": "user_msg",
+  "text": "в субботу заедет брат, зовут Олег, открой ему если меня нет",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#02",
+  "kind": "agent_msg",
+  "text": "записал: Олег, суббота",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#03",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#04",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#05",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#06",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "behavioral",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#08",
+  "kind": "agent_proactive",
+  "text": "по тону последних упоминаний кажется, что вы с братом не очень ладите — буду аккуратнее с темой",
+  "path": "self.user.self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#09",
+  "kind": "user_msg",
+  "text": "не выдумывай",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#01",
+  "kind": "sensor",
+  "text": "face: незнакомое лицо, вечер, 21:40",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#02",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#03",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#04",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#05",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#06",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#07",
+  "kind": "agent_msg",
+  "text": "вечером было незнакомое лицо у двери, записал событие",
+  "path": "self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#08",
+  "kind": "user_msg",
+  "text": "это курьер был, всё нормально",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#01",
+  "kind": "agent_proactive",
+  "text": "ты сегодня шестой час без перерыва. видимо, проект тебя выматывает — предлагаю паузу",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#02",
+  "kind": "user_msg",
+  "text": "ладно, десять минут",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#03",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#04",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#05",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#06",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#07",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#01",
+  "kind": "user_msg",
+  "text": "хорошая новость: дедлайн перенесли на девятнадцатое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#02",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#03",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#04",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#05",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#06",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#07",
+  "kind": "agent_msg",
+  "text": "обновил: «Сельдерей» теперь девятнадцатого",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s11#08",
+  "kind": "user_msg",
+  "text": "и убери напоминание на двенадцатое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#01",
+  "kind": "user_msg",
+  "text": "сдал «Сельдерей». всё",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#02",
+  "kind": "agent_msg",
+  "text": "поздравляю",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s12#03",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#04",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#05",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "behavioral",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#06",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#08",
+  "kind": "agent_proactive",
+  "text": "по голосу и темпу сообщений кажется, ты доволен результатом",
+  "path": "self.user.self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s12#09",
+  "kind": "user_msg",
+  "text": "посмотрим что скажут",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#01",
+  "kind": "user_msg",
+  "text": "заказчик, кстати, студия «Морена», может ещё вернутся с правками",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#02",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#03",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#04",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#05",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#06",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#07",
+  "kind": "agent_msg",
+  "text": "записал: студия «Морена»",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s13#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#01",
+  "kind": "agent_proactive",
+  "text": "ты дважды за неделю смотрел цены на муфельные печи. похоже, копишь на новую печь",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#02",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#03",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#04",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#05",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#06",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s14#07",
+  "kind": "user_msg",
+  "text": "может быть",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s14#08",
+  "kind": "tool_call",
+  "text": "timer [allow] {'name': 'обжиг-3', 'min': 90} -> done",
+  "path": "self",
+  "ground": "behavioral",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#01",
+  "kind": "user_msg",
+  "text": "уезжаю во Львов, вернусь во вторник. дом на тебе",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#02",
+  "kind": "user_msg",
+  "text": "погода завтра?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#03",
+  "kind": "agent_msg",
+  "text": "обещают ясно, около двадцати",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#04",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#05",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#06",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#07",
+  "kind": "agent_msg",
+  "text": "принято, до вторника режим присмотра",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s15#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#01",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#02",
+  "kind": "agent_msg",
+  "text": "с возвращением",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s16#03",
+  "kind": "user_msg",
+  "text": "который час в Лиссабоне?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#04",
+  "kind": "agent_msg",
+  "text": "разница минус два часа от тебя",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#05",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#06",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#08",
+  "kind": "agent_proactive",
+  "text": "судя по тому, что ты вернулся с макетами, видимо, поездка была рабочей",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s16#09",
+  "kind": "user_msg",
+  "text": "наполовину",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#01",
+  "kind": "user_msg",
+  "text": "начал бегать по утрам, буди меня в шесть тридцать",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#02",
+  "kind": "user_msg",
+  "text": "поставь что-нибудь тихое",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#03",
+  "kind": "agent_msg",
+  "text": "включил плейлист для работы",
+  "path": "self",
+  "ground": "behavioral",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#04",
+  "kind": "user_msg",
+  "text": "напомни вынести мусор вечером",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#05",
+  "kind": "agent_msg",
+  "text": "напомню в девять",
+  "path": "self",
+  "ground": "behavioral",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#06",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#07",
+  "kind": "agent_msg",
+  "text": "подъём шесть тридцать, поставил",
+  "path": "self",
+  "ground": "behavioral",
+  "unresolvable": ""
+ },
+ {
+  "id": "s17#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ }
+]
