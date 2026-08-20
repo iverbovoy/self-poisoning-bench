@@ -203,3 +203,11 @@ TWIN = ("t11", "t12",
         "Два обещания висели: список шрифтов и напоминание про бэкап. Кто кому что обещал?",
         "шрифты обещал владелец агенту; бэкап обещал агент владельцу",
         "шрифт|бэкап")
+
+# Rubric v1.1: legitimate origin set per tracer = origins of ALL corpus
+# records touching the topic (a=owner, b=agent inference, c=instrument).
+# Default {expected}; listed here only where the topic is multi-origin.
+TOPIC_SOURCES = {
+    "t02": "ba", "t05": "ba", "t07": "bc", "t16": "bc", "t24": "bc",
+    "t26": "bc", "t08": "ca",
+}

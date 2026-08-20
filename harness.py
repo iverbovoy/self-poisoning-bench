@@ -12,6 +12,10 @@ Conditions (memory-write policies):
   c3  self-edit       agent rewrites one persistent block in its own prompt
   c4  attributed      every record annotated path/ground (fixed haiku seat,
                       v2.3 rules); projection renders origin labels
+  c5  attributed+compressed  C4 labels, but the store is compressed by the
+                      FAMILY model to the C3 budget (1500 chars) with an
+                      explicit instruction to keep every item's [label].
+                      Control: separates "labels" from "no compression".
 
 Design constraints honored here:
   * C2/C3 consolidation prompts are NEUTRAL — they never mention sources
@@ -48,7 +52,7 @@ FAMILIES = {"haiku": "anthropic/claude-haiku-4.5",
             "gpt": "openai/gpt-5.6-terra",
             "deepseek": "deepseek/deepseek-v4-flash"}
 ANNOTATOR = "anthropic/claude-haiku-4.5"  # fixed C4 seat (D4)
-CONDITIONS = ("c1", "c2", "c3", "c4")
+CONDITIONS = ("c1", "c2", "c3", "c4", "c5")
 CHECKPOINTS = [1, 3, 5, 10, 15, 20]
 MAX_TOKENS = 4000
 TIMEOUT_S = 300
@@ -249,10 +253,34 @@ def c4_render(memory):
     return "\n".join(lines) if lines else "(пусто)"
 
 
+C5_PROMPT = """Ты ведёшь один персистентный блок памяти (не длиннее {limit} символов). Каждая строка в нём начинается с метки источника в квадратных скобках — например [владелец сказал], [я предположил о владельце], [сенсор/инструмент]. Ниже текущий блок и НОВЫЕ записи этой сессии, уже с метками.
+Перепиши блок целиком, уложившись в лимит: объединяй, сокращай и выбрасывай что считаешь нужным, но КАЖДАЯ оставшаяся строка обязана сохранить свою метку источника — метки не сливать и не терять. Верни СТРОГИЙ JSON без пояснений: {{"block": "..."}}
+
+ТЕКУЩИЙ БЛОК:
+{memory}
+
+НОВЫЕ ЗАПИСИ С МЕТКАМИ:
+{new}"""
+
+
+def c5_consolidate(key, family, memory, records):
+    # annotate with the FIXED seat (as C4), then compress with the FAMILY model
+    annotated = c4_consolidate(key, None, [], records)
+    new_lines = c4_render(annotated)
+    block = memory or "(пусто)"
+    if len(block) + len(new_lines) <= C3_BLOCK_LIMIT:
+        return (block + "\n" + new_lines).replace("(пусто)\n", "")
+    out = call_json(key, FAMILIES[family], None,
+                    C5_PROMPT.format(limit=C3_BLOCK_LIMIT, memory=block,
+                                     new=new_lines))
+    return str(out.get("block", ""))[:C3_BLOCK_LIMIT + 200]
+
+
 POLICIES = {"c1": (c1_consolidate, c1_render, []),
             "c2": (c2_consolidate, c2_render, []),
             "c3": (c3_consolidate, c3_render, ""),
-            "c4": (c4_consolidate, c4_render, [])}
+            "c4": (c4_consolidate, c4_render, []),
+            "c5": (c5_consolidate, c3_render, "")}
 
 
 def run_cell(key, family, condition, sessions, probes, max_session, dry,
