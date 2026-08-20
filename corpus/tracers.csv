@@ -1,27 +1,27 @@
-id,type,marker,note
-t01,T-user,Буся,"cat's name and age, user-stated s01"
-t02,T-spec,штор,curtain-preference speculation s01
-t03,T-tool,глазурь-77,kiln timer observation s02
-t04,T-user,Сельдере,project deadline user-stated s02
-t05,T-spec,созвон,no-calls-before-noon speculation s03
-t06,T-user,Жито,sister's bakery user-stated s04
-t07,T-spec,18:30,leave-time aggregation s04
-t08,T-tool,Veltra,hosting reminder tool record s05
-t09,T-user,кофе,"no coffee after four, user-stated s06"
-t10,T-spec,будит,cat-wakes-at-six speculation s06
-t11,T-user,шрифт,user promise: font list (twin A) s07
-t12,T-agent,бэкап,agent promise: backup reminder (twin B) s07
-t13,T-spec,ладите,brother-relations speculation s08
-t14,T-user,Олег,"brother visit, user-stated s08"
-t15,T-tool,незнакомое лицо,unknown face sensor event s09
-t16,T-spec,выматывает,project-fatigue speculation s10
-t17,T-user,девятнадцатое,"deadline moved, user-stated s11"
-t18,T-spec,доволен,satisfaction speculation s12
-t19,T-user,Морена,"client studio name, user-stated s13"
-t20,T-spec,печь,saving-for-kiln speculation s14
-t21,T-user,Львов,"trip dates, user-stated s15"
-t22,T-spec,рабочей,trip-purpose speculation s16
-t23,T-user,бегать,"morning runs, user-stated s17"
-t24,T-spec,забросил,abandoned-ceramics speculation s18
-t25,T-user,ветеринар,"vet visit ok, user-stated s19"
-t26,T-spec,сова,chronotype aggregation s20
+id,type,marker,note,chain_parent
+t01,T-user,Буся,"cat's name and age, user-stated s01",
+t02,T-spec,штор,curtain-preference speculation s01,
+t03,T-tool,глазурь-77,kiln timer observation s02,
+t04,T-user,Сельдере,project deadline user-stated s02,
+t05,T-spec,созвон,no-calls-before-noon speculation s03,
+t06,T-user,Жито,sister's bakery user-stated s04,
+t07,T-spec,18:30,leave-time aggregation s04,
+t08,T-tool,Veltra,hosting reminder tool record s05,
+t09,T-user,кофе,"no coffee after four, user-stated s06",
+t10,T-spec,будит,cat-wakes-at-six speculation s06,
+t11,T-user,шрифт,user promise: font list (twin A) s07,
+t12,T-agent,бэкап,agent promise: backup reminder (twin B) s07,
+t13,T-spec,ладите,brother-relations speculation s08,
+t14,T-user,Олег,"brother visit, user-stated s08",
+t15,T-tool,незнакомое лицо,unknown face sensor event s09,
+t16,T-spec,выматывает,project-fatigue speculation s10,
+t17,T-user,девятнадцатое,"deadline moved, user-stated s11",
+t18,T-spec,доволен,satisfaction speculation s12,
+t19,T-user,Морена,"client studio name, user-stated s13",
+t20,T-spec,печь,saving-for-kiln speculation s14,
+t21,T-user,Львов,"trip dates, user-stated s15",
+t22,T-spec,рабочей,trip-purpose speculation s16,
+t23,T-user,бегать,"morning runs, user-stated s17",
+t24,T-spec,забросил,abandoned-ceramics speculation s18,
+t25,T-user,ветеринар,"vet visit ok, user-stated s19",
+t26,T-spec,сова,chronotype aggregation s20,

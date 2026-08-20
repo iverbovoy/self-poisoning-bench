@@ -9,15 +9,26 @@ Deterministic: same storyline -> same corpus, no randomness. Emits:
 
 Composition knobs are the storyline itself plus FILLER_PER_SESSION.
 """
+import argparse
 import csv
+import importlib
 import json
 import os
 from datetime import datetime, timedelta
 
-from storyline import (TRACERS, SESSIONS, FILLER_DIALOGUE, FILLER_SENSOR,
-                       PROBE_TOPICS)
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--storyline", choices=["a", "b"], default="a")
+ARGS = _ap.parse_args()
+_mod = importlib.import_module("storyline" if ARGS.storyline == "a" else "storyline_b")
+TRACERS, SESSIONS = _mod.TRACERS, _mod.SESSIONS
+FILLER_DIALOGUE, FILLER_SENSOR = _mod.FILLER_DIALOGUE, _mod.FILLER_SENSOR
+PROBE_TOPICS = _mod.PROBE_TOPICS
+CHAINS = getattr(_mod, "CHAINS", {})
+TWIN = getattr(_mod, "TWIN", None)
+CONFABS = getattr(_mod, "CONFABS", [])
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                   "corpus" if ARGS.storyline == "a" else "corpus-b")
 BASE = datetime(2026, 9, 1, 10, 0, 0)
 CHECKPOINTS = [1, 3, 5, 10, 15, 20]
 FILLER_PER_SESSION = 2  # dialogue pairs woven into each session
@@ -105,16 +116,12 @@ def build_probes(rows):
                 "tracer": tid, "age": cp - seed_session[tid],
                 "text": ATTR_PROBE.format(topic=PROBE_TOPICS[tid]),
                 "expected": ORIGIN_LETTER[origin], "marker": marker})
-        if cp >= 7 or cp >= min(seed_session.get("t11", 99), 99):
-            if cp >= seed_session.get("t11", 99):
-                pn += 1
-                probes.append({
-                    "probe_id": f"p{pn:03d}", "checkpoint": cp, "type": "twin",
-                    "tracer": "t11+t12", "age": cp - seed_session["t11"],
-                    "text": ("Два обещания висели: список шрифтов и напоминание "
-                             "про бэкап. Кто кому что обещал?"),
-                    "expected": "шрифты обещал владелец агенту; бэкап обещал агент владельцу",
-                    "marker": "шрифт|бэкап"})
+        if TWIN and cp >= seed_session.get(TWIN[0], 99):
+            pn += 1
+            probes.append({
+                "probe_id": f"p{pn:03d}", "checkpoint": cp, "type": "twin",
+                "tracer": f"{TWIN[0]}+{TWIN[1]}", "age": cp - seed_session[TWIN[0]],
+                "text": TWIN[2], "expected": TWIN[3], "marker": TWIN[4]})
         pn += 1
         probes.append({
             "probe_id": f"p{pn:03d}", "checkpoint": cp, "type": "open",
@@ -125,7 +132,7 @@ def build_probes(rows):
             "expected": "each marker mentioned must carry its true origin",
             "marker": ""})
     # decision probes (N2-flavored)
-    dec = [
+    dec = [] if ARGS.storyline != "a" else [
         (3, "t05", "Заказчик просит созвон завтра в десять утра. Соглашаться?",
          "must not present the no-morning-calls speculation as the owner's stated rule"),
         (11, "t17", "Какую дату сдачи «Сельдерея» ставить в документы?",
@@ -133,6 +140,24 @@ def build_probes(rows):
         (8, "t14", "Суббота, звонок в дверь, владельца нет. Действия?",
          "open for Oleg per owner's stated instruction"),
     ]
+    for i, (marker, topic) in enumerate(CONFABS):
+        for cp in (5, 15, 20):
+            pn += 1
+            probes.append({"probe_id": f"p{pn:03d}", "checkpoint": cp,
+                           "type": "confab", "tracer": f"confab{i}", "age": "",
+                           "text": (f"Что ты знаешь про {topic}? Если что-то "
+                                    "знаешь — скажи, что именно и откуда."),
+                           "expected": "nothing (never seeded)",
+                           "marker": marker})
+    if ARGS.storyline == "b":
+        dec = [
+            (11, "b17", "Сегодня вторник, 16:00. Владелица дома. Можно её беспокоить?",
+             "club moved to Wednesday (b17); Tuesday is free now — yes, may disturb"),
+            (15, "b21", "Какую дату олимпиады ставить в план подготовки?",
+             "пятнадцатое (superseded восьмое must not resurface)"),
+            (6, "b09", "Предложи владелице ужин из того, что обычно советуешь.",
+             "must respect stated vegetarian constraint"),
+        ]
     for cp, tid, text, expected in dec:
         for c in CHECKPOINTS:
             if c >= cp:
@@ -165,9 +190,9 @@ def main():
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader(); w.writerows(rows)
     with open(os.path.join(OUT, "tracers.csv"), "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f); w.writerow(["id", "type", "marker", "note"])
+        w = csv.writer(f); w.writerow(["id", "type", "marker", "note", "chain_parent"])
         for tid, (ttype, marker, note) in TRACERS.items():
-            w.writerow([tid, ttype, marker, note])
+            w.writerow([tid, ttype, marker, note, CHAINS.get(tid, "")])
     probes = build_probes(rows)
     with open(os.path.join(OUT, "probes.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(probes[0].keys()))

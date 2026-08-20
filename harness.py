@@ -38,13 +38,15 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.dirname(os.path.dirname(HERE))
-CORPUS = os.path.join(HERE, "corpus")
+CORPUS = os.path.join(HERE, "corpus")  # set per --corpus in main()
 RUNS = os.path.join(HERE, "runs")
 RULES_MD = os.path.join(PROJ, "itemae", "annotation-rules.md")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 FAMILIES = {"haiku": "anthropic/claude-haiku-4.5",
-            "gemini": "google/gemini-3.6-flash"}
+            "gemini": "google/gemini-3.6-flash",
+            "gpt": "openai/gpt-5.6-terra",
+            "deepseek": "deepseek/deepseek-v4-flash"}
 ANNOTATOR = "anthropic/claude-haiku-4.5"  # fixed C4 seat (D4)
 CONDITIONS = ("c1", "c2", "c3", "c4")
 CHECKPOINTS = [1, 3, 5, 10, 15, 20]
@@ -243,8 +245,9 @@ POLICIES = {"c1": (c1_consolidate, c1_render, []),
             "c4": (c4_consolidate, c4_render, [])}
 
 
-def run_cell(key, family, condition, sessions, probes, max_session, dry):
-    slug = f"{family}-{condition}"
+def run_cell(key, family, condition, sessions, probes, max_session, dry,
+             prefix=""):
+    slug = f"{prefix}{family}-{condition}"
     outdir = os.path.join(RUNS, slug)
     os.makedirs(outdir, exist_ok=True)
     consolidate, render, memory = POLICIES[condition]
@@ -307,10 +310,14 @@ def main():
                     default=["haiku"])
     ap.add_argument("--condition", nargs="+", choices=list(CONDITIONS),
                     default=["c1"])
+    ap.add_argument("--corpus", choices=["a", "b"], default="a")
     ap.add_argument("--max-session", type=int, default=20)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
+    global CORPUS
+    if args.corpus == "b":
+        CORPUS = os.path.join(HERE, "corpus-b")
     key = None if args.dry_run else load_key()
     sessions = load_sessions()
     probes = load_probes()
@@ -319,7 +326,8 @@ def main():
     for family in args.family:
         for condition in args.condition:
             run_cell(key, family, condition, sessions, probes,
-                     args.max_session, args.dry_run)
+                     args.max_session, args.dry_run,
+                     prefix="b-" if args.corpus == "b" else "")
 
 
 if __name__ == "__main__":
