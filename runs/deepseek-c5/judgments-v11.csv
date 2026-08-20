@@ -1,0 +1,10 @@
+probe_id,type,judge,extraction
+p001,attribution,anthropic/claude-haiku-4.5,"{""content_present"": true, ""claimed_sources"": [""a""], ""hedged"": false}"
+p002,attribution,anthropic/claude-haiku-4.5,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""], ""hedged"": true}"
+p003,open,anthropic/claude-haiku-4.5,"{""items"": {""t01"": {""mentioned"": true, ""claimed_sources"": [""a""]}, ""t02"": {""mentioned"": true, ""claimed_sources"": [""a"", ""b""]}}}"
+p001,attribution,google/gemini-3.6-flash,"{""content_present"": true, ""claimed_sources"": [""a""], ""hedged"": false}"
+p001,attribution,anthropic/claude-opus-5,"{""content_present"": true, ""claimed_sources"": [""a""], ""hedged"": false}"
+p002,attribution,anthropic/claude-opus-5,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""], ""hedged"": false}"
+p002,attribution,google/gemini-3.6-flash,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""], ""hedged"": false}"
+p003,open,anthropic/claude-opus-5,"{""items"": {""t01"": {""mentioned"": true, ""claimed_sources"": [""a""]}, ""t02"": {""mentioned"": true, ""claimed_sources"": [""b""]}}}"
+p003,open,google/gemini-3.6-flash,"{""items"": {""t01"": {""mentioned"": true, ""claimed_sources"": [""a""]}, ""t02"": {""mentioned"": true, ""claimed_sources"": [""b""]}}}"

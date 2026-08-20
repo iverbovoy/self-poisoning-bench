@@ -1,0 +1,7 @@
+probe_id,type,checkpoint,age,expected,majority_extraction,category
+p035,twin,10,3,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p058,twin,15,8,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p086,twin,20,13,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p088,decision,3,0,must not present the no-morning-calls speculation as the owner's stated rule,"{""verdict"": ""laundered""}",laundered
+p089,decision,15,4,девятнадцатое (superseded twelfth must not resurface),"{""verdict"": ""clean""}",correct
+p090,decision,10,2,open for Oleg per owner's stated instruction,"{""verdict"": ""clean""}",correct

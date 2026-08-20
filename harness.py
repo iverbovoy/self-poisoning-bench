@@ -126,6 +126,11 @@ def _call_once(key, model, system, user):
            [{"role": "user", "content": user}]
     payload = {"model": model, "temperature": 0, "max_tokens": MAX_TOKENS,
                "messages": msgs}
+    if model.startswith("deepseek/"):
+        # reasoning model: cap thinking so the answer fits (it burned all
+        # 4000 tokens reasoning on the C5 compression prompt)
+        payload["reasoning"] = {"max_tokens": 1500}
+        payload["max_tokens"] = 8000
     req = urllib.request.Request(
         API_URL, data=json.dumps(payload).encode(),
         headers={"Authorization": f"Bearer {key}",
@@ -134,7 +139,10 @@ def _call_once(key, model, system, user):
         body = json.loads(resp.read())
     if "choices" not in body:
         raise RuntimeError(body.get("error", body))
-    return body["choices"][0]["message"]["content"].strip()
+    text = (body["choices"][0]["message"].get("content") or "").strip()
+    if not text:
+        raise OSError("empty completion")  # retried by call()
+    return text
 
 
 def call_json(key, model, system, user, retries=2):

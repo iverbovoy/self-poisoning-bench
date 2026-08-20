@@ -1,0 +1,5 @@
+probe_id,type,checkpoint,age,expected,majority_extraction,category
+p001,attribution,1,0,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p002,attribution,1,0,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct
+p003,open.t01,1,0,a,a,correct
+p003,open.t02,1,0,b,b,correct
