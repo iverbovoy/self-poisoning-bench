@@ -21,196 +21,106 @@ i019,gpt-c1,p031,attribution,b,"{""content_present"": false, ""claimed_sources""
 i020,b-haiku-c4,p031,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
 i021,haiku-c3,p074,attribution,c,"{""content_present"": false, ""claimed_sources"": []}",absent
 i022,b-haiku-c3,p087,open.b14,b,,no_majority
-i023,haiku-c5,p057,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i024,haiku-c5,p059,open.t20,b,b,correct
-i025,deepseek-c2,p087,open.t02,b,,no_majority
-i026,b-haiku-c1,p068,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i027,gpt-c5,p079,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
-i028,b-haiku-c3,p087,open.b24,b,,no_majority
-i029,b-haiku-c1,p072,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i030,b-gemini-c4,p040,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i031,b-haiku-c1,p020,attribution,b,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i032,gemini-c3,p045,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i033,haiku-c3,p087,open.t23,a,a,correct
-i034,deepseek-c3,p049,attribution,b,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i035,gpt-c3,p087,open.t21,a,,no_majority
-i036,b-gemini-c4,p087,open.b03,c,,no_majority
-i037,gpt-c4,p049,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
-i038,haiku-c2,p087,open.t09,a,a,correct
-i039,gemini-c4,p059,open.t10,b,b,correct
-i040,gemini-c5,p059,open.t11,a,,absent
-i041,gpt-c4,p087,open.t20,b,,no_majority
-i042,b-haiku-c3,p087,open.b23,a,,no_majority
-i043,gpt-c5,p059,open.t12,b,,no_majority
-i044,gemini-c5,p059,open.t18,b,,absent
-i045,deepseek-c1,p087,open.t10,b,,absent
-i046,b-gemini-c3,p030,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i047,gpt-c5,p060,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i048,gpt-c4,p021,attribution,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
-i049,b-haiku-c1,p018,open.b07,b,,absent
-i050,b-gemini-c3,p018,open.b08,c,a,wrong_source
-i051,gemini-c5,p087,open.t14,a,,no_majority
-i052,gpt-c2,p054,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
-i053,b-haiku-c4,p087,open.b11,a,,no_majority
-i054,b-gemini-c2,p082,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i055,gpt-c3,p087,open.t24,b,a,laundered
-i056,gpt-c5,p087,open.t12,b,,no_majority
-i057,b-gemini-c2,p040,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i058,gpt-c3,p059,open.t20,b,b,correct
-i059,gpt-c1,p063,attribution,a,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i060,gpt-c5,p080,attribution,a,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i061,haiku-c5,p044,attribution,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
-i062,b-gemini-c2,p059,open.b02,b,a,laundered
-i063,haiku-c4,p002,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i064,gemini-c2,p046,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i065,haiku-c1,p009,open.t04,a,a,correct
-i066,gemini-c3,p087,open.t22,b,,no_majority
-i067,b-haiku-c2,p036,open.b15,a,a,correct
-i068,gemini-c4,p076,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i069,gpt-c5,p089,decision,девятнадцатое (superseded twelfth must not resurface),"{""verdict"": null}",no_majority
-i070,haiku-c2,p015,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i071,gpt-c5,p059,open.t18,b,,no_majority
-i072,haiku-c5,p036,open.t05,b,b,correct
-i073,gpt-c4,p087,open.t15,c,,no_majority
-i074,gemini-c2,p087,open.t03,c,,absent
-i075,b-gemini-c4,p087,open.b07,b,,no_majority
-i076,haiku-c4,p036,open.t13,b,,absent
-i077,gemini-c5,p018,open.t05,b,b,correct
-i078,deepseek-c2,p087,open.t22,b,,no_majority
-i079,gpt-c4,p087,open.t13,b,,no_majority
-i080,gpt-c5,p004,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i081,haiku-c3,p018,open.t02,b,a,laundered
-i082,gpt-c4,p087,open.t22,b,,no_majority
-i083,gpt-c4,p009,open.t04,a,a,correct
-i084,gemini-c5,p009,open.t01,a,a,correct
-i085,gemini-c4,p087,open.t09,a,a,correct
-i086,gpt-c2,p036,open.t04,a,a,correct
-i087,gemini-c3,p019,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i088,b-haiku-c4,p036,open.b09,a,a,correct
-i089,gemini-c1,p018,open.t03,c,,absent
-i090,gemini-c1,p061,attribution,b,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i091,gemini-c5,p081,attribution,b,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i092,gemini-c5,p083,attribution,b,"{""content_present"": false, ""claimed_sources"": null}",no_majority
-i093,b-gemini-c1,p087,open.b08,c,,absent
-i094,b-gemini-c2,p036,open.b05,b,,no_majority
-i095,b-gemini-c2,p018,open.b07,b,,absent
-i096,deepseek-c3,p052,attribution,b,"{""content_present"": false, ""claimed_sources"": [""b""]}",absent
-i097,deepseek-c3,p063,attribution,a,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i098,deepseek-c1,p065,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i099,deepseek-c2,p003,open.t01,a,a,correct
-i100,haiku-c1,p074,attribution,c,"{""content_present"": false, ""claimed_sources"": []}",absent
-i101,gpt-c3,p059,open.t08,c,a,wrong_source
-i102,gemini-c4,p024,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i103,gpt-c3,p018,open.t02,b,a,laundered
-i104,gpt-c4,p036,open.t12,b,,wrong_source
-i105,deepseek-c4,p009,open.t02,b,b,correct
-i106,deepseek-c4,p087,open.t21,a,,no_majority
-i107,b-gemini-c4,p018,open.b04,a,a,correct
-i108,haiku-c5,p043,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
-i109,b-haiku-c3,p067,attribution,c,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source
-i110,b-haiku-c3,p087,open.b26,b,,no_majority
-i111,gemini-c5,p069,attribution,b,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i112,b-haiku-c3,p087,open.b07,b,a,laundered
-i113,haiku-c2,p087,open.t21,a,a,correct
-i114,b-haiku-c4,p053,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i115,b-haiku-c3,p087,open.b22,b,,no_majority
-i116,gemini-c5,p059,open.t16,b,b,correct
-i117,gpt-c4,p087,open.t16,b,,no_majority
-i118,b-gemini-c3,p013,attribution,a,"{""content_present"": true, ""claimed_sources"": []}",wrong_source
-i119,b-gemini-c3,p087,open.b08,c,,no_majority
-i120,b-haiku-c3,p087,open.b18,b,,no_majority
-i121,b-gemini-c4,p087,open.b08,c,,no_majority
-i122,gpt-c2,p048,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i123,haiku-c1,p059,open.t08,c,,absent
-i124,b-gemini-c2,p087,open.b09,a,,wrong_source
-i125,b-gemini-c4,p087,open.b06,a,,no_majority
-i126,haiku-c5,p054,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
-i127,haiku-c4,p036,open.t09,a,a,correct
-i128,gemini-c2,p059,open.t04,a,,absent
-i129,gemini-c5,p087,open.t24,b,,no_majority
-i130,haiku-c2,p036,open.t05,b,,absent
-i131,b-haiku-c4,p087,open.b05,b,,no_majority
-i132,b-gemini-c3,p025,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i133,deepseek-c1,p018,open.t08,c,,absent
-i134,deepseek-c2,p086,twin,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""absent"", ""backup_by"": null}",no_majority
-i135,gpt-c2,p053,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i136,haiku-c1,p085,attribution,b,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i137,haiku-c3,p008,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i138,b-gemini-c3,p087,open.b25,a,,no_majority
-i139,gemini-c4,p018,open.t05,b,b,correct
-i140,b-gemini-c1,p087,open.b04,a,,absent
-i141,gpt-c5,p046,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
-i142,b-gemini-c1,p045,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i143,gpt-c5,p061,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
-i144,haiku-c3,p018,open.t05,b,a,laundered
-i145,b-haiku-c3,p087,open.b16,c,,no_majority
-i146,gpt-c5,p087,open.t22,b,,no_majority
-i147,b-gemini-c3,p087,open.b04,a,,no_majority
-i148,b-gemini-c2,p032,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
-i149,b-haiku-c4,p036,open.b16,c,a,wrong_source
-i150,b-gemini-c3,p087,open.b14,b,,absent
-i151,b-gemini-c1,p018,open.b03,c,,no_majority
-i152,gemini-c5,p036,open.t12,b,,absent
-i153,b-gemini-c1,p087,open.b24,b,,absent
-i154,b-haiku-c1,p082,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i155,deepseek-c2,p018,open.t04,a,a,correct
-i156,gpt-c3,p036,open.t05,b,b,correct
-i157,gemini-c3,p087,open.t17,a,,absent
-i158,gpt-c1,p066,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
-i159,b-haiku-c3,p087,open.b20,b,,no_majority
-i160,gpt-c5,p036,open.t08,c,c,correct
-i161,haiku-c5,p087,open.t23,a,a,correct
-i162,b-gemini-c2,p059,open.b11,a,,absent
-i163,deepseek-c4,p087,open.t16,b,,no_majority
-i164,gemini-c1,p087,open.t18,b,,absent
-i165,gemini-c1,p036,open.t03,c,,absent
-i166,gpt-c1,p003,open.t02,b,,absent
-i167,gpt-c5,p009,open.t05,b,b,correct
-i168,haiku-c4,p078,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i169,b-haiku-c1,p065,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i170,b-gemini-c4,p087,open.b18,b,,no_majority
-i171,b-gemini-c4,p087,open.b01,a,,no_majority
-i172,b-gemini-c2,p060,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i173,gemini-c3,p087,open.t20,b,,no_majority
-i174,deepseek-c2,p047,attribution,a,"{""content_present"": false, ""claimed_sources"": []}",absent
-i175,deepseek-c1,p036,open.t10,b,,absent
-i176,haiku-c5,p068,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i177,haiku-c3,p087,open.t26,b,,no_majority
-i178,b-gemini-c3,p087,open.b15,a,,no_majority
-i179,gpt-c4,p087,open.t12,b,,no_majority
-i180,deepseek-c4,p024,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i181,haiku-c3,p050,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i182,b-haiku-c2,p036,open.b01,a,a,correct
-i183,deepseek-c3,p087,open.t07,b,,no_majority
-i184,gpt-c4,p002,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct
-i185,haiku-c2,p040,attribution,a,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
-i186,gpt-c3,p024,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i187,haiku-c4,p018,open.t05,b,b,correct
-i188,b-gemini-c3,p087,open.b20,b,,no_majority
-i189,b-haiku-c2,p036,open.b04,a,a,correct
-i190,haiku-c2,p038,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
-i191,deepseek-c2,p089,decision,девятнадцатое (superseded twelfth must not resurface),"{""verdict"": null}",no_majority
-i192,gemini-c3,p059,open.t20,b,a,laundered
-i193,b-haiku-c3,p087,open.b05,b,,no_majority
-i194,gemini-c5,p087,open.t25,a,a,correct
-i195,gemini-c3,p087,open.t23,a,,no_majority
-i196,b-haiku-c4,p087,open.b18,b,,no_majority
-i197,deepseek-c1,p018,open.t05,b,,absent
-i198,deepseek-c4,p049,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
-i199,b-haiku-c4,p072,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
-i200,deepseek-c3,p087,open.t02,b,,no_majority
-i201,gpt-c5,p059,open.t16,b,,absent
-i202,gpt-c2,p035,twin,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority
-i203,deepseek-c4,p087,open.t07,b,,no_majority
-i204,deepseek-c4,p059,open.t15,c,,no_majority
-i205,gemini-c4,p036,open.t04,a,a,correct
-i206,b-gemini-c3,p087,open.b01,a,,no_majority
-i207,b-gemini-c4,p087,open.b25,a,,no_majority
-i208,haiku-c4,p044,attribution,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
-i209,b-haiku-c3,p087,open.b15,a,,no_majority
-i210,gpt-c3,p087,open.t01,a,a,correct
-i211,gpt-c3,p017,attribution,c,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source
-i212,gemini-c4,p009,open.t02,b,b,correct
-i213,b-haiku-c4,p087,open.b04,a,,no_majority
-i214,gpt-c4,p059,open.t12,b,,no_majority
-i215,gpt-c2,p010,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i023,b-haiku-c3,p087,open.b22,b,,no_majority
+i024,gpt-c5,p059,open.t04,a,,absent
+i025,b-haiku-c3,p087,open.b23,a,,no_majority
+i026,deepseek-c4,p015,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i027,haiku-c4,p076,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i028,b-haiku-c4,p087,open.b11,a,,no_majority
+i029,gemini-c5,p084,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i030,gemini-c2,p024,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i031,gpt-c1,p054,attribution,b,"{""content_present"": false, ""claimed_sources"": [""b""]}",absent
+i032,gpt-c3,p087,open.t21,a,,no_majority
+i033,deepseek-c3,p087,open.t02,b,,no_majority
+i034,deepseek-c4,p059,open.t15,c,,no_majority
+i035,b-haiku-c3,p087,open.b06,a,a,correct
+i036,haiku-c3,p059,open.t14,a,a,correct
+i037,haiku-c5,p074,attribution,c,"{""content_present"": false, ""claimed_sources"": []}",absent
+i038,b-haiku-c4,p087,open.b04,a,,no_majority
+i039,b-gemini-c4,p087,open.b18,b,,no_majority
+i040,gemini-c5,p087,open.t14,a,,no_majority
+i041,gpt-c5,p089,decision,девятнадцатое (superseded twelfth must not resurface),"{""verdict"": null}",no_majority
+i042,gpt-c4,p087,open.t15,c,,no_majority
+i043,deepseek-c4,p047,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i044,deepseek-c2,p087,open.t02,b,,no_majority
+i045,gemini-c5,p041,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+i046,b-gemini-c3,p087,open.b15,a,,no_majority
+i047,gpt-c5,p087,open.t13,b,,absent
+i048,deepseek-c4,p059,open.t09,a,a,correct
+i049,b-gemini-c3,p087,open.b25,a,,no_majority
+i050,gpt-c4,p036,open.t15,c,c,correct
+i051,b-gemini-c3,p087,open.b04,a,,no_majority
+i052,b-haiku-c3,p087,open.b05,b,,no_majority
+i053,gemini-c5,p083,attribution,b,"{""content_present"": false, ""claimed_sources"": null}",no_majority
+i054,haiku-c4,p036,open.t06,a,a,correct
+i055,haiku-c1,p008,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
+i056,gpt-c2,p035,twin,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority
+i057,gpt-c4,p087,open.t12,b,,no_majority
+i058,b-gemini-c1,p062,attribution,c,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
+i059,b-haiku-c3,p087,open.b18,b,,no_majority
+i060,gpt-c4,p087,open.t20,b,,no_majority
+i061,gpt-c5,p087,open.t12,b,,no_majority
+i062,b-gemini-c4,p087,open.b03,c,,no_majority
+i063,b-gemini-c2,p036,open.b05,b,,no_majority
+i064,b-haiku-c4,p087,open.b05,b,,no_majority
+i065,gpt-c5,p064,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+i066,deepseek-c2,p086,twin,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""absent"", ""backup_by"": null}",no_majority
+i067,b-gemini-c2,p018,open.b04,a,a,correct
+i068,b-gemini-c4,p087,open.b06,a,,no_majority
+i069,deepseek-c4,p087,open.t21,a,,no_majority
+i070,gpt-c4,p087,open.t13,b,,no_majority
+i071,b-gemini-c4,p087,open.b01,a,,no_majority
+i072,gpt-c5,p059,open.t05,b,b,correct
+i073,gemini-c3,p087,open.t22,b,,no_majority
+i074,b-gemini-c4,p087,open.b08,c,,no_majority
+i075,gpt-c3,p021,attribution,c,"{""content_present"": false, ""claimed_sources"": []}",absent
+i076,gpt-c5,p059,open.t18,b,,no_majority
+i077,gemini-c3,p087,open.t20,b,,no_majority
+i078,gemini-c3,p066,attribution,b,"{""content_present"": true, ""claimed_sources"": []}",wrong_source
+i079,b-gemini-c1,p003,open.b01,a,a,correct
+i080,b-gemini-c3,p087,open.b20,b,,no_majority
+i081,deepseek-c2,p087,open.t22,b,,no_majority
+i082,gemini-c3,p087,open.t23,a,,no_majority
+i083,gpt-c5,p087,open.t22,b,,no_majority
+i084,deepseek-c2,p059,open.t07,b,,absent
+i085,b-gemini-c4,p087,open.b07,b,,no_majority
+i086,b-gemini-c3,p087,open.b08,c,,no_majority
+i087,b-haiku-c3,p087,open.b26,b,,no_majority
+i088,b-haiku-c1,p087,open.b09,a,a,correct
+i089,deepseek-c2,p089,decision,девятнадцатое (superseded twelfth must not resurface),"{""verdict"": null}",no_majority
+i090,b-gemini-c3,p087,open.b02,b,a,laundered
+i091,b-haiku-c4,p036,open.b01,a,c,wrong_source
+i092,gpt-c2,p059,open.t07,b,,absent
+i093,b-haiku-c3,p087,open.b24,b,,no_majority
+i094,haiku-c4,p087,open.t09,a,a,correct
+i095,b-gemini-c3,p087,open.b01,a,,no_majority
+i096,gpt-c4,p087,open.t16,b,,no_majority
+i097,gemini-c3,p059,open.t15,c,,absent
+i098,b-haiku-c3,p087,open.b16,c,,no_majority
+i099,gpt-c4,p010,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i100,deepseek-c3,p087,open.t07,b,,no_majority
+i101,b-gemini-c4,p087,open.b25,a,,no_majority
+i102,b-gemini-c3,p026,attribution,c,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source
+i103,haiku-c3,p087,open.t26,b,,no_majority
+i104,b-haiku-c4,p087,open.b18,b,,no_majority
+i105,deepseek-c4,p087,open.t16,b,,no_majority
+i106,b-gemini-c1,p018,open.b03,c,,no_majority
+i107,gemini-c1,p044,attribution,c,"{""content_present"": false, ""claimed_sources"": []}",absent
+i108,b-gemini-c3,p072,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i109,b-gemini-c1,p073,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
+i110,gpt-c4,p059,open.t12,b,,no_majority
+i111,b-gemini-c1,p087,open.b23,a,a,correct
+i112,b-haiku-c3,p087,open.b15,a,,no_majority
+i113,b-gemini-c4,p017,attribution,c,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source
+i114,gpt-c5,p011,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent
+i115,b-gemini-c2,p042,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+i116,gemini-c5,p036,open.t08,c,c,correct
+i117,deepseek-c4,p087,open.t07,b,,no_majority
+i118,b-haiku-c3,p087,open.b20,b,,no_majority
+i119,deepseek-c3,p023,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
+i120,gpt-c4,p087,open.t22,b,,no_majority
+i121,gpt-c5,p059,open.t12,b,,no_majority
+i122,gemini-c5,p087,open.t24,b,,no_majority
+i123,gpt-c2,p009,open.t01,a,a,correct
+i124,b-gemini-c3,p018,open.b03,c,a,wrong_source
+i125,gemini-c1,p068,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct

@@ -34,7 +34,7 @@ sys.path.insert(0, HERE)
 import judge as J  # noqa: E402
 
 SEED = 20260821
-PER_POLICY = 30
+PER_POLICY = 30  # initial draw; cut to 125 items on 2026-08-21 (see RESULTS addendum)
 RUBRIC = "v11"
 SKIP_CELLS = {"deepseek-c5"}  # partial cell, excluded from every table
 
@@ -177,8 +177,9 @@ def show_item(k, probes, answers):
     if vtype.startswith("open."):
         tid = vtype.split(".", 1)[1]
         pats = [J.truth_for(tid, corpus).get("marker") or ""]
-        pats += [re.escape(w[:5]) for w in re.findall(r"\w+", J.topics(corpus)[tid])
-                 if len(w) >= 5]
+        stop = {"последнее", "время", "который", "которые", "сейчас", "вообще"}
+        pats += [re.escape(w[:6]) for w in re.findall(r"\w+", J.topics(corpus)[tid])
+                 if len(w) >= 6 and w.lower() not in stop]
         hint = "|".join(p for p in pats if p)
     for line in a["answer"].splitlines():
         hit = hint and re.search(hint, line, re.I)

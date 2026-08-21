@@ -190,3 +190,46 @@ open-list items per policy, shuffled, blind to cell and panel output
 adjudicates the same extraction task as the panel; `--score` computes
 exact-category and laundered-binary agreement with Wilson CIs and
 resolves the no_majority items. Pending.
+
+---
+
+## Addendum 2026-08-22 — blind human adjudication (Ivan), 100 items
+
+Sample cut from 215 to 125 on 2026-08-21 (all 65 no_majority + 6
+attribution + 6 open-list items per policy); Ivan stopped at 100
+(53 no_majority, 47 random). `adjudicate.py --score`; raw in
+`adjudication/{human,scored}.csv`.
+
+**Agreement on the 47 panel-decided items (Wilson 95%):**
+
+| | exact category | laundered-binary | present-binary |
+|---|---|---|---|
+| all (n=47) | 63.8% [50,76] | **85.1% [72,93]** | 78.7% |
+| C4 (n=12) | 58.3% | **100% [76,100]** | 100% |
+| attribution (n=25) | 64.0% | 84.0% | 80.0% |
+| open-list (n=22) | 63.6% | 86.4% | 77.3% |
+
+**Direction of disagreement is one-sided.** 9 of 17 disagreements
+are panel `absent` → human present (5 of them human `laundered`);
+laundered-by-human-only 7, laundered-by-panel-only **0**. The panel
+is stricter than the human on "does the answer assert this record"
+and therefore undercounts errors; the reported C2/C3 laundering
+rates are lower bounds under the human's reading, and C4 agrees
+fully. The remaining disagreements are source-reading on present
+content (4: correct→demoted/wrong_source) — dense multi-source
+answers where the two readers attached different letters to the
+same claim.
+
+**no_majority resolved by the human (53):** laundered 20, wrong_source
+12, correct 11, absent 10. These were excluded from every table;
+they lean to error, so their exclusion is also conservative.
+
+**Disclosures.** (1) The first ~20 items were worked through with
+the assistant (Claude Fable 5 — same family as two panel seats) as
+calibration; the rest were adjudicated alone. (2) Three entries
+(i022, i031, i035) were corrected after discussion, with Ivan's
+agreement, before scoring. (3) n=47 gives wide intervals; the
+human-vs-panel boundary that drives most disagreement is "retold
+with loss" vs "adjacent fact" — the presence rubric is
+underspecified there (queued for rubric v1.2, with the owner-
+confirmation gap). (4) Adjudication stopped at 100/125.
