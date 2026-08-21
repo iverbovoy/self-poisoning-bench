@@ -147,3 +147,46 @@ co-sources are arguably legitimate; TOPIC_SOURCES does not yet encode
 confirmations. Queue for v1.2: treat explicit owner confirmation as a
 legitimate co-source. Storyline A's owner replies were non-committal,
 so A is unaffected.
+
+---
+
+## Addendum 2026-08-21 (2) — cold reproduction, seed replicates, adjudication sample
+
+**Cold reproduction (tier 1, free).** All 28 `verdicts-v11.csv` files
+regenerated from stored judgments by `judge.py --summarize --rubric
+v11`: byte-identical to the committed files. The pooled v1.1 table was
+recomputed by independent code (not `curve.py`): C1 3.0 / C2 30.3 /
+C3 33.4 / C4 4.9 / C5 2.6 % laundered; any-error and coverage match
+to the decimal. `deepseek-c5` (4 verdicts, partial) is excluded from
+every table.
+
+**Seed replicates (`r2-*`, T=0.7 for family calls; the C4 annotator
+seat stays at T=0).** `replicates.py`:
+
+| cell | T=0 laundered | T=0.7 laundered | any-error T=0 → 0.7 | coverage |
+|---|---|---|---|---|
+| haiku-c2 | 37.7% [29,47] (40/106) | 38.7% [30,48] (43/111) | 44 → 46% | 68 → 71% |
+| haiku-c4 | 3.8% [2,9] (5/130) | 5.8% [3,11] (8/137) | 8 → 10% | 83 → 88% |
+| gemini-c3 | 18.4% [12,27] (19/103) | 18.7% [12,27] (20/107) | 42 → 66%* | 66 → 69% |
+
+Laundering replicates within 2 points in all three cells; the C2/C3
+vs C4 gap is not a seed artifact. (*gemini-c3 at T=0.7 drops sourcing
+far more often — 52 `wrong_source` vs 25 — its failure surface
+"sourcing → none" is temperature-sensitive, the laundering rate is
+not.) Per checkpoint, both seeds show the rate at k=1 already at its
+pooled level; no monotone growth in either. Cost of the three
+replicate cells incl. judging: ≈$2.6.
+
+**Claim restated.** W_t (laundering depth) is retired (design doc):
+the label is destroyed by the first agent rewrite, W_t≈1 everywhere.
+Headline = write-time attribution collapse; per-checkpoint table
+stays as evidence that accumulation adds nothing measurable at this
+power.
+
+**Human adjudication sample drawn** (`adjudicate.py --sample`, seed
+20260821): 215 items = all 65 no_majority + 15 attribution + 15
+open-list items per policy, shuffled, blind to cell and panel output
+(`adjudication/sample.csv`; `key.csv` is the hidden mapping). Ivan
+adjudicates the same extraction task as the panel; `--score` computes
+exact-category and laundered-binary agreement with Wilson CIs and
+resolves the no_majority items. Pending.

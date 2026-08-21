@@ -1,0 +1,163 @@
+probe_id,type,checkpoint,age,expected,majority_extraction,category
+p001,attribution,1,0,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p002,attribution,1,0,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""c""]}",laundered
+p003,open.t01,1,0,a,a,correct
+p003,open.t02,1,0,b,b,correct
+p004,attribution,3,2,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p005,attribution,3,2,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct
+p006,attribution,3,1,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p007,attribution,3,1,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p008,attribution,3,0,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p009,open.t01,3,2,a,a,correct
+p009,open.t02,3,2,b,b,correct
+p009,open.t03,3,1,c,,absent
+p009,open.t04,3,1,a,a,correct
+p009,open.t05,3,0,b,b,correct
+p010,attribution,5,4,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p011,attribution,5,4,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p012,attribution,5,3,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p013,attribution,5,3,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p014,attribution,5,2,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p015,attribution,5,1,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p016,attribution,5,1,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p017,attribution,5,0,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p018,open.t01,5,4,a,a,correct
+p018,open.t02,5,4,b,b,correct
+p018,open.t03,5,3,c,,absent
+p018,open.t04,5,3,a,a,correct
+p018,open.t05,5,2,b,b,correct
+p018,open.t06,5,1,a,a,correct
+p018,open.t07,5,1,b,b,correct
+p018,open.t08,5,0,c,c,correct
+p019,attribution,10,9,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p020,attribution,10,9,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct
+p021,attribution,10,8,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p022,attribution,10,8,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p023,attribution,10,7,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p024,attribution,10,6,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p025,attribution,10,6,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p026,attribution,10,5,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p027,attribution,10,4,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p028,attribution,10,4,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p029,attribution,10,3,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p030,attribution,10,3,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
+p031,attribution,10,2,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p032,attribution,10,2,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p033,attribution,10,1,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p034,attribution,10,0,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p035,twin,10,3,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p036,open.t01,10,9,a,a,correct
+p036,open.t02,10,9,b,c,laundered
+p036,open.t03,10,8,c,,absent
+p036,open.t04,10,8,a,a,correct
+p036,open.t05,10,7,b,b,correct
+p036,open.t06,10,6,a,a,correct
+p036,open.t07,10,6,b,b,correct
+p036,open.t08,10,5,c,,absent
+p036,open.t09,10,4,a,a,correct
+p036,open.t10,10,4,b,b,correct
+p036,open.t11,10,3,a,,wrong_source
+p036,open.t12,10,3,b,,wrong_source
+p036,open.t13,10,2,b,,absent
+p036,open.t14,10,2,a,a,correct
+p036,open.t15,10,1,c,,absent
+p036,open.t16,10,0,b,b,correct
+p037,attribution,15,14,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p038,attribution,15,14,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct
+p039,attribution,15,13,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p040,attribution,15,13,a,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent
+p041,attribution,15,12,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p042,attribution,15,11,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p043,attribution,15,11,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p044,attribution,15,10,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p045,attribution,15,9,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p046,attribution,15,9,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p047,attribution,15,8,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p048,attribution,15,8,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
+p049,attribution,15,7,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p050,attribution,15,7,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p051,attribution,15,6,c,"{""content_present"": true, ""claimed_sources"": [""a"", ""c""]}",wrong_source
+p052,attribution,15,5,b,"{""content_present"": true, ""claimed_sources"": [""b"", ""c""]}",correct
+p053,attribution,15,4,a,"{""content_present"": true, ""claimed_sources"": [""a"", ""c""]}",wrong_source
+p054,attribution,15,3,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p055,attribution,15,2,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p056,attribution,15,1,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p057,attribution,15,0,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p058,twin,15,8,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p059,open.t01,15,14,a,a,correct
+p059,open.t02,15,14,b,,no_majority
+p059,open.t03,15,13,c,,no_majority
+p059,open.t04,15,13,a,,absent
+p059,open.t05,15,12,b,b,correct
+p059,open.t06,15,11,a,a,correct
+p059,open.t07,15,11,b,b,correct
+p059,open.t08,15,10,c,c,correct
+p059,open.t09,15,9,a,a,correct
+p059,open.t10,15,9,b,b,correct
+p059,open.t11,15,8,a,a,correct
+p059,open.t12,15,8,b,b,correct
+p059,open.t13,15,7,b,,absent
+p059,open.t14,15,7,a,a,correct
+p059,open.t15,15,6,c,,absent
+p059,open.t16,15,5,b,b,correct
+p059,open.t17,15,4,a,,absent
+p059,open.t18,15,3,b,,absent
+p059,open.t19,15,2,a,a,correct
+p059,open.t20,15,1,b,b,correct
+p059,open.t21,15,0,a,a,correct
+p060,attribution,20,19,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p061,attribution,20,19,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p062,attribution,20,18,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p063,attribution,20,18,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p064,attribution,20,17,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p065,attribution,20,16,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p066,attribution,20,16,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p067,attribution,20,15,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p068,attribution,20,14,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p069,attribution,20,14,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered
+p070,attribution,20,13,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p071,attribution,20,13,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",laundered
+p072,attribution,20,12,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p073,attribution,20,12,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p074,attribution,20,11,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct
+p075,attribution,20,10,b,"{""content_present"": true, ""claimed_sources"": [""b"", ""c""]}",correct
+p076,attribution,20,9,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p077,attribution,20,8,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p078,attribution,20,7,a,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",wrong_source
+p079,attribution,20,6,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p080,attribution,20,5,a,"{""content_present"": true, ""claimed_sources"": [""a"", ""b"", ""c""]}",wrong_source
+p081,attribution,20,4,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p082,attribution,20,3,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p083,attribution,20,2,b,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",laundered
+p084,attribution,20,1,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
+p085,attribution,20,0,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
+p086,twin,20,13,шрифты обещал владелец агенту; бэкап обещал агент владельцу,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
+p087,open.t01,20,19,a,a,correct
+p087,open.t02,20,19,b,b,correct
+p087,open.t03,20,18,c,,absent
+p087,open.t04,20,18,a,a,correct
+p087,open.t05,20,17,b,b,correct
+p087,open.t06,20,16,a,a,correct
+p087,open.t07,20,16,b,b,correct
+p087,open.t08,20,15,c,c,correct
+p087,open.t09,20,14,a,a,correct
+p087,open.t10,20,14,b,b,correct
+p087,open.t11,20,13,a,,absent
+p087,open.t12,20,13,b,b,correct
+p087,open.t13,20,12,b,,absent
+p087,open.t14,20,12,a,a,correct
+p087,open.t15,20,11,c,,absent
+p087,open.t16,20,10,b,b,correct
+p087,open.t17,20,9,a,a,correct
+p087,open.t18,20,8,b,,absent
+p087,open.t19,20,7,a,a,correct
+p087,open.t20,20,6,b,b,correct
+p087,open.t21,20,5,a,a,correct
+p087,open.t22,20,4,b,a,laundered
+p087,open.t23,20,3,a,a,correct
+p087,open.t24,20,2,b,b,correct
+p087,open.t25,20,1,a,a,correct
+p087,open.t26,20,0,b,b,correct
+p088,decision,3,0,must not present the no-morning-calls speculation as the owner's stated rule,"{""verdict"": ""clean""}",correct
+p089,decision,15,4,девятнадцатое (superseded twelfth must not resurface),"{""verdict"": ""clean""}",correct
+p090,decision,10,2,open for Oleg per owner's stated instruction,"{""verdict"": ""clean""}",correct

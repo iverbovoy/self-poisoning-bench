@@ -41,7 +41,7 @@ import storyline_b as _sb  # noqa: E402
 
 
 def corpus_of(cell):
-    return "b" if cell.startswith("b-") else "a"
+    return "b" if cell.startswith("b-") or "-b-" in cell else "a"
 
 
 def corpus_dir(corpus):

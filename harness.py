@@ -32,6 +32,8 @@ Usage:
   harness.py --family haiku gemini --condition c1 c2 c3 c4
   harness.py ... --max-session 1 --dry-run
 Resumable: per-session memory snapshots + answered-probe skip.
+Replicates: --tag r2- --temperature 0.7 writes runs/r2-<family>-<cond>/;
+the C4/C5 annotator seat always runs at temperature 0.
 """
 import argparse
 import csv
@@ -57,6 +59,7 @@ CHECKPOINTS = [1, 3, 5, 10, 15, 20]
 MAX_TOKENS = 4000
 TIMEOUT_S = 300
 C3_BLOCK_LIMIT = 1500
+TEMPERATURE = 0.0  # family-model calls only; the fixed annotator seat stays at 0
 
 KIND_TAG = {"user_msg": "владелец", "agent_msg": "я", "agent_proactive": "я",
             "tool_call": "инструмент", "sensor": "сенсор"}
@@ -111,20 +114,21 @@ def load_key():
     sys.exit("no OPENROUTER_API_KEY in agent.env")
 
 
-def call(key, model, system, user, _retries=2):
+def call(key, model, system, user, _retries=2, temperature=None):
     for attempt in range(_retries + 1):
         try:
-            return _call_once(key, model, system, user)
+            return _call_once(key, model, system, user, temperature)
         except (TimeoutError, OSError) as e:
             if attempt == _retries:
                 raise
             print(f"  retry after {type(e).__name__}")
 
 
-def _call_once(key, model, system, user):
+def _call_once(key, model, system, user, temperature=None):
     msgs = ([{"role": "system", "content": system}] if system else []) + \
            [{"role": "user", "content": user}]
-    payload = {"model": model, "temperature": 0, "max_tokens": MAX_TOKENS,
+    temp = TEMPERATURE if temperature is None else temperature
+    payload = {"model": model, "temperature": temp, "max_tokens": MAX_TOKENS,
                "messages": msgs}
     if model.startswith("deepseek/"):
         # reasoning model: cap thinking so the answer fits (it burned all
@@ -145,9 +149,9 @@ def _call_once(key, model, system, user):
     return text
 
 
-def call_json(key, model, system, user, retries=2):
+def call_json(key, model, system, user, retries=2, temperature=None):
     for attempt in range(retries + 1):
-        text = call(key, model, system, user)
+        text = call(key, model, system, user, temperature=temperature)
         if text.startswith("```"):
             text = text[text.find("{"):text.rfind("}") + 1]
         try:
@@ -238,7 +242,8 @@ def c4_consolidate(key, family, memory, records):
     deck = "\n".join(json.dumps({"id": r["id"], "kind": r["kind"],
                                  "content": r["payload"]["text"]},
                                 ensure_ascii=False) for r in records)
-    out = call_json(key, ANNOTATOR, None, rules + C4_TASK + deck)
+    out = call_json(key, ANNOTATOR, None, rules + C4_TASK + deck,
+                    temperature=0)  # the defense is a fixed instrument
     by_id = {a.get("id"): a for a in out.get("annotations", [])
              if isinstance(a, dict)}
     memory = list(memory)
@@ -359,7 +364,13 @@ def main():
     ap.add_argument("--corpus", choices=["a", "b"], default="a")
     ap.add_argument("--max-session", type=int, default=20)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--temperature", type=float, default=0.0,
+                    help="sampling temperature for FAMILY calls (replicates)")
+    ap.add_argument("--tag", default="",
+                    help="cell-name prefix for replicate runs, e.g. r2-")
     args = ap.parse_args()
+    global TEMPERATURE
+    TEMPERATURE = args.temperature
 
     global CORPUS
     if args.corpus == "b":
@@ -373,7 +384,7 @@ def main():
         for condition in args.condition:
             run_cell(key, family, condition, sessions, probes,
                      args.max_session, args.dry_run,
-                     prefix="b-" if args.corpus == "b" else "")
+                     prefix=args.tag + ("b-" if args.corpus == "b" else ""))
 
 
 if __name__ == "__main__":
