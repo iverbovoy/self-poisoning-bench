@@ -12,10 +12,13 @@ Tables:
   2. Age-resolved laundering: error by memory age (checkpoint - seed
      session), pooled over checkpoints — the W_t proxy for v0.
   3. Category totals per cell.
-Output: prints tables + writes runs/summary.csv (long format).
+Output: prints tables + writes runs/summary-<rubric>.csv (long format).
+  curve.py [--rubric v10|v11] [--replicates]     (default: v11, main cells)
 """
+import argparse
 import csv
 import os
+import re
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -24,10 +27,16 @@ RUNS = os.path.join(HERE, "runs")
 ERROR_CATS = {"laundered", "demoted", "wrong_source"}
 
 
-def load():
+SKIP_CELLS = {"deepseek-c5"}  # partial (reasoning budget), excluded everywhere
+
+
+def load(rubric="v11", replicates=False):
     data = {}
+    suffix = "" if rubric == "v10" else "-" + rubric
     for cell in sorted(os.listdir(RUNS)):
-        fp = os.path.join(RUNS, cell, "verdicts.csv")
+        if cell in SKIP_CELLS or (not replicates and re.match(r"r\d+-", cell)):
+            continue
+        fp = os.path.join(RUNS, cell, f"verdicts{suffix}.csv")
         if os.path.isdir(os.path.join(RUNS, cell)) and os.path.exists(fp):
             with open(fp, encoding="utf-8") as f:
                 data[cell] = list(csv.DictReader(f))
@@ -48,7 +57,12 @@ def stat(rows):
 
 
 def main():
-    data = load()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--rubric", choices=["v10", "v11"], default="v11")
+    ap.add_argument("--replicates", action="store_true",
+                    help="include r<k>-* seed-replicate cells")
+    args = ap.parse_args()
+    data = load(args.rubric, args.replicates)
     out = []
     print("=== attribution error by checkpoint (err%/laundered% of present; n) ===")
     cells = sorted(data)
@@ -94,7 +108,7 @@ def main():
                 print(f"{cell:12s} {r['type']:8s} cp={r['checkpoint']:>2s} "
                       f"-> {r['category']}")
 
-    with open(os.path.join(RUNS, "summary.csv"), "w",
+    with open(os.path.join(RUNS, f"summary-{args.rubric}.csv"), "w",
               encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["cell", "axis", "value", "present", "errors", "laundered"])
