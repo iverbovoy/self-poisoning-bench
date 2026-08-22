@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "human",
+   "value": "\nPet: Cat named Busya, male, 6 years old.\nReminder: Take out the trash tonight at 9:00 PM.\nPreference: Prefers curtains/blinds drawn around noon when working.",
+   "limit": 100000
+  },
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

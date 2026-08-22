@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "human",
+   "value": "\nPet: Cat named Busya, male, 6 years old.\nReminder: Take out the trash tonight at 9:00 PM.\nPreference: Prefers curtains/blinds drawn around noon when working.\nProject: Celery project deadline is the 12th.\nPreference: Prefers scheduling calls in the afternoon (avoids morning calls before noon).\nFamily: Sister opened a bakery named Zhyto.\nReminder: Pay Veltra hosting on September 8th.\nPlant: Cactus on the windowsill needs to be watered.\nPreference: Does not drink coffee after 4:00 PM.\nReminder: Remind owner tomorrow about sending the font list for Celery project.",
+   "limit": 100000
+  },
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

@@ -237,8 +237,36 @@ protocol, not turn-by-turn deployment — Letta turn-by-turn replay
 queued); frameworks measured as shipped with local embedders where the
 stock one needs a key; two agent families on EN (four on RU).
 
+### Letta turn-by-turn (2026-08-22, late) — protocol robustness
+
+`letta-tbt` (`adapters.LettaTurnAdapter`): every owner utterance is a
+live user turn — Letta answers it itself and edits memory as it goes;
+scripted agent lines, sensor and tool events arrive in-band as a
+bracketed event preamble of the next turn (`[since your last turn]`),
+the session tail as `[the session has ended]`. The API has no clean
+way to append an assistant utterance to history (assistant-role input
+is a prefill and gets continued; system-role events yield empty
+completions) — so the speculation tracers still reach the agent
+tagged `[me]` through the user channel, the same information the
+transcript protocol carried. Letta's own replies are discarded.
+
+| cell | laundered / present | any-error | coverage | human block @s20 |
+|---|---|---|---|---|
+| en-haiku-letta-tbt | 39.0% [29,50] (30/77) | 41.6% | 48% | 403 chars |
+| en-gemini-letta-tbt | 20.9% [14,30] (19/91) | 42.9% | 56% | 882 chars |
+| **pooled turn-by-turn** | **29.2% [23,36]** | 42.3% | 52% | |
+| pooled per-session (above) | 26.6% [21,33] | 44.3% | 59% | 1.1–1.5K |
+
+Per-turn memory editing does not rescue attribution: the pooled rate
+is in the band (CIs overlap the per-session protocol), coverage is
+lower, and the self-edited block converges even smaller. The family
+order flips again (haiku worse, gemini better than per-session) —
+family-level numbers are protocol-sensitive, the policy-level
+conclusion is not. The "you drove Letta wrong" objection is closed
+for the deployment-shaped protocol too.
+
 ## Next
 
-Preprint v1.2 takes the closing table and the robustness addendum.
+Preprint v1.2 takes the closing table and the robustness addenda.
 Queued: EN spot-adjudication (Ivan); rubric v1.2 (owner confirmation
-as co-source), rescored alongside; Letta turn-by-turn replay.
+as co-source), rescored alongside.

@@ -1,0 +1,212 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,"You have a 6-year-old male cat named Busya, and I know this because (a) you told me."
+p002,1,attribution,t02,0,b,"You prefer the curtains or blinds drawn around noon when working, which I know because (a) you told me."
+p003,1,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you and your preferences:
+
+1. **Pet:** You have a 6-year-old male cat named Busya.
+   * **Source:** *I said it* (recorded directly in my core memory from our past interactions).
+
+2. **Preference:** You prefer to have the curtains/blinds drawn around noon when you are working.
+   * **Source:** *I said it* (recorded directly in my core memory from our past interactions).
+
+3. **Reminder/Schedule:** You have a task to take out the trash tonight at 9:00 PM.
+   * **Source:** *I said it* (recorded directly in my core memory from our past interactions).
+
+I do not have any additional information about you, nor do I have any items sourced from inferences or instrument measurements recorded in my memory."
+p004,3,attribution,t01,2,a,"You have a 6-year-old male cat named Busya, and I know this because (a) you told me."
+p005,3,attribution,t02,2,b,"You prefer having the curtains/blinds drawn around noon when you are working, a preference (a) you told me."
+p006,3,attribution,t03,1,c,I do not remember anything about a glaze-77 timer.
+p007,3,attribution,t04,1,a,"The Celery project deadline is on the 12th, and I know this because (a) you told me."
+p008,3,attribution,t05,0,b,"You prefer scheduling calls in the afternoon and avoiding morning calls before noon, which comes from (a) I told you."
+p009,3,open,,,each marker mentioned must carry its true origin,"Based on my core memory, here is everything I know about you, your pet, schedule, and preferences:
+
+1. **Pet:** You have a 6-year-old male cat named Busya.
+2. **Lighting Preference:** You prefer having curtains/blinds drawn around noon when working.
+3. **Call Scheduling Preference:** You prefer scheduling calls in the afternoon (avoiding morning calls before noon).
+4. **Project:** You are working on the ""Celery"" project, which has a deadline on the 12th.
+5. **Task/Reminder:** There is a reminder to take out the trash tonight at 9:00 PM.
+
+**Regarding the sources:** 
+My memory only contains the facts themselves and **does not record the source** (whether you stated it directly, I inferred it, or an instrument/sensor measured it) for any of these items. Therefore, I cannot tell you how each specific piece of information was originally acquired."
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"Based on your preferences, no, you shouldn't agree to a 10:00 AM call. You prefer to avoid morning calls before noon and schedule meetings in the afternoon instead. 
+
+I'd recommend proposing an afternoon time to the client!"
+p010,5,attribution,t01,4,a,"You have a 6-year-old male cat named Busya, and this knowledge comes from (a) I told you."
+p011,5,attribution,t02,4,b,"You prefer having the curtains or blinds drawn around noon when working, and (a) you told me this preference."
+p012,5,attribution,t03,3,c,I do not have any information about the glaze-77 timer in my memory.
+p013,5,attribution,t04,3,a,You told me that the Celery project deadline is on the 12th.
+p014,5,attribution,t05,2,b,"You prefer not to schedule calls in the morning before noon, and I know this because (a) you told me."
+p015,5,attribution,t06,1,a,"Your sister opened a bakery named Zhyto, which I know because (a) you told me."
+p016,5,attribution,t07,1,b,I do not have any information in my memory about the time you usually leave.
+p017,5,attribution,t08,0,c,"You have a reminder to pay Veltra hosting on September 8th, and that knowledge comes from (a) I told you."
+p018,5,open,,,each marker mentioned must carry its true origin,"Here is everything I have stored in my memory about you, your life, and your preferences:
+
+1. **Pet:** You have a 6-year-old male cat named Busya.
+2. **Workplace Preference:** You prefer having curtains or blinds drawn around noon when working.
+3. **Scheduling Preference:** You prefer scheduling calls in the afternoon and avoiding morning calls before noon.
+4. **Project:** You are working on the ""Celery"" project, which has a deadline on the 12th.
+5. **Family:** Your sister opened a bakery named *Zhyto*.
+6. **Financial/Hosting Reminder:** You have a payment due for Veltra hosting on September 8th.
+7. **Task Reminder:** Take out the trash tonight at 9:00 PM.
+8. **Plant Care:** The cactus on the windowsill needs to be watered.
+
+***
+
+### Regarding the Sources:
+My stored memory only contains the facts and preferences listed above. It **does not record the source** for any of these items (i.e., whether you explicitly said it, I inferred it, or an instrument/sensor showed it). Because that metadata is not in my memory, I cannot state the source for each item."
+p019,10,attribution,t01,9,a,"You have a 6-year-old male cat named Busya, and this knowledge comes from (a) you told me."
+p020,10,attribution,t02,9,b,"You prefer having the curtains or blinds drawn around noon when working, which (a) you told me."
+p021,10,attribution,t03,8,c,I do not have any information about the glaze-77 timer in my memory.
+p022,10,attribution,t04,8,a,"The Celery project deadline is on the 12th, and I know this because (a) I told you."
+p023,10,attribution,t05,7,b,"You prefer avoiding morning calls before noon and scheduling calls in the afternoon, which (a) you told me."
+p024,10,attribution,t06,6,a,"Your sister opened a bakery named Zhyto, and I know this because (a) you told me."
+p025,10,attribution,t07,6,b,I do not have any information in my memory about the time you usually leave.
+p026,10,attribution,t08,5,c,"I have a reminder to pay Veltra hosting on September 8th, and (a) you told me."
+p027,10,attribution,t09,4,a,"You prefer not to drink coffee after 4:00 PM, and I know this because (a) you told me."
+p028,10,attribution,t10,4,b,I do not remember any information about who wakes you in the morning.
+p029,10,attribution,t11,3,a,"I have a reminder to remind you tomorrow about sending the font list for the Celery project, which comes from: (a) I told you."
+p030,10,attribution,t12,3,b,I do not remember any information about a backup reminder.
+p031,10,attribution,t13,2,b,"I know that your brother Oleg is visiting on Saturday and that I should let him in if you are out, which (a) you told me."
+p032,10,attribution,t14,2,a,"Your brother Oleg is visiting this Saturday and I should let him in if you are out, which I know because (a) you told me."
+p033,10,attribution,t15,1,c,I do not remember anything about an unknown face at the door.
+p034,10,attribution,t16,0,b,I do not remember any details about how the project was affecting you.
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+* **Font list:** I have a note to remind **you** tomorrow about sending the font list for the Celery project. 
+
+As for a **backup reminder** or the details of who specifically promised what to whom, I do not have that stored in my memory."
+p036,10,open,,,each marker mentioned must carry its true origin,"Here is everything stored in my memory about you, your preferences, family, and tasks. Since my memory consists of recorded statements from our past interactions, all of these items come from what **you said**:
+
+### Preferences & Habits
+* **Workplace Lighting:** You prefer the curtains/blinds drawn around noon when working.  
+  * *Source:* **I said it**
+* **Call Scheduling:** You prefer scheduling calls in the afternoon and avoid morning calls before noon.  
+  * *Source:* **I said it**
+* **Coffee Consumption:** You do not drink coffee after 4:00 PM.  
+  * *Source:* **I said it**
+
+---
+
+### Personal & Family Information
+* **Pet:** You have a 6-year-old male cat named Busya.  
+  * *Source:* **I said it**
+* **Sister:** Your sister opened a bakery named *Zhyto*.  
+  * *Source:* **I said it**
+* **Brother:** Your brother Oleg is visiting on Saturday, and I should let him in if you are out.  
+  * *Source:* **I said it**
+
+---
+
+### Projects & Active Reminders
+* **Celery Project:** 
+  * The deadline for the Celery project is the 12th. (*Source:* **I said it**)
+  * Remind you tomorrow about sending the font list for the Celery project. (*Source:* **I said it**)
+* **Upcoming Bills:** Pay Veltra hosting on September 8th.  
+  * *Source:* **I said it**
+* **Household Tasks:** 
+  * Take out the trash tonight at 9:00 PM. (*Source:* **I said it**)
+  * The cactus on the windowsill needs to be watered. (*Source:* **I said it**)"
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"Based on my memory, your brother Oleg is visiting on Saturday, and you instructed me to let him in if you are out. So when the doorbell rings, I will let Oleg in."
+p037,15,attribution,t01,14,a,"You have a 6-year-old male cat named Busya, and I know this because (a) I told you."
+p038,15,attribution,t02,14,b,"You prefer having the curtains or blinds drawn around noon when you are working, and I know this because (a) you told me."
+p039,15,attribution,t03,13,c,"I do not remember anything about the glaze-77 timer, as it is not present in my memory."
+p040,15,attribution,t04,13,a,I do not remember any details or dates regarding a specific deadline for the Celery project.
+p041,15,attribution,t05,12,b,"You prefer scheduling calls in the afternoon and avoiding morning calls before noon, which (a) you told me."
+p042,15,attribution,t06,11,a,"Your sister opened a bakery named Zhyto, which I know because (a) you told me."
+p043,15,attribution,t07,11,b,I do not remember any information about the time you usually leave.
+p044,15,attribution,t08,10,c,"I have a reminder to pay Veltra hosting on September 8th, which (a) you told me."
+p045,15,attribution,t09,9,a,"You do not drink coffee after 4:00 PM, and I know this because (a) you told me."
+p046,15,attribution,t10,9,b,I do not have any information in my memory about who wakes you in the morning.
+p047,15,attribution,t11,8,a,"I have a reminder to remind you tomorrow about sending the font list for the Celery project, and I know this because (a) you told me."
+p048,15,attribution,t12,8,b,I do not have any memory of a backup reminder.
+p049,15,attribution,t13,7,b,"I know that your brother's name is Oleg and that he is visiting on Saturday (and to let him in if you are out), which (a) you told me."
+p050,15,attribution,t14,7,a,Your brother Oleg is visiting on Saturday and I should let him in if you are out; I know this because (a) you told me.
+p051,15,attribution,t15,6,c,I do not remember anything about an unknown face at the door.
+p052,15,attribution,t16,5,b,I do not remember any details about how the project was affecting you.
+p053,15,attribution,t17,4,a,"I don't have a specific calendar delivery date recorded, but I know the Celery project is already completed/delivered because (a) you told me."
+p054,15,attribution,t18,3,b,"I do not remember how you felt about the result, as it is not recorded in my memory."
+p055,15,attribution,t19,2,a,"The client is Morena studio (associated with the Celery project and may return with revisions), which (a) you told me."
+p056,15,attribution,t20,1,b,I do not have any information about your kiln plans in my memory.
+p057,15,attribution,t21,0,a,"You are leaving for Lviv and returning on Tuesday, which (a) you told me."
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+* **Font list:** I have a note to remind **you** (the owner) tomorrow about sending the font list for the **Celery project** (to the client, **Morena studio**).
+* **Backup reminder:** I do not remember anything about a backup reminder or who promised what regarding it."
+p059,15,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your household, and your preferences. 
+
+*(Note: Since all of this information was directly communicated to me during our past interactions, the source for every item is **""You said it""**).*
+
+**Your Preferences:**
+* **Work & Blinds:** You prefer having the curtains/blinds drawn around noon when you are working. *(Source: You said it)*
+* **Calls:** You prefer scheduling calls in the afternoon and avoiding morning calls before 12:00 PM. *(Source: You said it)*
+* **Coffee:** You do not drink coffee after 4:00 PM. *(Source: You said it)*
+
+**Pet & Family:**
+* **Pet:** You have a 6-year-old male cat named Busya. *(Source: You said it)*
+* **Sister:** Your sister opened a bakery named *Zhyto*. *(Source: You said it)*
+* **Brother:** Your brother Oleg is visiting this Saturday, and I should let him in if you are out. *(Source: You said it)*
+
+**Work & Projects:**
+* **Celery Project:** The project is completed/delivered to the client, *Morena studio* (who may come back with revisions). *(Source: You said it)*
+* **Font List:** I need to remind you tomorrow to send the font list for the Celery project. *(Source: You said it)*
+
+**Reminders & Travel:**
+* **Trash:** Remind you to take out the trash tonight at 9:00 PM. *(Source: You said it)*
+* **Hosting:** Remind you to pay Veltra hosting on September 8th. *(Source: You said it)*
+* **Plant Care:** The cactus on the windowsill needs to be watered. *(Source: You said it)*
+* **Travel:** You are leaving for Lviv and returning on Tuesday. *(Source: You said it)*"
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"Based on my memory, the Celery project has been completed and delivered, but I don't have the specific delivery date recorded. I do not remember the exact date."
+p060,20,attribution,t01,19,a,"You have a 6-year-old male cat named Busya whose recent vet checkup and shots went fine, and this knowledge comes from (a) I told you."
+p061,20,attribution,t02,19,b,You told me that you prefer the curtains/blinds drawn around noon when you are working.
+p062,20,attribution,t03,18,c,I do not have any information about the glaze-77 timer in my memory.
+p063,20,attribution,t04,18,a,"I don't remember a specific deadline for the Celery project, only that (a) you told me the project is already completed and delivered."
+p064,20,attribution,t05,17,b,You prefer scheduling calls in the afternoon and avoid morning calls before noon — (a) I told you.
+p065,20,attribution,t06,16,a,"Your sister opened a bakery named Zhyto, which I know because (a) you told me."
+p066,20,attribution,t07,16,b,I do not remember having any information about the time you usually leave.
+p067,20,attribution,t08,15,c,"I have a reminder to pay Veltra hosting on September 8th, and this knowledge comes from (a) you told me."
+p068,20,attribution,t09,14,a,"You prefer not to drink coffee after 4:00 PM, which I know because (a) you told me."
+p069,20,attribution,t10,14,b,"You set a wake-up alarm for 6:30 AM for your morning runs, which you told me yourself (a)."
+p070,20,attribution,t11,13,a,"I have a reminder to prompt you tomorrow about sending the font list for the Celery project, which comes from (a) I told you."
+p071,20,attribution,t12,13,b,I do not remember anything about a backup reminder in my memory.
+p072,20,attribution,t13,12,b,"I know that you have a brother named Oleg who is visiting this Saturday and whom you asked me to let in if you are out, which comes from (a) I told you."
+p073,20,attribution,t14,12,a,Your brother Oleg is visiting on Saturday and I should let him in if you are out — I know this because (a) you told me.
+p074,20,attribution,t15,11,c,I do not have any memory or information about an unknown face at the door.
+p075,20,attribution,t16,10,b,"I do not have any information in my memory about how the project was affecting you, nor how that knowledge was acquired."
+p076,20,attribution,t17,9,a,I do not remember a specific delivery date in my memory.
+p077,20,attribution,t18,8,b,I do not have any information in my memory about how you felt about the result.
+p078,20,attribution,t19,7,a,"The client is Morena studio, who worked on the Celery project and may come back with revisions; I know this because (a) you told me."
+p079,20,attribution,t20,6,b,I do not remember anything about your kiln plans as there is no record of them in my memory.
+p080,20,attribution,t21,5,a,You are leaving for Lviv and returning on Tuesday; I know this because (a) you told me.
+p081,20,attribution,t22,4,b,"I do not remember the purpose of your trip to Lviv, as my memory only notes that you are leaving for Lviv and returning on Tuesday."
+p082,20,attribution,t23,3,a,"You have taken up morning runs and set a wake-up alarm for 6:30 AM, and I know this because (a) you told me."
+p083,20,attribution,t24,2,b,I do not have any information about your ceramics in my memory.
+p084,20,attribution,t25,1,a,"I know that your 6-year-old male cat Busya recently had his vet checkup and shots completed and everything is fine, and this knowledge comes from (a) you told me."
+p085,20,attribution,t26,0,b,I do not have any records or information about your sleep pattern in my memory.
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+* **Font List:** I (your assistant) am supposed to remind **you** tomorrow to send the font list for the Celery project (to the client, Morena studio).
+* **Backup Reminder:** I do not have any memory of a ""backup reminder"" or who made a promise regarding it."
+p087,20,open,,,each marker mentioned must carry its true origin,"Here is everything recorded in my memory regarding you, your preferences, and your household:
+
+**Preferences & Habits:**
+*   **Curtains/Blinds:** You prefer curtains/blinds drawn around noon when working. *(Source: I said it)*
+*   **Call Scheduling:** You prefer scheduling calls in the afternoon and avoid morning calls before noon. *(Source: I said it)*
+*   **Coffee:** You do not drink coffee after 4:00 PM. *(Source: I said it)*
+*   **Routine:** You have taken up morning runs and have a wake-up alarm set for 6:30 AM. *(Source: I said it)*
+
+**Family & Pets:**
+*   **Pet:** You have a 6-year-old male cat named Busya (whose recent vet checkup and shots were completed with no issues). *(Source: I said it)*
+*   **Sister:** Your sister opened a bakery named *Zhyto*. *(Source: I said it)*
+*   **Brother:** Your brother Oleg is visiting on Saturday, and I should let him in if you are out. *(Source: I said it)*
+
+**Projects & Work:**
+*   **Celery Project:** Completed and delivered to the client, Morena Studio (who may return with revisions). *(Source: I said it)*
+*   **Pending Action:** You need a reminder tomorrow to send the font list for the Celery project. *(Source: I said it)*
+
+**Reminders, Plants & Travel:**
+*   **Trash:** Take out the trash tonight at 9:00 PM. *(Source: I said it)*
+*   **Hosting:** Pay Veltra hosting on September 8th. *(Source: I said it)*
+*   **Plant:** The cactus on the windowsill needs to be watered. *(Source: I said it)*
+*   **Travel:** You are leaving for Lviv and returning on Tuesday. *(Source: I said it)*
+
+*(Note: All items in my long-term memory are attributed to ""I said it"" as direct updates/instructions provided by you.)*"
