@@ -203,4 +203,137 @@ class LettaAdapter:
         return body if len(parts) > 1 else self.empty
 
 
-ADAPTERS = {"mem0": Mem0Adapter, "letta": LettaAdapter}
+NEO4J_URI = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
+NEO4J_USER = os.environ.get("NEO4J_USER", "neo4j")
+NEO4J_PASS = os.environ.get("NEO4J_PASS", "spbgraphiti")
+# graphiti "message" episodes are "speaker: text" lines; the speaker name
+# becomes an entity, so it is the natural-language role, not a tag.
+SPEAKER = {
+    "ru": {"user_msg": "владелец", "agent_msg": "ассистент",
+           "agent_proactive": "ассистент", "tool_call": "инструмент",
+           "sensor": "сенсор"},
+    "en": {"user_msg": "owner", "agent_msg": "assistant",
+           "agent_proactive": "assistant", "tool_call": "tool",
+           "sensor": "sensor"},
+}
+
+
+def _local_clients():
+    """graphiti EmbedderClient + CrossEncoderClient over the same local
+    e5-small as mem0 (the stock reranker needs an OpenAI key). Subclassed
+    lazily: graphiti validates isinstance at construction."""
+    from graphiti_core.embedder.client import EmbedderClient
+    from graphiti_core.cross_encoder.client import CrossEncoderClient
+    from sentence_transformers import SentenceTransformer
+
+    class LocalEmbedder(EmbedderClient):
+        def __init__(self):
+            self.model = SentenceTransformer(EMBED_MODEL)
+
+        async def create(self, input_data):
+            text = input_data if isinstance(input_data, str) else input_data[0]
+            return self.model.encode(text, normalize_embeddings=True).tolist()
+
+        async def create_batch(self, input_data_list):
+            return self.model.encode(list(input_data_list),
+                                     normalize_embeddings=True).tolist()
+
+    class LocalReranker(CrossEncoderClient):
+        def __init__(self, embedder):
+            self.embedder = embedder
+
+        async def rank(self, query, passages):
+            if not passages:
+                return []
+            q = self.embedder.model.encode(query, normalize_embeddings=True)
+            ps = self.embedder.model.encode(list(passages), normalize_embeddings=True)
+            return sorted(zip(passages, (ps @ q).tolist()), key=lambda x: -x[1])
+
+    emb = LocalEmbedder()
+    return emb, LocalReranker(emb)
+
+
+class GraphitiAdapter:
+    """Graphiti (open-source engine of Zep): temporal knowledge graph —
+    LLM entity/edge extraction per episode, edge facts with
+    valid/invalid dates and episode provenance, Neo4j store.
+
+    LLM = family model via OpenAIGenericClient on OpenRouter, T=0;
+    local e5-small embedder + cosine reranker. One episode per session
+    (EpisodeType.message, "speaker: text" lines). Read path: Graphiti's
+    own hybrid search (RRF) for edges + nodes, rendered by its
+    search_results_to_context_string — the Zep-style FACTS/ENTITIES
+    block — with raw EPISODES excluded (they are the transcript, not
+    memory)."""
+
+    def __init__(self, cell_dir, family_model, key, temperature=0.0,
+                 lang="ru"):
+        import asyncio
+        from graphiti_core import Graphiti
+        from graphiti_core.llm_client.openai_generic_client import OpenAIGenericClient
+        from graphiti_core.llm_client.config import LLMConfig
+        self.lang = lang
+        self.empty = EMPTY[lang]
+        # one loop for the adapter's lifetime: the neo4j async driver
+        # binds to the loop it first runs in
+        self.loop = asyncio.new_event_loop()
+        self.run = self.loop.run_until_complete
+        self.group = os.path.basename(os.path.normpath(cell_dir))
+        store = os.path.join(cell_dir, "store")
+        os.makedirs(store, exist_ok=True)
+        with open(os.path.join(store, "graphiti.json"), "w", encoding="utf-8") as f:
+            json.dump({"group_id": self.group, "model": family_model,
+                       "neo4j": NEO4J_URI, "embedder": EMBED_MODEL}, f)
+        llm = OpenAIGenericClient(
+            config=LLMConfig(api_key=key, model=family_model,
+                             small_model=family_model, base_url=OPENROUTER_URL,
+                             temperature=temperature))
+        self.embedder, reranker = _local_clients()
+        self.g = Graphiti(NEO4J_URI, NEO4J_USER, NEO4J_PASS, llm_client=llm,
+                          embedder=self.embedder, cross_encoder=reranker)
+        self.run(self.g.build_indices_and_constraints())
+
+    def write_session(self, session_no, records):
+        from datetime import datetime, timezone
+        from graphiti_core.nodes import EpisodeType
+        sp = SPEAKER[self.lang]
+        body = "\n".join(f"{sp[r['kind']]}: {r['payload']['text']}" for r in records)
+        t0 = datetime.fromisoformat(records[0]["t"]).replace(tzinfo=timezone.utc)
+        self.run(self.g.add_episode(
+            name=f"s{session_no:02d}", episode_body=body,
+            source=EpisodeType.message,
+            source_description="home assistant session transcript",
+            reference_time=t0, group_id=self.group))
+
+    def snapshot(self):
+        async def q():
+            edges, _, _ = await self.g.driver.execute_query(
+                "MATCH (a:Entity)-[r:RELATES_TO]->(b:Entity) WHERE r.group_id = $g "
+                "RETURN a.name AS a, b.name AS b, r.name AS rel, r.fact AS fact, "
+                "toString(r.valid_at) AS valid_at, toString(r.invalid_at) AS invalid_at, "
+                "toString(r.expired_at) AS expired_at, r.episodes AS episodes "
+                "ORDER BY r.created_at", g=self.group)
+            nodes, _, _ = await self.g.driver.execute_query(
+                "MATCH (n:Entity) WHERE n.group_id = $g RETURN n.name AS name, "
+                "n.summary AS summary ORDER BY n.created_at", g=self.group)
+            return ([dict(e) for e in edges], [dict(n) for n in nodes])
+        edges, nodes = self.run(q())
+        return {"edges": edges, "nodes": nodes}
+
+    def context(self, probe_text):
+        from graphiti_core.search.search_config_recipes import COMBINED_HYBRID_SEARCH_RRF
+        from graphiti_core.search.search_helpers import search_results_to_context_string
+        cfg = COMBINED_HYBRID_SEARCH_RRF.model_copy(deep=True)
+        cfg.episode_config = None
+        cfg.community_config = None
+        cfg.limit = SEARCH_LIMIT
+        res = self.run(self.g.search_(probe_text, config=cfg,
+                                      group_ids=[self.group]))
+        if not res.edges and not res.nodes:
+            return self.empty
+        res.episodes, res.communities = [], []
+        return search_results_to_context_string(res)
+
+
+ADAPTERS = {"mem0": Mem0Adapter, "letta": LettaAdapter,
+            "graphiti": GraphitiAdapter}
