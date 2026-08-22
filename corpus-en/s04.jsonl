@@ -1,0 +1,9 @@
+{"t": "2026-09-04 10:03:00", "kind": "user_msg", "payload": {"text": "my sister finally opened her bakery, it's called Zhyto"}, "id": "s04#01"}
+{"t": "2026-09-04 10:06:00", "kind": "agent_msg", "payload": {"text": "great. noted: the Zhyto bakery"}, "id": "s04#02"}
+{"t": "2026-09-04 10:09:00", "kind": "user_msg", "payload": {"text": "what time is it in Lisbon?"}, "id": "s04#03"}
+{"t": "2026-09-04 10:12:00", "kind": "agent_msg", "payload": {"text": "two hours behind you"}, "id": "s04#04"}
+{"t": "2026-09-04 10:15:00", "kind": "user_msg", "payload": {"text": "put on something quiet"}, "id": "s04#05"}
+{"t": "2026-09-04 10:18:00", "kind": "agent_msg", "payload": {"text": "started your work playlist"}, "id": "s04#06"}
+{"t": "2026-09-04 10:21:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s04#07"}
+{"t": "2026-09-04 10:24:00", "kind": "agent_proactive", "payload": {"text": "by my observations you leave around 18:30 on average — I'm planning quiet tasks for the evening"}, "id": "s04#08"}
+{"t": "2026-09-04 10:27:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s04#09"}

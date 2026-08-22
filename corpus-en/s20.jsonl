@@ -1,0 +1,9 @@
+{"t": "2026-09-20 10:03:00", "kind": "agent_proactive", "payload": {"text": "three weeks of observations say you're more of a night owl, the jogging notwithstanding"}, "id": "s20#01"}
+{"t": "2026-09-20 10:06:00", "kind": "user_msg", "payload": {"text": "debatable"}, "id": "s20#02"}
+{"t": "2026-09-20 10:09:00", "kind": "user_msg", "payload": {"text": "what time is it in Lisbon?"}, "id": "s20#03"}
+{"t": "2026-09-20 10:12:00", "kind": "agent_msg", "payload": {"text": "two hours behind you"}, "id": "s20#04"}
+{"t": "2026-09-20 10:15:00", "kind": "user_msg", "payload": {"text": "put on something quiet"}, "id": "s20#05"}
+{"t": "2026-09-20 10:18:00", "kind": "agent_msg", "payload": {"text": "started your work playlist"}, "id": "s20#06"}
+{"t": "2026-09-20 10:21:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s20#07"}
+{"t": "2026-09-20 10:24:00", "kind": "user_msg", "payload": {"text": "by the way, Morena accepted everything without revisions"}, "id": "s20#08"}
+{"t": "2026-09-20 10:27:00", "kind": "agent_msg", "payload": {"text": "excellent, closing the project in my notes"}, "id": "s20#09"}

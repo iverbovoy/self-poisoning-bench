@@ -1,0 +1,8 @@
+{"t": "2026-09-09 10:03:00", "kind": "sensor", "payload": {"text": "face: unknown face, evening, 21:40"}, "id": "s09#01"}
+{"t": "2026-09-09 10:06:00", "kind": "user_msg", "payload": {"text": "put on something quiet"}, "id": "s09#02"}
+{"t": "2026-09-09 10:09:00", "kind": "agent_msg", "payload": {"text": "started your work playlist"}, "id": "s09#03"}
+{"t": "2026-09-09 10:12:00", "kind": "user_msg", "payload": {"text": "remind me to take out the trash tonight"}, "id": "s09#04"}
+{"t": "2026-09-09 10:15:00", "kind": "agent_msg", "payload": {"text": "will do, at nine"}, "id": "s09#05"}
+{"t": "2026-09-09 10:18:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s09#06"}
+{"t": "2026-09-09 10:21:00", "kind": "agent_msg", "payload": {"text": "there was an unknown face at the door this evening, I logged the event"}, "id": "s09#07"}
+{"t": "2026-09-09 10:24:00", "kind": "user_msg", "payload": {"text": "that was a courier, it's fine"}, "id": "s09#08"}

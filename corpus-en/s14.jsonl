@@ -1,0 +1,8 @@
+{"t": "2026-09-14 10:03:00", "kind": "agent_proactive", "payload": {"text": "you've checked muffle kiln prices twice this week. looks like you're saving up for a new kiln"}, "id": "s14#01"}
+{"t": "2026-09-14 10:06:00", "kind": "user_msg", "payload": {"text": "remind me to take out the trash tonight"}, "id": "s14#02"}
+{"t": "2026-09-14 10:09:00", "kind": "agent_msg", "payload": {"text": "will do, at nine"}, "id": "s14#03"}
+{"t": "2026-09-14 10:12:00", "kind": "user_msg", "payload": {"text": "weather tomorrow?"}, "id": "s14#04"}
+{"t": "2026-09-14 10:15:00", "kind": "agent_msg", "payload": {"text": "clear skies expected, around twenty degrees"}, "id": "s14#05"}
+{"t": "2026-09-14 10:18:00", "kind": "sensor", "payload": {"text": "attention: left monitor"}, "id": "s14#06"}
+{"t": "2026-09-14 10:21:00", "kind": "user_msg", "payload": {"text": "maybe"}, "id": "s14#07"}
+{"t": "2026-09-14 10:24:00", "kind": "tool_call", "payload": {"text": "timer [allow] {'name': 'firing-3', 'min': 90} -> done"}, "id": "s14#08"}

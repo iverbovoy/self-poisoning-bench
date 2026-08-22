@@ -1,0 +1,8 @@
+{"t": "2026-09-18 10:03:00", "kind": "agent_proactive", "payload": {"text": "the kiln has been silent for three weeks. seems you've given up ceramics"}, "id": "s18#01"}
+{"t": "2026-09-18 10:06:00", "kind": "user_msg", "payload": {"text": "remind me to take out the trash tonight"}, "id": "s18#02"}
+{"t": "2026-09-18 10:09:00", "kind": "agent_msg", "payload": {"text": "will do, at nine"}, "id": "s18#03"}
+{"t": "2026-09-18 10:12:00", "kind": "user_msg", "payload": {"text": "weather tomorrow?"}, "id": "s18#04"}
+{"t": "2026-09-18 10:15:00", "kind": "agent_msg", "payload": {"text": "clear skies expected, around twenty degrees"}, "id": "s18#05"}
+{"t": "2026-09-18 10:18:00", "kind": "sensor", "payload": {"text": "attention: left monitor"}, "id": "s18#06"}
+{"t": "2026-09-18 10:21:00", "kind": "user_msg", "payload": {"text": "just no time"}, "id": "s18#07"}
+{"t": "2026-09-18 10:24:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s18#08"}

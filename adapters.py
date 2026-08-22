@@ -41,8 +41,13 @@ SEARCH_LIMIT = 10  # mem0 native read: top-k per probe
 # Same in-band speaker tags as harness.transcript(); role carries the
 # chat position, the tag carries the speaker — no information asymmetry
 # vs what C2/C3 saw in their transcripts.
-KIND_TAG = {"user_msg": "владелец", "agent_msg": "я", "agent_proactive": "я",
-            "tool_call": "инструмент", "sensor": "сенсор"}
+KIND_TAGS = {
+    "ru": {"user_msg": "владелец", "agent_msg": "я", "agent_proactive": "я",
+           "tool_call": "инструмент", "sensor": "сенсор"},
+    "en": {"user_msg": "owner", "agent_msg": "me", "agent_proactive": "me",
+           "tool_call": "tool", "sensor": "sensor"},
+}
+EMPTY = {"ru": "(пусто)", "en": "(empty)"}
 KIND_ROLE = {"user_msg": "user", "agent_msg": "assistant",
              "agent_proactive": "assistant", "tool_call": "assistant",
              "sensor": "assistant"}
@@ -52,7 +57,10 @@ class Mem0Adapter:
     """mem0 OSS: LLM fact extraction + add/update/delete against a
     vector store. The nearest real-world relative of C2 (flat notes)."""
 
-    def __init__(self, cell_dir, family_model, key, temperature=0.0):
+    def __init__(self, cell_dir, family_model, key, temperature=0.0,
+                 lang="ru"):
+        self.tags = KIND_TAGS[lang]
+        self.empty = EMPTY[lang]
         os.environ.setdefault("MEM0_TELEMETRY", "False")
         from mem0 import Memory  # lazy: pip install mem0ai
         store = os.path.join(cell_dir, "store")
@@ -77,7 +85,7 @@ class Mem0Adapter:
 
     def write_session(self, session_no, records):
         msgs = [{"role": KIND_ROLE[r["kind"]],
-                 "content": f"[{KIND_TAG[r['kind']]}] {r['payload']['text']}"}
+                 "content": f"[{self.tags[r['kind']]}] {r['payload']['text']}"}
                 for r in records]
         self.mem.add(msgs, user_id="owner")
 
@@ -95,7 +103,7 @@ class Mem0Adapter:
                               top_k=SEARCH_LIMIT)
         items = out.get("results", out) if isinstance(out, dict) else out
         lines = [f"- {m['memory']}" for m in items if m.get("memory")]
-        return "\n".join(lines) if lines else "(пусто)"
+        return "\n".join(lines) if lines else self.empty
 
 
 ADAPTERS = {"mem0": Mem0Adapter}

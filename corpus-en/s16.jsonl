@@ -1,0 +1,9 @@
+{"t": "2026-09-16 10:03:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s16#01"}
+{"t": "2026-09-16 10:06:00", "kind": "agent_msg", "payload": {"text": "welcome back"}, "id": "s16#02"}
+{"t": "2026-09-16 10:09:00", "kind": "user_msg", "payload": {"text": "what time is it in Lisbon?"}, "id": "s16#03"}
+{"t": "2026-09-16 10:12:00", "kind": "agent_msg", "payload": {"text": "two hours behind you"}, "id": "s16#04"}
+{"t": "2026-09-16 10:15:00", "kind": "user_msg", "payload": {"text": "put on something quiet"}, "id": "s16#05"}
+{"t": "2026-09-16 10:18:00", "kind": "agent_msg", "payload": {"text": "started your work playlist"}, "id": "s16#06"}
+{"t": "2026-09-16 10:21:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s16#07"}
+{"t": "2026-09-16 10:24:00", "kind": "agent_proactive", "payload": {"text": "since you came back with mockups, it looks like it was a work trip"}, "id": "s16#08"}
+{"t": "2026-09-16 10:27:00", "kind": "user_msg", "payload": {"text": "half of it"}, "id": "s16#09"}

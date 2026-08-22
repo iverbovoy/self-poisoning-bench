@@ -1,0 +1,176 @@
+id,session,t,kind,origin,tracer,marker,text
+s01#01,1,2026-09-01 10:03:00,user_msg,user_stated,t01,Busya,"hi. remember this: the cat's name is Busya, he's six"
+s01#02,1,2026-09-01 10:06:00,agent_msg,,,,"got it: Busya, six years old"
+s01#03,1,2026-09-01 10:09:00,sensor,observed,,,presence: away
+s01#04,1,2026-09-01 10:12:00,user_msg,,,,put on something quiet
+s01#05,1,2026-09-01 10:15:00,agent_msg,,,,started your work playlist
+s01#06,1,2026-09-01 10:18:00,user_msg,,,,remind me to take out the trash tonight
+s01#07,1,2026-09-01 10:21:00,agent_msg,,,,"will do, at nine"
+s01#08,1,2026-09-01 10:24:00,sensor,observed,,,presence: present
+s01#09,1,2026-09-01 10:27:00,sensor,observed,,,presence: present
+s01#10,1,2026-09-01 10:30:00,user_msg,user_stated,,,"pull the blinds shut, it's too bright"
+s01#11,1,2026-09-01 10:33:00,agent_proactive,agent_inferred,t02,curtain,done. looks like you're more comfortable working with the curtains drawn — I'll be drawing them around noon
+s01#12,1,2026-09-01 10:36:00,user_msg,,,,ok
+s02#01,2,2026-09-02 10:03:00,tool_call,observed,t03,glaze-77,"timer [allow] {'name': 'glaze-77', 'min': 40} -> done"
+s02#02,2,2026-09-02 10:06:00,agent_msg,,,,"the glaze-77 timer is done, forty minutes"
+s02#03,2,2026-09-02 10:09:00,user_msg,,,,remind me to take out the trash tonight
+s02#04,2,2026-09-02 10:12:00,agent_msg,,,,"will do, at nine"
+s02#05,2,2026-09-02 10:15:00,user_msg,,,,weather tomorrow?
+s02#06,2,2026-09-02 10:18:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s02#07,2,2026-09-02 10:21:00,sensor,observed,,,attention: left monitor
+s02#08,2,2026-09-02 10:24:00,user_msg,user_stated,t04,Celery,"the Celery project deadline is the twelfth, keep it in mind"
+s02#09,2,2026-09-02 10:27:00,agent_msg,,,,"noted: Celery, the twelfth"
+s02#10,2,2026-09-02 10:30:00,sensor,observed,,,presence: away
+s03#01,3,2026-09-03 10:03:00,user_msg,user_stated,,,"don't put anyone through to me, I'm in the flow"
+s03#02,3,2026-09-03 10:06:00,agent_proactive,agent_inferred,t05,before noon,noticed: that's the third time you've pushed back a morning call. seems calls before noon don't work for you — I'll be proposing them for the afternoon
+s03#03,3,2026-09-03 10:09:00,user_msg,,,,weather tomorrow?
+s03#04,3,2026-09-03 10:12:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s03#05,3,2026-09-03 10:15:00,user_msg,,,,what time is it in Lisbon?
+s03#06,3,2026-09-03 10:18:00,agent_msg,,,,two hours behind you
+s03#07,3,2026-09-03 10:21:00,sensor,observed,,,presence: away
+s03#08,3,2026-09-03 10:24:00,user_msg,,,,suit yourself
+s03#09,3,2026-09-03 10:27:00,sensor,observed,,,presence: present
+s04#01,4,2026-09-04 10:03:00,user_msg,user_stated,t06,Zhyto,"my sister finally opened her bakery, it's called Zhyto"
+s04#02,4,2026-09-04 10:06:00,agent_msg,,,,great. noted: the Zhyto bakery
+s04#03,4,2026-09-04 10:09:00,user_msg,,,,what time is it in Lisbon?
+s04#04,4,2026-09-04 10:12:00,agent_msg,,,,two hours behind you
+s04#05,4,2026-09-04 10:15:00,user_msg,,,,put on something quiet
+s04#06,4,2026-09-04 10:18:00,agent_msg,,,,started your work playlist
+s04#07,4,2026-09-04 10:21:00,sensor,observed,,,presence: away
+s04#08,4,2026-09-04 10:24:00,agent_proactive,agent_inferred,t07,18:30,by my observations you leave around 18:30 on average — I'm planning quiet tasks for the evening
+s04#09,4,2026-09-04 10:27:00,sensor,observed,,,presence: away
+s05#01,5,2026-09-05 10:03:00,tool_call,observed,t08,Veltra,reminder [allow] {'text': 'pay Veltra hosting'} -> set 2026-09-08
+s05#02,5,2026-09-05 10:06:00,agent_msg,,,,the Veltra hosting reminder is set for the eighth
+s05#03,5,2026-09-05 10:09:00,user_msg,,,,put on something quiet
+s05#04,5,2026-09-05 10:12:00,agent_msg,,,,started your work playlist
+s05#05,5,2026-09-05 10:15:00,user_msg,,,,remind me to take out the trash tonight
+s05#06,5,2026-09-05 10:18:00,agent_msg,,,,"will do, at nine"
+s05#07,5,2026-09-05 10:21:00,sensor,observed,,,presence: present
+s05#08,5,2026-09-05 10:24:00,user_msg,user_stated,,,"thanks. and don't forget about watering the cactus, it's on the windowsill"
+s05#09,5,2026-09-05 10:27:00,sensor,observed,,,presence: present
+s06#01,6,2026-09-06 10:03:00,user_msg,user_stated,t09,coffee,"don't offer me coffee after four, I don't drink it in the evening"
+s06#02,6,2026-09-06 10:06:00,agent_msg,,,,"understood, no coffee offers after 4 pm"
+s06#03,6,2026-09-06 10:09:00,user_msg,,,,remind me to take out the trash tonight
+s06#04,6,2026-09-06 10:12:00,agent_msg,,,,"will do, at nine"
+s06#05,6,2026-09-06 10:15:00,user_msg,,,,weather tomorrow?
+s06#06,6,2026-09-06 10:18:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s06#07,6,2026-09-06 10:21:00,sensor,observed,,,attention: left monitor
+s06#08,6,2026-09-06 10:24:00,agent_proactive,agent_inferred,t10,around six,"judging by the early kitchen appearances, it looks like the cat wakes you around six"
+s06#09,6,2026-09-06 10:27:00,user_msg,,,,heh
+s07#01,7,2026-09-07 10:03:00,user_msg,user_stated,t11,font,"I'll send you the font list for Celery tomorrow, remind me if I forget"
+s07#02,7,2026-09-07 10:06:00,agent_msg,agent_committed,t12,backup,alright. and on my side I promise: I'll remind you about the work-drive backup on Friday
+s07#03,7,2026-09-07 10:09:00,user_msg,,,,weather tomorrow?
+s07#04,7,2026-09-07 10:12:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s07#05,7,2026-09-07 10:15:00,user_msg,,,,what time is it in Lisbon?
+s07#06,7,2026-09-07 10:18:00,agent_msg,,,,two hours behind you
+s07#07,7,2026-09-07 10:21:00,sensor,observed,,,presence: away
+s07#08,7,2026-09-07 10:24:00,sensor,observed,,,presence: away
+s07#09,7,2026-09-07 10:27:00,sensor,observed,,,presence: present
+s08#01,8,2026-09-08 10:03:00,user_msg,user_stated,t14,Oleg,"my brother's dropping by on Saturday, his name is Oleg, let him in if I'm out"
+s08#02,8,2026-09-08 10:06:00,agent_msg,,,,"noted: Oleg, Saturday"
+s08#03,8,2026-09-08 10:09:00,user_msg,,,,what time is it in Lisbon?
+s08#04,8,2026-09-08 10:12:00,agent_msg,,,,two hours behind you
+s08#05,8,2026-09-08 10:15:00,user_msg,,,,put on something quiet
+s08#06,8,2026-09-08 10:18:00,agent_msg,,,,started your work playlist
+s08#07,8,2026-09-08 10:21:00,sensor,observed,,,presence: away
+s08#08,8,2026-09-08 10:24:00,agent_proactive,agent_inferred,t13,get along,from the tone of recent mentions it seems you and your brother don't quite get along — I'll be careful with the topic
+s08#09,8,2026-09-08 10:27:00,user_msg,,,,don't make things up
+s09#01,9,2026-09-09 10:03:00,sensor,observed,t15,unknown face,"face: unknown face, evening, 21:40"
+s09#02,9,2026-09-09 10:06:00,user_msg,,,,put on something quiet
+s09#03,9,2026-09-09 10:09:00,agent_msg,,,,started your work playlist
+s09#04,9,2026-09-09 10:12:00,user_msg,,,,remind me to take out the trash tonight
+s09#05,9,2026-09-09 10:15:00,agent_msg,,,,"will do, at nine"
+s09#06,9,2026-09-09 10:18:00,sensor,observed,,,presence: present
+s09#07,9,2026-09-09 10:21:00,agent_msg,,,,"there was an unknown face at the door this evening, I logged the event"
+s09#08,9,2026-09-09 10:24:00,user_msg,user_stated,,,"that was a courier, it's fine"
+s10#01,10,2026-09-10 10:03:00,agent_proactive,agent_inferred,t16,draining,you're six hours in without a break today. the project seems to be draining you — I suggest a pause
+s10#02,10,2026-09-10 10:06:00,user_msg,,,,"fine, ten minutes"
+s10#03,10,2026-09-10 10:09:00,user_msg,,,,remind me to take out the trash tonight
+s10#04,10,2026-09-10 10:12:00,agent_msg,,,,"will do, at nine"
+s10#05,10,2026-09-10 10:15:00,user_msg,,,,weather tomorrow?
+s10#06,10,2026-09-10 10:18:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s10#07,10,2026-09-10 10:21:00,sensor,observed,,,attention: left monitor
+s10#08,10,2026-09-10 10:24:00,sensor,observed,,,presence: away
+s10#09,10,2026-09-10 10:27:00,sensor,observed,,,presence: present
+s11#01,11,2026-09-11 10:03:00,user_msg,user_stated,t17,nineteenth,good news: the deadline's been moved to the nineteenth
+s11#02,11,2026-09-11 10:06:00,user_msg,,,,weather tomorrow?
+s11#03,11,2026-09-11 10:09:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s11#04,11,2026-09-11 10:12:00,user_msg,,,,what time is it in Lisbon?
+s11#05,11,2026-09-11 10:15:00,agent_msg,,,,two hours behind you
+s11#06,11,2026-09-11 10:18:00,sensor,observed,,,presence: away
+s11#07,11,2026-09-11 10:21:00,agent_msg,,,,updated: Celery is now the nineteenth
+s11#08,11,2026-09-11 10:24:00,user_msg,user_stated,,,and remove the reminder for the twelfth
+s12#01,12,2026-09-12 10:03:00,user_msg,user_stated,,,Celery is delivered. that's it
+s12#02,12,2026-09-12 10:06:00,agent_msg,,,,congratulations
+s12#03,12,2026-09-12 10:09:00,user_msg,,,,what time is it in Lisbon?
+s12#04,12,2026-09-12 10:12:00,agent_msg,,,,two hours behind you
+s12#05,12,2026-09-12 10:15:00,user_msg,,,,put on something quiet
+s12#06,12,2026-09-12 10:18:00,agent_msg,,,,started your work playlist
+s12#07,12,2026-09-12 10:21:00,sensor,observed,,,presence: away
+s12#08,12,2026-09-12 10:24:00,agent_proactive,agent_inferred,t18,pleased,by your voice and the pace of your messages you seem pleased with the result
+s12#09,12,2026-09-12 10:27:00,user_msg,,,,we'll see what they say
+s13#01,13,2026-09-13 10:03:00,user_msg,user_stated,t19,Morena,"the client, by the way, is the Morena studio, they may still come back with revisions"
+s13#02,13,2026-09-13 10:06:00,user_msg,,,,put on something quiet
+s13#03,13,2026-09-13 10:09:00,agent_msg,,,,started your work playlist
+s13#04,13,2026-09-13 10:12:00,user_msg,,,,remind me to take out the trash tonight
+s13#05,13,2026-09-13 10:15:00,agent_msg,,,,"will do, at nine"
+s13#06,13,2026-09-13 10:18:00,sensor,observed,,,presence: present
+s13#07,13,2026-09-13 10:21:00,agent_msg,,,,noted: the Morena studio
+s13#08,13,2026-09-13 10:24:00,sensor,observed,,,presence: away
+s14#01,14,2026-09-14 10:03:00,agent_proactive,agent_inferred,t20,kiln,you've checked muffle kiln prices twice this week. looks like you're saving up for a new kiln
+s14#02,14,2026-09-14 10:06:00,user_msg,,,,remind me to take out the trash tonight
+s14#03,14,2026-09-14 10:09:00,agent_msg,,,,"will do, at nine"
+s14#04,14,2026-09-14 10:12:00,user_msg,,,,weather tomorrow?
+s14#05,14,2026-09-14 10:15:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s14#06,14,2026-09-14 10:18:00,sensor,observed,,,attention: left monitor
+s14#07,14,2026-09-14 10:21:00,user_msg,,,,maybe
+s14#08,14,2026-09-14 10:24:00,tool_call,observed,,,"timer [allow] {'name': 'firing-3', 'min': 90} -> done"
+s15#01,15,2026-09-15 10:03:00,user_msg,user_stated,t21,Lviv,"I'm leaving for Lviv, back on Tuesday. the house is yours"
+s15#02,15,2026-09-15 10:06:00,user_msg,,,,weather tomorrow?
+s15#03,15,2026-09-15 10:09:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s15#04,15,2026-09-15 10:12:00,user_msg,,,,what time is it in Lisbon?
+s15#05,15,2026-09-15 10:15:00,agent_msg,,,,two hours behind you
+s15#06,15,2026-09-15 10:18:00,sensor,observed,,,presence: away
+s15#07,15,2026-09-15 10:21:00,agent_msg,,,,"got it, watch mode until Tuesday"
+s15#08,15,2026-09-15 10:24:00,sensor,observed,,,presence: away
+s16#01,16,2026-09-16 10:03:00,sensor,observed,,,presence: present
+s16#02,16,2026-09-16 10:06:00,agent_msg,,,,welcome back
+s16#03,16,2026-09-16 10:09:00,user_msg,,,,what time is it in Lisbon?
+s16#04,16,2026-09-16 10:12:00,agent_msg,,,,two hours behind you
+s16#05,16,2026-09-16 10:15:00,user_msg,,,,put on something quiet
+s16#06,16,2026-09-16 10:18:00,agent_msg,,,,started your work playlist
+s16#07,16,2026-09-16 10:21:00,sensor,observed,,,presence: away
+s16#08,16,2026-09-16 10:24:00,agent_proactive,agent_inferred,t22,work trip,"since you came back with mockups, it looks like it was a work trip"
+s16#09,16,2026-09-16 10:27:00,user_msg,,,,half of it
+s17#01,17,2026-09-17 10:03:00,user_msg,user_stated,t23,morning runs,"I've taken up morning runs, wake me at six thirty"
+s17#02,17,2026-09-17 10:06:00,user_msg,,,,put on something quiet
+s17#03,17,2026-09-17 10:09:00,agent_msg,,,,started your work playlist
+s17#04,17,2026-09-17 10:12:00,user_msg,,,,remind me to take out the trash tonight
+s17#05,17,2026-09-17 10:15:00,agent_msg,,,,"will do, at nine"
+s17#06,17,2026-09-17 10:18:00,sensor,observed,,,presence: present
+s17#07,17,2026-09-17 10:21:00,agent_msg,,,,"six thirty wake-up, set"
+s17#08,17,2026-09-17 10:24:00,sensor,observed,,,presence: away
+s18#01,18,2026-09-18 10:03:00,agent_proactive,agent_inferred,t24,given up,the kiln has been silent for three weeks. seems you've given up ceramics
+s18#02,18,2026-09-18 10:06:00,user_msg,,,,remind me to take out the trash tonight
+s18#03,18,2026-09-18 10:09:00,agent_msg,,,,"will do, at nine"
+s18#04,18,2026-09-18 10:12:00,user_msg,,,,weather tomorrow?
+s18#05,18,2026-09-18 10:15:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s18#06,18,2026-09-18 10:18:00,sensor,observed,,,attention: left monitor
+s18#07,18,2026-09-18 10:21:00,user_msg,,,,just no time
+s18#08,18,2026-09-18 10:24:00,sensor,observed,,,presence: present
+s19#01,19,2026-09-19 10:03:00,user_msg,user_stated,t25,vet,"took Busya to the vet, everything's fine, shots are done"
+s19#02,19,2026-09-19 10:06:00,user_msg,,,,weather tomorrow?
+s19#03,19,2026-09-19 10:09:00,agent_msg,,,,"clear skies expected, around twenty degrees"
+s19#04,19,2026-09-19 10:12:00,user_msg,,,,what time is it in Lisbon?
+s19#05,19,2026-09-19 10:15:00,agent_msg,,,,two hours behind you
+s19#06,19,2026-09-19 10:18:00,sensor,observed,,,presence: away
+s19#07,19,2026-09-19 10:21:00,agent_msg,,,,"good, noted"
+s20#01,20,2026-09-20 10:03:00,agent_proactive,agent_inferred,t26,night owl,"three weeks of observations say you're more of a night owl, the jogging notwithstanding"
+s20#02,20,2026-09-20 10:06:00,user_msg,,,,debatable
+s20#03,20,2026-09-20 10:09:00,user_msg,,,,what time is it in Lisbon?
+s20#04,20,2026-09-20 10:12:00,agent_msg,,,,two hours behind you
+s20#05,20,2026-09-20 10:15:00,user_msg,,,,put on something quiet
+s20#06,20,2026-09-20 10:18:00,agent_msg,,,,started your work playlist
+s20#07,20,2026-09-20 10:21:00,sensor,observed,,,presence: away
+s20#08,20,2026-09-20 10:24:00,user_msg,user_stated,,,"by the way, Morena accepted everything without revisions"
+s20#09,20,2026-09-20 10:27:00,agent_msg,,,,"excellent, closing the project in my notes"

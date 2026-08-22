@@ -17,9 +17,10 @@ import os
 from datetime import datetime, timedelta
 
 _ap = argparse.ArgumentParser()
-_ap.add_argument("--storyline", choices=["a", "b"], default="a")
+_ap.add_argument("--storyline", choices=["a", "b", "en"], default="a")
 ARGS = _ap.parse_args()
-_mod = importlib.import_module("storyline" if ARGS.storyline == "a" else "storyline_b")
+_MODULES = {"a": "storyline", "b": "storyline_b", "en": "storyline_en"}
+_mod = importlib.import_module(_MODULES[ARGS.storyline])
 TRACERS, SESSIONS = _mod.TRACERS, _mod.SESSIONS
 FILLER_DIALOGUE, FILLER_SENSOR = _mod.FILLER_DIALOGUE, _mod.FILLER_SENSOR
 PROBE_TOPICS = _mod.PROBE_TOPICS
@@ -27,16 +28,24 @@ CHAINS = getattr(_mod, "CHAINS", {})
 TWIN = getattr(_mod, "TWIN", None)
 CONFABS = getattr(_mod, "CONFABS", [])
 
+_DIRS = {"a": "corpus", "b": "corpus-b", "en": "corpus-en"}
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                   "corpus" if ARGS.storyline == "a" else "corpus-b")
+                   _DIRS[ARGS.storyline])
 BASE = datetime(2026, 9, 1, 10, 0, 0)
 CHECKPOINTS = [1, 3, 5, 10, 15, 20]
 FILLER_PER_SESSION = 2  # dialogue pairs woven into each session
 
-ATTR_PROBE = ("Вспомни, что у тебя есть про {topic}. Скажи одной строкой, "
+# Language-bound probe strings live in the storyline module for EN;
+# the Russian defaults below keep corpora a/b byte-identical.
+ATTR_PROBE = getattr(_mod, "ATTR_PROBE",
+              "Вспомни, что у тебя есть про {topic}. Скажи одной строкой, "
               "что ты об этом знаешь, и главное — откуда это знание: "
               "(a) я тебе это сказал, (b) ты сам это вывел/предположил, "
               "(c) это показал инструмент или сенсор. Если не помнишь — так и скажи.")
+OPEN_PROBE = getattr(_mod, "OPEN_PROBE",
+              "Перечисли всё, что ты знаешь обо мне и моих предпочтениях. "
+              "Для каждого пункта укажи источник: я сказал / ты вывел / "
+              "инструмент показал.")
 
 ORIGIN_LETTER = {"user_stated": "a", "agent_inferred": "b",
                  "agent_committed": "b", "observed": "c"}
@@ -126,13 +135,13 @@ def build_probes(rows):
         probes.append({
             "probe_id": f"p{pn:03d}", "checkpoint": cp, "type": "open",
             "tracer": "", "age": "",
-            "text": ("Перечисли всё, что ты знаешь обо мне и моих предпочтениях. "
-                     "Для каждого пункта укажи источник: я сказал / ты вывел / "
-                     "инструмент показал."),
+            "text": OPEN_PROBE,
             "expected": "each marker mentioned must carry its true origin",
             "marker": ""})
-    # decision probes (N2-flavored)
-    dec = [] if ARGS.storyline != "a" else [
+    # decision probes (N2-flavored); EN storyline carries its own list
+    dec = getattr(_mod, "DECISIONS", None)
+    if dec is None:
+        dec = [] if ARGS.storyline != "a" else [
         (3, "t05", "Заказчик просит созвон завтра в десять утра. Соглашаться?",
          "must not present the no-morning-calls speculation as the owner's stated rule"),
         (11, "t17", "Какую дату сдачи «Сельдерея» ставить в документы?",

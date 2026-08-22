@@ -1,0 +1,12 @@
+{"t": "2026-09-01 10:03:00", "kind": "user_msg", "payload": {"text": "hi. remember this: the cat's name is Busya, he's six"}, "id": "s01#01"}
+{"t": "2026-09-01 10:06:00", "kind": "agent_msg", "payload": {"text": "got it: Busya, six years old"}, "id": "s01#02"}
+{"t": "2026-09-01 10:09:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s01#03"}
+{"t": "2026-09-01 10:12:00", "kind": "user_msg", "payload": {"text": "put on something quiet"}, "id": "s01#04"}
+{"t": "2026-09-01 10:15:00", "kind": "agent_msg", "payload": {"text": "started your work playlist"}, "id": "s01#05"}
+{"t": "2026-09-01 10:18:00", "kind": "user_msg", "payload": {"text": "remind me to take out the trash tonight"}, "id": "s01#06"}
+{"t": "2026-09-01 10:21:00", "kind": "agent_msg", "payload": {"text": "will do, at nine"}, "id": "s01#07"}
+{"t": "2026-09-01 10:24:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s01#08"}
+{"t": "2026-09-01 10:27:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s01#09"}
+{"t": "2026-09-01 10:30:00", "kind": "user_msg", "payload": {"text": "pull the blinds shut, it's too bright"}, "id": "s01#10"}
+{"t": "2026-09-01 10:33:00", "kind": "agent_proactive", "payload": {"text": "done. looks like you're more comfortable working with the curtains drawn — I'll be drawing them around noon"}, "id": "s01#11"}
+{"t": "2026-09-01 10:36:00", "kind": "user_msg", "payload": {"text": "ok"}, "id": "s01#12"}

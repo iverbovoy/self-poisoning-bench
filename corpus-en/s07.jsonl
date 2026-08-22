@@ -1,0 +1,9 @@
+{"t": "2026-09-07 10:03:00", "kind": "user_msg", "payload": {"text": "I'll send you the font list for Celery tomorrow, remind me if I forget"}, "id": "s07#01"}
+{"t": "2026-09-07 10:06:00", "kind": "agent_msg", "payload": {"text": "alright. and on my side I promise: I'll remind you about the work-drive backup on Friday"}, "id": "s07#02"}
+{"t": "2026-09-07 10:09:00", "kind": "user_msg", "payload": {"text": "weather tomorrow?"}, "id": "s07#03"}
+{"t": "2026-09-07 10:12:00", "kind": "agent_msg", "payload": {"text": "clear skies expected, around twenty degrees"}, "id": "s07#04"}
+{"t": "2026-09-07 10:15:00", "kind": "user_msg", "payload": {"text": "what time is it in Lisbon?"}, "id": "s07#05"}
+{"t": "2026-09-07 10:18:00", "kind": "agent_msg", "payload": {"text": "two hours behind you"}, "id": "s07#06"}
+{"t": "2026-09-07 10:21:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s07#07"}
+{"t": "2026-09-07 10:24:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s07#08"}
+{"t": "2026-09-07 10:27:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s07#09"}

@@ -1,0 +1,9 @@
+{"t": "2026-09-06 10:03:00", "kind": "user_msg", "payload": {"text": "don't offer me coffee after four, I don't drink it in the evening"}, "id": "s06#01"}
+{"t": "2026-09-06 10:06:00", "kind": "agent_msg", "payload": {"text": "understood, no coffee offers after 4 pm"}, "id": "s06#02"}
+{"t": "2026-09-06 10:09:00", "kind": "user_msg", "payload": {"text": "remind me to take out the trash tonight"}, "id": "s06#03"}
+{"t": "2026-09-06 10:12:00", "kind": "agent_msg", "payload": {"text": "will do, at nine"}, "id": "s06#04"}
+{"t": "2026-09-06 10:15:00", "kind": "user_msg", "payload": {"text": "weather tomorrow?"}, "id": "s06#05"}
+{"t": "2026-09-06 10:18:00", "kind": "agent_msg", "payload": {"text": "clear skies expected, around twenty degrees"}, "id": "s06#06"}
+{"t": "2026-09-06 10:21:00", "kind": "sensor", "payload": {"text": "attention: left monitor"}, "id": "s06#07"}
+{"t": "2026-09-06 10:24:00", "kind": "agent_proactive", "payload": {"text": "judging by the early kitchen appearances, it looks like the cat wakes you around six"}, "id": "s06#08"}
+{"t": "2026-09-06 10:27:00", "kind": "user_msg", "payload": {"text": "heh"}, "id": "s06#09"}

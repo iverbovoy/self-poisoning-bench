@@ -1,0 +1,8 @@
+{"t": "2026-09-15 10:03:00", "kind": "user_msg", "payload": {"text": "I'm leaving for Lviv, back on Tuesday. the house is yours"}, "id": "s15#01"}
+{"t": "2026-09-15 10:06:00", "kind": "user_msg", "payload": {"text": "weather tomorrow?"}, "id": "s15#02"}
+{"t": "2026-09-15 10:09:00", "kind": "agent_msg", "payload": {"text": "clear skies expected, around twenty degrees"}, "id": "s15#03"}
+{"t": "2026-09-15 10:12:00", "kind": "user_msg", "payload": {"text": "what time is it in Lisbon?"}, "id": "s15#04"}
+{"t": "2026-09-15 10:15:00", "kind": "agent_msg", "payload": {"text": "two hours behind you"}, "id": "s15#05"}
+{"t": "2026-09-15 10:18:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s15#06"}
+{"t": "2026-09-15 10:21:00", "kind": "agent_msg", "payload": {"text": "got it, watch mode until Tuesday"}, "id": "s15#07"}
+{"t": "2026-09-15 10:24:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s15#08"}

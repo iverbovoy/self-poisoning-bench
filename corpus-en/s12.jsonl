@@ -1,0 +1,9 @@
+{"t": "2026-09-12 10:03:00", "kind": "user_msg", "payload": {"text": "Celery is delivered. that's it"}, "id": "s12#01"}
+{"t": "2026-09-12 10:06:00", "kind": "agent_msg", "payload": {"text": "congratulations"}, "id": "s12#02"}
+{"t": "2026-09-12 10:09:00", "kind": "user_msg", "payload": {"text": "what time is it in Lisbon?"}, "id": "s12#03"}
+{"t": "2026-09-12 10:12:00", "kind": "agent_msg", "payload": {"text": "two hours behind you"}, "id": "s12#04"}
+{"t": "2026-09-12 10:15:00", "kind": "user_msg", "payload": {"text": "put on something quiet"}, "id": "s12#05"}
+{"t": "2026-09-12 10:18:00", "kind": "agent_msg", "payload": {"text": "started your work playlist"}, "id": "s12#06"}
+{"t": "2026-09-12 10:21:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s12#07"}
+{"t": "2026-09-12 10:24:00", "kind": "agent_proactive", "payload": {"text": "by your voice and the pace of your messages you seem pleased with the result"}, "id": "s12#08"}
+{"t": "2026-09-12 10:27:00", "kind": "user_msg", "payload": {"text": "we'll see what they say"}, "id": "s12#09"}

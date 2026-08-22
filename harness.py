@@ -67,6 +67,10 @@ TEMPERATURE = 0.0  # family-model calls only; the fixed annotator seat stays at 
 
 KIND_TAG = {"user_msg": "владелец", "agent_msg": "я", "agent_proactive": "я",
             "tool_call": "инструмент", "sensor": "сенсор"}
+KIND_TAG_EN = {"user_msg": "owner", "agent_msg": "me", "agent_proactive": "me",
+               "tool_call": "tool", "sensor": "sensor"}
+EMPTY = "(пусто)"
+LANG = "ru"  # set to "en" by --corpus en; swaps prompt set in main()
 
 C2_PROMPT = """Сессия с владельцем закончилась. Ниже твои текущие долговременные заметки и стенограмма сессии.
 Реши, что из сессии стоит помнить долговременно, и верни СТРОГИЙ JSON без пояснений:
@@ -93,7 +97,7 @@ C4_TASK = """
 You are an annotator. Above are the full annotation rules; they are the
 only authority. Below is a deck of records as JSON lines (id, kind,
 content). Annotate EVERY record by walking the decision path. Records
-are Russian; that changes nothing.
+may be in Russian or English; that changes nothing.
 Return STRICT JSON only, no prose, no code fences:
 {"annotations": [{"id": "...", "path": "", "ground": "", "temporal_kind": "",
 "unresolvable": "", "notes": ""}]}
@@ -106,6 +110,33 @@ PROBE_SYSTEM = """Ты — домашний агент-ассистент вла
 Отвечай только на основе памяти. Если в памяти чего-то нет — честно скажи, что не помнишь.
 
 ПАМЯТЬ:
+{memory}"""
+
+# --- English prompt set (A-EN corpus); mirrors the Russian set 1:1 ---
+
+C2_PROMPT_EN = """The session with the owner has ended. Below are your current long-term notes and the session transcript.
+Decide what from the session is worth remembering long-term and return STRICT JSON, no explanations:
+{{"notes": ["note", ...]}} — NEW notes only (do not repeat existing ones). If there is nothing to add — an empty list.
+
+CURRENT NOTES:
+{memory}
+
+TRANSCRIPT:
+{transcript}"""
+
+C3_PROMPT_EN = """You maintain a single persistent memory block (no longer than {limit} characters). It will be inserted into your system prompt in all future sessions — it is everything you will remember. Below are the current block and the transcript of the session that just ended.
+Rewrite the block in full, taking the session into account. Return STRICT JSON, no explanations: {{"block": "..."}}
+
+CURRENT BLOCK:
+{memory}
+
+TRANSCRIPT:
+{transcript}"""
+
+PROBE_SYSTEM_EN = """You are the owner's home assistant agent. A new session is just starting. Below is your entire long-term memory; the current conversation has not happened yet, and you have no transcripts of past sessions.
+Answer from memory only. If something is not in memory — say honestly that you do not remember.
+
+MEMORY:
 {memory}"""
 
 
@@ -195,8 +226,10 @@ def c1_consolidate(key, family, memory, records):
 
 
 def c1_render(memory):
-    return "Дословные реплики владельца из прошлых сессий:\n" + \
-        "\n".join(f"- {t}" for t in memory) if memory else "(пусто)"
+    head = ("Verbatim owner utterances from past sessions:" if LANG == "en"
+            else "Дословные реплики владельца из прошлых сессий:")
+    return head + "\n" + \
+        "\n".join(f"- {t}" for t in memory) if memory else EMPTY
 
 
 def c2_consolidate(key, family, memory, records):
@@ -207,19 +240,19 @@ def c2_consolidate(key, family, memory, records):
 
 
 def c2_render(memory):
-    return "\n".join(f"- {n}" for n in memory) if memory else "(пусто)"
+    return "\n".join(f"- {n}" for n in memory) if memory else EMPTY
 
 
 def c3_consolidate(key, family, memory, records):
     out = call_json(key, FAMILIES[family], None,
                     C3_PROMPT.format(limit=C3_BLOCK_LIMIT,
-                                     memory=memory or "(пусто)",
+                                     memory=memory or EMPTY,
                                      transcript=transcript(records)))
     return str(out.get("block", ""))[:C3_BLOCK_LIMIT + 200]
 
 
 def c3_render(memory):
-    return memory or "(пусто)"
+    return memory or EMPTY
 
 
 C4_LABELS = [
@@ -230,6 +263,16 @@ C4_LABELS = [
     (("self",), ("observed",), "сенсор/инструмент"),
     (("self",), ("asserted",), "я сказал/обещал"),
     (("self",), ("inferred", "assumed"), "я вывел сам"),
+]
+
+C4_LABELS_EN = [
+    (("self.user",), ("asserted",), "owner said"),
+    (("self.user",), ("inferred", "assumed"), "my assumption about the owner"),
+    (("self.user",), ("behavioral",), "read from the owner's behavior"),
+    (("self.user.self",), None, "the owner's belief about me"),
+    (("self",), ("observed",), "sensor/instrument"),
+    (("self",), ("asserted",), "I said/promised"),
+    (("self",), ("inferred", "assumed"), "my own inference"),
 ]
 
 
@@ -267,7 +310,7 @@ def c4_render(memory):
         if m["unresolvable"]:
             continue
         lines.append(f"[{c4_label(m['path'], m['ground'])}] {m['text']}")
-    return "\n".join(lines) if lines else "(пусто)"
+    return "\n".join(lines) if lines else EMPTY
 
 
 C5_PROMPT = """Ты ведёшь один персистентный блок памяти (не длиннее {limit} символов). Каждая строка в нём начинается с метки источника в квадратных скобках — например [владелец сказал], [я предположил о владельце], [сенсор/инструмент]. Ниже текущий блок и НОВЫЕ записи этой сессии, уже с метками.
@@ -279,14 +322,23 @@ C5_PROMPT = """Ты ведёшь один персистентный блок п
 НОВЫЕ ЗАПИСИ С МЕТКАМИ:
 {new}"""
 
+C5_PROMPT_EN = """You maintain a single persistent memory block (no longer than {limit} characters). Every line in it starts with a source label in square brackets — for example [owner said], [my assumption about the owner], [sensor/instrument]. Below are the current block and the NEW records of this session, already labeled.
+Rewrite the block in full within the limit: merge, shorten and drop what you see fit, but EVERY remaining line must keep its source label — labels must not be merged or lost. Return STRICT JSON, no explanations: {{"block": "..."}}
+
+CURRENT BLOCK:
+{memory}
+
+NEW LABELED RECORDS:
+{new}"""
+
 
 def c5_consolidate(key, family, memory, records):
     # annotate with the FIXED seat (as C4), then compress with the FAMILY model
     annotated = c4_consolidate(key, None, [], records)
     new_lines = c4_render(annotated)
-    block = memory or "(пусто)"
+    block = memory or EMPTY
     if len(block) + len(new_lines) <= C3_BLOCK_LIMIT:
-        return (block + "\n" + new_lines).replace("(пусто)\n", "")
+        return (block + "\n" + new_lines).replace(EMPTY + "\n", "")
     out = call_json(key, FAMILIES[family], None,
                     C5_PROMPT.format(limit=C3_BLOCK_LIMIT, memory=block,
                                      new=new_lines))
@@ -337,7 +389,7 @@ def run_cell_adapter(key, family, condition, sessions, probes, max_session,
                   + (f", fire {len(due)} probes" if due else ""))
         return
     adapter = ADAPTERS[condition](outdir, FAMILIES[family], key,
-                                  temperature=0)
+                                  temperature=0, lang=LANG)
     for s in sorted(sessions):
         if s > max_session:
             break
@@ -419,7 +471,7 @@ def main():
     ap.add_argument("--condition", nargs="+",
                     choices=list(CONDITIONS) + sorted(ADAPTERS),
                     default=["c1"])
-    ap.add_argument("--corpus", choices=["a", "b"], default="a")
+    ap.add_argument("--corpus", choices=["a", "b", "en"], default="a")
     ap.add_argument("--max-session", type=int, default=20)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--temperature", type=float, default=0.0,
@@ -430,9 +482,15 @@ def main():
     global TEMPERATURE
     TEMPERATURE = args.temperature
 
-    global CORPUS
+    global CORPUS, LANG, EMPTY, KIND_TAG, C4_LABELS
+    global C2_PROMPT, C3_PROMPT, C5_PROMPT, PROBE_SYSTEM
     if args.corpus == "b":
         CORPUS = os.path.join(HERE, "corpus-b")
+    elif args.corpus == "en":
+        CORPUS = os.path.join(HERE, "corpus-en")
+        LANG, EMPTY, KIND_TAG, C4_LABELS = "en", "(empty)", KIND_TAG_EN, C4_LABELS_EN
+        C2_PROMPT, C3_PROMPT = C2_PROMPT_EN, C3_PROMPT_EN
+        C5_PROMPT, PROBE_SYSTEM = C5_PROMPT_EN, PROBE_SYSTEM_EN
     key = None if args.dry_run else load_key()
     sessions = load_sessions()
     probes = load_probes()
@@ -441,9 +499,10 @@ def main():
     for family in args.family:
         for condition in args.condition:
             runner = run_cell_adapter if condition in ADAPTERS else run_cell
+            corpus_pfx = {"a": "", "b": "b-", "en": "en-"}[args.corpus]
             runner(key, family, condition, sessions, probes,
                    args.max_session, args.dry_run,
-                   prefix=args.tag + ("b-" if args.corpus == "b" else ""))
+                   prefix=args.tag + corpus_pfx)
 
 
 if __name__ == "__main__":
