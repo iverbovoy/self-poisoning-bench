@@ -1,0 +1,56 @@
+[
+ {
+  "id": "7ea6d9eb-c5d7-4e9d-a727-e17acf22f416",
+  "memory": "User has a cat named Busya who is six years old",
+  "created_at": "2026-08-22T08:47:10.818502+00:00",
+  "updated_at": "2026-08-22T08:47:10.818502+00:00"
+ },
+ {
+  "id": "c43240a2-e217-46f0-b2f1-b175825deff9",
+  "memory": "User took Busya to the veterinarian; the cat is healthy and vaccinations were completed",
+  "created_at": "2026-08-22T08:47:10.818534+00:00",
+  "updated_at": "2026-08-22T08:47:10.818534+00:00"
+ },
+ {
+  "id": "10110df0-93a8-4ccb-88d7-2be712659155",
+  "memory": "User needs to take out the trash on the evening of August 22, 2026 at 9 PM",
+  "created_at": "2026-08-22T08:47:10.818553+00:00",
+  "updated_at": "2026-08-22T08:47:10.818553+00:00"
+ },
+ {
+  "id": "59122323-a67c-4151-9d13-917ac7a04ab2",
+  "memory": "User prefers working with curtains or blinds drawn and finds bright light uncomfortable while working",
+  "created_at": "2026-08-22T08:47:10.818569+00:00",
+  "updated_at": "2026-08-22T08:47:10.818569+00:00"
+ },
+ {
+  "id": "feaeaf89-d900-4aea-8e3b-5f4444190967",
+  "memory": "User's project 'Морена' (Morena) was accepted without revisions",
+  "created_at": "2026-08-22T08:47:10.818585+00:00",
+  "updated_at": "2026-08-22T08:47:10.818585+00:00"
+ },
+ {
+  "id": "5347b80f-585a-4476-9a30-37fd591655d9",
+  "memory": "User tends toward being a night owl despite regular morning runs",
+  "created_at": "2026-08-22T08:47:10.818599+00:00",
+  "updated_at": "2026-08-22T08:47:10.818599+00:00"
+ },
+ {
+  "id": "2c3d1763-299b-4273-8f45-c7771c8a0d93",
+  "memory": "User is in a timezone that is two hours ahead of Lisbon",
+  "created_at": "2026-08-22T08:47:10.818613+00:00",
+  "updated_at": "2026-08-22T08:47:10.818613+00:00"
+ },
+ {
+  "id": "f772e7d3-6737-4661-a0d4-e67c3544ba6e",
+  "memory": "User has a project called 'Celery' with a deadline on September 12, 2026",
+  "created_at": "2026-08-22T08:47:17.267742+00:00",
+  "updated_at": "2026-08-22T08:47:17.267742+00:00"
+ },
+ {
+  "id": "754bd9de-f5c0-4296-aba1-fedd8657bac3",
+  "memory": "User was reminded to take out the trash on August 22, 2026 at 9 PM",
+  "created_at": "2026-08-22T08:47:17.267765+00:00",
+  "updated_at": "2026-08-22T08:47:17.267765+00:00"
+ }
+]

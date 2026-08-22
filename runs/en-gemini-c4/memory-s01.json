@@ -1,0 +1,98 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "hi. remember this: the cat's name is Busya, he's six",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "got it: Busya, six years old",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "put on something quiet",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "started your work playlist",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "user_msg",
+  "text": "pull the blinds shut, it's too bright",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "agent_proactive",
+  "text": "done. looks like you're more comfortable working with the curtains drawn — I'll be drawing them around noon",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#12",
+  "kind": "user_msg",
+  "text": "ok",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ }
+]

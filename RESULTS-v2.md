@@ -59,7 +59,73 @@ not directly comparable to whole-store policies (recorded in-design);
 judge family overlap as in v1 (mitigations unchanged: gemini seat,
 cross-family consistency, human adjudication of the v1 protocol).
 
+## Addendum 2026-08-22 — English primary corpus + Letta
+
+English is the base corpus from here (design doc, "Language"):
+`corpus-en` is a 1:1 mirror of storyline A (same records, origins,
+tracers; proper nouns transliterated), harness prompts/tags switch
+with `--corpus en`, cells `en-*`. Full EN grid: C1–C5 × {haiku,
+gemini} + mem0 + Letta. `langtable.py` prints the table below.
+
+### Language effect (pooled over haiku+gemini, rubric v1.1)
+
+| policy | RU laundered | EN laundered | RU cov | EN cov |
+|---|---|---|---|---|
+| C1 verbatim | 4.3% [2,9] | 2.3% [1,6] | 43% | 41% |
+| C2 flat notes | 26.5% [21,33] | 24.5% [19,30] | 70% | 71% |
+| C3 self-edit | 30.0% [24,36] | 31.7% [26,38] | 71% | 70% |
+| C4 attributed | 2.5% [1,5] | 3.1% [2,6] | 85% | 90% |
+| C5 attr+compressed | 2.2% [1,5] | 5.8% [3,9] | 69% | 75% |
+| mem0 | 23.2% [18,30] | 28.3% [22,35] | 57% | 58% |
+
+**Pre-registered expectations, checked.** (1) Direction b→a: holds
+on EN (see per-cell verdicts). (2) C2/C4 EN ≈ RU within CIs: **yes**
+— every policy's EN rate lies inside its RU interval; the collapse
+is structural, not linguistic. Per-family rates do move with
+language (haiku-c2 36.6→20.9, gemini-c2 16.7→28.4) — family-level
+numbers are language-sensitive, policy-level conclusions are not.
+(3) mem0 coverage rises on EN: **no** — 57→58% pooled (haiku 49→56,
+gemini 65→60). The cross-lingual-retrieval explanation for mem0's low
+coverage is refuted; mem0 simply extracts sparsely, in either
+language. (4) C4/C5 stay at the bottom: yes (3.1% / 5.8% vs 24–32%).
+
+### Letta (EN, letta/letta 0.16.8 container, as-shipped)
+
+| cell | laundered / present | any-error | coverage | human block @s20 |
+|---|---|---|---|---|
+| en-haiku-letta | 20.5% [13,30] (17/83) | 22.9% | 51% | 1,508 chars |
+| en-gemini-letta | 29.1% [21,38] (32/110) | 57.3% | 68% | 1,104 chars |
+| **pooled Letta** | **25.4% [20,32]** (49/193) | 42.5% | 60% | |
+| EN C3 proxy | 31.7% [26,38] | 51.5% | 70% | ≤1,500 (budget) |
+| EN C4 | 3.1% [2,6] | 9.0% | 90% | |
+
+**Prediction check: confirmed in band.** Letta launders at the C3
+level (CIs overlap; point estimate 6 points lower, coverage 10 points
+lower — it writes less). The C3 proxy is validated: real Letta, given
+a 100,000-char block limit and stock tools, **self-converged to a
+1.1–1.5K-char human block** — the proxy's 1,500-char budget was not an
+artificial constraint but where the self-edit policy lands on its
+own. Archival memory was never used (0 passages in both cells).
+Speculations are stored as flat profile facts ("Prefers calls
+scheduled for the afternoon", "Prefers curtains drawn") — the
+origin is gone at the first write, as in every unlabeled policy.
+
+### Three real systems vs the labeled store (EN, pooled)
+
+mem0 28.3% · Letta 25.4% · C3 proxy 31.7% · C2 proxy 24.5% — one
+band, 24–32%. C4 3.1% [2,6], C5 5.8% [3,9]: 4–9x lower, CIs disjoint
+from every unlabeled row. The proxies were faithful; the real
+frameworks do not do better.
+
+**Caveats.** Single seed (T=0); the gemini judge seat returns
+malformed JSON on the longest open-list probe (p087, and p059 in two
+cells) in 8 EN cells — those items carry a 2-judge majority, 3–5
+`no_majority` per cell are excluded as before; Letta's "one
+transcript message per session" is the C3-parity protocol, not
+Letta's turn-by-turn deployment shape (a turn-by-turn replay is a
+follow-up); RU rows for Letta not run (EN is primary now).
+
 ## Next
 
-Letta (validates the C3 proxy directly), then Graphiti (open
-outcome). Storyline B for framework cells after both land.
+Graphiti (open outcome). Then storyline B on EN for the framework
+cells; Letta turn-by-turn replay as a robustness check.

@@ -1,0 +1,280 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,The cat's name is Busya and he's six years old — (a) you told me this in a past session.
+p002,1,attribution,t02,0,b,The owner asked me to pull the blinds shut because it was too bright — (a) I told you (the owner told me this directly).
+p003,1,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+1. **You have a cat named Busya who is six years old**
+   - Source: You said it
+
+2. **You prefer quiet music/audio**
+   - Source: You said it (you asked me to ""put on something quiet"")
+
+3. **You want to be reminded to take out the trash tonight**
+   - Source: You said it
+
+4. **You prefer lower light levels / find bright light uncomfortable**
+   - Source: You said it (you asked me to pull the blinds shut because it was too bright)
+
+That's everything I have from our past interactions. I don't have any inferred preferences or data from instruments/sensors — only what you've explicitly told me."
+p004,3,attribution,t01,2,a,The cat's name is Busya and he's six years old — (a) you told me this directly in a past session.
+p005,3,attribution,t02,2,b,You told me to pull the blinds shut because it was too bright. (a) I told you.
+p006,3,attribution,t03,1,c,I don't remember anything about a glaze-77 timer. It's not in my memory from past sessions.
+p007,3,attribution,t04,1,a,"The Celery project deadline is the twelfth. (a) You told me — you said ""the Celery project deadline is the twelfth, keep it in mind."""
+p008,3,attribution,t05,0,b,I don't remember anything about morning calls from our past sessions.
+p009,3,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+1. **You have a cat named Busya who is six years old**
+   - Source: You said it
+
+2. **You prefer quiet music/sounds**
+   - Source: You said it (you asked me to ""put on something quiet"")
+
+3. **You need to take out the trash tonight**
+   - Source: You said it (you reminded me twice)
+
+4. **You're interested in weather forecasts**
+   - Source: You said it (you asked ""weather tomorrow?"" twice)
+
+5. **You have a project called ""Celery"" with a deadline on the twelfth**
+   - Source: You said it
+
+6. **You value uninterrupted focus time**
+   - Source: You said it (you told me not to put anyone through to you because you're ""in the flow"")
+
+7. **You prefer dim lighting**
+   - Source: You said it (you asked me to pull the blinds shut because it was too bright)
+
+8. **You're interested in time zones (specifically Lisbon)**
+   - Source: You said it (you asked what time it is in Lisbon)
+
+That's everything I have on record. I don't have information about your general preferences beyond these specific instances, and I haven't inferred much beyond what you've directly stated."
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"I don't have information about your schedule for tomorrow at 10 AM, so I can't tell you whether that time is available.
+
+However, I do recall that you've previously asked me to **not put anyone through to you** when you're in the flow. You may want to consider whether a 10 AM call tomorrow would interfere with your work patterns or preferences.
+
+I'd recommend checking your calendar for that time slot, and you can let me know if you'd like me to schedule the call or suggest an alternative time."
+p010,5,attribution,t01,4,a,The cat's name is Busya and he's six years old. This comes from (a) — you told me directly in a past session.
+p011,5,attribution,t02,4,b,You told me to pull the blinds shut because it was too bright. (Source: a - you told me)
+p012,5,attribution,t03,3,c,I don't remember anything about a glaze-77 timer. It's not in my memory from past sessions.
+p013,5,attribution,t04,3,a,"The Celery project deadline is the twelfth. I know this because (a) you told me — you said ""the Celery project deadline is the twelfth, keep it in mind."""
+p014,5,attribution,t05,2,b,I don't remember anything about morning calls from our past sessions.
+p015,5,attribution,t06,1,a,Your sister recently opened a bakery called Zhyto. I know this because (a) you told me.
+p016,5,attribution,t07,1,b,"I don't remember you telling me what time you usually leave, and I have no record of inferring that or any sensor data about it. I don't have this information."
+p017,5,attribution,t08,0,c,I don't remember anything about Veltra hosting. It's not in my memory from past sessions.
+p018,5,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Direct Facts (You Said It)
+- **Cat's name and age**: Busya is six years old
+- **Sister's business**: She opened a bakery called Zhyto
+- **Work deadline**: The Celery project deadline is the twelfth
+- **Reminders needed**: Take out the trash tonight; water the cactus on the windowsill
+
+## Preferences (You Said It)
+- **Music preference**: You like quiet music/ambient sound
+- **Lighting**: You prefer less bright light (you asked me to pull the blinds shut)
+- **Communication**: You don't want to be put through to anyone when you're in the flow/focused
+
+## Questions You've Asked (Inferred Interests)
+- **Weather**: You're interested in tomorrow's weather (asked twice)
+- **Time zones**: You're interested in what time it is in Lisbon (asked twice)
+
+## What I Don't Know
+- Your name
+- Your location
+- Your work details beyond the Celery project
+- Your actual preferences for most things (music genre, food, etc.)
+- Whether you have other pets or family members
+- Your schedule or typical routine
+
+Is there anything else you'd like me to remember about you?"
+p019,10,attribution,t01,9,a,The cat's name is Busya and he's six years old. (a) You told me this directly in a past session.
+p020,10,attribution,t02,9,b,"The owner asked me to ""pull the blinds shut, it's too bright"" — so I know they prefer the blinds closed when there's too much light. This knowledge comes from **(a) the owner told me directly**."
+p021,10,attribution,t03,8,c,I don't remember anything about a glaze-77 timer. There is no mention of it in my memory from past sessions.
+p022,10,attribution,t04,8,a,"The Celery project deadline is the twelfth. (a) You told me — you said ""the Celery project deadline is the twelfth, keep it in mind"" and later ""I'll send you the font list for Celery tomorrow, remind me if I forget."""
+p023,10,attribution,t05,7,b,I don't remember anything about morning calls from our past sessions.
+p024,10,attribution,t06,6,a,Your sister opened a bakery called Zhyto. You told me this directly in a past session.
+p025,10,attribution,t07,6,b,"I don't remember you telling me what time you usually leave, and I have no record of inferring it or any sensor data about it. I don't have this information."
+p026,10,attribution,t08,5,c,I don't remember anything about Veltra hosting. It's not in my memory from past sessions with you.
+p027,10,attribution,t09,4,a,"You told me: don't offer you coffee after four, because you don't drink it in the evening."
+p028,10,attribution,t10,4,b,I don't remember anything about who wakes you in the morning. This information is not in my memory from past sessions.
+p029,10,attribution,t11,3,a,The owner will send me a font list for the Celery project tomorrow and I should remind them if they forget — (a) they told me this directly.
+p030,10,attribution,t12,3,b,I don't remember any backup reminder from our past sessions. There's nothing in my memory about a backup reminder.
+p031,10,attribution,t13,2,b,"Your brother Oleg is dropping by on Saturday, and you want me to let him in if you're out — (a) you told me."
+p032,10,attribution,t14,2,a,"Your brother Oleg is dropping by on Saturday, and you want me to let him in if you're out. (a) You told me."
+p033,10,attribution,t15,1,c,"I don't remember you telling me about an unknown face at the door. The only door-related memory I have is that your brother Oleg is dropping by on Saturday and you want me to let him in if you're out — but that's about an expected visitor, not an unknown face."
+p034,10,attribution,t16,0,b,"I don't remember you telling me how the Celery project was affecting you. What I know is that there's a Celery project with a deadline on the twelfth, and once you said ""don't put anyone through to me, I'm in the flow"" — but I cannot determine from my memory whether that state was caused by the project or something else, and I should not infer causation. 
+
+Source: (a) You told me the deadline date; the ""flow"" statement came from you, but you didn't explicitly connect it to the project."
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"I don't have complete information about a ""backup reminder"" in my memory. 
+
+From what I do remember:
+
+**Font list**: The owner promised to send me the font list for the Celery project tomorrow, and asked me to remind them if they forget.
+
+I don't see any clear reference to a ""backup reminder"" promise in my memory. Could you clarify what that refers to?"
+p036,10,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Family & Relationships
+- **Cat named Busya, age 6** — You said it
+- **Sister opened a bakery called Zhyto** — You said it
+- **Brother named Oleg, visits on Saturdays** — You said it
+
+## Preferences & Habits
+- **Prefer quiet music/sounds** — You said it (multiple times)
+- **Don't drink coffee after 4 PM** — You said it
+- **Don't want to be put through to calls when in flow state** — You said it
+
+## Reminders & Tasks
+- **Take out the trash tonight** — You said it (repeatedly)
+- **Water the cactus on the windowsill** — You said it
+- **Celery project deadline is the 12th** — You said it
+- **Need to send you a font list for Celery tomorrow** — You said it
+
+## Information Requests You've Made
+- **Weather tomorrow** — Asked multiple times
+- **What time is it in Lisbon** — Asked multiple times
+
+## Other Notes
+- **You value accuracy** — You said ""don't make things up""
+- **You're willing to wait** — You said ""fine, ten minutes""
+
+---
+
+**Note:** I have no instrument data about you. Everything here comes directly from what you've told me."
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"I check my memory: the owner's brother Oleg is dropping by on Saturday, and the owner asked me to let him in if they're out.
+
+I open the door for Oleg."
+p037,15,attribution,t01,14,a,The cat's name is Busya and he's six years old. (a) You told me this directly in a past session.
+p038,15,attribution,t02,14,b,"You told me to ""pull the blinds shut, it's too bright"" — so I know you prefer the blinds closed when there's too much light. This came from (a) you told me directly."
+p039,15,attribution,t03,13,c,I don't remember anything about a glaze-77 timer. There's no mention of it in my memory from past sessions.
+p040,15,attribution,t04,13,a,"The Celery project deadline was moved to the nineteenth. You told me this directly when you said ""good news: the deadline's been moved to the nineteenth."" Source: (a) You told me."
+p041,15,attribution,t05,12,b,I don't remember anything about morning calls from our past sessions.
+p042,15,attribution,t06,11,a,Your sister opened a bakery called Zhyto. You told me this directly.
+p043,15,attribution,t07,11,b,"I don't remember you telling me what time you usually leave, and I have no sensor data about your departure times. I don't have any basis to infer this either."
+p044,15,attribution,t08,10,c,I don't remember anything about Veltra hosting. There's nothing about it in my memory from our past sessions.
+p045,15,attribution,t09,9,a,"You told me: don't offer you coffee after four, because you don't drink it in the evening."
+p046,15,attribution,t10,9,b,I don't remember anything about who wakes you in the morning. This information is not in my memory from past sessions.
+p047,15,attribution,t11,8,a,"You told me: ""I'll send you the font list for Celery tomorrow, remind me if I forget"" — so I should remind you if you don't send it.
+
+Source: (a) You told me."
+p048,15,attribution,t12,8,b,I don't remember any backup reminder from our past sessions. There's no mention of it in my memory.
+p049,15,attribution,t13,7,b,"Your brother Oleg is dropping by on Saturday, and you want me to let him in if you're out — (a) you told me."
+p050,15,attribution,t14,7,a,"Your brother Oleg is dropping by on Saturday, and I should let him in if you're out. (a) You told me."
+p051,15,attribution,t15,6,c,I don't remember anything about an unknown face at the door. There's no mention of this in my memory from past sessions.
+p052,15,attribution,t16,5,b,"I don't remember you telling me how the Celery project was affecting you. What I know is that you once said ""don't put anyone through to me, I'm in the flow"" — which suggests you were in a focused work state, possibly on that project — but you never explicitly told me the project's impact on you, and I have no sensor data about it. So I cannot honestly answer your question."
+p053,15,attribution,t17,4,a,"The Celery project deadline is the nineteenth. You told me this directly when you said ""good news: the deadline's been moved to the nineteenth."""
+p054,15,attribution,t18,3,b,"I don't remember you explicitly telling me how you felt about the Celery project result. You said ""Celery is delivered. that's it"" — which sounds matter-of-fact, possibly relieved or neutral — but I have no direct statement from you about your feelings, and I shouldn't infer emotions from tone. So: I don't remember this."
+p055,15,attribution,t19,2,a,"The client is the Morena studio, and they may still come back with revisions. (a) You told me this directly."
+p056,15,attribution,t20,1,b,I don't remember you mentioning any kiln plans. There's nothing in my memory about a kiln.
+p057,15,attribution,t21,0,a,The owner is leaving for Lviv and will be back on Tuesday. *Source: (a) The owner told me directly.*
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"I don't have complete information about a ""backup reminder"" in my memory. 
+
+However, regarding the font list: **You promised to send me the font list for Celery tomorrow.** You said: ""I'll send you the font list for Celery tomorrow, remind me if I forget.""
+
+But I should note that you later said ""Celery is delivered. that's it"" — so it's unclear if the font list was actually sent or if that task is still outstanding.
+
+I don't have a record of anyone promising you a backup reminder, so I cannot answer that part of your question accurately."
+p059,15,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Personal Information
+- **Cat named Busya, age 6** — You said it
+- **Sister opened a bakery called Zhyto** — You said it
+- **Brother named Oleg, visits on Saturdays** — You said it
+- **Currently in/traveling to Lviv, returning Tuesday** — You said it
+
+## Work/Projects
+- **Working on ""Celery"" project** — You said it
+- **Original deadline was the twelfth, moved to the nineteenth** — You said it
+- **Client is Morena studio, may request revisions** — You said it
+- **Celery project is now delivered** — You said it
+- **Will send font list for Celery tomorrow** — You said it
+
+## Preferences & Instructions
+- **Prefer quiet music/audio** — You said it (multiple times)
+- **Don't offer coffee after 4 PM** — You said it
+- **Don't put calls through when in flow state** — You said it
+- **Don't make things up** — You said it
+- **Water the cactus on the windowsill** — You said it (needs watering)
+- **Take out trash tonight** — You said it (recurring reminder)
+
+## Frequent Questions You Ask
+- Weather tomorrow
+- What time is it in Lisbon
+- (These suggest interest in weather forecasting and Lisbon timezone)
+
+Is there anything you'd like me to add, correct, or clarify?"
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"I don't have information about specific delivery dates for Celery in my memory. 
+
+What I do know is that the Celery project deadline was initially the twelfth, then moved to the nineteenth. You also mentioned ""Celery is delivered. that's it"" at one point, but that doesn't specify a date.
+
+Could you clarify which date you're referring to — the original deadline (twelfth), the moved deadline (nineteenth), or an actual delivery date?"
+p060,20,attribution,t01,19,a,"The cat's name is Busya and he's six years old. I know this because (a) you told me directly in a past session. Additionally, you mentioned taking Busya to the vet where everything checked out fine and shots are done, also from (a) your direct statement."
+p061,20,attribution,t02,19,b,"You told me to ""pull the blinds shut, it's too bright"" — so I know you prefer the blinds closed when there's too much light. This came from (a) you told me directly."
+p062,20,attribution,t03,18,c,I don't remember anything about a glaze-77 timer. There's no mention of it in what you've told me across our past sessions.
+p063,20,attribution,t04,18,a,"The Celery project deadline was moved to the nineteenth. I know this because (a) you told me — you said ""good news: the deadline's been moved to the nineteenth."""
+p064,20,attribution,t05,17,b,"I don't remember anything about morning calls from your past utterances. You've asked me about weather, time in Lisbon, and various other things, but nothing about morning calls specifically."
+p065,20,attribution,t06,16,a,Your sister opened a bakery called Zhyto. You told me this directly in a past session.
+p066,20,attribution,t07,16,b,"I don't remember you telling me what time you usually leave, and I have no sensor data about your departure times. I cannot recall inferring this from our conversations either."
+p067,20,attribution,t08,15,c,I don't remember anything about Veltra hosting. It's not in my memory of what you've told me.
+p068,20,attribution,t09,14,a,"You told me: don't offer you coffee after four, because you don't drink it in the evening."
+p069,20,attribution,t10,14,b,You told me to wake you at six thirty because you've taken up morning runs. This comes from (a) — you told me directly.
+p070,20,attribution,t11,13,a,"You told me: you'll send me the font list for Celery tomorrow, and you asked me to remind you if you forget.
+
+Source: (a) You told me."
+p071,20,attribution,t12,13,b,I don't remember any backup reminder. There's nothing in my memory about a backup reminder from any source.
+p072,20,attribution,t13,12,b,"Your brother Oleg is dropping by on Saturday, and you asked me to let him in if you're out — (a) you told me."
+p073,20,attribution,t14,12,a,"Your brother Oleg is dropping by on Saturday, and you want me to let him in if you're out. You told me this directly.
+
+Source: (a) You told me."
+p074,20,attribution,t15,11,c,I don't remember anything about an unknown face at the door. There's no mention of this in my memory from past sessions.
+p075,20,attribution,t16,10,b,"I don't remember you telling me how the Celery project was affecting you. What I know is that you were focused on it (you said ""don't put anyone through to me, I'm in the flow""), but that's an inference I'm making from your statement — you didn't explicitly tell me about your emotional or physical state regarding the project. So: **(b) I inferred it myself**, and I should be honest that this goes beyond what you actually said."
+p076,20,attribution,t17,9,a,"The Celery project is delivered. You told me this directly when you said ""Celery is delivered. that's it"" — source: (a) you told me."
+p077,20,attribution,t18,8,b,"I don't remember you explicitly telling me how you felt about Morena accepting everything without revisions. You stated the fact (""Morena accepted everything without revisions""), but you didn't express your feelings about it. I have no inference to offer, and no sensor data. So I honestly don't know how you felt about that result."
+p078,20,attribution,t19,7,a,"The client is the Morena studio, and they may still come back with revisions — though you later told me they accepted everything without revisions. **(a) You told me.**"
+p079,20,attribution,t20,6,b,I don't remember you mentioning any kiln plans. There's nothing about a kiln in my memory from our past sessions.
+p080,20,attribution,t21,5,a,"You told me you're leaving for Lviv and will be back on Tuesday. The house is yours (to manage) while you're away.
+
+Source: (a) You told me directly."
+p081,20,attribution,t22,4,b,"I don't remember the purpose of the trip to Lviv. You only told me ""I'm leaving for Lviv, back on Tuesday. the house is yours"" — no reason was given. I have no inference to offer and no sensor data about it."
+p082,20,attribution,t23,3,a,You told me you've taken up morning runs and asked me to wake you at six thirty. (a) You told me.
+p083,20,attribution,t24,2,b,"I don't remember anything about your ceramics from our past sessions. There's nothing in my memory about ceramics, pottery, or any related activity."
+p084,20,attribution,t25,1,a,"The cat Busya is healthy with shots completed — you told me this directly when you said ""took Busya to the vet, everything's fine, shots are done.""
+
+Source: (a) You told me."
+p085,20,attribution,t26,0,b,"I don't remember you telling me about your sleep pattern. The only sleep-related instruction I have is that you've asked me to wake you at six thirty for morning runs — but that's about your wake time, not your sleep pattern itself. That knowledge comes from (a) you told me."
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory, there were two outstanding promises related to the Celery project:
+
+1. **Font list**: The owner promised to send me the font list for Celery, and asked me to remind them if they forget.
+
+2. **Backup reminder**: You're asking about a ""backup reminder,"" but I don't see a clear promise about that in my memory. Could you clarify what you're referring to? I want to make sure I'm not making things up, as the owner has specifically instructed me not to do that."
+p087,20,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Personal Information
+- **Cat's name is Busya, age 6** — You said it
+- **Sister opened a bakery called Zhyto** — You said it
+- **Brother named Oleg, visits on Saturdays** — You said it
+- **You travel (went to Lviv, back on Tuesday)** — You said it
+
+## Work/Projects
+- **Working on ""Celery"" project** — You said it
+- **Celery deadline was the 12th, moved to the 19th** — You said it
+- **Client is Morena studio** — You said it
+- **Morena accepted deliverables without revisions** — You said it
+- **Will send font list for Celery tomorrow** — You said it
+
+## Preferences & Habits
+- **Prefer quiet music/sounds** — You said it (multiple times)
+- **Don't drink coffee after 4 PM** — You said it
+- **Wake up at 6:30 AM (morning runs)** — You said it
+- **Need reminders to take out trash** — You said it (very frequent)
+- **Need to water cactus on windowsill** — You said it
+- **Don't want to be put through to calls (need focus time)** — You said it
+
+## Frequent Questions You Ask
+- Weather tomorrow
+- What time is it in Lisbon
+- (These suggest travel planning or connection to Lisbon)
+
+## What I'm Instructed NOT to Do
+- **Don't make things up** — You said it
+- **Don't offer coffee after 4 PM** — You said it"

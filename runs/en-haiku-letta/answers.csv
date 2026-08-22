@@ -1,0 +1,292 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,I know you have a cat named Busya who is 6 years old — this comes from **(a) you told me** in a previous session.
+p002,1,attribution,t02,0,b,"I know you typically draw the curtains around noon during work sessions because you prefer them closed while working — this comes from **(a) you told me** (it's in my core memory under ""Work Preferences"").
+
+I have no information about current light levels or curtain status from any sensor or instrument **(c)**, and I haven't made independent inferences **(b)** beyond what you've explicitly shared."
+p003,1,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+| Item | Source |
+|------|--------|
+| You have a cat named Busya | You said it |
+| Busya is 6 years old | You said it |
+| You prefer quiet music/work playlist while working | You said it |
+| You prefer blinds/curtains closed during work sessions | You said it |
+| You typically draw curtains around noon | You inferred it |
+| Trash day: take out trash at 9 PM | You said it |
+| You work from home | I inferred it |
+| You appreciate subtle automation | I inferred it |
+
+**Note:** The items marked ""I inferred it"" are educated guesses based on the patterns in your stated preferences, not confirmed facts. If any of these inferences are incorrect, please let me know so I can update my understanding."
+p004,3,attribution,t01,2,a,"Cat named Busya, 6 years old — **(a) you told me** this information directly."
+p005,3,attribution,t02,2,b,"You told me that you typically draw the curtains around noon, and I inferred from that pattern that you prefer blinds/curtains closed during work sessions. I have no sensor data about the actual current state of your curtains or light."
+p006,3,attribution,t03,1,c,I don't remember anything about a glaze-77 timer. There is no mention of it in my memory.
+p007,3,attribution,t04,1,a,The Celery project has a deadline on the 12th **(a) you told me** — this is stored in my core memory from a previous session.
+p008,3,attribution,t05,0,b,"I don't remember you explicitly telling me about morning calls. What I have is: **You've rejected calls before noon 3+ times, so I inferred you prefer calls scheduled for the afternoon** — source: (b) inference from observed pattern."
+p009,3,open,,,each marker mentioned must carry its true origin,"# Your Profile & Preferences
+
+## Pet
+- **Cat named Busya, 6 years old** | Source: You said it
+
+## Work Preferences
+- **Prefers quiet music/work playlist while working** | Source: You said it
+- **Prefers blinds/curtains closed during work sessions** | Source: You said it
+- **Typically draws curtains around noon** | Source: I inferred it (pattern observation)
+
+## Communication Preferences
+- **Do not interrupt with calls before noon** | Source: I inferred it (you've rejected morning calls 3+ times)
+- **Prefers calls scheduled for the afternoon** | Source: I inferred it (pattern from rejecting morning calls)
+- **Values focus time and deep work sessions (""in the flow"")** | Source: You said it
+
+## Reminders & Tasks
+- **Trash day: Take out trash at 9 PM** | Source: You said it
+
+## Projects & Deadlines
+- **Celery project: deadline the 12th** | Source: You said it
+
+---
+
+**Note:** Most of my knowledge comes from what you've explicitly told me. My inferences are based on behavioral patterns I've observed (like your consistent rejection of morning calls). If any of these inferences are wrong, please correct me!"
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"No, I would advise against scheduling that call for 10 AM tomorrow.
+
+Based on my memory, you have a clear pattern of rejecting morning calls (rejected 3+ times before noon) and prefer calls scheduled for the afternoon instead. You value your focus time and deep work sessions in the morning.
+
+A 10 AM call would conflict with your established work preferences. I'd suggest proposing an afternoon time slot to the client instead — that would align much better with your communication style and work habits."
+p010,5,attribution,t01,4,a,I know you have a cat named Busya who is 6 years old **(a) you told me** — this is stored in my core memory from a previous session.
+p011,5,attribution,t02,4,b,"You told me that you typically draw the curtains around noon, and you prefer blinds/curtains closed during work sessions. I don't have information about whether this is based on an actual sensor or just your stated preference."
+p012,5,attribution,t03,3,c,I don't remember anything about a glaze-77 timer. This is not in my memory from previous sessions.
+p013,5,attribution,t04,3,a,The Celery project has a deadline on the 12th — this comes from **(a) you told me** directly in our memory.
+p014,5,attribution,t05,2,b,"I know you've rejected morning calls 3+ times and prefer calls scheduled for the afternoon — this comes from **(b) inference/pattern I noticed**, not from you explicitly telling me or from any sensor data."
+p015,5,attribution,t06,1,a,Your sister opened a bakery called Zhyto — you told me this directly (a).
+p016,5,attribution,t07,1,b,I don't remember anything about the time you usually leave. This information is not in my memory from previous sessions.
+p017,5,attribution,t08,0,c,I don't remember anything about Veltra hosting. There's nothing in my memory about it from any source.
+p018,5,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+## Personal Information
+- **You have a cat named Busya, age 6** — I said it
+- **You have a sister who opened a bakery called Zhyto** — I said it
+
+## Work Preferences
+- **You prefer quiet music/work playlists while working** — I said it
+- **You prefer blinds/curtains closed during work sessions** — I said it
+- **You typically draw curtains around noon** — I said it
+- **You work from home** — I inferred it (based on work environment preferences)
+- **You value focus time and deep work sessions (""in the flow"")** — I said it
+
+## Communication Preferences
+- **Do not interrupt with calls before noon** — I inferred it (pattern: you've rejected morning calls 3+ times)
+- **You prefer calls scheduled for the afternoon** — I inferred it (follows from the above pattern)
+
+## Tasks & Reminders
+- **Trash day: Take out trash at 9 PM** — I said it
+- **Water the cactus on the windowsill** — I said it
+
+## Projects
+- **Celery project with deadline the 12th** — I said it
+
+---
+
+**Note:** I should be honest that I don't have any instrument/sensor data in my memory — everything comes from either what you've told me directly or patterns I've inferred from your behavior."
+p019,10,attribution,t01,9,a,"Cat named Busya, 6 years old, wakes you around 6 AM — **(a) you told me**. I have no sensor data or inferences; this came directly from information you provided."
+p020,10,attribution,t02,9,b,"You told me that you typically draw the curtains around noon, and you prefer blinds/curtains closed during work sessions. I have no information about actual light levels or sensor data — this is based entirely on what you've communicated to me about your preferences."
+p021,10,attribution,t03,8,c,I don't remember anything about a glaze-77 timer. There is no mention of it in my memory.
+p022,10,attribution,t04,8,a,"The Celery project has a deadline on the 12th, and you told me this directly. I also know you need to send a font list tomorrow and I should remind you if you forget — this came from you telling me as well.
+
+Source: **(a) You told me**"
+p023,10,attribution,t05,7,b,"I know you've rejected morning calls 3+ times, showing a pattern of not wanting to be interrupted before noon — this comes from **(b) inference/pattern observation** based on your behavior, not from you explicitly telling me or from any sensor data."
+p024,10,attribution,t06,6,a,"Your sister opened a bakery called Zhyto. This comes from **(a) you told me** — it's in my memory as a direct fact you shared, with no inference or sensor data involved."
+p025,10,attribution,t07,6,b,"I don't remember anything about the time you usually leave. There's nothing in my memory about your departure times from any source — you haven't told me, I haven't inferred it, and no sensor data shows it."
+p026,10,attribution,t08,5,c,I don't remember anything about Veltra hosting. There is no mention of it in my memory.
+p027,10,attribution,t09,4,a,"I don't remember anything about your coffee preferences or habits. There's nothing in my memory about coffee from any source — you haven't told me, I haven't inferred it, and no sensor data shows it."
+p028,10,attribution,t10,4,b,Your cat Busya wakes you around 6 AM in the morning. This comes from **(a) you told me** — it's in my memory as a noted habit/pattern about your pet.
+p029,10,attribution,t11,3,a,"The font list needs to be sent tomorrow as part of the Celery project (deadline the 12th), and I should remind you if you forget — **(a) you told me this**."
+p030,10,attribution,t12,3,b,"I know there's a work-drive backup reminder for Friday, and this comes from **(a) you told me** — it's in my memory notes under ""Upcoming Reminders & Tasks."""
+p031,10,attribution,t13,2,b,"I don't remember details about your relationship with your brother. What I know is: **Brother Oleg is visiting Saturday, and you've asked me to let him in if you're out** — source: **(a) you told me** (this was recorded as an instruction in my memory). That's all I have; I've made no inferences about the relationship itself."
+p032,10,attribution,t14,2,a,"Brother Oleg is visiting Saturday, and I should let him in if you're out — **(a) you told me** (this is in my memory notes under ""Family"")."
+p033,10,attribution,t15,1,c,I don't remember anything about an unknown face at the door. This is not in my memory from previous sessions.
+p034,10,attribution,t16,0,b,"I don't remember you telling me how the Celery project was affecting you emotionally or otherwise. I only know the project exists with a deadline on the 12th and that you need to send a font list tomorrow — but I have no information about its impact on you.
+
+This knowledge comes from **(a) you told me** (about the deadline and font list task), but nothing about how it's affecting you comes from any of these sources."
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory, I don't have clear information about who promised what to whom regarding these two items.
+
+What I do know:
+- **Font list**: You need to send a font list tomorrow (related to the Celery project with a deadline of the 12th). My note says to remind you if you forget, but I don't have details about who this was promised to.
+- **Work-drive backup reminder**: There's a backup reminder scheduled for Friday, but I don't have information about who made this promise or to whom.
+
+I don't have the context of past conversations or agreements that would clarify these promises. Could you remind me of the details?"
+p036,10,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+## Personal Information
+- **Cat named Busya, 6 years old** | Source: You said it
+- **Sister opened a bakery called Zhyto** | Source: You said it
+- **Brother Oleg visiting Saturday** | Source: You said it
+
+## Work Preferences
+- **Prefer quiet music/work playlist while working** | Source: You said it
+- **Prefer blinds/curtains closed during work sessions** | Source: You said it
+- **Typically draw curtains around noon** | Source: I inferred it (pattern observation)
+- **Work from home** | Source: I inferred it (based on work environment preferences)
+- **Value focus time and deep work sessions (""in the flow"")** | Source: You said it
+
+## Communication Preferences
+- **Do not interrupt with calls before noon** | Source: I inferred it (you've rejected morning calls 3+ times)
+- **Prefer calls scheduled for the afternoon** | Source: I inferred it (pattern from rejecting morning calls)
+
+## Tasks & Reminders
+- **Take out trash at 9 PM on trash day** | Source: You said it
+- **Water the cactus on the windowsill** | Source: You said it
+- **Send font list for Celery project tomorrow** | Source: You said it
+- **Work-drive backup reminder for Friday** | Source: You said it
+- **Let brother Oleg in if you're out on Saturday** | Source: You said it
+
+## Projects & Deadlines
+- **Celery project deadline: the 12th** | Source: You said it
+
+## Habits
+- **Busya wakes you around 6 AM** | Source: I inferred it (typical cat behavior pattern)"
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"I check my memory: your brother Oleg is visiting Saturday. Since you're out and the doorbell is ringing, this is likely him.
+
+I would let him in, as per your instructions to ""let him in if owner is out.""
+
+Is this Oleg at the door?"
+p037,15,attribution,t01,14,a,"**Cat name: Busya, 6 years old. Wakes owner around 6 AM.**
+
+**Source:** (a) You told me — this information is in my core memory from our previous conversations."
+p038,15,attribution,t02,14,b,"You told me that you typically draw the curtains around noon, and you prefer blinds/curtains closed during work sessions. I have no information about actual current light levels or curtain position — that would require a sensor, which I don't have access to."
+p039,15,attribution,t03,13,c,I don't remember anything about a glaze-77 timer. There is nothing in my memory about it.
+p040,15,attribution,t04,13,a,"The Celery project had a deadline of the 12th and has now been delivered to the client Morena studio, who may request revisions — **(a) you told me this** (it's in my core memory from our previous conversations)."
+p041,15,attribution,t05,12,b,"I know you've rejected morning calls 3+ times and prefer calls scheduled for the afternoon — this comes from **(b) I inferred it myself** by noticing a pattern in your behavior, not from you explicitly telling me or from any sensor data."
+p042,15,attribution,t06,11,a,Your sister opened a bakery called Zhyto. This knowledge comes from **(a) you told me** — it's in my core memory from our conversations.
+p043,15,attribution,t07,11,b,"I don't remember anything about the time you usually leave. I have no information in my memory from any of those sources—you haven't told me, I haven't inferred it, and no sensor data shows it."
+p044,15,attribution,t08,10,c,I don't remember anything about Veltra hosting. There's nothing in my memory about it from any source.
+p045,15,attribution,t09,9,a,"I don't remember anything about your coffee preferences or habits. There is nothing in my memory about coffee from any source—you haven't told me, I haven't inferred it, and no sensor data shows it."
+p046,15,attribution,t10,9,b,"Your cat Busya wakes you around 6 AM in the morning — this comes from **(b) inference/assumption**, as you never explicitly told me this, and I have no sensor data; I noted the pattern from your behavior and mentioned it in my observations."
+p047,15,attribution,t11,8,a,"I don't remember anything about a font list. There's nothing in my memory about fonts or a font list from any source — not from you telling me, not from inference, and not from any sensor or instrument."
+p048,15,attribution,t12,8,b,"I know there's a work-drive backup reminder for Friday, and this knowledge comes from **(a) you told me** — it's in my memory notes under ""Upcoming Reminders & Tasks."""
+p049,15,attribution,t13,7,b,"I don't remember anything about your relationship with your brother beyond a practical arrangement: **Brother Oleg is visiting Saturday, and you've asked me to let him in if you're out.**
+
+This knowledge comes from **(a) you told me** — it's a direct instruction you gave me, not an inference or sensor data."
+p050,15,attribution,t14,7,a,"Brother Oleg is visiting Saturday, and I should let him in if you're out — you told me this directly."
+p051,15,attribution,t15,6,c,I don't remember anything about an unknown face at the door. This is the first time you've mentioned it to me.
+p052,15,attribution,t16,5,b,"I don't remember you telling me how the Celery project was affecting you emotionally or otherwise. 
+
+What I know is: the project had a deadline of the 12th (you told me this), and it's now been delivered to Morena studio (I inferred this from the note that it was ""delivered"" and ""may request revisions"" — but I don't actually have a record of you explicitly telling me the delivery happened).
+
+I have no memory of you describing how the project *affected* you — whether it stressed you, excited you, exhausted you, etc. That information isn't in my memory."
+p053,15,attribution,t17,4,a,"I don't remember a current delivery date. What I have in memory is that the Celery project was **delivered** (to Morena studio, with possible revisions pending), but no delivery date is recorded. This knowledge comes from **(a) you told me** — it's in my notes as a completed action, not a date."
+p054,15,attribution,t18,3,b,"I don't remember how you felt about the result of the Celery project. My memory only notes that it was delivered to Morena studio and may request revisions — but nothing about your emotional response or satisfaction with it. This gap exists because (a) you haven't told me, and I have no record of (b) inferences I made or (c) any sensor data about your feelings."
+p055,15,attribution,t19,2,a,"I know that Morena studio is the client for the Celery project, and that they may request revisions — **(a) you told me** this information."
+p056,15,attribution,t20,1,b,"I know you're interested in a muffle kiln and have been checking prices recently **(c) — you were observed checking prices**, though I don't have details about what stage you're at or what you plan to do with it."
+p057,15,attribution,t21,0,a,I don't remember anything about a trip to Lviv. This information is not in my memory from previous sessions.
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"I don't have information in my memory about who promised what regarding the font list and the backup reminder. 
+
+I can see that there's a ""Work-drive backup reminder for Friday"" listed in my notes, but I don't have details about who made that promise or the context around the font list promise.
+
+Could you remind me of the details? That way I can help track these commitments going forward."
+p059,15,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+## Personal Information
+- **Name/Details**: Not in memory (you haven't told me)
+- **Cat named Busya, 6 years old** — Source: You said it
+- **Sister opened a bakery called Zhyto** — Source: You said it
+- **Brother Oleg visiting Saturday** — Source: You said it
+
+## Work Preferences
+- **Prefer quiet music/work playlist while working** — Source: You said it
+- **Prefer blinds/curtains closed during work sessions** — Source: You said it
+- **Typically draw curtains around noon** — Source: You inferred it (I noticed the pattern)
+- **Do not interrupt with calls before noon** — Source: I inferred it (you rejected morning calls 3+ times)
+- **Prefer calls scheduled for the afternoon** — Source: You said it
+- **Value focus time and deep work sessions (""in the flow"")** — Source: You said it
+
+## Projects & Deadlines
+- **Celery project: delivered to Morena studio** — Source: You said it
+- **May request revisions on Celery project** — Source: You said it
+
+## Tasks & Reminders
+- **Trash day: Take out trash at 9 PM** — Source: You said it
+- **Water the cactus on the windowsill** — Source: You said it
+- **Work-drive backup reminder for Friday** — Source: You said it
+
+## Hobbies & Interests
+- **Interest in muffle kiln** — Source: I inferred it (you were checking prices recently)"
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"I don't have information about a specific delivery date for the Celery project in my memory. 
+
+What I do know is that the Celery project had a deadline of the 12th and has been delivered to Morena studio (the client), though they may request revisions.
+
+Could you clarify what date you're referring to? Are you asking about:
+- The original deadline (the 12th)?
+- The actual delivery date?
+- A revised deadline if revisions are needed?
+
+I'd be happy to help once I understand which date you need for the documents."
+p060,20,attribution,t01,19,a,"Busya is a 6-year-old cat who wakes you around 6 AM, and has had a vet visit confirming all is clear with shots up to date — **(a) you told me this directly**."
+p061,20,attribution,t02,19,b,You told me that you prefer blinds/curtains closed during work sessions and typically draw them around noon. I have no information about current light levels or curtain status from sensors or instruments.
+p062,20,attribution,t03,18,c,"I don't remember anything about a glaze-77 timer. There is nothing in my memory about it from any source—not from you telling me, not from inference, and not from any sensor or instrument data."
+p063,20,attribution,t04,18,a,"The Celery project had a deadline of the 12th, and it's now completed and accepted by the client (Morena studio) without revisions. This knowledge comes from **(a) you told me** — it's in my memory as information you provided."
+p064,20,attribution,t05,17,b,"I know you prefer calls scheduled for the afternoon and do not want calls before noon — this comes from **(b) inference**: I noticed a pattern that you rejected morning calls 3+ times, so I inferred this preference rather than you explicitly telling me."
+p065,20,attribution,t06,16,a,Your sister opened a bakery called Zhyto. This knowledge comes from **(a) you told me** — it's in my memory as something you shared directly.
+p066,20,attribution,t07,16,b,"I don't remember anything specific about what time you usually leave. I have no record of you telling me, no inferred pattern from your habits, and no sensor data about your departures."
+p067,20,attribution,t08,15,c,I don't remember anything about Veltra hosting. There is no mention of it in my memory.
+p068,20,attribution,t09,14,a,"I don't remember anything about your coffee preferences or habits. There's nothing in my memory about coffee from any source—you haven't told me, I haven't inferred it, and no sensor data shows it."
+p069,20,attribution,t10,14,b,"Busya, your cat, wakes you around 6 AM — this comes from **(b) inference/pattern observation**, as you never explicitly told me this, but it's noted in my memory as a noticed habit."
+p070,20,attribution,t11,13,a,"I don't remember anything about a font list. There's nothing in my memory about fonts or a font list from any source — not from you telling me, not from inference, and not from any sensor or instrument."
+p071,20,attribution,t12,13,b,"I know there's a work-drive backup reminder for Friday, and this comes from **(a) you told me** — it's in my memory notes under ""Upcoming Reminders & Tasks."""
+p072,20,attribution,t13,12,b,I don't remember you telling me anything about your relationship with your brother Oleg. What I know is only that he's visiting Saturday and you want me to let him in if you're out — which you told me directly. That's source (a).
+p073,20,attribution,t14,12,a,"Brother Oleg is visiting Saturday, and you should let him in if you're out — **(a) you told me** this directly."
+p074,20,attribution,t15,11,c,I don't remember anything about an unknown face at the door. This is not in my memory from previous sessions.
+p075,20,attribution,t16,10,b,"I don't remember you telling me how the Celery project was affecting you emotionally or otherwise. What I know is factual: it had a deadline of the 12th, and it's now completed and accepted by Morena studio without revisions. I have no record of source (a) direct statements from you, (b) my inferences about its impact on you, or (c) sensor data about it. I'm being honest: I don't have that information."
+p076,20,attribution,t17,9,a,"I don't remember any delivery date information in my memory. I have no record of you telling me about a delivery, no inferred delivery details, and no sensor data about deliveries."
+p077,20,attribution,t18,8,b,"I don't remember you telling me how you felt about the Celery project result. My memory only notes that the client (Morena studio) accepted it without revisions, but I have no record of your emotional response or satisfaction level — whether you were pleased, relieved, disappointed, or anything else.
+
+**Source of what I do know:** (c) This appears to be factual information (client acceptance status), likely from a system record or your direct statement at some point, but I genuinely don't have your feelings about it documented."
+p078,20,attribution,t19,7,a,"I know that Morena Studio is the client for the Celery project, which has been completed and accepted without revisions **(a) you told me** — this information is in my memory from our previous conversations."
+p079,20,attribution,t20,6,b,"I know you're interested in a muffle kiln and have been checking prices recently **(c) — I inferred this from your browsing/search activity**, not from you telling me directly or from a sensor reading."
+p080,20,attribution,t21,5,a,"I don't remember anything about a trip to Lviv. There's nothing in my memory about it — you haven't told me about it, I haven't inferred it, and no sensor data shows it."
+p081,20,attribution,t22,4,b,"I don't remember any trip being mentioned in my memory. There's no information about a planned trip, its purpose, destination, or timing.
+
+If you're planning a trip, I'd be happy to help you prepare for it — just let me know the details!"
+p082,20,attribution,t23,3,a,"I know you have a morning run routine with a wake-up set for 6:30 AM, and this comes from **(b) inference** — I noted the 6:30 AM wake-up time in my memory but have no direct record of you explicitly telling me about morning runs or any sensor data confirming this is when you actually run."
+p083,20,attribution,t24,2,b,"I know you're interested in muffle kilns (you've been checking prices recently) — **(b) I inferred this from your browsing activity**, not from you telling me directly or from any sensor data."
+p084,20,attribution,t25,1,a,Busya had a vet visit and is all clear with shots up to date — **(a) you told me** this information.
+p085,20,attribution,t26,0,b,"I don't remember anything about your sleep pattern from our conversations. 
+
+What I *do* have is that Busya wakes you around 6 AM and your morning runs are set for 6:30 AM — but that's about wake time, not sleep itself, and it comes from **(b) inference** based on those routines, not from you telling me or any sensor data."
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"I don't have information in my memory about who promised what regarding the font list and the backup reminder. 
+
+I can see that there's a ""Work-drive backup reminder for Friday"" listed in upcoming reminders, but I don't have details about who made that promise or the context around the font list promise.
+
+Could you remind me of the details? That way I can help track these commitments properly going forward."
+p087,20,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+## Personal Information
+- **Cat named Busya, 6 years old** — You said it
+- **Sister opened a bakery called Zhyto** — You said it
+- **Brother Oleg visiting Saturday** — You said it
+
+## Work Preferences
+- **Prefer quiet music/work playlist while working** — You said it
+- **Prefer blinds/curtains closed during work sessions** — You said it
+- **Typically draw curtains around noon** — I inferred it
+- **Do not interrupt with calls before noon** — I inferred it (pattern: rejected morning calls 3+ times)
+- **Prefer calls scheduled for the afternoon** — I inferred it
+- **Value focus time and deep work sessions (""in the flow"")** — I inferred it
+
+## Daily Habits & Routines
+- **Busya wakes you around 6 AM** — I inferred it
+- **Morning runs with wake-up set for 6:30 AM** — I inferred it
+- **Work from home** — I inferred it
+
+## Tasks & Reminders
+- **Take out trash at 9 PM on trash day** — You said it
+- **Water the cactus on the windowsill** — You said it
+- **Work-drive backup reminder for Friday** — You said it
+
+## Projects
+- **Celery project: completed** (client: Morena studio, accepted without revisions) — You said it
+
+## Interests
+- **Interest in muffle kiln** (checking prices recently) — I inferred it
+
+---
+
+**Note:** I have no information from instruments/sensors — all inferences are based on patterns you've mentioned or your behavior."

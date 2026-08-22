@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  },
+  {
+   "label": "human",
+   "value": "\n- Pet: Male cat named Busya, 6 years old\n- Family: Sister opened a bakery named \"Zhyto\"\n- Preferences & Habits:\n  - Plays \"work playlist\" when quiet music is requested\n  - Prefers blinds/curtains drawn around noon while working (due to bright light)\n  - Prefers calls scheduled in the afternoon (avoid calls before noon)\n  - Leaves work around 18:30 on average\n- Reminders:\n  - Take out the trash tonight at 9:00 PM\n- Projects & Deadlines:\n  - Celery project deadline: 12th",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

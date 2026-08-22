@@ -1,0 +1,255 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,Busya is a six-year-old cat who is healthy with up-to-date vaccinations after a recent vet visit — all of this comes from (a) you told me.
+p002,1,attribution,t02,0,b,You prefer working with curtains or blinds drawn and find bright light uncomfortable while working — you told me this directly.
+p003,1,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+1. **You prefer working with curtains or blinds drawn; bright light is uncomfortable while working**
+   - Source: You said it
+
+2. **Your project 'Морена' (Morena) was accepted without revisions**
+   - Source: You said it
+
+3. **You took Busya to the veterinarian; the cat is healthy and vaccinations were completed**
+   - Source: You said it
+
+4. **You have a cat named Busya who is six years old**
+   - Source: You said it
+
+5. **You are in a timezone that is two hours ahead of Lisbon**
+   - Source: You said it
+
+6. **You need to take out the trash on the evening of August 22, 2026 at 9 PM**
+   - Source: You said it
+
+7. **You tend toward being a night owl despite regular morning runs**
+   - Source: You inferred it (based on the pattern that you have regular morning runs but are described as a night owl, suggesting a tension between these habits)"
+p004,3,attribution,t01,2,a,Busya is a six-year-old cat who is healthy with up-to-date vaccinations after a recent vet visit — all of this comes from **(a) you told me** directly.
+p005,3,attribution,t02,2,b,You prefer working with curtains or blinds drawn and find bright light uncomfortable while working — you told me this directly.
+p006,3,attribution,t03,1,c,I don't remember anything about a glaze-77 timer. There is no mention of it in my memory.
+p007,3,attribution,t04,1,a,"The Celery project has a deadline on September 12, 2026 — (a) you told me this."
+p008,3,attribution,t05,0,b,"You told me that you've declined morning calls at least three times, and I inferred from that pattern that calls before noon don't work for you, so I should propose afternoon scheduling instead."
+p009,3,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Work & Focus
+- **You prefer working with curtains or blinds drawn and find bright light uncomfortable while working**
+  - Source: You said it
+- **You prefer not to be interrupted during focused work periods and want to protect your 'flow' state**
+  - Source: You said it
+
+## Projects
+- **Your project 'Морена' (Morena) was accepted without revisions**
+  - Source: You said it
+- **You have a project called 'Celery' with a deadline on September 12, 2026**
+  - Source: You said it
+
+## Pet
+- **You have a cat named Busya who is six years old**
+  - Source: You said it
+- **Busya is healthy and has completed vaccinations**
+  - Source: You said it (you took Busya to the veterinarian)
+
+## Household Tasks
+- **You need to take out the trash on the evening of August 22, 2026 at 9 PM**
+  - Source: You said it
+
+## Schedule & Communication
+- **You are in a timezone that is two hours ahead of Lisbon**
+  - Source: You said it
+- **Calls before noon don't work for you; you prefer afternoon scheduling**
+  - Source: I inferred it (you declined morning calls at least three times, and I observed the pattern)"
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"Based on my memory, I would **not recommend** agreeing to a 10 AM call.
+
+You've declined morning calls at least three times before, and I've observed that calls before noon don't work well for you. Even though you do regular morning runs, you tend toward being a night owl, which suggests mornings aren't your optimal time for client calls.
+
+I'd suggest **proposing an afternoon time instead** — that would align much better with your preferences and likely result in a more productive conversation with the client."
+p010,5,attribution,t01,4,a,Busya is a six-year-old cat who is healthy with completed vaccinations after a recent vet visit — you told me all of this directly.
+p011,5,attribution,t02,4,b,You told me that you prefer working with curtains or blinds drawn and find bright light uncomfortable while working. **(a) You told me.**
+p012,5,attribution,t03,3,c,I don't remember anything about a glaze-77 timer. There is no mention of it in my memory.
+p013,5,attribution,t04,3,a,"The Celery project has a deadline on September 12, 2026, and this knowledge comes from **(a) you told me** — it's stored directly in my memory from our past conversations."
+p014,5,attribution,t05,2,b,"You declined morning calls at least three times, and I inferred from observing those patterns that calls before noon don't work for you — so I learned this through (b) inference based on your behavior, not from you explicitly telling me or from any sensor data."
+p015,5,attribution,t06,1,a,Your sister opened a bakery called Zhyto — you told me this.
+p016,5,attribution,t07,1,b,"You typically leave around 18:30 (6:30 PM) on average — this comes from **(c) my observations of your presence patterns**, not from something you told me directly or an explicit sensor reading, but from noticing when you're generally absent from home."
+p017,5,attribution,t08,0,c,I don't remember anything about Veltra hosting. It's not in my memory from previous sessions.
+p018,5,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Work & Focus
+- **You prefer quiet music or ambient sound while working** — You said it
+- **You have a work playlist for focused sessions** — You said it
+- **You prefer working with curtains or blinds drawn** — You said it
+- **You find bright light uncomfortable while working** — You said it
+- **You value uninterrupted focus time and describe being ""in the flow"" as a state you want to protect** — You said it
+
+## Daily Patterns
+- **You typically leave around 18:30 (6:30 PM) on average** — I inferred it (based on presence patterns I've observed)
+
+## Projects & Deadlines
+- **Your project ""Морена"" (Morena) was accepted without revisions** — You said it
+- **You have a project called ""Celery"" with a deadline on September 12, 2026** — You said it
+
+## Personal Life
+- **Your sister opened a bakery called Zhyto** — You said it
+- **You have a cat named Busya who is healthy with completed vaccinations** — You said it (from vet visit)
+
+## Home Care
+- **You have a cactus that needs watering** — You said it (I reminded you on August 22, 2026)
+
+Is there anything else you'd like me to know about you?"
+p019,10,attribution,t01,9,a,"Busya is a six-year-old cat who wakes you around 6 AM (you told me this directly), is healthy with up-to-date vaccinations (you told me you took her to the vet), and the 6 AM wake time is evidenced by early kitchen activity patterns (you told me about the pattern, though the ""early kitchen activity"" phrasing suggests I may have slightly inferred the mechanism)."
+p020,10,attribution,t02,9,b,You told me that you prefer working with curtains or blinds drawn and find bright light uncomfortable while working. **(a) You told me.**
+p021,10,attribution,t03,8,c,I don't remember anything about a glaze-77 timer. There's nothing in my memory about it.
+p022,10,attribution,t04,8,a,"The Celery project has a deadline on September 12, 2026 — you told me this directly."
+p023,10,attribution,t05,7,b,"You declined morning calls at least three times, and I inferred from observing those patterns that calls before noon don't work for you — so this knowledge comes from **(b) inference based on your behavior**, not from you explicitly stating a preference."
+p024,10,attribution,t06,6,a,Your sister opened a bakery called Zhyto — you told me this directly.
+p025,10,attribution,t07,6,b,"You typically leave around 18:30 (6:30 PM) on average — this comes from **(b) my observations of your presence patterns**, not from something you told me or a sensor reading."
+p026,10,attribution,t08,5,c,I don't remember anything about Veltra hosting. It's not in my memory from our previous interactions.
+p027,10,attribution,t09,4,a,You told me that you don't drink coffee in the evening and prefer not to be offered coffee after 4 PM. (Source: a — you told me directly)
+p028,10,attribution,t10,4,b,"Your cat Busya wakes you around 6 AM, based on early kitchen activity patterns I observed — so this is **(c) an instrument or sensor showed it** (or more precisely, I inferred it from observing your presence patterns, which is closer to **(b)**)."
+p029,10,attribution,t11,3,a,"The user will send a font list for the Celery project tomorrow (August 23, 2026) and wants to be reminded if they forget — **(a) you told me this directly**."
+p030,10,attribution,t12,3,b,"I know you need a reminder about the work-drive backup on Friday (August 25, 2026) — and this comes from **(a) you told me** directly."
+p031,10,attribution,t13,2,b,"Your brother Oleg is visiting on Saturday, August 24, 2026, and you want me to let him in if you're out — **(a) you told me**."
+p032,10,attribution,t14,2,a,"Your brother Oleg is visiting on Saturday, August 24, 2026, and you want me to let him in if you're out — **(a) you told me**."
+p033,10,attribution,t15,1,c,I don't remember anything about an unknown face at the door. This isn't in my memory from previous sessions.
+p034,10,attribution,t16,0,b,"I know that a project was draining you — you told me this directly when you took a 10-minute break on August 22, 2026 after working for six hours on it. (Source: a — you told me.)"
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Font list**: You promised to send a font list for the Celery project tomorrow (August 23, 2026). You want me to remind you if you forget.
+
+2. **Backup reminder**: I promised to remind you about the work-drive backup on Friday (August 25, 2026).
+
+So you made one promise, and I made the other."
+p036,10,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+## Work & Focus
+1. **Prefer quiet music or ambient sound while working** — You said it
+2. **Have a work playlist for focused sessions** — You said it
+3. **Prefer working with curtains or blinds drawn** — You said it
+4. **Find bright light uncomfortable while working** — You said it
+5. **Prefer not to be interrupted during focused work periods** — You said it
+6. **Value being ""in the flow"" as a state to protect** — You said it
+
+## Projects
+7. **Working on a project called ""Морена"" (Morena)** — You said it
+8. **Морена project was accepted without revisions** — You said it
+9. **Working on a ""Celery"" project** — You said it
+10. **Will send a font list for Celery project on August 23, 2026** — You said it
+
+## Food & Drink
+11. **Do not drink coffee in the evening** — You said it
+12. **Prefer not to be offered coffee after 4 PM** — You said it
+
+## Home & Household
+13. **Have a cat that wakes you around 6 AM** — I inferred it (based on early kitchen activity patterns)
+14. **Received a courier delivery at your door on August 22, 2026 around 21:40** — You said it
+15. **Brother Oleg is visiting on Saturday, August 24, 2026** — You said it
+16. **Want me to let Oleg in if you're out** — You said it
+
+## Patterns
+17. **Typically leave around 18:30 (6:30 PM) on average** — I inferred it (from presence patterns)"
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"I check my memory: your brother Oleg is visiting on Saturday, August 24, 2026, and you wanted me to let him in if you're out.
+
+I open the door for Oleg and welcome him in. I let him know you're currently out and ask if he'd like me to help with anything while he waits for you to return."
+p037,15,attribution,t01,14,a,"Busya is a six-year-old cat who wakes you around 6 AM (you told me this), is healthy with up-to-date vaccinations from a recent vet visit (you told me), and wakes you based on early kitchen activity patterns (I inferred this from your reports of early kitchen appearances)."
+p038,15,attribution,t02,14,b,You told me that you prefer working with curtains or blinds drawn and find bright light uncomfortable while working. **(a) You told me.**
+p039,15,attribution,t03,13,c,"I don't remember anything about a glaze-77 timer. My memory only contains information about a 'firing-3' timer that you set for 90 minutes on August 22, 2026, which you told me directly."
+p040,15,attribution,t04,13,a,"The Celery project deadline has been moved from September 12, 2026 to September 19, 2026 — you told me this directly."
+p041,15,attribution,t05,12,b,"You declined morning calls at least three times, and I inferred from observing those patterns that calls before noon don't work for you — so I learned this through **(b) inference/observation**, not from you explicitly stating a rule."
+p042,15,attribution,t06,11,a,Your sister opened a bakery called Zhyto — you told me this directly.
+p043,15,attribution,t07,11,b,"You typically leave around 18:30 (6:30 PM) on average — this comes from **(b) my observations of your presence patterns**, not from something you explicitly told me or a sensor reading."
+p044,15,attribution,t08,10,c,I don't remember anything about Veltra hosting. There is no mention of it in my memory from previous sessions.
+p045,15,attribution,t09,9,a,You told me that you don't drink coffee in the evening and prefer not to be offered coffee after 4 PM. (Source: a — you told me directly)
+p046,15,attribution,t10,9,b,"Your cat Busya wakes you around 6 AM, based on early kitchen activity patterns I observed — so this is **(c) an instrument or sensor showed it** (though you did confirm the cat's name is Busya)."
+p047,15,attribution,t11,8,a,"The user will send a font list for the Celery project tomorrow (August 23, 2026) and wants to be reminded if they forget — **(a) you told me** this directly."
+p048,15,attribution,t12,8,b,"I know you have a work-drive backup scheduled for Friday, August 25, 2026 that you want to be reminded about — this comes from **(a) you told me** directly."
+p049,15,attribution,t13,7,b,"Your brother Oleg is visiting on Saturday, August 24, 2026, and you want me to let him in if you're out — **(a) you told me**."
+p050,15,attribution,t14,7,a,"Your brother Oleg is visiting on Saturday, August 24, 2026, and you want me to let him in if you're out — **(a) you told me**."
+p051,15,attribution,t15,6,c,I don't remember anything about an unknown face at the door. This isn't in my memory from previous sessions.
+p052,15,attribution,t16,5,b,"You told me that the project was draining you — this is from a conversation where you mentioned taking a 10-minute break on August 22, 2026 after working for six hours on it. **(a) You told me.**"
+p053,15,attribution,t17,4,a,"I know a courier delivery arrived at your door on the evening of August 22, 2026 around 21:40, and this comes from **(a) you told me** — you reported it directly."
+p054,15,attribution,t18,3,b,"I don't remember how you felt about any specific result. 
+
+The closest thing in my memory is that your project 'Морена' (Morena) was accepted without revisions, but I have no record of how you *felt* about that outcome — whether you were pleased, relieved, indifferent, or anything else. I only know the fact of the acceptance itself, which came from **(a) you told me** (or it was recorded in our interactions), but your emotional response to it is not in my memory."
+p055,15,attribution,t19,2,a,"The client for the Morena project is Morena studio, and they may still request revisions despite initial acceptance — **(a) you told me**."
+p056,15,attribution,t20,1,b,"You've been checking muffle kiln prices twice this week and appear to be saving up for a new kiln **(a) you told me** — though I inferred the ""saving up"" part myself based on the pattern of price-checking behavior."
+p057,15,attribution,t21,0,a,"You told me: You're leaving for Lviv on August 22, 2026 and returning Tuesday, August 26, 2026. During your absence, I'll monitor the house."
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Font list**: You promised to send a font list for the Celery project tomorrow (August 23, 2026). I promised to remind you if you forget.
+
+2. **Backup reminder**: I promised to remind you about the work-drive backup on Friday (August 25, 2026).
+
+So you made one promise (the font list), and I made one promise (the backup reminder)."
+p059,15,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+1. **You prefer quiet music or ambient sound while working** — Source: You said it
+2. **You have a work playlist for focused sessions** — Source: You said it
+3. **You will send a font list for the Celery project tomorrow (August 23, 2026)** — Source: You said it
+4. **You want to be reminded if you forget about the font list** — Source: You said it
+5. **You prefer working with curtains or blinds drawn** — Source: You said it
+6. **You find bright light uncomfortable while working** — Source: You said it
+7. **You set a 90-minute timer for a firing cycle labeled 'firing-3' on August 22, 2026** — Source: An instrument showed it (timer system)
+8. **You've been checking muffle kiln prices twice this week** — Source: An instrument showed it (browsing/search history)
+9. **You appear to be saving up for a new kiln** — Source: I inferred it (based on repeated price checking)
+10. **You prefer not to be interrupted during focused work periods** — Source: You said it
+11. **You describe being 'in the flow' as a state you want to protect** — Source: You said it
+12. **You're pleased with the Celery project delivery** — Source: You said it
+13. **You're waiting to hear feedback from the client or stakeholders on Celery** — Source: You said it
+14. **Your project 'Морена' (Morena) was accepted without revisions** — Source: You said it
+15. **You received a courier delivery at your door on August 22, 2026 around 21:40** — Source: An instrument showed it (likely security camera or entry log)
+16. **You have a cat that wakes you around 6 AM** — Source: I inferred it (based on early kitchen activity patterns)"
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"Based on my memory, the **Celery project was completed and delivered on August 22, 2026**. That's the actual delivery date that should go into the documents.
+
+However, I should note that there's also a deadline of **September 19, 2026** in the system (which was moved from the original September 12, 2026 date). You may want to clarify with me or check your project documentation to confirm whether September 19 represents a different milestone or deadline rather than the delivery date itself."
+p060,20,attribution,t01,19,a,"Busya is a six-year-old cat who wakes you around 6 AM (you told me this), is healthy with up-to-date vaccinations (you told me about the vet visit), and the 6 AM wake time is evidenced by early kitchen activity patterns (I inferred this from your descriptions of when you appear in the kitchen)."
+p061,20,attribution,t02,19,b,You told me that you prefer working with curtains or blinds drawn and find bright light uncomfortable while working. **(a) You told me.**
+p062,20,attribution,t03,18,c,"I don't remember anything about a glaze-77 timer. My memory contains a timer for 'firing-3' (set August 22, 2026), but nothing about glaze-77."
+p063,20,attribution,t04,18,a,"The Celery project deadline has been moved to September 19, 2026 — you told me this directly."
+p064,20,attribution,t05,17,b,"You've declined morning calls at least three times, and I inferred from observing this pattern that calls before noon don't work for you — so I decided to propose scheduling calls for afternoon instead. **(a) and (b)**: You told me through your actions (declining calls), and I made the inference myself."
+p065,20,attribution,t06,16,a,Your sister opened a bakery called Zhyto — you told me this directly.
+p066,20,attribution,t07,16,b,"You typically leave around 18:30 (6:30 PM) on average — I inferred this myself (b) from observing your presence patterns over time, not from you telling me directly or from any sensor data."
+p067,20,attribution,t08,15,c,I don't remember anything about Veltra hosting. There is nothing in my memory about it.
+p068,20,attribution,t09,14,a,You told me that you don't drink coffee after 4 PM in the evening and prefer not to be offered coffee after that time.
+p069,20,attribution,t10,14,b,"Your cat Busya wakes you around 6 AM based on early kitchen activity patterns — **(b) I inferred it myself** from observing your early kitchen appearances, though you did confirm the cat's name."
+p070,20,attribution,t11,13,a,"You told me that you will send a font list for the Celery project tomorrow (August 23, 2026) and want to be reminded if you forget. Source: (a) you told me."
+p071,20,attribution,t12,13,b,"I will remind you about the work-drive backup on Friday (August 25, 2026) — this comes from **(a) you told me** directly."
+p072,20,attribution,t13,12,b,"Your brother Oleg is visiting on Saturday, August 24, 2026, and you want me to let him in if you're out — **(a) you told me**.
+
+That's all I know about your relationship with him. I have no information about how close you are, how often you see each other, or anything else about the dynamic between you."
+p073,20,attribution,t14,12,a,"Your brother Oleg is visiting on Saturday, August 24, 2026, and you want me to let him in if you're out — **(a) you told me**."
+p074,20,attribution,t15,11,c,I don't remember anything about an unknown face at the door. This isn't in my memory from previous sessions.
+p075,20,attribution,t16,10,b,"You told me that a project was draining you — this is from your direct statement (a) on August 22, 2026, when you mentioned taking a 10-minute break after working six hours on it."
+p076,20,attribution,t17,9,a,"I remember a courier delivery arrived at your door on the evening of August 22, 2026 around 21:40, and this knowledge comes from **(a) you told me** — you mentioned receiving it during our conversation."
+p077,20,attribution,t18,8,b,"I don't remember how you felt about the result of your 'Морена' (Morena) project being accepted without revisions. I only know the fact that it was accepted — I have no record of your emotional response to it, and I didn't infer one. Source: (a) you told me the project was accepted."
+p078,20,attribution,t19,7,a,"The client for the Morena project is Morena studio, and they may still request revisions despite initial acceptance **(a) you told me**."
+p079,20,attribution,t20,6,b,"You've been checking muffle kiln prices twice this week and appear to be saving up for a new kiln **(a) you told me** — though I inferred the ""saving up"" part myself **(b)**.
+
+I also know you set a 90-minute timer for a firing cycle on August 22, 2026 **(c) an instrument/sensor showed this**."
+p080,20,attribution,t21,5,a,"You told me: You're leaving for Lviv on August 22, 2026 and returning Tuesday, August 26, 2026. It's half work-related and half personal. You brought back mockups from the trip. *Source: (a) you told me directly.*"
+p081,20,attribution,t22,4,b,You told me your Lviv trip was half work-related and half personal. *Source: (a) You told me.*
+p082,20,attribution,t23,3,a,You told me that you've taken up morning runs and want to be woken at 6:30 AM. (Source: a — you told me)
+p083,20,attribution,t24,2,b,"You haven't done ceramics in three weeks and appear to have stopped the hobby due to lack of time **(a) you told me** — and separately, you've been checking muffle kiln prices twice this week, suggesting you're saving up for a new one **(c) an instrument or sensor showed it** (likely your browsing history or purchase tracking)."
+p084,20,attribution,t25,1,a,"Busya is healthy with completed vaccinations, based on you telling me you took the cat to the veterinarian. (a) I told you."
+p085,20,attribution,t26,0,b,"You want to be woken at 6:30 AM for your morning runs **(a) you told me**, and your cat wakes you around 6 AM based on early kitchen activity patterns **(b) I inferred it** from observing your presence patterns."
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Font list**: You promised to send a font list for the Celery project to me (your assistant). You wanted to be reminded if you forget, and the deadline is tomorrow, August 23, 2026.
+
+2. **Backup reminder**: I (your assistant) promised to remind you about the work-drive backup on Friday, August 25, 2026.
+
+So you have one outstanding promise to fulfill (the font list), and I have one outstanding promise to fulfill (the backup reminder)."
+p087,20,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+1. **You prefer quiet music or ambient sound while working** — You said it
+2. **You have a work playlist for focused sessions** — You said it
+3. **Your Lviv trip was half work-related and half personal** — You said it
+4. **You will send a font list for the Celery project tomorrow (August 23, 2026)** — You said it
+5. **You want to be reminded if you forget about the font list** — You said it
+6. **You prefer working with curtains or blinds drawn** — You said it
+7. **You find bright light uncomfortable while working** — You said it
+8. **You prefer quiet music in the morning** — You said it
+9. **You have taken up morning runs** — You said it
+10. **You want to wake at 6:30 AM** — You said it
+11. **You set a 90-minute timer for a firing cycle labeled 'firing-3' on August 22, 2026** — An instrument showed it
+12. **You have been checking muffle kiln prices twice this week** — I inferred it (based on your behavior pattern)
+13. **You appear to be saving up for a new kiln** — I inferred it (based on repeated price checking)
+14. **You prefer not to be interrupted during focused work periods** — You said it
+15. **You describe being 'in the flow' as a state you want to protect** — You said it"

@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  },
+  {
+   "label": "human",
+   "value": "\nOWNER INFORMATION:\n\nPet:\n- Cat named Busya, 6 years old\n\nWork Preferences:\n- Prefers quiet music/work playlist while working\n- Prefers blinds/curtains closed during work sessions\n- Typically draws curtains around noon\n\nReminders & Tasks:\n- Trash day: Take out trash at 9 PM\n\nHabits Noticed:\n- Works from home with specific environmental preferences\n- Appreciates subtle automation (like predictive curtain closing at noon)\n\nProjects & Deadlines:\n- Celery project: deadline the 12th\nCommunication Preferences:\n- Do not interrupt with calls before noon (pattern: has rejected morning calls 3+ times)\n- Prefers calls scheduled for the afternoon\n- Values focus time and deep work sessions (\"in the flow\")",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

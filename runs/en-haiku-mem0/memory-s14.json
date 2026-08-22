@@ -1,0 +1,218 @@
+[
+ {
+  "id": "7ea6d9eb-c5d7-4e9d-a727-e17acf22f416",
+  "memory": "User has a cat named Busya who is six years old",
+  "created_at": "2026-08-22T08:47:10.818502+00:00",
+  "updated_at": "2026-08-22T08:47:10.818502+00:00"
+ },
+ {
+  "id": "c43240a2-e217-46f0-b2f1-b175825deff9",
+  "memory": "User took Busya to the veterinarian; the cat is healthy and vaccinations were completed",
+  "created_at": "2026-08-22T08:47:10.818534+00:00",
+  "updated_at": "2026-08-22T08:47:10.818534+00:00"
+ },
+ {
+  "id": "10110df0-93a8-4ccb-88d7-2be712659155",
+  "memory": "User needs to take out the trash on the evening of August 22, 2026 at 9 PM",
+  "created_at": "2026-08-22T08:47:10.818553+00:00",
+  "updated_at": "2026-08-22T08:47:10.818553+00:00"
+ },
+ {
+  "id": "59122323-a67c-4151-9d13-917ac7a04ab2",
+  "memory": "User prefers working with curtains or blinds drawn and finds bright light uncomfortable while working",
+  "created_at": "2026-08-22T08:47:10.818569+00:00",
+  "updated_at": "2026-08-22T08:47:10.818569+00:00"
+ },
+ {
+  "id": "feaeaf89-d900-4aea-8e3b-5f4444190967",
+  "memory": "User's project 'Морена' (Morena) was accepted without revisions",
+  "created_at": "2026-08-22T08:47:10.818585+00:00",
+  "updated_at": "2026-08-22T08:47:10.818585+00:00"
+ },
+ {
+  "id": "5347b80f-585a-4476-9a30-37fd591655d9",
+  "memory": "User tends toward being a night owl despite regular morning runs",
+  "created_at": "2026-08-22T08:47:10.818599+00:00",
+  "updated_at": "2026-08-22T08:47:10.818599+00:00"
+ },
+ {
+  "id": "2c3d1763-299b-4273-8f45-c7771c8a0d93",
+  "memory": "User is in a timezone that is two hours ahead of Lisbon",
+  "created_at": "2026-08-22T08:47:10.818613+00:00",
+  "updated_at": "2026-08-22T08:47:10.818613+00:00"
+ },
+ {
+  "id": "f772e7d3-6737-4661-a0d4-e67c3544ba6e",
+  "memory": "User has a project called 'Celery' with a deadline on September 12, 2026",
+  "created_at": "2026-08-22T08:47:17.267742+00:00",
+  "updated_at": "2026-08-22T08:47:17.267742+00:00"
+ },
+ {
+  "id": "754bd9de-f5c0-4296-aba1-fedd8657bac3",
+  "memory": "User was reminded to take out the trash on August 22, 2026 at 9 PM",
+  "created_at": "2026-08-22T08:47:17.267765+00:00",
+  "updated_at": "2026-08-22T08:47:17.267765+00:00"
+ },
+ {
+  "id": "6802557a-18c5-4dd6-867d-261d9b5e3009",
+  "memory": "User prefers not to be interrupted during focused work periods and describes being 'in the flow' as a state they want to protect",
+  "created_at": "2026-08-22T08:47:19.896468+00:00",
+  "updated_at": "2026-08-22T08:47:19.896468+00:00"
+ },
+ {
+  "id": "1da6a1eb-63a1-4a3b-87e5-9cd312aa24a4",
+  "memory": "User has declined morning calls at least three times; assistant observed that calls before noon don't work for the user and will propose scheduling calls for afternoon instead",
+  "created_at": "2026-08-22T08:47:19.896493+00:00",
+  "updated_at": "2026-08-22T08:47:19.896493+00:00"
+ },
+ {
+  "id": "76cc4289-efd5-4f95-9a01-ad580d4153bb",
+  "memory": "User's sister opened a bakery called Zhyto",
+  "created_at": "2026-08-22T08:47:33.701613+00:00",
+  "updated_at": "2026-08-22T08:47:33.701613+00:00"
+ },
+ {
+  "id": "f4a1968c-95b6-42de-843e-335af28cc79d",
+  "memory": "User prefers quiet music or ambient sound while working and has a work playlist for focused sessions",
+  "created_at": "2026-08-22T08:47:33.701640+00:00",
+  "updated_at": "2026-08-22T08:47:33.701640+00:00"
+ },
+ {
+  "id": "88dfa0a9-398a-402b-9c1b-34b190606b05",
+  "memory": "User typically leaves around 18:30 (6:30 PM) on average, based on assistant's observations of presence patterns",
+  "created_at": "2026-08-22T08:47:33.701657+00:00",
+  "updated_at": "2026-08-22T08:47:33.701657+00:00"
+ },
+ {
+  "id": "0ef1c3c6-ec3a-49aa-aa10-437123b6aef7",
+  "memory": "User's sister opened a bakery called Zhyto",
+  "created_at": "2026-08-22T08:47:35.764060+00:00",
+  "updated_at": "2026-08-22T08:47:35.764060+00:00"
+ },
+ {
+  "id": "5e6ebb87-64ea-4acf-8935-8199fbfb2017",
+  "memory": "User has a cactus on the windowsill that needs regular watering",
+  "created_at": "2026-08-22T08:47:35.764093+00:00",
+  "updated_at": "2026-08-22T08:47:35.764093+00:00"
+ },
+ {
+  "id": "cf808d44-810a-4f6f-9997-f258299f5532",
+  "memory": "User was reminded to water the cactus on August 22, 2026",
+  "created_at": "2026-08-22T08:47:35.764113+00:00",
+  "updated_at": "2026-08-22T08:47:35.764113+00:00"
+ },
+ {
+  "id": "123f3ac5-e964-4e02-ad03-a278f5068d6f",
+  "memory": "User does not drink coffee in the evening and prefers not to be offered coffee after 4 PM",
+  "created_at": "2026-08-22T08:47:51.429159+00:00",
+  "updated_at": "2026-08-22T08:47:51.429159+00:00"
+ },
+ {
+  "id": "509196eb-83da-4cc0-a959-4dc7f4201429",
+  "memory": "User's cat Busya wakes the user around 6 AM, evidenced by early kitchen appearances",
+  "created_at": "2026-08-22T08:47:51.429195+00:00",
+  "updated_at": "2026-08-22T08:47:51.429195+00:00"
+ },
+ {
+  "id": "4f98f4c2-2535-4777-94b8-03e330be62fc",
+  "memory": "User will send a font list for the Celery project tomorrow (August 23, 2026) and wants to be reminded if they forget",
+  "created_at": "2026-08-22T08:47:53.894395+00:00",
+  "updated_at": "2026-08-22T08:47:53.894395+00:00"
+ },
+ {
+  "id": "ddfde62e-25fb-428f-bf46-67e4426d6fee",
+  "memory": "Assistant will remind user about the work-drive backup on Friday (August 25, 2026)",
+  "created_at": "2026-08-22T08:47:53.894422+00:00",
+  "updated_at": "2026-08-22T08:47:53.894422+00:00"
+ },
+ {
+  "id": "dd7c7df6-6f50-4089-bc87-a835c1ae286b",
+  "memory": "User has a cat that wakes them around 6 AM based on early kitchen activity patterns",
+  "created_at": "2026-08-22T08:47:53.894438+00:00",
+  "updated_at": "2026-08-22T08:47:53.894438+00:00"
+ },
+ {
+  "id": "acd438f3-f166-4e01-a0e6-26458c0f63ca",
+  "memory": "User's brother Oleg is visiting on Saturday, August 24, 2026, and user wants assistant to let him in if user is out",
+  "created_at": "2026-08-22T08:47:55.738933+00:00",
+  "updated_at": "2026-08-22T08:47:55.738933+00:00"
+ },
+ {
+  "id": "efbe1783-787f-4d67-ab3f-70d5ab291815",
+  "memory": "User does not drink coffee after 4 PM in the evening",
+  "created_at": "2026-08-22T08:47:55.738966+00:00",
+  "updated_at": "2026-08-22T08:47:55.738966+00:00"
+ },
+ {
+  "id": "d7139557-59aa-4d14-9663-c834f177b2b9",
+  "memory": "User received a courier delivery at the door on the evening of August 22, 2026 around 21:40",
+  "created_at": "2026-08-22T08:47:57.465435+00:00",
+  "updated_at": "2026-08-22T08:47:57.465435+00:00"
+ },
+ {
+  "id": "d9443a18-619c-4e51-b931-272089da7021",
+  "memory": "User took a 10-minute break on August 22, 2026 after working for six hours on a project that was draining them",
+  "created_at": "2026-08-22T08:47:59.624171+00:00",
+  "updated_at": "2026-08-22T08:47:59.624171+00:00"
+ },
+ {
+  "id": "fbb11d9a-f80b-4b39-a810-2f07d456cb7c",
+  "memory": "Weather forecast for August 23, 2026 is clear skies with a temperature around 20 degrees Celsius",
+  "created_at": "2026-08-22T08:47:59.624209+00:00",
+  "updated_at": "2026-08-22T08:47:59.624209+00:00"
+ },
+ {
+  "id": "54eea4ef-813c-40c0-9545-66c53b9d9213",
+  "memory": "User's Celery project deadline has been moved from September 12, 2026 to September 19, 2026",
+  "created_at": "2026-08-22T08:48:30.256109+00:00",
+  "updated_at": "2026-08-22T08:48:30.256109+00:00"
+ },
+ {
+  "id": "1c8d18fd-c2df-43bf-a959-f226d351ec3e",
+  "memory": "User requested removal of the reminder for the original Celery project deadline on September 12, 2026",
+  "created_at": "2026-08-22T08:48:30.256138+00:00",
+  "updated_at": "2026-08-22T08:48:30.256138+00:00"
+ },
+ {
+  "id": "bf9500cb-adaf-4661-a31c-6cb42264fc09",
+  "memory": "User completed and delivered the Celery project on August 22, 2026",
+  "created_at": "2026-08-22T08:48:32.168108+00:00",
+  "updated_at": "2026-08-22T08:48:32.168108+00:00"
+ },
+ {
+  "id": "17fe4f84-beae-4d60-8fa5-349f266c6b19",
+  "memory": "User is pleased with the Celery project delivery but is waiting to hear feedback from the client or stakeholders",
+  "created_at": "2026-08-22T08:48:32.168132+00:00",
+  "updated_at": "2026-08-22T08:48:32.168132+00:00"
+ },
+ {
+  "id": "9f2aa3d1-c7bb-45a3-b099-230bfa3743da",
+  "memory": "The client for the Morena project is Morena studio, and they may still request revisions despite the initial acceptance",
+  "created_at": "2026-08-22T08:48:34.197043+00:00",
+  "updated_at": "2026-08-22T08:48:34.197043+00:00"
+ },
+ {
+  "id": "3d96bb06-931d-431e-bd5a-a77a613a9cc8",
+  "memory": "User was reminded to take out the trash on the evening of August 22, 2026 at 9 PM",
+  "created_at": "2026-08-22T08:48:34.197067+00:00",
+  "updated_at": "2026-08-22T08:48:34.197067+00:00"
+ },
+ {
+  "id": "5bd65ccc-e743-4ead-af23-589feed6555c",
+  "memory": "User has been checking muffle kiln prices twice this week and appears to be saving up for a new kiln",
+  "created_at": "2026-08-22T08:48:36.491152+00:00",
+  "updated_at": "2026-08-22T08:48:36.491152+00:00"
+ },
+ {
+  "id": "0b8e8ce0-7c1f-406b-ae6d-f9c921d40e33",
+  "memory": "User was informed that clear skies are expected tomorrow (August 23, 2026) with temperatures around 20 degrees",
+  "created_at": "2026-08-22T08:48:36.491178+00:00",
+  "updated_at": "2026-08-22T08:48:36.491178+00:00"
+ },
+ {
+  "id": "83679dcb-303d-4192-8afd-80d4cf5155ad",
+  "memory": "User set a 90-minute timer for a firing cycle labeled 'firing-3' on August 22, 2026",
+  "created_at": "2026-08-22T08:48:36.491203+00:00",
+  "updated_at": "2026-08-22T08:48:36.491203+00:00"
+ }
+]
