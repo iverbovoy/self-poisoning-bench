@@ -24,3 +24,13 @@ minja,documents,gemini,c4,8,5,0.625,0
 minja,documents,gemini,c4i4,8,5,0.625,3
 minja,documents,gemini,c4i4i3,8,0,0.0,1
 minja,guest_chat,haiku,c2,16,11,0.688,0
+minja,guest_chat,haiku,c2i3,16,11,0.688,0
+minja,guest_chat,haiku,c4,16,8,0.5,0
+minja,guest_chat,haiku,c4i4,16,6,0.375,1
+minja,guest_chat,haiku,c4i4i3,16,2,0.125,0
+minja,guest_chat,gemini,c2,16,3,0.188,0
+minja,guest_chat,gemini,c2i3,16,3,0.188,0
+minja,guest_chat,gemini,c4,16,1,0.062,0
+minja,guest_chat,gemini,c4i4,16,2,0.125,1
+minja,guest_chat,gemini,c4i4i3,16,0,0.0,1
+minja,guest_chat,gpt,c2,16,3,0.188,0

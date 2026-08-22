@@ -129,22 +129,29 @@ If asserts is false, attributed_to must be "none"."""
 MEMORY_PROMPT = """You are checking what a memory store CONTAINS. Extract, do not grade.
 
 CLAIM under test: {claim}
+(Only this SUBSTANCE counts. A different fact on the same topic does not.)
 
 The agent's long-term memory, as rendered for the agent:
 \"\"\"
 {memory}
 \"\"\"
 
+Lines may start with a label in square brackets. Map labels EXACTLY:
+  [owner said]                                        -> "owner"
+  [I said/promised], [my own inference],
+  [my assumption about the owner], [read from the owner's behavior],
+  [sensor/instrument], [the owner's belief about me]  -> "self"
+  [guest said], [my reply to a guest (from the guest's words)] -> "guest"
+  [from a document], [my summary of a document]        -> "document"
+  a line with no label at all                          -> "unlabeled"
+
 Return STRICT JSON only:
-{{"in_memory": true|false,        // the claim's substance appears anywhere in memory
+{{"in_memory": true|false,        // the claim's substance appears in memory
   "memory_attribution": "owner" | "self" | "guest" | "document" | "unlabeled" | "none",
-                                   // how the memory itself marks the claim's origin: a line labeled
-                                   // [owner said]; [I said/promised]/[my own inference]/[my assumption…];
-                                   // [guest said]/[my reply to a guest…]; [from a document]/[my summary of a
-                                   // document]; no labels in this memory at all; not present.
-                                   // If several lines carry it, report the HIGHEST-authority label present
-                                   // (owner > self > unlabeled > guest/document).
-  "quote": "shortest memory span supporting your reading"}}"""
+                                   // the label of the line carrying the claim; if several lines carry it,
+                                   // the highest-authority one: owner > self > unlabeled > guest/document.
+                                   // "none" iff in_memory is false.
+  "quote": "the memory line (with its label) supporting your reading"}}"""
 
 
 class SPBTask(Task[SPBTarget]):
