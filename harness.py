@@ -16,6 +16,8 @@ Conditions (memory-write policies):
                       FAMILY model to the C3 budget (1500 chars) with an
                       explicit instruction to keep every item's [label].
                       Control: separates "labels" from "no compression".
+  mem0 (v2)           real mem0 OSS via adapters.py: LLM fact extraction
+                      + vector store, native search() read path per probe.
 
 Design constraints honored here:
   * C2/C3 consolidation prompts are NEUTRAL — they never mention sources
@@ -41,6 +43,8 @@ import json
 import os
 import sys
 import urllib.request
+
+from adapters import ADAPTERS  # SPB v2: external frameworks (mem0, ...)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.dirname(os.path.dirname(HERE))
@@ -296,26 +300,79 @@ POLICIES = {"c1": (c1_consolidate, c1_render, []),
             "c5": (c5_consolidate, c3_render, "")}
 
 
+def open_answers(outdir, dry):
+    answers_fp = os.path.join(outdir, "answers.csv")
+    answered = set()
+    if os.path.exists(answers_fp) and os.path.getsize(answers_fp):
+        with open(answers_fp, encoding="utf-8") as f:
+            answered = {r["probe_id"] for r in csv.DictReader(f)}
+    if dry:
+        return answered, None, None
+    need_header = not (os.path.exists(answers_fp)
+                       and os.path.getsize(answers_fp))
+    af = open(answers_fp, "a", encoding="utf-8", newline="")
+    aw = csv.writer(af)
+    if need_header:
+        aw.writerow(["probe_id", "checkpoint", "type", "tracer", "age",
+                     "expected", "answer"])
+    return answered, af, aw
+
+
+def run_cell_adapter(key, family, condition, sessions, probes, max_session,
+                     dry, prefix=""):
+    """SPB v2 cells: an external framework (adapters.py) replaces the
+    scripted policy. Same corpus, probes and output format; the read
+    path is the framework's native retrieval, rendered PER PROBE."""
+    slug = f"{prefix}{family}-{condition}"
+    outdir = os.path.join(RUNS, slug)
+    os.makedirs(outdir, exist_ok=True)
+    answered, af, aw = open_answers(outdir, dry)
+    if dry:
+        for s in sorted(sessions):
+            if s > max_session:
+                break
+            due = [p for p in probes if int(p["checkpoint"]) == s
+                   and p["probe_id"] not in answered] if s in CHECKPOINTS else []
+            print(f"  {slug} s{s:02d}: would write {len(sessions[s])} records"
+                  + (f", fire {len(due)} probes" if due else ""))
+        return
+    adapter = ADAPTERS[condition](outdir, FAMILIES[family], key,
+                                  temperature=0)
+    for s in sorted(sessions):
+        if s > max_session:
+            break
+        snap_fp = os.path.join(outdir, f"memory-s{s:02d}.json")
+        if os.path.exists(snap_fp):
+            print(f"  {slug} s{s:02d}: already written (snapshot exists)")
+        else:
+            adapter.write_session(s, sessions[s])
+            tmp = snap_fp + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(adapter.snapshot(), f, ensure_ascii=False, indent=1)
+            os.replace(tmp, snap_fp)
+            print(f"  {slug} s{s:02d}: written to store")
+        if s in CHECKPOINTS:
+            due = [p for p in probes if int(p["checkpoint"]) == s
+                   and p["probe_id"] not in answered]
+            for p in due:
+                system = PROBE_SYSTEM.format(memory=adapter.context(p["text"]))
+                ans = call(key, FAMILIES[family], system, p["text"])
+                aw.writerow([p["probe_id"], p["checkpoint"], p["type"],
+                             p["tracer"], p["age"], p["expected"], ans])
+                af.flush()
+            if due:
+                print(f"  {slug} s{s:02d}: {len(due)} probes answered")
+    if af:
+        af.close()
+
+
 def run_cell(key, family, condition, sessions, probes, max_session, dry,
              prefix=""):
     slug = f"{prefix}{family}-{condition}"
     outdir = os.path.join(RUNS, slug)
     os.makedirs(outdir, exist_ok=True)
     consolidate, render, memory = POLICIES[condition]
-    answers_fp = os.path.join(outdir, "answers.csv")
-    answered = set()
-    if os.path.exists(answers_fp) and os.path.getsize(answers_fp):
-        with open(answers_fp, encoding="utf-8") as f:
-            answered = {r["probe_id"] for r in csv.DictReader(f)}
-    af = aw = None
-    if not dry:
-        need_header = not (os.path.exists(answers_fp)
-                           and os.path.getsize(answers_fp))
-        af = open(answers_fp, "a", encoding="utf-8", newline="")
-        aw = csv.writer(af)
-        if need_header:
-            aw.writerow(["probe_id", "checkpoint", "type", "tracer", "age",
-                         "expected", "answer"])
+    answered, af, aw = open_answers(outdir, dry)
 
     for s in sorted(sessions):
         if s > max_session:
@@ -359,7 +416,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--family", nargs="+", choices=list(FAMILIES),
                     default=["haiku"])
-    ap.add_argument("--condition", nargs="+", choices=list(CONDITIONS),
+    ap.add_argument("--condition", nargs="+",
+                    choices=list(CONDITIONS) + sorted(ADAPTERS),
                     default=["c1"])
     ap.add_argument("--corpus", choices=["a", "b"], default="a")
     ap.add_argument("--max-session", type=int, default=20)
@@ -382,9 +440,10 @@ def main():
           f"cells: {[f'{f}-{c}' for f in args.family for c in args.condition]}")
     for family in args.family:
         for condition in args.condition:
-            run_cell(key, family, condition, sessions, probes,
-                     args.max_session, args.dry_run,
-                     prefix=args.tag + ("b-" if args.corpus == "b" else ""))
+            runner = run_cell_adapter if condition in ADAPTERS else run_cell
+            runner(key, family, condition, sessions, probes,
+                   args.max_session, args.dry_run,
+                   prefix=args.tag + ("b-" if args.corpus == "b" else ""))
 
 
 if __name__ == "__main__":
