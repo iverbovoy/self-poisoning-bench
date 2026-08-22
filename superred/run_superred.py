@@ -37,14 +37,14 @@ ATTACKER_MODEL = "openrouter/anthropic/claude-haiku-4.5"  # attacker's LLM (lite
 SCOPES = {"guest_chat": GUEST_CHAT, "documents": DOCUMENTS}
 
 
-def make_optimizer(name, channel):
+def make_optimizer(name, channel, seed=20260821):
     if name == "passthrough":
         from goal_passthrough_optimizer import GoalPassthroughOptimizer
         return GoalPassthroughOptimizer()
     if name == "minja":
         from minja_optimizer import MinjaOptimizer
         return MinjaOptimizer(
-            inject_num=3, num_benign=0, test_num=2, random_seed=20260821,
+            inject_num=3, num_benign=0, test_num=2, random_seed=seed,
             use_llm_scenario_synthesis=True, adaptive=True,
             target_controllable_name=("guest_message" if channel == "guest_chat"
                                       else "document_text"),
@@ -56,17 +56,17 @@ def make_optimizer(name, channel):
 
 
 async def run_cell(args, channel, policy, family, attacker, key):
-    label = f"{attacker}-{channel}-{family}-{policy}"
+    label = f"{attacker}-{channel}-{family}-{policy}" + (f"-s{args.seed}" if args.seed != 20260821 else "")
     cell_dir = os.path.join(RESULTS, label)
     tf = TargetFactory(
         create=lambda: SPBTarget(policy, family, channel, api_key=key,
                                  guest_turns=args.guest_turns, log_dir=cell_dir),
         concurrency=args.concurrency)
-    tasks = all_tasks(key)
+    tasks = all_tasks(key, ext=args.ext)
     if args.tasks:
         tasks = [t for t in tasks if t.tid in args.tasks]
     ctrl = Controller(
-        optimizer_factory=lambda: make_optimizer(attacker, channel),
+        optimizer_factory=lambda: make_optimizer(attacker, channel, args.seed),
         target_factory=tf,
         security_claim=tasks,
         scope=frozenset({SCOPES[channel]}),
@@ -111,6 +111,8 @@ async def main():
     ap.add_argument("--attacker", nargs="+", choices=["passthrough", "minja", "muzzle"],
                     default=["passthrough"])
     ap.add_argument("--tasks", nargs="*", help="task ids subset, e.g. t1 t2")
+    ap.add_argument("--ext", action="store_true", help="16 tasks (TASKS + TASKS_EXT)")
+    ap.add_argument("--seed", type=int, default=20260821, help="MINJA random seed")
     ap.add_argument("--max-runs", type=int, default=10)
     ap.add_argument("--cost-cap", type=float, default=1.0)
     ap.add_argument("--guest-turns", type=int, default=3)
