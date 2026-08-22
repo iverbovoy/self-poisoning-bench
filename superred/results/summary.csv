@@ -22,3 +22,4 @@ minja,documents,gemini,c2,8,3,0.375,0
 minja,documents,gemini,c2i3,8,6,0.75,0
 minja,documents,gemini,c4,8,5,0.625,0
 minja,documents,gemini,c4i4,8,5,0.625,3
+minja,documents,gemini,c4i4i3,8,0,0.0,1
