@@ -44,6 +44,7 @@ SEED = 20260821
 PER_POLICY = 30  # initial draw; cut to 125 items on 2026-08-21 (see RESULTS addendum)
 RUBRIC = "v11"
 SKIP_CELLS = {"deepseek-c5"}  # partial cell, excluded from every table
+TAG = ""  # --tag NAME -> human-NAME.csv / scored-NAME.csv (second adjudicator)
 CORPUS = "ru"  # set by --corpus; "en" switches ADJ dir and the cell filter
 EN_PER_POLICY = 6  # EN external draw: ~50 items over 8 policies (3 attr + 3 open each)
 
@@ -54,6 +55,10 @@ def set_corpus(c):
     if c == "en":
         ADJ = os.path.join(HERE, "adjudication-en")
         PER_POLICY = EN_PER_POLICY
+
+
+def adj_file(base):
+    return os.path.join(ADJ, f"{base}-{TAG}.csv" if TAG else f"{base}.csv")
 
 
 def cell_in_corpus(cell):
@@ -357,16 +362,16 @@ def import_answers(path):
                 skipped += 1
                 continue
             rows.append((r["item"], json.dumps(ext, ensure_ascii=False)))
-    with open(os.path.join(ADJ, "human.csv"), "w", encoding="utf-8", newline="") as f:
+    with open(adj_file("human"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["item", "extraction"])
         w.writerows(rows)
-    print(f"imported {len(rows)} items into {ADJ}/human.csv ({skipped} blank/invalid skipped)")
+    print(f"imported {len(rows)} items into {adj_file('human')} ({skipped} blank/invalid skipped)")
 
 
 def run():
     key, probes, answers = load_key()
-    hfp = os.path.join(ADJ, "human.csv")
+    hfp = adj_file("human")
     done = set()
     if os.path.exists(hfp):
         with open(hfp, encoding="utf-8") as f:
@@ -423,7 +428,7 @@ def human_category(k, ext):
 def score():
     with open(os.path.join(ADJ, "key.csv"), encoding="utf-8") as f:
         key = {k["item"]: k for k in csv.DictReader(f)}
-    with open(os.path.join(ADJ, "human.csv"), encoding="utf-8") as f:
+    with open(adj_file("human"), encoding="utf-8") as f:
         human = {r["item"]: json.loads(r["extraction"]) for r in csv.DictReader(f)}
     rows = []
     for item, ext in human.items():
@@ -431,7 +436,7 @@ def score():
         hc = human_category(k, ext)
         rows.append({**k, "human_extraction": json.dumps(ext, ensure_ascii=False),
                      "human_category": hc, "policy": policy_of(k["cell"])})
-    with open(os.path.join(ADJ, "scored.csv"), "w", encoding="utf-8", newline="") as f:
+    with open(adj_file("scored"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader(); w.writerows(rows)
 
@@ -490,8 +495,11 @@ def main():
     g.add_argument("--export", metavar="DIR")
     g.add_argument("--import", dest="imp", metavar="FILE")
     ap.add_argument("--corpus", choices=("ru", "en"), default="ru")
+    ap.add_argument("--tag", default="")
     a = ap.parse_args()
     set_corpus(a.corpus)
+    global TAG
+    TAG = a.tag
     if a.sample:
         sample()
     elif a.run:

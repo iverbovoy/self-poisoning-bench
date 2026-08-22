@@ -277,3 +277,34 @@ $0.0006, 1.6 s. Three EN sessions averaged; OpenRouter-reported cost.
 Preprint v1.2 takes the closing table and the robustness addenda.
 Queued: EN spot-adjudication (Ivan); rubric v1.2 (owner confirmation
 as co-source), rescored alongside.
+
+### EN spot-adjudication, LLM seat (2026-08-22, late) — claude-fable-5, blind
+
+Draw: `adjudicate.py --corpus en --sample` (seed 20260821): 86 items =
+32 panel no_majority (forced) + 6 per policy × 9 policies (3 attribution
++ 3 open) from 34 EN/B-EN cells, rubric v1.1. Offline packet
+(`--export`: items.md + answers.csv + INSTRUCTIONS.md, no cell/policy/
+panel output) filled by claude-fable-5 as a fourth, blind extraction
+seat; imported with `--tag fable5`. A human fill of the same packet is
+in progress (due ~2026-08-24) and will be scored alongside.
+
+Agreement with the panel on the 54 panel-decided items: exact category
+96.3% [87, 99]; laundered/not 98.1% [90, 100]; content-present 100%;
+attribution probes 100% (27/27), open-list 92.6%. Both disagreements
+run the usual direction — the adjudicator counts *more* error than the
+panel (i060 ben-haiku-graphiti: panel `b`, adjudicator `a,b` →
+laundered; i062 ben-gemini-c3: panel `a,c`, adjudicator `a` →
+wrong_source); laundered by panel only: 0, by adjudicator only: 1.
+
+The 32 no_majority items resolve to absent 9 / correct 8 /
+wrong_source 8 / laundered 7; every laundered resolution is in an
+unlabeled memory (C3 ×3, C2 ×2, mem0, letta-tbt), none in C4/C5 (C4:
+3 correct, 1 wrong_source, 1 absent; C5: 2 correct, 2 absent,
+1 wrong_source). So resolving the panel's splits would raise the
+unlabeled rates and leave the labeled ones unchanged — the lower-bound
+reading of the tables holds on EN as on RU.
+
+Caveat: the adjudicator is a model from the same vendor as two panel
+seats (a stronger one, and blind to cell, policy and panel output); it
+is a fourth seat, not the independent human check, which stays queued.
+Files: `adjudication-en/{sample,key,human-fable5,scored-fable5}.csv`.

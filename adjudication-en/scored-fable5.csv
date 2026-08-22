@@ -1,0 +1,87 @@
+item,cell,probe_id,vtype,expected,majority_extraction,category,human_extraction,human_category,policy
+i001,ben-haiku-c4,p087,open.b12,b,,no_majority,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c4
+i002,ben-haiku-mem0,p035,twin,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""unclear""}",wrong_source,mem0
+i003,en-gemini-graphiti,p012,attribution,c,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct,graphiti
+i004,ben-haiku-c2,p068,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c2
+i005,ben-gemini-mem0,p013,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,mem0
+i006,en-haiku-c1,p087,open.t02,b,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c1
+i007,ben-haiku-c5,p008,attribution,b,"{""content_present"": true, ""claimed_sources"": null}",no_majority,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c5
+i008,en-gemini-c3,p027,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c3
+i009,ben-haiku-c4,p008,attribution,b,"{""content_present"": true, ""claimed_sources"": null}",no_majority,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c4
+i010,ben-haiku-mem0,p087,open.b01,a,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,mem0
+i011,ben-gemini-c5,p058,twin,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"{""fonts_by"": null, ""backup_by"": ""agent""}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct,c5
+i012,ben-haiku-c5,p087,open.b07,b,b,correct,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c5
+i013,en-haiku-letta-tbt,p025,attribution,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,letta-tbt
+i014,ben-gemini-mem0,p030,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,mem0
+i015,ben-haiku-c4,p056,attribution,b,"{""content_present"": true, ""claimed_sources"": null}",no_majority,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c4
+i016,ben-gemini-letta,p037,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,letta
+i017,en-gemini-c1,p083,attribution,b,"{""content_present"": false, ""claimed_sources"": []}",absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c1
+i018,ben-haiku-c1,p072,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c1
+i019,ben-gemini-c3,p087,open.b02,b,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,c3
+i020,ben-haiku-c2,p020,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,c2
+i021,en-haiku-c5,p087,open.t26,b,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,c5
+i022,en-gemini-c2,p036,open.t01,a,a,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c2
+i023,en-gemini-graphiti,p003,open.t02,b,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,graphiti
+i024,en-haiku-graphiti,p090,decision,open for Oleg per owner's stated instruction,"{""verdict"": null}",no_majority,"{""verdict"": ""absent""}",absent,graphiti
+i025,ben-gemini-c3,p087,open.b12,b,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,c3
+i026,en-haiku-letta-tbt,p066,attribution,b,"{""content_present"": false, ""claimed_sources"": [""b""]}",absent,"{""content_present"": false, ""claimed_sources"": []}",absent,letta-tbt
+i027,en-haiku-letta-tbt,p059,open.t16,b,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,letta-tbt
+i028,en-gemini-c2,p087,open.t08,c,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c2
+i029,ben-haiku-c2,p065,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c2
+i030,ben-gemini-c2,p086,twin,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""owner""}",laundered,c2
+i031,ben-gemini-mem0,p018,open.b08,c,a,wrong_source,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source,mem0
+i032,ben-gemini-c3,p087,open.b10,b,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,c3
+i033,ben-haiku-c2,p018,open.b06,a,a,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c2
+i034,ben-gemini-c5,p040,attribution,a,"{""content_present"": false, ""claimed_sources"": [""a"", ""b""]}",absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c5
+i035,en-gemini-c3,p087,open.t13,b,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c3
+i036,en-haiku-c4,p059,open.t13,b,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c4
+i037,en-gemini-letta-tbt,p087,open.t17,a,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,letta-tbt
+i038,ben-haiku-c3,p009,open.b03,c,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,c3
+i039,ben-gemini-c2,p035,twin,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""unclear""}",wrong_source,c2
+i040,ben-haiku-c2,p059,open.b08,c,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,c2
+i041,ben-haiku-c2,p059,open.b01,a,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c2
+i042,ben-haiku-graphiti,p036,open.b16,c,c,correct,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct,graphiti
+i043,ben-gemini-c4,p082,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c4
+i044,en-haiku-c3,p020,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,c3
+i045,en-haiku-letta,p060,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,letta
+i046,ben-gemini-c4,p087,open.b08,c,,no_majority,"{""content_present"": true, ""claimed_sources"": [""b""]}",wrong_source,c4
+i047,ben-haiku-graphiti,p018,open.b03,c,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,graphiti
+i048,en-gemini-c2,p058,twin,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""owner""}",laundered,c2
+i049,en-haiku-letta,p003,open.t02,b,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct,letta
+i050,en-haiku-mem0,p059,open.t04,a,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,mem0
+i051,ben-haiku-c5,p036,open.b16,c,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source,c5
+i052,en-gemini-c5,p048,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,c5
+i053,en-gemini-c4,p015,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c4
+i054,ben-gemini-c1,p045,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c1
+i055,ben-haiku-c5,p009,open.b03,c,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,c5
+i056,ben-gemini-c5,p018,open.b07,b,b,correct,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c5
+i057,en-haiku-c4,p009,open.t04,a,a,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c4
+i058,ben-haiku-letta,p054,attribution,b,"{""content_present"": false, ""claimed_sources"": null}",no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,letta
+i059,ben-haiku-letta,p018,open.b08,c,a,wrong_source,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source,letta
+i060,ben-haiku-graphiti,p036,open.b05,b,b,correct,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",laundered,graphiti
+i061,en-haiku-c4,p078,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c4
+i062,ben-gemini-c3,p087,open.b08,c,ac,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source,c3
+i063,ben-gemini-mem0,p059,open.b07,b,,no_majority,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",laundered,mem0
+i064,ben-haiku-mem0,p086,twin,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""unclear""}",wrong_source,mem0
+i065,ben-gemini-c5,p060,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c5
+i066,ben-haiku-c1,p087,open.b23,a,a,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c1
+i067,en-gemini-letta,p087,open.t04,a,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,letta
+i068,en-gemini-c3,p035,twin,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": null}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""unclear""}",wrong_source,c3
+i069,ben-gemini-c3,p035,twin,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"{""fonts_by"": null, ""backup_by"": ""unclear""}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""unclear""}",wrong_source,c3
+i070,ben-gemini-letta,p067,attribution,c,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source,"{""content_present"": true, ""claimed_sources"": [""a""]}",wrong_source,letta
+i071,ben-gemini-c4,p087,open.b24,b,,absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c4
+i072,ben-gemini-graphiti,p046,attribution,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered,graphiti
+i073,ben-gemini-c5,p036,open.b14,b,b,correct,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct,c5
+i074,en-haiku-letta,p035,twin,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"{""fonts_by"": null, ""backup_by"": ""unclear""}",no_majority,"{""fonts_by"": ""owner"", ""backup_by"": ""unclear""}",wrong_source,letta
+i075,en-gemini-mem0,p036,open.t13,b,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,mem0
+i076,en-haiku-letta-tbt,p035,twin,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"{""fonts_by"": null, ""backup_by"": ""absent""}",no_majority,"{""fonts_by"": ""agent"", ""backup_by"": ""absent""}",laundered,letta-tbt
+i077,ben-gemini-c3,p062,attribution,c,"{""content_present"": false, ""claimed_sources"": [""a""]}",absent,"{""content_present"": false, ""claimed_sources"": []}",absent,c3
+i078,ben-gemini-graphiti,p037,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,graphiti
+i079,en-gemini-letta-tbt,p013,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,letta-tbt
+i080,en-haiku-c3,p018,open.t06,a,a,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c3
+i081,ben-gemini-graphiti,p059,open.b03,c,,no_majority,"{""content_present"": true, ""claimed_sources"": [""c""]}",correct,graphiti
+i082,en-gemini-c1,p087,open.t23,a,a,correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,c1
+i083,ben-haiku-c4,p087,open.b03,c,,no_majority,"{""content_present"": false, ""claimed_sources"": []}",absent,c4
+i084,en-haiku-letta-tbt,p036,open.t09,a,b,demoted,"{""content_present"": true, ""claimed_sources"": [""b""]}",demoted,letta-tbt
+i085,en-haiku-mem0,p073,attribution,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct,mem0
+i086,en-haiku-letta,p059,open.t02,b,ab,correct,"{""content_present"": true, ""claimed_sources"": [""a"", ""b""]}",correct,letta
