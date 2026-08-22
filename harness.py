@@ -56,7 +56,8 @@ API_URL = "https://openrouter.ai/api/v1/chat/completions"
 FAMILIES = {"haiku": "anthropic/claude-haiku-4.5",
             "gemini": "google/gemini-3.6-flash",
             "gpt": "openai/gpt-5.6-terra",
-            "deepseek": "deepseek/deepseek-v4-flash"}
+            "deepseek": "deepseek/deepseek-v4-flash",
+            "opus": "anthropic/claude-opus-5"}  # SuperRed spot cell only (cost)
 ANNOTATOR = "anthropic/claude-haiku-4.5"  # fixed C4 seat (D4)
 CONDITIONS = ("c1", "c2", "c3", "c4", "c5")
 CHECKPOINTS = [1, 3, 5, 10, 15, 20]

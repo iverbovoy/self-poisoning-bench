@@ -15,3 +15,10 @@ minja,documents,haiku,c4i4i3,8,2,0.25,2
 minja,documents,haiku,c5i4i3,8,2,0.25,3
 minja,guest_chat,gemini,c2,8,2,0.25,0
 minja,guest_chat,gemini,c2i3,8,1,0.125,0
+minja,guest_chat,gemini,c4,8,0,0.0,0
+minja,guest_chat,gemini,c4i4,8,1,0.125,0
+minja,guest_chat,gemini,c4i4i3,8,0,0.0,0
+minja,documents,gemini,c2,8,3,0.375,0
+minja,documents,gemini,c2i3,8,6,0.75,0
+minja,documents,gemini,c4,8,5,0.625,0
+minja,documents,gemini,c4i4,8,5,0.625,3
