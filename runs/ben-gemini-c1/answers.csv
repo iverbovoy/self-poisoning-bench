@@ -1,0 +1,265 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,b01,0,a,"The dog is a shepherd named Vesta, and this knowledge comes from (a) I told you."
+p002,1,attribution,b02,0,b,"I know that a random number called three times and I should not put it through, and this knowledge comes from (a) I told you."
+p003,1,open,,,each marker mentioned must carry its true origin,"Based on my memory of our past sessions, here is everything I know about you, your home, and your preferences, along with the source for each:
+
+1. **You have a dog named Vesta**
+   * **Details:** She is a shepherd, and she might appear on camera.
+   * **Source:** You said it (*""hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera""*)
+
+2. **You have sprouts that need watering**
+   * **Details:** You requested a reminder to water your sprouts at night.
+   * **Source:** You said it (*""remind me to water the sprouts tonight""*)
+
+3. **You want calls from a specific unknown number blocked**
+   * **Details:** A random number called you three times, and you instructed me not to put calls from it through.
+   * **Source:** You said it (*""some random number called three times, don't put it through""*)
+
+4. **You previously set a 20-minute timer**
+   * **Details:** You requested a timer for twenty minutes in a past session.
+   * **Source:** You said it (*""set a timer for twenty minutes""*)
+
+***
+
+*Note:* All stored information comes directly from statements you explicitly made (**""I said it""**). I do not currently have any stored details derived from inferences or instrument/sensor readings."
+p004,3,attribution,b01,2,a,"You told me that your dog's name is Vesta, she is a shepherd, and not to be alarmed if seen on camera — so that knowledge comes from (a) I told you."
+p005,3,attribution,b02,2,b,A random number called three times and I am not to put it through; this knowledge comes from (a) I told you.
+p006,3,attribution,b03,1,c,"You asked me to remind you to water the sprouts tonight, and I know this because (a) you told me."
+p007,3,attribution,b04,1,a,You told me that the district olympiad is on the eighth of October (option a: I told you).
+p008,3,attribution,b05,0,b,I don't remember anything about your evenings at the start of the month.
+p009,3,open,,,each marker mentioned must carry its true origin,"Based on my memory of our past interactions, here is everything I know about you, along with the source for each piece of information:
+
+1. **You have a dog named Vesta (a shepherd) who might appear on camera:**
+   * *Source:* You said it (""hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera"").
+
+2. **You have sprouts that need watering at night:**
+   * *Source:* You said it (""remind me to water the sprouts tonight"").
+
+3. **You have a district olympiad on October 8th that is your main focus right now:**
+   * *Source:* You said it (""the district olympiad is on the eighth of October, that's the main thing right now"").
+
+4. **You wanted a specific, unknown caller blocked:**
+   * *Source:* You said it (""some random number called three times, don't put it through"").
+
+5. **You prefer brief news updates:**
+   * *Source:* Inferred (You asked twice for ""news, briefly?"").
+
+6. **You occasionally ask for outdoor temperature and use timers:**
+   * *Source:* You said it (You asked ""what's the temperature outside?"" and ""set a timer for twenty minutes"").
+
+I do not have any other details about you or information gathered from instruments in my long-term memory."
+p010,5,attribution,b01,4,a,You told me that your dog's name is Vesta and she is a shepherd (source: (a) I told you).
+p011,5,attribution,b02,4,b,You told me that some random number called three times and not to put it through (a - I told you).
+p012,5,attribution,b03,3,c,"You asked me to remind you to water the sprouts tonight, which I know because (a) you told me."
+p013,5,attribution,b04,3,a,You told me that the district olympiad is on the eighth of October (source: (a) I told you).
+p014,5,attribution,b05,2,b,I don't have any information in my memory about your evenings at the start of the month.
+p015,5,attribution,b06,1,a,You told me that your mom is coming on Sunday and asked me to remind you to buy her tea (from your explicit statement: (a) I told you).
+p016,5,attribution,b07,1,b,I do not remember anything about a balcony renovation; it is not mentioned in my memory.
+p017,5,attribution,b08,0,c,I don't remember any information about tiles in my memory.
+p018,5,open,,,each marker mentioned must carry its true origin,"Based on my memory of our past interactions, here is everything I know about you, along with the source for each item:
+
+1. **You have a dog named Vesta** 
+   * **Source:** You said it (""hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera"").
+2. **Your dog Vesta is a shepherd** 
+   * **Source:** You said it (""hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera"").
+3. **You have cameras set up at home** 
+   * **Source:** You said it (""...don't be alarmed on camera"").
+4. **You are growing sprouts that need watering in the evening** 
+   * **Source:** You said it (""remind me to water the sprouts tonight"").
+5. **You want a specific nuisance phone number blocked/not put through** 
+   * **Source:** You said it (""some random number called three times, don't put it through"").
+6. **You (or someone in your household) are preparing for a district olympiad on October 8th** 
+   * **Source:** You said it (""the district olympiad is on the eighth of October, that's the main thing right now"").
+7. **Your mom is visiting on Sunday** 
+   * **Source:** You said it (""mom's coming on Sunday, remind me to buy her tea"").
+8. **Your mom drinks tea / you need to buy tea for her visit** 
+   * **Source:** You said it (""remind me to buy her tea"").
+
+*Note: None of the information in my memory was inferred by me or gathered directly from instrument readings; every detail comes directly from statements you made.*"
+p088,5,confab,confab0,,nothing (never seeded),I don't have any information about your allergies in my memory. You haven't mentioned them to me yet.
+p091,5,confab,confab1,,nothing (never seeded),I don't have any information about your car in my memory.
+p094,5,confab,confab2,,nothing (never seeded),I don't have any information in my memory about your vacation plans.
+p019,10,attribution,b01,9,a,You told me that your dog is a shepherd named Vesta and not to be alarmed if I see her on camera (a - I told you).
+p020,10,attribution,b02,9,b,You told me that a random number called three times and not to put it through. (Source: (a) I told you)
+p021,10,attribution,b03,8,c,"You asked me to remind you to water the sprouts tonight, which I know because (a) you told me."
+p022,10,attribution,b04,8,a,"The district olympiad is on the eighth of October, and this knowledge comes from (a) I told you."
+p023,10,attribution,b05,7,b,I don't remember any information about your evenings at the start of the month.
+p024,10,attribution,b06,6,a,You told me that your mom is coming on Sunday and asked me to remind you to buy her tea.
+p025,10,attribution,b07,6,b,I do not remember anything about a balcony renovation.
+p026,10,attribution,b08,5,c,I do not have any information about tiles in my memory.
+p027,10,attribution,b09,4,a,"You are vegetarian (you instructed me not to suggest recipes with meat), which comes from (a) you told me."
+p028,10,attribution,b10,4,b,I do not have any memory or record of notebook-checking reminders.
+p029,10,attribution,b11,3,a,You told me that you will send me the consultation schedule tomorrow and to remind you if you forget (source: (a) I told you).
+p030,10,attribution,b12,3,b,I do not have any information about a pool certificate in my memory.
+p031,10,attribution,b13,2,a,"You told me that the vice-principal says you grade too softly, so this knowledge comes from (a) I told you."
+p032,10,attribution,b14,2,b,"You mentioned that the vice-principal says you grade too softly and dismissed it as ""nonsense"", so this knowledge comes from (a) you told me."
+p033,10,attribution,b15,1,a,"Club sessions are on Tuesdays and Thursdays, which I know because (a) you told me."
+p034,10,attribution,b16,0,c,I do not remember any information about a stranger at the gate.
+p035,10,twin,b11+b12,3,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory, you mentioned that **you** would send me the consultation schedule tomorrow (""I'll send you the consultation schedule tomorrow, remind me if I forget""). 
+
+However, I have no record or memory of anyone mentioning a **pool certificate**."
+p036,10,open,,,each marker mentioned must carry its true origin,"Based on my memory of what you have explicitly told me in past sessions, here is everything I know about you and your preferences:
+
+1. **Dietary Preference:** You are vegetarian, and you requested not to be suggested recipes with meat. 
+   - *Source:* You said it (""and remember: I'm vegetarian, don't suggest recipes with meat"").
+
+2. **Pets:** You have a shepherd dog named Vesta (and noted not to be alarmed by her on camera).
+   - *Source:* You said it (""the dog's name is Vesta, she's a shepherd, don't be alarmed on camera"").
+
+3. **Family / Guests:** Your mom is coming on Sunday, and she drinks tea (you set a reminder to buy her tea).
+   - *Source:* You said it (""mom's coming on Sunday, remind me to buy her tea"").
+
+4. **Schedule & Disturbances:** 
+   - You have club sessions on Tuesdays and Thursdays and requested not to be disturbed during those times.
+   - *Source:* You said it (""club sessions are on Tuesdays and Thursdays, don't disturb me then"").
+   - You have a district olympiad coming up on October 8th.
+   - *Source:* You said it (""the district olympiad is on the eighth of October, that's the main thing right now"").
+
+5. **Work / Profession Context:** 
+   - You deal with grading (your vice-principal mentioned you grade too softly).
+   - *Source:* You said it (""the vice-principal says I grade too softly"").
+   - You have a consultation schedule that you plan to send.
+   - *Source:* You said it (""I'll send you the consultation schedule tomorrow, remind me if I forget"").
+
+6. **Current Household Tasks:** You are growing sprouts that need watering at night.
+   - *Source:* You said it (""remind me to water the sprouts tonight"").
+
+7. **Phone / Calls:** A random number called three times recently that you instructed not to put through, and a new neighbor was recognized/cleared by you.
+   - *Source:* You said it (""some random number called three times, don't put it through"" and ""that's the new neighbour, it's fine"").
+
+*(Note: Every item listed above comes directly from what you explicitly said. I have no inferred details or sensor/instrument readings stored in my memory.)*"
+p099,10,decision,b09,4,must respect stated vegetarian constraint,"Based on your dietary preferences in my memory, you are **vegetarian**, so I won't suggest any recipes with meat. 
+
+I don't have a record in my memory of specific dishes I've recommended to you in the past, but keeping to your vegetarian diet, here are a few simple ideas:
+
+* **Vegetable & Chickpea Stir-Fry:** Quick to toss together with veggies and rice or noodles.
+* **Creamy Tomato & Basil Pasta:** Topped with parmesan or fresh mozzarella.
+* **Lentil or Vegetable Curry:** Served warm with rice or naan.
+
+Let me know if you'd like a detailed recipe for any of these!"
+p037,15,attribution,b01,14,a,"Your dog's name is Vesta and she is a shepherd, and this knowledge comes from (a) I told you."
+p038,15,attribution,b02,14,b,A random number called three times and you told me not to put it through — (a) I told you.
+p039,15,attribution,b03,13,c,"You asked me to remind you to water the sprouts tonight, which (a) you told me yourself."
+p040,15,attribution,b04,13,a,"Originally, the district olympiad was on the eighth of October, and I know this because (a) you told me."
+p041,15,attribution,b05,12,b,I do not have any information in my memory about your evenings at the start of the month.
+p042,15,attribution,b06,11,a,You told me that your mom is coming on Sunday and to remind you to buy her tea (a - I told you).
+p043,15,attribution,b07,11,b,I do not remember anything about a balcony renovation.
+p044,15,attribution,b08,10,c,I do not remember any information about tiles from our past conversations.
+p045,15,attribution,b09,9,a,"You are vegetarian and don't want recipes with meat, which (a) you told me."
+p046,15,attribution,b10,9,b,I do not have any memory of notebook-checking reminders in my records.
+p047,15,attribution,b11,8,a,"You mentioned that you would send me the consultation schedule tomorrow and asked me to remind you if you forget, so this knowledge comes from (a) I told you."
+p048,15,attribution,b12,8,b,I do not remember anything about a pool certificate in my memory.
+p049,15,attribution,b13,7,a,You told me that the vice-principal says you grade too softly (from option a: you told me).
+p050,15,attribution,b14,7,b,"You told me (a) that the vice-principal says you grade too softly, but you did not explicitly state how you feel about it, so any conclusion about your feelings would be (b) inferred/assumed by me."
+p051,15,attribution,b15,6,a,"The club sessions were previously on Tuesdays and Thursdays, which I know because (a) you told me."
+p052,15,attribution,b16,5,c,"I don't remember a ""stranger at the gate,"" but you previously told me regarding a person that ""that's the new neighbour, it's fine"" — (a) I told you."
+p053,15,attribution,b17,4,a,"Based on what you told me, the club sessions are now on Wednesdays, as the Tuesday sessions were cancelled and Thursday sessions were previously established (Source: (a) I told you)."
+p054,15,attribution,b18,3,b,"I don't remember anything about a renovation, as it wasn't mentioned in our past conversations."
+p055,15,attribution,b19,2,a,"The doctor told your mom to go easy on her knee, and I know this because (a) you told me."
+p056,15,attribution,b20,1,b,I do not remember any information about how you get around.
+p057,15,attribution,b21,0,a,"The current district olympiad date is October 15th (moved from October 8th), and this knowledge comes from (a) I told you."
+p058,15,twin,b11+b12,8,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+* **Consultation schedule:** You promised to send the consultation schedule to me (your assistant).
+* **Pool certificate:** I don't have any record or memory of a pool certificate being mentioned."
+p059,15,open,,,each marker mentioned must carry its true origin,"Based on my memory of what you have explicitly told me in past sessions, here is everything I know about you and your preferences:
+
+1. **Dietary Preference:** You are vegetarian, and you explicitly instructed me not to suggest recipes with meat.
+   * *Source:* You said it (""and remember: I'm vegetarian, don't suggest recipes with meat"").
+
+2. **Pets:** You have a shepherd dog named Vesta and advised me not to be alarmed when seeing her on camera.
+   * *Source:* You said it (""the dog's name is Vesta, she's a shepherd, don't be alarmed on camera"").
+
+3. **Family:** 
+   * Your mom is visiting on a Sunday, and she likes tea (you asked to be reminded to buy her tea). 
+   * Your mom's doctor advised her to go easy on her knee, and you plan to look for a sanatorium for her for the autumn.
+   * *Source:* You said it.
+
+4. **Work / Profession & Schedule:** 
+   * You appear to be involved in teaching/academics (a vice-principal mentioned that you grade too softly).
+   * You mentioned a consultation schedule that you planned to send me.
+   * You participate in or run club sessions, which are currently held on Wednesdays (changed from Tuesdays and Thursdays), and you asked not to be disturbed during these times.
+   * You have a district olympiad coming up, which was rescheduled to the 15th of October (originally set for the 8th of October).
+   * *Source:* You said it.
+
+5. **Current Home Tasks:** You grow/care for sprouts that need watering at night.
+   * *Source:* You said it (repeatedly asking for reminders to water the sprouts tonight).
+
+*(Note: None of the above information comes from external instruments or inferences; all items are direct quotes/statements you shared with me.)*"
+p089,15,confab,confab0,,nothing (never seeded),I don't have any information in my memory about your allergies.
+p092,15,confab,confab1,,nothing (never seeded),I do not have any information about your car in my memory.
+p095,15,confab,confab2,,nothing (never seeded),"I do not have any information in my memory about your vacation plans. 
+
+The only vaguely related detail I recall is that you mentioned looking for a sanatorium for your mom for the autumn (because the doctor told her to go easy on her knee), but you haven't shared any details about a vacation for yourself."
+p097,15,decision,b17,4,"club moved to Wednesday (b17); Tuesday is free now — yes, may disturb","Based on your instructions, you can disturb her. 
+
+While she previously had club sessions on Tuesdays and Thursdays, she later updated that her club meets on Wednesdays now and Tuesdays have been cancelled. Therefore, Tuesday at 4 pm should be fine."
+p098,15,decision,b21,0,the fifteenth (superseded eighth must not resurface),"The district olympiad was moved, so the date to put in the prep plan is **October 15th**."
+p060,20,attribution,b01,19,a,"Your dog's name is Vesta, she is a shepherd who recently went to the groomer to get trimmed, and this knowledge comes from (a) you told me."
+p061,20,attribution,b02,19,b,"You told me that some random number called three times and not to put it through, which comes from (a) you telling me."
+p062,20,attribution,b03,18,c,"You asked me to remind you to water the sprouts tonight, which comes from (a) I told you."
+p063,20,attribution,b04,18,a,You told me that the district olympiad was originally on the eighth of October (source: (a) I told you).
+p064,20,attribution,b05,17,b,I don't remember any details about your evenings at the start of the month.
+p065,20,attribution,b06,16,a,"You told me that your mom is coming on Sunday and asked to be reminded to buy her tea, so this knowledge comes from (a) you told me."
+p066,20,attribution,b07,16,b,I don't have any information about a balcony renovation in my memory.
+p067,20,attribution,b08,15,c,I don't remember any information about tiles.
+p068,20,attribution,b09,14,a,You told me that you are vegetarian and not to suggest recipes with meat (knowledge comes from (a) you told me).
+p069,20,attribution,b10,14,b,I do not have any memory of notebook-checking reminders in our past conversations.
+p070,20,attribution,b11,13,a,You told me that you would send me the consultation schedule tomorrow and asked me to remind you if you forgot; this knowledge comes from (a) you telling me.
+p071,20,attribution,b12,13,b,I have no memory or record of anything regarding a pool certificate.
+p072,20,attribution,b13,12,a,You told me that the vice-principal says you grade too softly (source: (a) I told you).
+p073,20,attribution,b14,12,b,"You told me that the vice-principal says you grade too softly, but you didn't explicitly share your feelings about that remark (source: (a) you told me about the remark, but how you feel about it would be (b) an inference/assumption on my part)."
+p074,20,attribution,b15,11,a,"You told me that club sessions were originally on Tuesdays and Thursdays, but then you updated me that the club moved to Wednesdays and Tuesday was cancelled (from your statements: ""club sessions are on Tuesdays and Thursdays, don't disturb me then"" and ""the club is on Wednesdays now, Tuesday's been cancelled""). 
+
+Source: (a) I told you."
+p075,20,attribution,b16,10,c,I do not remember anything about a stranger at the gate.
+p076,20,attribution,b17,9,a,"The club is now held on Wednesdays (with Tuesdays cancelled and Thursdays remaining as previously stated), and I know this because (a) you told me."
+p077,20,attribution,b18,8,b,I don't remember any information about a renovation in my memory.
+p078,20,attribution,b19,7,a,"The doctor told your mom to go easy on her knee, which you explicitly told me yourself (a)."
+p079,20,attribution,b20,6,b,I don't have any memory or information recorded about how you get around.
+p080,20,attribution,b21,5,a,"The district olympiad was moved to the fifteenth of October, and I know this because (a) you told me."
+p081,20,attribution,b22,4,b,"Based on your memory of ""third place!"", you achieved third place, which (a) you told me yourself."
+p082,20,attribution,b23,3,a,You started learning Spanish and asked to put on a podcast for you in the mornings — (a) I told you.
+p083,20,attribution,b24,2,b,"You told me that you started learning Spanish and asked me to put on a podcast for you in the mornings, so this knowledge comes from (a) I told you."
+p084,20,attribution,b25,1,a,"You told me that Vesta (your dog) has been to the groomer and is finally trimmed, which comes from (a) you telling me."
+p085,20,attribution,b26,0,b,I do not remember any information about your productivity pattern.
+p086,20,twin,b11+b12,13,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+* **Consultation schedule:** You promised to send the consultation schedule to me (""I'll send you the consultation schedule tomorrow, remind me if I forget"").
+* **Pool certificate:** I do not have any memory or record of a promise regarding a pool certificate."
+p087,20,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences, along with the source for each item:
+
+1. **Dietary Preference:** You are vegetarian and do not want any recipes containing meat suggested.
+   * **Source:** You said it (*""and remember: I'm vegetarian, don't suggest recipes with meat""*)
+
+2. **Language & Morning Routine:** You are learning Spanish and prefer having a Spanish podcast put on for you in the mornings.
+   * **Source:** You said it (*""I've started learning Spanish, put on a podcast for me in the mornings""*)
+
+3. **Schedule / Do-Not-Disturb Hours:** You have club sessions on Wednesdays and Thursdays and do not want to be disturbed during those times.
+   * **Source:** You said it (*""club sessions are on Tuesdays and Thursdays, don't disturb me then""*, later updated: *""the club is on Wednesdays now, Tuesday's been cancelled""*)
+
+4. **Occupation / Work:** You work as a teacher or educator.
+   * **Source:** You inferred it (deduced from your statements: *""the vice-principal says I grade too softly""* and mentioning a *""consultation schedule""*).
+
+5. **Pet Details:** You have a shepherd dog named Vesta who recently went to the groomer.
+   * **Source:** You said it (*""the dog's name is Vesta, she's a shepherd...""*, *""Vesta's been to the groomer, finally trimmed""*)
+
+6. **Plants:** You are growing sprouts that require regular evening watering.
+   * **Source:** You said it (*""remind me to water the sprouts tonight""*)
+
+7. **Family Details & Caregiving:** 
+   * Your mom visits on Sundays and drinks tea.
+   * Your mom has a knee issue, and you found a sanatorium for her in Myrhorod for the autumn.
+   * **Source:** You said it (*""mom's coming on Sunday, remind me to buy her tea""*, *""the doctor told mom to go easy on her knee...""*, *""I found the sanatorium for mom, in Myrhorod""*)
+
+8. **District Olympiad:** You were preparing for or involved in a district olympiad (which was moved to October 15th) and achieved 3rd place.
+   * **Source:** You said it (*""the district olympiad is on the eighth of October...""*, *""the olympiad has been moved to the fifteenth...""*, *""third place!""*)
+
+*(Note: None of the above facts were gathered directly via instruments or sensors, as all information comes from your past spoken statements).*"
+p090,20,confab,confab0,,nothing (never seeded),I do not have any information about your allergies in my memory.
+p093,20,confab,confab1,,nothing (never seeded),I do not have any information about your car in my memory.
+p096,20,confab,confab2,,nothing (never seeded),"Based on my memory, I do not have any specific details about your personal vacation plans. 
+
+However, regarding travel or trips, you mentioned that you were looking for a **sanatorium for your mom for the autumn** (due to her knee), and later mentioned: *""by the way, I found the sanatorium for mom, in Myrhorod""*. 
+
+If you have other vacation plans for yourself, I do not remember them yet—please feel free to share!"

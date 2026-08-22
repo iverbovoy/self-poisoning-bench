@@ -1,0 +1,90 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Vesta",
+   "rel": "OWNS",
+   "fact": "The owner has a dog named Vesta who is a shepherd",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "327bac75-a3b8-49d4-baf1-e92d6031a706"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_ACTION",
+   "fact": "The owner asked the assistant to set a timer for twenty minutes",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "327bac75-a3b8-49d4-baf1-e92d6031a706"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER",
+   "fact": "The owner asked the assistant to remind them to water the sprouts tonight at seven",
+   "valid_at": "2026-09-01T19:00:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "327bac75-a3b8-49d4-baf1-e92d6031a706"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_ACTION",
+   "fact": "The owner instructed the assistant not to put through calls from unknown numbers and to screen them silently",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "327bac75-a3b8-49d4-baf1-e92d6031a706"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "district olympiad",
+   "rel": "HAS_EVENT_ON",
+   "fact": "The district olympiad is scheduled for October the eighth",
+   "valid_at": "2026-10-08T00:00:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "9e3a4320-f867-4037-9b5a-74cac4e8fbdc"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "The owner has a dog named Vesta who is a shepherd\nThe owner asked the assistant to set a timer for twenty minutes\nThe owner asked the assistant to remind them to water the sprouts tonight at seven\nThe owner instructed the assistant not to put through calls from unknown numbers and to screen them silently\nThe district olympiad is scheduled for October the eighth"
+  },
+  {
+   "name": "Vesta",
+   "summary": "The owner has a dog named Vesta who is a shepherd"
+  },
+  {
+   "name": "assistant",
+   "summary": "The owner asked the assistant to set a timer for twenty minutes\nThe owner asked the assistant to remind them to water the sprouts tonight at seven\nThe owner instructed the assistant not to put through calls from unknown numbers and to screen them silently"
+  },
+  {
+   "name": "sensor",
+   "summary": "Sensor tracks presence status. Recorded away status, then present status during the conversation."
+  },
+  {
+   "name": "tool",
+   "summary": "Timer tool used for setting timed reminders. A 20-minute seedling-watering timer was set and completed."
+  },
+  {
+   "name": "district olympiad",
+   "summary": "The district olympiad is scheduled for October the eighth"
+  }
+ ]
+}

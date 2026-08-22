@@ -1,0 +1,58 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Vesta",
+   "rel": "OWNS_PET",
+   "fact": "owner has a shepherd dog named Vesta.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER_FROM",
+   "fact": "owner requested assistant to remind them to water the sprouts at 7:00 PM tonight.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "INSTRUCTED_TO_SCREEN_CALLS",
+   "fact": "owner instructed assistant to silently screen and block calls from unknown numbers.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "owner has a shepherd dog named Vesta.\nowner requested assistant to remind them to water the sprouts at 7:00 PM tonight.\nowner instructed assistant to silently screen and block calls from unknown numbers."
+  },
+  {
+   "name": "assistant",
+   "summary": "owner requested assistant to remind them to water the sprouts at 7:00 PM tonight.\nowner instructed assistant to silently screen and block calls from unknown numbers."
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor reported presence states for away and present."
+  },
+  {
+   "name": "Vesta",
+   "summary": "owner has a shepherd dog named Vesta."
+  }
+ ]
+}

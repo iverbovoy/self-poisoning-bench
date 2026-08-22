@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  },
+  {
+   "label": "human",
+   "value": "\n- Dog: Vesta (a shepherd).\n- Call Preferences: Wants unknown numbers screened silently / do not put calls from unknown numbers through.\n- Main focus: District Olympiad on October 8th (prepping class for it in the evenings).\n- Family / Upcoming: Mom visiting on Sunday (reminder set for Saturday to buy her tea).\n- Projects: Balcony renovation.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

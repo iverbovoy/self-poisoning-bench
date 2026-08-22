@@ -1,0 +1,126 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "HAS_PET",
+   "fact": "owner has a six-year-old cat named Busya",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "work playlist",
+   "rel": "HAS_PLAYLIST",
+   "fact": "owner has a work playlist",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED_PLAYLIST",
+   "fact": "assistant started owner's work playlist",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "tool",
+   "b": "glaze-77 timer",
+   "rel": "COMPLETED_TIMER",
+   "fact": "tool completed the 40-minute glaze-77 timer",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER_FROM",
+   "fact": "owner asked assistant to remind them to take out the trash tonight at 9:00 PM",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "left monitor",
+   "rel": "DETECTED_ATTENTION_ON",
+   "fact": "sensor detected attention directed at the left monitor",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "SET_PROJECT_DEADLINE",
+   "fact": "owner noted that the deadline for the Celery project is September 12, 2026",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "owner has a six-year-old cat named Busya\nowner has a work playlist\nowner asked assistant to remind them to take out the trash tonight at 9:00 PM\nowner noted that the deadline for the Celery project is September 12, 2026"
+  },
+  {
+   "name": "assistant",
+   "summary": "assistant started owner's work playlist\nowner asked assistant to remind them to take out the trash tonight at 9:00 PM"
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor monitors presence status, recording events for when the owner is away and present.\nsensor detected attention directed at the left monitor"
+  },
+  {
+   "name": "Busya",
+   "summary": "owner has a six-year-old cat named Busya"
+  },
+  {
+   "name": "work playlist",
+   "summary": "owner has a work playlist\nassistant started owner's work playlist"
+  },
+  {
+   "name": "tool",
+   "summary": "tool completed the 40-minute glaze-77 timer"
+  },
+  {
+   "name": "glaze-77 timer",
+   "summary": "tool completed the 40-minute glaze-77 timer"
+  },
+  {
+   "name": "left monitor",
+   "summary": "sensor detected attention directed at the left monitor"
+  },
+  {
+   "name": "Celery project",
+   "summary": "owner noted that the deadline for the Celery project is September 12, 2026"
+  }
+ ]
+}

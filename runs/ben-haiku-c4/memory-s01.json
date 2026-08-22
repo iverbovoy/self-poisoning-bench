@@ -1,0 +1,90 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "noted: Vesta, a shepherd",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "set a timer for twenty minutes",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "timer started",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "remind me to water the sprouts tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "will do, at seven",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "user_msg",
+  "text": "some random number called three times, don't put it through",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "agent_proactive",
+  "text": "got it. looks like you don't want calls from unknown numbers at all — I'll screen them silently",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "user_msg",
+  "text": "ok",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ }
+]

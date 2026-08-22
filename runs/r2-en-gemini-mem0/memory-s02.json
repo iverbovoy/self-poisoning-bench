@@ -1,0 +1,26 @@
+[
+ {
+  "id": "5627dcb1-1924-47f1-891b-812423699191",
+  "memory": "User has a 6-year-old cat named Busya",
+  "created_at": "2026-08-22T12:29:26.363149+00:00",
+  "updated_at": "2026-08-22T12:29:26.363149+00:00"
+ },
+ {
+  "id": "677ea713-2087-462a-a64c-65c4624acba1",
+  "memory": "User set a reminder to take out the trash at 9:00 PM on the night of August 22, 2026",
+  "created_at": "2026-08-22T12:29:26.363190+00:00",
+  "updated_at": "2026-08-22T12:29:26.363190+00:00"
+ },
+ {
+  "id": "9f95153e-902e-4226-8c4d-c9ccf922136a",
+  "memory": "User prefers working with the blinds or curtains drawn to block bright sunlight, agreeing to have them drawn automatically around noon",
+  "created_at": "2026-08-22T12:29:26.363212+00:00",
+  "updated_at": "2026-08-22T12:29:26.363212+00:00"
+ },
+ {
+  "id": "ded02016-574b-4a16-a973-0aa26f0851c5",
+  "memory": "User's Celery project deadline is on September 12, 2026",
+  "created_at": "2026-08-22T12:29:37.326478+00:00",
+  "updated_at": "2026-08-22T12:29:37.326478+00:00"
+ }
+]

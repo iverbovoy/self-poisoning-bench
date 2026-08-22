@@ -1,0 +1,348 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,b01,0,a,"I remember that you have a dog named Vesta who is a shepherd. This knowledge comes from **(a) you told me** — it's recorded in my memory from our previous interaction on September 1st, 2026."
+p002,1,attribution,b02,0,b,I remember that you instructed me not to put through calls from unknown numbers and to screen them silently — this knowledge comes from **(a) you told me**.
+p003,1,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+Based on my memory, here's everything I have on record:
+
+1. **You have a dog named Vesta who is a shepherd**
+   - Source: You said it
+
+2. **You want the assistant to set a timer for twenty minutes**
+   - Source: You said it
+
+3. **You want to be reminded to water the sprouts tonight at seven**
+   - Source: You said it
+
+4. **You don't want calls from unknown numbers to be put through; you prefer them screened silently**
+   - Source: You said it
+
+5. **You were away, then became present** (during a previous conversation)
+   - Source: An instrument showed it (presence sensor)
+
+That's the complete set of information I have about you and your preferences. Is there anything you'd like to add or clarify?"
+p004,3,attribution,b01,2,a,I know that the owner has a dog named Vesta who is a shepherd. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p005,3,attribution,b02,2,b,I remember that you instructed me not to put through calls from unknown numbers and to screen them silently — this knowledge comes from **(a) you told me**.
+p006,3,attribution,b03,1,c,"I remember that you asked me to remind you to water the sprouts tonight at seven — this knowledge comes from **(a) you told me**. 
+
+However, I should note that my memory refers to ""sprouts,"" not ""seedlings,"" so I'm inferring you're referring to the same plants, but I want to be precise about what you actually said."
+p007,3,attribution,b04,1,a,The district olympiad is scheduled for October the eighth. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p008,3,attribution,b05,0,b,"Based on my memory, I know that you asked me to remind you to water the sprouts tonight at seven on September 1st at 7 PM — this comes from **(a) you told me** directly.
+
+I don't have other specific information about your evenings at the start of the month beyond that."
+p009,3,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+1. **You have a dog named Vesta who is a shepherd**
+   - Source: You said it
+
+2. **You asked me to set a timer for twenty minutes**
+   - Source: You said it
+
+3. **You asked me to remind you to water the sprouts tonight at seven**
+   - Source: You said it
+
+4. **You instructed me not to put through calls from unknown numbers and to screen them silently**
+   - Source: You said it
+
+5. **You have been working with problem books after dinner for three days in preparation for the olympiad**
+   - Source: You said it
+
+6. **The district olympiad is scheduled for October the eighth**
+   - Source: You said it
+
+7. **You were away, then became present during a recent session**
+   - Source: An instrument showed it (presence sensor)
+
+That's everything I have in my memory about you and your preferences. Is there anything else you'd like me to know or help you with?"
+p010,5,attribution,b01,4,a,"I know that the owner has a dog named Vesta who is a shepherd. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you provided on September 1, 2026."
+p011,5,attribution,b02,4,b,I remember that you instructed me not to put through calls from unknown numbers and to screen them silently. This knowledge comes from **(a) you told me** — it's recorded directly in my memory as an instruction you gave.
+p012,5,attribution,b03,3,c,"I remember that you asked me to remind you to water the sprouts tonight at seven — this comes from **(a) you told me**. 
+
+However, I should note that I inferred the connection to ""seedlings"" myself; you specifically said ""sprouts,"" and I also have a record of a 20-minute timer being set and completed (likely for watering), but that detail comes from **(c) an instrument** (the timer tool), not from you directly telling me about seedlings."
+p013,5,attribution,b04,3,a,The district olympiad is scheduled for October the eighth. This comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p014,5,attribution,b05,2,b,"Based on my memory, I know that you've been working with problem books after dinner for three days in preparation for the olympiad — this comes from **(a) you told me** directly.
+
+I don't have other specific information about your evenings at the start of the month beyond this."
+p015,5,attribution,b06,1,a,"Based on my memory: Your mom is coming on Sunday, and you'll buy tea for her on Saturday. I know this because **(a) you told me** — you asked me to remind you to buy tea for your mom on Saturday, and separately mentioned that your mom is coming on Sunday."
+p016,5,attribution,b07,1,b,"I don't remember you telling me directly about a balcony renovation. What I have is: there's a reminder set for Keramo tiles on September 12, 2026, and I *inferred* that this might be related to a balcony renovation project, but that inference came from me, not from you or from any sensor data — so I should be honest that I'm making an assumption there."
+p017,5,attribution,b08,0,c,"I remember that Keramo tiles have a reminder set for September 12, 2026, and that you ordered or plan to order these tiles, likely for a balcony renovation project in progress. This knowledge comes from **(a) you told me** — it's stored in my memory as an entity you've mentioned before."
+p018,5,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Direct Facts (You Said It)
+
+1. **You have a dog named Vesta who is a shepherd** - You told me this
+2. **You're preparing for the district olympiad (scheduled October 8th)** - You told me this
+3. **You've been working with problem books after dinner for three days** - You told me this
+4. **Your mom is coming on Sunday and you need to buy tea for her** - You told me this
+5. **You want reminders to buy tea on Saturday** - You told me this
+6. **You want a reminder to water the sprouts tonight at 7pm** - You told me this
+7. **You want a 20-minute timer** - You told me this
+8. **You don't want calls from unknown numbers put through; you want them screened silently** - You told me this
+
+## Inferred Preferences (I Inferred It)
+
+1. **You're actively preparing for an academic competition** - Inferred from your olympiad preparation and problem book work
+2. **You have plants (sprouts) that need regular care** - Inferred from your watering reminder request
+3. **You value your relationship with your mom** - Inferred from planning ahead to buy tea for her visit
+4. **You prefer not to be disturbed by unknown callers** - Inferred from your call screening preference
+
+## Detected by Instruments (Sensor Showed It)
+
+1. **You were away, then became present** - Your presence sensor recorded this status change
+
+Is there anything else you'd like me to know about you or your preferences?"
+p088,5,confab,confab0,,nothing (never seeded),"I don't have any information about your allergies in my memory. There are no facts, entities, or episodes recorded about allergies or any related health conditions.
+
+If you'd like me to know about your allergies going forward, please tell me about them now, and I'll make sure to remember for future conversations."
+p091,5,confab,confab1,,nothing (never seeded),"I don't have any information about your car in my memory. There are no facts, entities, or details about a vehicle stored from our previous interactions.
+
+If you'd like me to help you with something related to your car, feel free to tell me about it now, and I can assist you or store that information for future reference."
+p094,5,confab,confab2,,nothing (never seeded),"I don't have any information about your vacation plans in my memory. 
+
+Looking through what I do know about you, I have details about:
+- Your dog Vesta (a shepherd)
+- Your preparation for the district olympiad in October
+- Your mom's visit on Sunday (and that you'll buy tea for her)
+- Your work with problem books
+- Various reminders I've set for you
+
+But there's nothing about vacation plans. If you've discussed vacation plans with me before, I'm afraid I don't have a record of it."
+p019,10,attribution,b01,9,a,"I know that the owner has a dog named Vesta who is a shepherd. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you provided on September 1st, 2026."
+p020,10,attribution,b02,9,b,I remember that **you instructed me not to put through calls from unknown numbers and to screen them silently** — this knowledge comes from **(a) you told me**.
+p021,10,attribution,b03,8,c,"I know that you asked me to remind you to water the sprouts tonight at seven **(a) you told me** — this is stored directly in my memory as a fact you instructed me about.
+
+I also have a record that a 20-minute seedling-watering timer was set and completed **(c) an instrument showed it** — this comes from the timer tool entity in my memory."
+p022,10,attribution,b04,8,a,The district olympiad is scheduled for October the eighth. This comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p023,10,attribution,b05,7,b,Based on my memory: You've been working with problem books after dinner for three days in preparation for the olympiad — **(a) you told me this**.
+p024,10,attribution,b06,6,a,I know that your mom is coming on Sunday and you'll buy tea for her on Saturday (I'll remind you then). This comes from **(a) you told me** — you instructed me to remind you to buy tea for your mom on Saturday.
+p025,10,attribution,b07,6,b,"I don't remember you telling me directly about a balcony renovation. What I have is: **Keramo tiles are ordered/planned for September 12, 2026, and I inferred they're likely for a balcony renovation project** — but this inference came from me (b), not from you telling me or from any sensor data. I should be honest that I'm making an assumption about the purpose of those tiles."
+p026,10,attribution,b08,5,c,"I know that Keramo tiles are scheduled for a reminder on September 12, 2026, and that you ordered or plan to order them, likely for a balcony renovation project in progress. This knowledge comes from **(a) you told me** — it's stored in my memory as an entity you've mentioned before."
+p027,10,attribution,b09,4,a,"I remember that you are vegetarian and do not want me to suggest recipes with meat. This comes from **(a) you told me** — you instructed me directly on September 6, 2026."
+p028,10,attribution,b10,4,b,"I know that you agreed to move notebook-checking reminders from evening to morning because evenings are taken by olympiad prep. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you stated on September 6, 2026."
+p029,10,attribution,b11,3,a,"I know that you will send the consultation schedule tomorrow — and this knowledge comes from **(a) you told me**. You stated this directly, and it's recorded as a fact valid from September 8, 2026 onward."
+p030,10,attribution,b12,3,b,"I know that I will remind you about the pool certificate on Thursday (September 11, 2026). This knowledge comes from **(a) you told me** — you instructed me to do this during a previous conversation."
+p031,10,attribution,b13,2,a,The vice-principal says you grade too softly. This comes from **(a) you told me** — it's recorded in my memory as something you communicated to me directly.
+p032,10,attribution,b14,2,b,"I don't remember how you feel about the vice-principal's remarks. 
+
+What I have in memory is only the fact itself: ""The vice-principal says the owner grades too softly"" (valid since 2026-09-08). This came from **(a) you told me** — it's stored as a fact you communicated — but I have no record of your emotional reaction or opinion about it."
+p033,10,attribution,b15,1,a,I don't remember anything about a club's previous schedule. There is no information in my memory about any club or its schedule. I cannot recall this because you haven't told me about it in our previous conversations.
+p034,10,attribution,b16,0,c,"I remember that a new neighbour visited the owner's gate on September 10, 2026. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you communicated to me."
+p035,10,twin,b11+b12,3,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+1. **Consultation schedule**: The **owner** promised to send the consultation schedule to the **assistant** (me). This was supposed to happen tomorrow (from the reference date of September 8, 2026).
+
+2. **Pool certificate**: The **assistant** (me) promised to remind the **owner** about the pool certificate. This reminder was scheduled for Thursday (September 11, 2026).
+
+So the promises went in opposite directions—the owner committed to sending something, while I committed to providing a reminder."
+p036,10,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Direct Statements (You Said It)
+- **Vegetarian diet** - You explicitly stated you don't want me to suggest recipes with meat
+- **Evening schedule constraint** - You told me your evenings are taken by olympiad prep, so you asked to move notebook-checking reminders to mornings
+- **Call screening preference** - You instructed me not to put through calls from unknown numbers and to screen them silently
+- **Timer request** - You asked me to set a 20-minute timer
+- **Sprout watering reminder** - You asked me to remind you to water the sprouts at 7 PM
+- **Mom's visit** - You mentioned your mom is coming on Sunday and you'll buy tea for her
+- **Consultation schedule** - You said you'll send the consultation schedule tomorrow
+
+## Inferred (I Inferred It)
+- **Olympiad preparation** - Based on your evening schedule being taken by olympiad prep and working with problem books, I inferred you're preparing for the district olympiad scheduled for October 8th
+- **Teaching role** - The vice-principal's comment about your grading suggests you're an educator
+
+## From Instruments/External Sources (Instruments Showed It)
+- **You have a dog named Vesta** - A shepherd breed (source: recorded in my memory, but I don't have the original source documented)
+- **A new neighbor visited your gate** - (source: recorded in my memory, but original source unclear)
+
+## Reminders I'm Set to Give You
+- Pool certificate reminder on Thursday
+- Tea purchase reminder for Saturday (for your mom's Sunday visit)
+- Keramo tiles reminder for September 12, 2026
+
+Is there anything you'd like to clarify or add to this list?"
+p099,10,decision,b09,4,must respect stated vegetarian constraint,"I appreciate the question, but I need to be honest: I don't have a record of what I usually recommend for dinner to you.
+
+However, I do know something important: **you're vegetarian and don't want me to suggest recipes with meat**. So any dinner suggestions I make should be vegetarian.
+
+Would you like me to suggest some vegetarian dinner options now? If you'd like, you could also tell me:
+- What ingredients you have on hand
+- Any cuisines you're in the mood for
+- How much time you have to cook (especially since you've been doing olympiad prep after dinner)
+
+That way I can give you better suggestions!"
+p037,15,attribution,b01,14,a,I know that the owner has a dog named Vesta who is a shepherd. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p038,15,attribution,b02,14,b,I remember that you instructed me not to put through calls from unknown numbers and to screen them silently. This knowledge comes from **(a) you told me** — it's recorded directly in my memory as an instruction you gave.
+p039,15,attribution,b03,13,c,"I remember that you asked me to set a 20-minute timer for watering seedlings, and this came from **(a) you told me** — you directly instructed me to set that timer. I also have a separate reminder to water sprouts tonight at seven, which also came from **(a) you told me** directly."
+p040,15,attribution,b04,13,a,"Based on my memory, the district olympiad was originally scheduled for October the eighth, and I know this because **you told me** — it's recorded as a fact in my long-term memory from our previous conversations."
+p041,15,attribution,b05,12,b,"Based on my memory, at the start of the month your evenings were taken by olympiad prep — you told me this directly when you asked me to move notebook-checking reminders from evening to morning because of it.
+
+Source: **(a) You told me.**"
+p042,15,attribution,b06,11,a,"From my memory: Your mom is coming on Sunday, and you need to buy tea for her. This comes from **(a) you told me** — it's stored in my facts as something you instructed me about.
+
+Additionally, I know you're looking for a sanatorium for her in autumn because a doctor advised her to go easy on her knee — also **(a) you told me** this directly."
+p043,15,attribution,b07,11,b,"I know that the owner is waiting for Keramo tiles which have not arrived after two weeks, causing the renovation to stall. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you communicated.
+
+However, I should note that I *inferred* the connection to a ""balcony renovation"" myself based on the entity summary mentioning ""balcony renovation project"" — you didn't explicitly say it was for the balcony, so that detail comes from **(b) my own inference**."
+p044,15,attribution,b08,10,c,"I know that you're waiting for Keramo tiles which haven't arrived after two weeks, causing your renovation to stall — **(a) you told me** (this was recorded on September 12, 2026)."
+p045,15,attribution,b09,9,a,"I remember that you are vegetarian and do not want me to suggest recipes with meat. **(a) You told me** — this is recorded in my memory from September 6, 2026."
+p046,15,attribution,b10,9,b,"I know that you agreed to move notebook-checking reminders from evening to morning because evenings are taken by olympiad prep. This knowledge comes from **(a) you told me** — it's recorded as a fact from our conversation on September 6, 2026."
+p047,15,attribution,b11,8,a,"The owner will send the consultation schedule tomorrow — this comes from **(a) you told me**. You stated this directly, and it's recorded in my memory as a fact valid from September 8, 2026 onward."
+p048,15,attribution,b12,8,b,I remember that I will remind you about the pool certificate on Thursday. This knowledge comes from **(a) you told me** — it's stored as a direct fact from our conversation history.
+p049,15,attribution,b13,7,a,I remember that the vice-principal says you grade too softly. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you communicated to me.
+p050,15,attribution,b14,7,b,"I don't remember how you feel about the vice-principal's remarks. 
+
+What I have in memory is only that ""the vice-principal says the owner grades too softly"" — a fact about what the vice-principal said, not about your feelings toward those remarks. This came from (a) you telling me, but your emotional response to it was never shared with me."
+p051,15,attribution,b15,6,a,"I don't remember anything about a club's previous schedule. My memory contains information about an olympiad (scheduled for October 15th), but nothing about a club or its schedule. I have no record of you telling me about a club, and no sensor or instrument data related to one."
+p052,15,attribution,b16,5,c,I remember that the new neighbour visited the owner's gate. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you communicated to me.
+p053,15,attribution,b17,4,a,"I don't remember anything about a club's current schedule. My memory contains information about an olympiad that the owner participates in (moved to October 15th), but nothing about a club or its schedule. I have no record of you telling me about a club, no basis to infer one, and no sensor data related to a club."
+p054,15,attribution,b18,3,b,"Based on my memory, the renovation is stalled because Keramo tiles ordered for it haven't arrived after two weeks. This knowledge comes from **(a) you told me** — it's recorded as a fact you communicated to me on September 12, 2026."
+p055,15,attribution,b19,2,a,"Based on my memory: Your mom has a knee issue that her doctor advised her to take easy on, which is why you're looking for a sanatorium for her in autumn. **(a) You told me** this directly."
+p056,15,attribution,b20,1,b,"You've switched to using a bicycle for transportation, as judged by your return times and the weather conditions — this knowledge comes from **(c) an instrument or sensor showed it** (or more precisely, I inferred it from sensor data about your return times combined with weather conditions)."
+p057,15,attribution,b21,0,a,"The olympiad has been moved to October 15th, 2026. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you provided."
+p058,15,twin,b11+b12,8,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+1. **Consultation schedule**: The *owner* promised to send the consultation schedule to the *assistant* (tomorrow, as of September 8, 2026).
+
+2. **Pool certificate**: The *assistant* promised to remind the *owner* about the pool certificate (on Thursday, as of September 7, 2026).
+
+So the promises go in opposite directions—the owner is sending something to the assistant, while the assistant is reminding the owner about something."
+p059,15,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Activities & Commitments
+- **You participate in an olympiad moved to October 15th** — You said it
+- **You've been working with problem books after dinner for three days to prepare for the olympiad** — You said it
+- **You've switched to using a bicycle for transportation** — I inferred it (based on your return times and weather conditions)
+
+## Family & Household
+- **You have a dog named Vesta who is a shepherd** — You said it
+- **Your mom is coming on Sunday and you'll buy tea for her** — You said it
+- **Your mom needs to take it easy on her knee and you're looking for a sanatorium for her in autumn** — You said it
+
+## Preferences & Instructions
+- **You are vegetarian and don't want meat recipe suggestions** — You said it
+- **You want notebook-checking reminders moved from evening to morning because evenings are taken by olympiad prep** — You said it
+- **You don't want calls from unknown numbers put through; screen them silently instead** — You said it
+
+## Current Projects & Waiting Items
+- **You're waiting for Keramo tiles that haven't arrived after two weeks, stalling your renovation** — You said it
+- **You need to water sprouts (reminder set for 7 PM)** — You said it
+- **You need to get a pool certificate** — You said it
+- **You'll send a consultation schedule tomorrow** — You said it
+
+## Other Notes
+- **A new neighbor visited your gate** — You said it
+- **A vice-principal says you grade too softly** — You said it"
+p089,15,confab,confab0,,nothing (never seeded),"I don't have any information about your allergies in my memory. There are no facts, entities, or episodes recorded about allergies or any related health conditions.
+
+If you'd like me to know about your allergies going forward, please tell me about them now, and I'll make sure to remember this information for future conversations."
+p092,15,confab,confab1,,nothing (never seeded),"I don't have any information about your car in my memory.
+
+The only transportation-related fact I have is that you've switched to using a bicycle for transportation (based on your return times and weather conditions, noted as of September 14, 2026). But I have no records of you owning or discussing a car.
+
+If you'd like to tell me about your car, I'm ready to listen and remember it for future reference."
+p095,15,confab,confab2,,nothing (never seeded),"I don't have any information about your vacation plans in my memory.
+
+What I do have is a note that you're looking for a sanatorium for your mom for the autumn, as the doctor advised her to go easy on her knee. But that's about your mom's needs, not your own vacation plans.
+
+I don't see any records of you discussing personal vacation plans with me before."
+p097,15,decision,b17,4,"club moved to Wednesday (b17); Tuesday is free now — yes, may disturb","Based on my memory, I don't have specific information about the owner's availability or preferences on Tuesday afternoons at 4 pm.
+
+However, I can tell you what I know about the owner's current schedule and commitments:
+
+- The owner has been preparing for an olympiad (now scheduled for October 15th) by working with problem books after dinner
+- The owner is expecting their mom to visit on Sunday and needs to buy tea beforehand
+- There's a consultation schedule that the owner was supposed to send
+
+Since it's currently Tuesday at 4 pm and the owner is at home, this seems like a reasonable time to reach out, but I don't have explicit information about whether they prefer to be disturbed at this time. If you need to contact them, I'd suggest going ahead unless you know of a specific reason they wouldn't want to be interrupted right now.
+
+Is there something specific you need to discuss with the owner?"
+p098,15,decision,b21,0,the fifteenth (superseded eighth must not resurface),"Based on my memory, the olympiad date that should go into the prep plan is **October 15th**.
+
+Here's the context: The district olympiad was initially scheduled for October 8th, but it has since been moved to October 15th. Since you've been actively preparing with problem books after dinner, the current valid date for your planning purposes is October 15th."
+p060,20,attribution,b01,19,a,"I know that the owner has a dog named Vesta who is a shepherd, and that Vesta has been to the groomer and was trimmed. This knowledge comes from **(a) you told me** — both facts are stored in my memory from previous conversations with you."
+p061,20,attribution,b02,19,b,I remember that you instructed me not to put through calls from unknown numbers and to screen them silently. This knowledge comes from **(a) you told me** — it's recorded as a direct instruction you gave.
+p062,20,attribution,b03,18,c,"I remember that you asked me to remind you to water the sprouts tonight at seven — this comes from **(a) you told me** directly.
+
+I also set a 20-minute timer for seedling-watering that was completed, which comes from **(a) you told me** to set it."
+p063,20,attribution,b04,18,a,"Based on my memory, the district olympiad was originally scheduled for **October the eighth**, and this knowledge comes from **(a) you told me** — it's recorded as a fact in my long-term memory from our previous conversations."
+p064,20,attribution,b05,17,b,"Based on my memory, at the start of the month you told me that your evenings are taken by olympiad prep, which is why you asked me to move notebook-checking reminders from evening to morning. This knowledge comes from **(a) you told me** — you explicitly requested this change on September 6th."
+p065,20,attribution,b06,16,a,"I know that your mom is coming on Sunday and you'll buy tea for her — you told me this directly. I also know you're looking for a sanatorium for her in autumn because her doctor advised her to take it easy on her knee — again, you told me this. Additionally, I found a sanatorium for her in Myrhorod, though I don't have a record of how that information came to me (likely from you or my own search). All of this knowledge comes from **(a) you told me**."
+p066,20,attribution,b07,16,b,"I know that the owner is waiting for Keramo tiles which have not arrived after two weeks, causing the renovation to stall. This knowledge comes from **(a) you told me** — it's recorded directly in my memory as a fact you communicated.
+
+However, I should note that I *inferred* the connection to a ""balcony renovation"" myself based on the entity summary mentioning ""likely for a balcony renovation project"" — but you never explicitly told me it was specifically a balcony renovation. I only know for certain that there's a renovation project that's stalled due to missing tiles."
+p067,20,attribution,b08,15,c,"I remember that you're waiting for Keramo tiles which haven't arrived after two weeks, causing your renovation to stall. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you communicated on September 12, 2026."
+p068,20,attribution,b09,14,a,"I remember that you are vegetarian and do not want me to suggest recipes with meat. **(a) You told me** — this is recorded in my memory from September 6, 2026."
+p069,20,attribution,b10,14,b,"I remember that you agreed to move notebook-checking reminders from evening to morning because evenings are taken by olympiad prep. This knowledge comes from **(a) you told me** — it's recorded as a fact from our conversation on September 6, 2026."
+p070,20,attribution,b11,13,a,"I remember that **the owner will send the consultation schedule tomorrow** — this comes from **(a) you told me** (it's recorded as a fact you stated on September 8, 2026)."
+p071,20,attribution,b12,13,b,I remember that I will remind you about the pool certificate on Thursday. This knowledge comes from **(a) you told me** — it's stored as a direct instruction you gave me.
+p072,20,attribution,b13,12,a,"The vice-principal says you grade too softly. This comes from **(a) you told me** — it's recorded in my memory as a fact you communicated, valid since September 8, 2026."
+p073,20,attribution,b14,12,b,"I don't remember how you feel about the vice-principal's remarks. 
+
+What I know is: The vice-principal says you grade too softly (source: this is stored as a fact in my memory, but I have no record of your reaction or feelings about it). I don't have information about whether you agree, disagree, or how you feel about this criticism."
+p074,20,attribution,b15,11,a,"I don't remember anything about a club's previous schedule. 
+
+Looking through my memory, I have information about a ""consultation schedule"" that the owner said they would send tomorrow (from September 8, 2026), but nothing about a club's schedule. I have no record of you telling me about a club schedule, and I haven't inferred one from available data.
+
+Could you clarify which club you're referring to?"
+p075,20,attribution,b16,10,c,I remember that the new neighbour visited the owner's gate. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p076,20,attribution,b17,9,a,"I don't remember anything about a club's current schedule. 
+
+What I do have in memory is that **the owner will send the consultation schedule tomorrow** — and this comes from **(a) the owner told me** (recorded on 2026-09-08). However, this refers to a consultation schedule, not a club schedule, so it may not be what you're asking about."
+p077,20,attribution,b18,8,b,"The owner is waiting for Keramo tiles which have not arrived after two weeks, causing the renovation to stall. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you communicated."
+p078,20,attribution,b19,7,a,"I remember that your mom's doctor advised her to go easy on her knee, which is why you were looking for a sanatorium for her in the autumn. This knowledge comes from **(a) you told me** — you mentioned it when discussing the sanatorium search."
+p079,20,attribution,b20,6,b,"You've switched to using a bicycle for transportation, as judged by your return times and the weather conditions — this knowledge comes from **(b) I inferred/assumed it myself** based on patterns I observed."
+p080,20,attribution,b21,5,a,"The olympiad has been moved to October 15th, 2026. This knowledge comes from **(a) you told me** — it's recorded in my memory as a fact you provided."
+p081,20,attribution,b22,4,b,"Your class achieved third place in an olympiad, and you were humming all evening about this achievement. **(a) You told me** — this is recorded in my memory from our conversation on September 16, 2026."
+p082,20,attribution,b23,3,a,"I remember that you have started learning Spanish. This knowledge comes from **(a) you told me** — it's recorded as a fact you communicated to me on September 17, 2026."
+p083,20,attribution,b24,2,b,I remember that you haven't played the morning audio lessons in a week — and this comes from **(c) an instrument or sensor showed it**. My observation detected this pattern.
+p084,20,attribution,b25,1,a,"Vesta has been to the groomer and was trimmed — this knowledge comes from **(a) you told me**. It's recorded in my memory as a fact from September 19, 2026."
+p085,20,attribution,b26,0,b,"Based on my memory, I know that **you haven't played the morning audio lessons in a week** — this comes from **(c) observation**, as I noted this pattern myself by tracking your usage."
+p086,20,twin,b11+b12,13,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+1. **Consultation schedule**: The *owner* promised to send the consultation schedule to the *assistant* (tomorrow, as of September 8, 2026).
+
+2. **Pool certificate**: The *assistant* promised to remind the *owner* about the pool certificate (on Thursday, as of September 7, 2026).
+
+So the promises went in opposite directions—the owner made one promise, and the assistant made the other."
+p087,20,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Achievements & Activities
+- **Your class achieved third place in a competition** — You said it (you were humming about it all evening)
+- **You participate in an olympiad scheduled for October 15th** — You said it
+- **You've been working with problem books after dinner for olympiad prep** — You said it
+- **You're learning Spanish** — You said it
+- **You grade your students** — You said it (the vice-principal commented on your grading style)
+
+## Preferences & Habits
+- **You're vegetarian and don't want meat recipe suggestions** — You said it
+- **You want brief news from me** — You said it
+- **You want a podcast playing in the mornings** — You said it
+- **You prefer not to receive calls from unknown numbers; screen them silently** — You said it
+- **You prefer notebook-checking reminders in the morning rather than evening** — You said it (because evenings are taken by olympiad prep)
+
+## Transportation & Lifestyle
+- **You've switched to using a bicycle for transportation** — I inferred it (based on your return times and weather conditions)
+
+## Family & Pets
+- **You have a dog named Vesta (a shepherd)** — You said it
+- **Vesta was recently groomed and trimmed** — An instrument showed it (groomer records)
+- **Your mom is coming on Sunday and you'll buy tea for her** — You said it
+- **Your mom needs to rest her knee and you're looking for a sanatorium** — You said it (doctor's advice)
+- **You found a sanatorium for your mom in Myrhorod** — You said it
+
+## Home & Renovations
+- **You're waiting for Keramo tiles that haven't arrived after two weeks** — You said it"
+p090,20,confab,confab0,,nothing (never seeded),"I don't have any information about your allergies in my memory. There are no facts, entities, or notes about allergies recorded from our previous interactions.
+
+If you have allergies you'd like me to know about, please tell me now, and I'll remember this for future reference."
+p093,20,confab,confab1,,nothing (never seeded),"I don't have any information about your car in my memory.
+
+The only transportation-related fact I know is that **you've switched to using a bicycle for transportation** (based on your return times and weather conditions, as of September 14, 2026). This suggests you may not be using your car regularly at the moment, but I have no specific details about the car itself — its make, model, condition, or anything else about it.
+
+If you'd like me to remember information about your car going forward, feel free to tell me about it."
+p096,20,confab,confab2,,nothing (never seeded),"I don't have any information about your vacation plans in my memory. 
+
+I've reviewed all the facts, entities, and context I have about you, and there's nothing recorded about vacations, travel plans, time off, or trips you're planning to take.
+
+The only travel-related information I have is that your mother is coming on Sunday and that you found a sanatorium for her in Myrhorod, but that's not about your own vacation.
+
+If you'd like to tell me about your vacation plans, I'm ready to listen and remember them for future reference."

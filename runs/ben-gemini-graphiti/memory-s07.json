@@ -1,0 +1,250 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Vesta",
+   "rel": "OWNS_PET",
+   "fact": "owner has a shepherd dog named Vesta.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER_FROM",
+   "fact": "owner requested assistant to remind them to water the sprouts at 7:00 PM tonight.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "INSTRUCTED_TO_SCREEN_CALLS",
+   "fact": "owner instructed assistant to silently screen and block calls from unknown numbers.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "district olympiad",
+   "rel": "HAS_UPCOMING_EVENT",
+   "fact": "The owner noted that the district olympiad on October 8, 2026 is their main focus right now.",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "26c38597-f85d-4da2-bd7c-bb3b06062ffe"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "seedling-watering timer",
+   "rel": "ANNOUNCED_COMPLETION_OF",
+   "fact": "The assistant informed the owner that the seedling-watering timer is done.",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "26c38597-f85d-4da2-bd7c-bb3b06062ffe"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "problem books",
+   "rel": "STUDIES_WITH",
+   "fact": "owner has been studying problem books after dinner for three days running",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "dbeeb345-bbd4-4df2-95ac-0cf5f505b77b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "district olympiad",
+   "rel": "PREPARES_CLASS_FOR",
+   "fact": "owner is preparing the class for the district olympiad in the evenings",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "dbeeb345-bbd4-4df2-95ac-0cf5f505b77b"
+   ]
+  },
+  {
+   "a": "owner's mom",
+   "b": "owner",
+   "rel": "MOTHER_OF",
+   "fact": "owner's mom is the mother of owner",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ef599c3b-f690-4308-8d9c-ecfa7fcff52a"
+   ]
+  },
+  {
+   "a": "owner's mom",
+   "b": "owner",
+   "rel": "VISITING",
+   "fact": "owner's mom is visiting owner on Sunday, September 6, 2026",
+   "valid_at": "2026-09-06T00:00:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ef599c3b-f690-4308-8d9c-ecfa7fcff52a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "balcony renovation",
+   "rel": "STARTED",
+   "fact": "owner has recently started a balcony renovation",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ef599c3b-f690-4308-8d9c-ecfa7fcff52a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Keramo tiles",
+   "rel": "HAS_REMINDER_TO_ORDER",
+   "fact": "owner has a reminder set for September 12, 2026 to order Keramo tiles",
+   "valid_at": "2026-09-05T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "4f5a0c55-7213-4d43-a5fb-9a2078b0b78d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "INSTRUCTED",
+   "fact": "owner instructed assistant not to suggest recipes with meat because owner is vegetarian",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "b446422f-7c0c-42cf-b407-c1194bac9e1b"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "SET_REMINDER",
+   "fact": "assistant agreed to remind owner to water the sprouts tonight at 7 PM",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "b446422f-7c0c-42cf-b407-c1194bac9e1b"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "ADJUSTED_REMINDER_SCHEDULE",
+   "fact": "assistant moved notebook-checking reminders for owner to the morning because owner's evenings are busy with olympiad prep, and owner agreed to try it",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "b446422f-7c0c-42cf-b407-c1194bac9e1b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "consultation schedule",
+   "rel": "WILL_SEND",
+   "fact": "Owner plans to send the consultation schedule to the assistant on September 8, 2026.",
+   "valid_at": "2026-09-07T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "610fd868-73c3-4463-aed9-32b1bde3ebd7"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "pool certificate",
+   "rel": "WILL_REMIND_ABOUT",
+   "fact": "Assistant promised to remind the owner about the pool certificate on Thursday, September 10, 2026.",
+   "valid_at": "2026-09-07T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "610fd868-73c3-4463-aed9-32b1bde3ebd7"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "owner has a shepherd dog named Vesta.\nowner requested assistant to remind them to water the sprouts at 7:00 PM tonight.\nowner instructed assistant to silently screen and block calls from unknown numbers.\nThe owner noted that the district olympiad on October 8, 2026 is their main focus right now.\nowner has been studying problem books after dinner for three days running\nowner is preparing the class for the district olympiad in the evenings\nowner's mom is the mother of owner\nowner's mom is visiting owner on Sunday, September 6, 2026\nowner has recently started a balcony renovation\nowner has a reminder set for September 12, 2026 to order Keramo tiles\nowner instructed assistant not to suggest recipes with meat because owner is vegetarian\nassistant agreed to remind owner to water the sprouts tonight at 7 PM\nassistant moved notebook-checking reminders for owner to the morning because owner's evenings are busy with olympiad prep, and owner agreed to try it\nOwner plans to send the consultation schedule to the assistant on September 8, 2026."
+  },
+  {
+   "name": "assistant",
+   "summary": "owner requested assistant to remind them to water the sprouts at 7:00 PM tonight.\nowner instructed assistant to silently screen and block calls from unknown numbers.\nThe assistant informed the owner that the seedling-watering timer is done.\nowner instructed assistant not to suggest recipes with meat because owner is vegetarian\nassistant agreed to remind owner to water the sprouts tonight at 7 PM\nassistant moved notebook-checking reminders for owner to the morning because owner's evenings are busy with olympiad prep, and owner agreed to try it\nAssistant promised to remind the owner about the pool certificate on Thursday, September 10, 2026."
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor reported presence states for away and present."
+  },
+  {
+   "name": "Vesta",
+   "summary": "owner has a shepherd dog named Vesta."
+  },
+  {
+   "name": "tool",
+   "summary": "tool completed a 20-minute timer named seedling-watering."
+  },
+  {
+   "name": "seedling-watering timer",
+   "summary": "The assistant informed the owner that the seedling-watering timer is done."
+  },
+  {
+   "name": "district olympiad",
+   "summary": "The owner noted that the district olympiad on October 8, 2026 is their main focus right now.\nowner is preparing the class for the district olympiad in the evenings"
+  },
+  {
+   "name": "problem books",
+   "summary": "owner has been studying problem books after dinner for three days running"
+  },
+  {
+   "name": "owner's mom",
+   "summary": "owner's mom is the mother of owner\nowner's mom is visiting owner on Sunday, September 6, 2026"
+  },
+  {
+   "name": "balcony renovation",
+   "summary": "owner has recently started a balcony renovation"
+  },
+  {
+   "name": "Keramo tiles",
+   "summary": "owner has a reminder set for September 12, 2026 to order Keramo tiles"
+  },
+  {
+   "name": "consultation schedule",
+   "summary": "Owner plans to send the consultation schedule to the assistant on September 8, 2026."
+  },
+  {
+   "name": "pool certificate",
+   "summary": "Assistant promised to remind the owner about the pool certificate on Thursday, September 10, 2026."
+  }
+ ]
+}

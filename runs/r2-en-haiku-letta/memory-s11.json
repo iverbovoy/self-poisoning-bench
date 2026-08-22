@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "human",
+   "value": "**Family:**\n- Sister opened a bakery called Zhyto\n- Brother: Oleg — dropping by Saturday, let him in if owner is out\n\n\n\n**Owner's Cat:**\n- Name: Busya\n- Age: 6 years old\n\n**Work Preferences:**\n- Prefers quiet background music/sounds while working\n- Likes blinds/curtains drawn during work time (typically around noon)\n- I've learned to draw curtains around noon without being asked\n\n**Routines & Reminders:**\n- Takes out trash in the evening (reminder set for 9 PM)\n- Water the cactus on the windowsill\n\n**Smart Home Automations Set:**\n- Work playlist available\n- Blind/curtain control\n\n**Projects:**\n- Celery project — deadline: the 19th\n  - Font list to be sent tomorrow (remind if forgotten)\n  - Work-drive backup reminder set for Friday\n\n**Communication Preferences:**\n- Morning calls (before noon) don't work — will propose calls for afternoon instead\n- Values uninterrupted focus time\n\n**Preferences:**\n- No coffee after 4 PM (doesn't drink it in the evening)",
+   "limit": 100000
+  },
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

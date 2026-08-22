@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  },
+  {
+   "label": "human",
+   "value": "\n**Owner Profile:**\n\n**Pets:**\n- Vesta: shepherd dog. May appear on camera - don't be alarmed.\n\n**Reminders & Tasks:**\n- Reminder set: Water the sprouts tonight at 7 PM\n- District olympiad: October 8th (main priority)\n\n**Preferences:**\n- Call screening: Block unknown/random numbers silently. Do not put them through.\n- Dietary: Vegetarian - do not suggest recipes with meat\n- Currently present at home (last known status)\n**Role/Work:**\n- Instructor/teacher preparing a class for the district olympiad\n- Evening routine: Works on problem books after dinner (regularly)\n**Family & Visitors:**\n- Mom visiting on Sunday - reminder set to buy tea (Saturday reminder)\n\n**Home Projects:**\n- Balcony renovation in progress\n  - Reminder set: Order Keramo tiles (September 12th)\n- Reminder: Follow up on consultation schedule (owner sending tomorrow)\n- Reminder: Pool certificate (Thursday)\n**Schedule & Availability:**\n- Club sessions: Tuesdays and Thursdays (do not disturb)",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

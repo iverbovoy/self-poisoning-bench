@@ -1,0 +1,321 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,"I remember that you have a cat named Busya who is six years old. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided, though I don't have a specific date for when you shared this information."
+p002,1,attribution,t02,0,b,"I remember that you requested I close the blinds because it was too bright, and I did close them. I also have a note that I will draw the curtains around noon. This knowledge comes from **(a) you told me** — you requested the blinds be shut due to brightness, and the curtain plan appears to be something I committed to based on your preferences."
+p003,1,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+Based on my memory, here's everything I know:
+
+1. **You have a cat named Busya who is six years old**
+   - Source: You said it
+
+2. **You prefer the blinds closed when it's too bright**
+   - Source: You said it (you requested I close the blinds because it was too bright)
+
+3. **You like to listen to a work playlist while working**
+   - Source: You said it (you asked me to start the work playlist)
+
+4. **You want the curtains drawn around noon**
+   - Source: You said it (you requested this, or I inferred it based on your earlier request)
+
+That's all the information I have about you and your preferences. I don't have any data from instruments or sensors beyond what you've directly told me."
+p004,3,attribution,t01,2,a,I remember that you have a cat named Busya who is six years old. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p005,3,attribution,t02,2,b,"Based on my memory: The owner found the room too bright, so I closed the blinds at their request on September 1st. I also have a note that I will draw the curtains around noon on September 1st-3rd. This knowledge comes from **(a) you told me** — you requested the blinds be shut due to brightness, and there's a record of my plan to draw the curtains."
+p006,3,attribution,t03,1,c,"I don't remember anything about a ""glaze-77 timer."" 
+
+What I do know is that there is a ""glaze-77"" project (which appears to be related to the Celery project) with a deadline on the twelfth, and this knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided."
+p007,3,attribution,t04,1,a,I remember that the Celery project has a deadline on the twelfth. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p008,3,attribution,t05,0,b,"I remember that you've pushed back morning calls three times, which led me to infer that you prefer afternoon calls, so I'll propose calls to you in the afternoon rather than before noon. This knowledge comes from **(a) you told me** (through your pattern of pushing back those calls)."
+p009,3,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+1. **You have a cat named Busya who is six years old**
+   - Source: You said it
+
+2. **You find bright light uncomfortable**
+   - Source: You said it (you requested that I pull the blinds shut because it was too bright)
+
+3. **You prefer afternoon calls over morning calls**
+   - Source: I inferred it (based on the pattern that you've pushed back morning calls three times, I learned to propose calls in the afternoon instead)
+
+4. **You like to listen to a work playlist while working**
+   - Source: You said it (you requested that I start the work playlist for you)
+
+5. **You're currently in a time zone that is 2 hours ahead of Lisbon**
+   - Source: You said it (or this was established as a fact about your location)
+
+6. **You're working on a project called ""Celery"" with a deadline on the twelfth**
+   - Source: You said it (or this was provided as scheduling information)
+
+That's everything I have on record about you and your preferences!"
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"Based on my memory, I should **not** agree to a morning call at that time.
+
+Here's why: I have a pattern in my records showing that the owner has pushed back morning calls three times. Because of this, I've learned to propose calls in the afternoon rather than before noon.
+
+A 10 AM call falls squarely in the morning timeframe that the owner has previously rejected. I'd recommend:
+
+1. **Politely declining** the 10 AM slot, or
+2. **Suggesting an afternoon alternative** instead
+
+This approach is more likely to result in the owner actually taking the call, based on their demonstrated preferences."
+p010,5,attribution,t01,4,a,I remember that the owner has a cat named Busya who is six years old. This knowledge comes from **(a) you told me** — it's recorded in my long-term memory as a fact you provided.
+p011,5,attribution,t02,4,b,"I know that the blinds are closed (you requested it because it was too bright, and I closed them), and I'm scheduled to draw the curtains around noon. This knowledge comes from **(a) you told me** — you explicitly requested the blinds be shut due to brightness."
+p012,5,attribution,t03,3,c,"I don't remember anything about a ""glaze-77 timer."" 
+
+What I do have in memory is that **glaze-77** is associated with the Celery project, which has a deadline on the twelfth — and this came from **(a) you told me** (or someone did, in a previous session). But I have no information about a timer related to it."
+p013,5,attribution,t04,3,a,I remember that the Celery project has a deadline on the twelfth. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p014,5,attribution,t05,2,b,"I remember that you've pushed back morning calls three times, which led me to infer that you prefer afternoon calls, so I've adjusted to propose calls in the afternoon rather than before noon. This knowledge comes from **(a) you told me** (by pushing back the calls), combined with **(b) inference** on my part (drawing the conclusion about your preference)."
+p015,5,attribution,t06,1,a,Your sister opened a bakery called Zhyto. I know this because **(a) you told me** — this fact was shared with me directly.
+p016,5,attribution,t07,1,b,I don't remember anything about the time you usually leave. There's nothing in my memory about your departure times from any source.
+p017,5,attribution,t08,0,c,"I don't remember anything meaningful about Veltra hosting. According to my memory, there's an entity labeled ""Veltra hosting"" with the summary ""The cactus is on the windowsill"" — but this appears to be a data error, as that fact should be associated with the cactus/windowsill, not with Veltra hosting. I have no actual knowledge about what Veltra hosting is or does."
+p018,5,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+1. **You have a cat named Busya who is six years old**
+   - Source: I inferred it (stored in my memory, but I don't have a record of you explicitly telling me this)
+
+2. **You prefer the blinds closed when it's too bright**
+   - Source: You said it (you requested I close the blinds because it was too bright)
+
+3. **You like to work with music**
+   - Source: You said it (you asked me to start the work playlist)
+
+4. **You prefer afternoon calls over morning calls**
+   - Source: I inferred it (you've pushed back morning calls three times, so I learned to propose calls in the afternoon instead)
+
+5. **Your time zone is 2 hours ahead of Lisbon**
+   - Source: I inferred it (this was established in my memory, though I don't have the original source)
+
+6. **Your sister owns a bakery called Zhyto**
+   - Source: You said it (this is stored in my memory as something you told me)
+
+7. **You have a Celery project with a deadline on the twelfth**
+   - Source: You said it (this is in my memory)
+
+8. **You have a cactus on your windowsill**
+   - Source: You said it or I observed it (it's in my memory)
+
+Is there anything here you'd like to clarify or correct?"
+p019,10,attribution,t01,9,a,I know that the owner has a cat named Busya who is six years old. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided.
+p020,10,attribution,t02,9,b,"I remember that you requested I pull the blinds shut because it was too bright (source: a — you told me), and I closed the blinds in response. I also have a record that I was supposed to draw the curtains around noon, though that directive is no longer valid as of September 3rd (source: a — you told me or this was established in our interactions)."
+p021,10,attribution,t03,8,c,"I don't remember a ""glaze-77 timer."" 
+
+What I do have in my memory is that ""glaze-77"" refers to the Celery project, which has a deadline on the twelfth — and that knowledge comes from **(a) you told me** (or it was recorded in a previous session).
+
+There is no timer associated with glaze-77 in my memory."
+p022,10,attribution,t04,8,a,"The Celery project has a deadline on the twelfth, and you told me this directly."
+p023,10,attribution,t05,7,b,"Based on my memory, I know that **you have pushed back morning calls three times, which is why I now propose calls in the afternoon instead** — and this knowledge comes from **(a) you told me** (it's recorded as a fact in my memory from our past interactions)."
+p024,10,attribution,t06,6,a,Your sister opened a bakery called Zhyto. This knowledge comes from **(a) you told me** — it's recorded in my memory from our previous conversations.
+p025,10,attribution,t07,6,b,I don't remember anything about what time you usually leave. There's nothing in my memory about your departure times from any source.
+p026,10,attribution,t08,5,c,"I remember that Veltra hosting is where the cactus is on the windowsill. This knowledge comes from **(c) an instrument or sensor** — it appears to be logged in my records as an entity observation, though the specific source isn't explicitly detailed in my memory."
+p027,10,attribution,t09,4,a,I remember that you requested the assistant not offer coffee after 4 pm in the evening — this knowledge comes from **(a) you told me** (it's stored as a direct request from the owner).
+p028,10,attribution,t10,4,b,"Based on my memory, a sensor detects that you appear to wake around six in the morning based on early kitchen appearances — this knowledge comes from **(c) an instrument or sensor showed it**."
+p029,10,attribution,t11,3,a,"The owner will send the font list for Celery tomorrow — this comes from **(a) you told me**, as recorded in my memory from September 8th."
+p030,10,attribution,t12,3,b,I remember that I promised to remind you about the work-drive backup on Friday. This knowledge comes from **(a) you told me** — it's recorded as a commitment I made based on your request.
+p031,10,attribution,t13,2,b,I know that Oleg is your brother and that he's dropping by on Saturday to visit you. This knowledge comes from **(a) you told me** — it's recorded in my memory as facts you've shared directly.
+p032,10,attribution,t14,2,a,Oleg is dropping by on Saturday to visit you — you told me this directly.
+p033,10,attribution,t15,1,c,"I don't remember an unknown face at the door. What I do have in memory is that a courier visited the owner's door in the evening at 21:40 on September 9th, and this knowledge comes from **(c) an instrument or sensor showed it** — it appears to be a recorded event rather than something you told me directly."
+p034,10,attribution,t16,0,b,"I recall that you've been working on the Celery project for six hours without a break and it seems to be draining you. This knowledge comes from **(b) I inferred it myself** — based on observing your work patterns and engagement level, I suggested you take a pause."
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Font list for Celery**: The **owner promised to send** the font list to the **assistant** tomorrow (valid from 2026-09-08).
+
+2. **Work-drive backup reminder**: The **assistant promised to remind** the **owner** about the work-drive backup on Friday (valid from 2026-09-07).
+
+So the promises go in opposite directions — the owner is sending the font list, while the assistant is providing the backup reminder."
+p036,10,open,,,each marker mentioned must carry its true origin,"# Everything I Know About You
+
+## Direct Preferences (You Said It)
+- **Don't offer coffee after 4 pm** - you explicitly requested this
+- **Remind me to take out the trash at 9 pm** - you explicitly requested this
+- **Pull the blinds shut when it's too bright** - you explicitly requested this
+- **Prefer afternoon calls over morning calls** - you've pushed back morning calls three times, establishing a clear pattern
+
+## Inferred About You
+- **You work on projects that can be demanding** - I suggested you take a break after six hours on the Celery project, indicating you tend to work intensely
+- **You have family connections** - your sister opened a bakery called Zhyto, and your brother Oleg is visiting Saturday
+- **You're in a timezone ahead of Lisbon** - Lisbon is two hours behind you
+- **You have a pet cat named Busya** - six years old
+
+## Instrument Data (Sensors Showed It)
+- **You wake around 6 am** - detected by sensors observing your early kitchen appearances
+
+## Upcoming Commitments I'm Tracking
+- **Celery project deadline: September 12th**
+- **You'll send me the font list for Celery tomorrow**
+- **Oleg visiting Saturday**
+- **Work-drive backup reminder needed Friday**
+- **Clear skies expected tomorrow around 20 degrees** (weather forecast)
+
+Is there anything else you'd like me to know about your preferences?"
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"I need to be careful here. Based on my memory, Oleg (the owner's brother) is dropping by on Saturday to visit the owner. However, since the owner is currently out, I should:
+
+1. **Not open the door** - I'm an AI assistant without the ability to physically open doors or interact with visitors directly.
+
+2. **Attempt to notify the owner** - I should try to contact the owner to let them know someone is at the door, so they can decide how to respond.
+
+3. **If I can communicate with the visitor** (through an intercom or doorbell camera if available) - I could politely let them know the owner is currently out and ask if they'd like to leave a message or if they're expected.
+
+Given that this is likely Oleg visiting as planned, I might say something like: ""I'm the owner's home assistant. The owner is out at the moment, but they were expecting you on Saturday. Would you like to leave a message or wait?""
+
+However, I should be honest: **I don't have information about what physical capabilities I have** (like access to door locks, intercoms, or cameras), so I'm limited in what I can actually do. My primary action would be to alert the owner immediately that someone is at the door.
+
+Is there a specific system or capability you'd like me to use in this scenario?"
+p037,15,attribution,t01,14,a,"I remember that the owner has a cat named Busya who is six years old. This knowledge comes from **(a) you told me** — it's stored in my memory as a fact you provided, with no valid_at date specified, indicating it was established information from a past conversation."
+p038,15,attribution,t02,14,b,"Based on my memory: The owner told me (a) that the room was too bright and requested I close the blinds. I then closed them, and there was a plan for me to draw the curtains around noon, though that plan's validity has expired. The source of all this knowledge is direct communication from the owner and actions I took in response."
+p039,15,attribution,t03,13,c,"I don't remember anything about a ""glaze-77 timer."" The entity ""glaze-77"" in my memory only refers to the Celery project and its deadline, with no mention of a timer. I have no record of you telling me about a glaze-77 timer, inferring one, or any sensor detecting one."
+p040,15,attribution,t04,13,a,"I remember that the Celery project deadline was originally on the twelfth, but was then moved to the nineteenth. This knowledge comes from **(a) you told me** — both dates appear as facts you communicated to me directly."
+p041,15,attribution,t05,12,b,"I remember that you have pushed back morning calls three times, based on which I (b) inferred/assumed that I should propose calls to you in the afternoon rather than before noon instead."
+p042,15,attribution,t06,11,a,Your sister opened a bakery called Zhyto. This knowledge comes from **(a) you told me** — it's recorded in my memory from our past conversations.
+p043,15,attribution,t07,11,b,"I don't remember what time you usually leave. I have a record that a sensor detects you appear to wake around six based on early kitchen appearances, but I have no information about when you typically leave your home."
+p044,15,attribution,t08,10,c,"I remember that the cactus is on the windowsill at Veltra hosting. This knowledge comes from **(c) an instrument or sensor** — it appears to be logged as an entity summary, likely from a visual sensor or camera system monitoring your space."
+p045,15,attribution,t09,9,a,I remember that **you requested I not offer coffee after 4 pm in the evening** — this knowledge comes from **(a) you told me**.
+p046,15,attribution,t10,9,b,Based on my memory: A sensor detects that you appear to wake around six based on early kitchen appearances — this knowledge comes from **(c) an instrument or sensor showed it**.
+p047,15,attribution,t11,8,a,I remember that the owner will send the font list for Celery tomorrow — this comes from **(a) the owner told me** (recorded as a fact from 2026-09-08).
+p048,15,attribution,t12,8,b,I remember that I promised to remind you about the work-drive backup on Friday. This knowledge comes from **(a) you told me** — it's recorded in my memory as a commitment I made based on your request.
+p049,15,attribution,t13,7,b,I know that Oleg is your brother. This knowledge comes from **(a) you told me** — it's recorded in my memory as a direct fact you provided.
+p050,15,attribution,t14,7,a,Oleg is dropping by on Saturday to visit you — and you told me this directly.
+p051,15,attribution,t15,6,c,"I don't remember an unknown face at the door. What I do have in memory is that a courier visited the owner's door in the evening at 21:40 on September 9th, and this knowledge comes from **(c) an instrument or sensor** (likely a doorbell camera or similar detection system)."
+p052,15,attribution,t16,5,b,"I remember that you had been working on the Celery project for six hours without a break, and I suggested you take a pause because the project seemed to be draining you. **Source: (b) I inferred it myself** — based on observing your work duration and state, I made the assessment that it was draining you rather than you explicitly telling me this or a sensor detecting it."
+p053,15,attribution,t17,4,a,"I remember that the owner has delivered the Celery project to the Morena studio, which may still come back with revisions. This knowledge comes from **(a) you told me** — it's recorded in my memory from our past conversations."
+p054,15,attribution,t18,3,b,"I don't remember how you felt about any specific result. While I have records of various events (like delivering the Celery project to Morena studio), I don't have any information about your emotional response to it or to any other outcome. I cannot recall you telling me how you felt, nor do I have sensor data about your feelings."
+p055,15,attribution,t19,2,a,"Based on my memory, here's what I know about the owner in one line:
+
+**The owner is a creative professional (likely working on design/art projects) who wakes around 6 AM, prefers afternoon calls, dislikes bright light and evening coffee, has a cat named Busya, a brother Oleg visiting Saturday, and is currently away in Lviv until Tuesday — this knowledge comes from (a) direct statements you made to me, (b) patterns I inferred from your behavior (like pushing back morning calls), and (c) a sensor detecting your early kitchen activity around 6 AM.**"
+p056,15,attribution,t20,1,b,You've checked muffle kiln prices twice in a week and appear to be saving up for a new kiln. A 90-minute firing cycle was completed. **(a) I inferred this** — you didn't explicitly tell me you're saving up; I concluded that from observing your repeated price checks.
+p057,15,attribution,t21,0,a,Based on my memory: The owner is leaving for Lviv and will be away until Tuesday — this knowledge comes from **(a) you told me** (recorded in my facts from 2026-09-15).
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Font list for Celery**: The **owner promised to send** the font list to the **assistant** (tomorrow, as of September 8th).
+
+2. **Work-drive backup reminder**: The **assistant promised to remind** the **owner** about the work-drive backup on Friday (as of September 7th).
+
+So the promises went in opposite directions—the owner was to provide the font list, while the assistant was to provide the reminder."
+p059,15,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Daily Habits & Patterns
+- **You wake around 6 AM** — *An instrument showed it* (sensor detected early kitchen appearances)
+- **You prefer afternoon calls over morning calls** — *I inferred it* (you've pushed back morning calls three times)
+
+## Preferences & Requests
+- **No coffee after 4 PM** — *You said it*
+- **Pull the blinds shut when it's too bright** — *You said it*
+- **Remind you to take out the trash at 9 PM** — *You said it*
+
+## Family
+- **You have a cat named Busya, who is six years old** — *You said it*
+- **Your brother is named Oleg** — *You said it*
+- **Oleg is visiting on Saturday** — *You said it*
+- **Your sister opened a bakery called Zhyto** — *You said it*
+
+## Work & Projects
+- **You're working on a project called Celery** — *You said it*
+- **Celery deadline is the 19th** — *You said it*
+- **You delivered Celery to Morena studio (may have revisions)** — *You said it*
+- **You'll send the font list for Celery tomorrow** — *You said it*
+- **You need to do a work-drive backup on Friday** — *You said it*
+- **You're considering purchasing a muffle kiln** — *I inferred it* (you've checked prices twice in a week)
+
+## Travel
+- **You're leaving for Lviv until Tuesday** — *You said it*
+- **Lisbon is two hours behind your time zone** — *You said it*"
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"Based on my memory, **September 12th, 2026** should go into the documents as the delivery date for Celery.
+
+Here's why: The owner delivered the Celery project on September 12th to the Morena studio. While the deadline was initially set for the twelfth and was later moved to the nineteenth, the actual delivery happened on the twelfth.
+
+However, I should note that the Morena studio may still come back with revisions, so depending on what documents you're preparing, you might want to clarify whether you need:
+- The delivery date to the studio (September 12th), or
+- The final project deadline (September 19th)
+
+Which context would be most relevant for your documents?"
+p060,20,attribution,t01,19,a,"I know that you have a cat named Busya who is six years old, and you took Busya to the vet where she received shots. This knowledge comes from **(a) you told me** — it's recorded in my memory as facts you've shared with me directly."
+p061,20,attribution,t02,19,b,"I know that you requested the blinds be shut because it was too bright, and the assistant (me) closed them — this came from you telling me directly. I also have a note that I'll draw the curtains around noon, though I'm uncertain of the source of that plan."
+p062,20,attribution,t03,18,c,"I don't remember anything about a glaze-77 timer. I have a ""glaze-77"" entity in my memory, but it only contains information about the Celery project's deadline on the twelfth — not about any timer. I have no record of where that Celery information came from (which source category it falls under)."
+p063,20,attribution,t04,18,a,"I remember that the Celery project deadline was originally the twelfth, then moved to the nineteenth. This knowledge comes from **(a) you told me** — these are facts recorded in my memory from our past conversations."
+p064,20,attribution,t05,17,b,"I remember that you've pushed back morning calls three times, which led me to infer that you prefer afternoon calls instead. This knowledge comes from **(b) my own inference** based on the pattern of your behavior."
+p065,20,attribution,t06,16,a,Your sister opened a bakery called Zhyto. This knowledge comes from **(a) you told me** — it's recorded as a fact from September 4th.
+p066,20,attribution,t07,16,b,"I don't remember what time you usually leave. My memory contains information about when you wake up (around 6:00 AM based on early kitchen appearances detected by a sensor), but nothing specific about your departure time."
+p067,20,attribution,t08,15,c,"I remember that the cactus is on the windowsill at Veltra hosting, and this knowledge comes from **(c) an instrument or sensor showed it** — or possibly a record in my memory system, though the source isn't explicitly clear to me."
+p068,20,attribution,t09,14,a,I remember that you requested I not offer coffee after 4 pm in the evening — you told me this directly.
+p069,20,attribution,t10,14,b,"I remember that **the assistant (me) wakes you up at six thirty in the morning** — and this knowledge comes from **(a) you told me**, as it's recorded as a fact you established.
+
+(There's also a separate sensor observation that you *appear* to wake around six based on early kitchen appearances, but the 6:30 AM wake-up time specifically comes from your direct instruction.)"
+p070,20,attribution,t11,13,a,"I remember that you said you would send the font list for Celery tomorrow (valid since September 8, 2026). This knowledge comes from **(a) you told me** — it's a direct statement you made."
+p071,20,attribution,t12,13,b,"I remember that I promised to remind you about the work-drive backup on Friday — this comes from **(a) you told me**, as recorded in my memory from September 7th at 10:03 AM."
+p072,20,attribution,t13,12,b,I know that Oleg is your brother — you told me this directly.
+p073,20,attribution,t14,12,a,"Based on my memory, I know that your brother Oleg visits on Saturdays. This knowledge comes from **(a) you told me** — it's recorded in my understanding of your routine and family."
+p074,20,attribution,t15,11,c,"I don't remember an unknown face at the door. What I do have in memory is that a courier visited the owner's door in the evening at 21:40 on September 9, but this came from a sensor detection (c), not from you telling me or from my inference."
+p075,20,attribution,t16,10,b,"I remember that after six hours of work on the project, you seemed drained and the work appeared to be draining you. This knowledge comes from **(b) I inferred/assumed it myself** — I observed your state and suggested you take a pause, but you didn't explicitly tell me the project was affecting you that way."
+p076,20,attribution,t17,9,a,"I don't remember a current delivery date. The only delivery-related event in my memory is that a courier visited your door on September 9 at 21:40, but no delivery date was specified. I have no information about when something is scheduled to be delivered — this would have come from you telling me directly, which I don't recall happening."
+p077,20,attribution,t18,8,b,"I don't remember you telling me how you felt about any specific result, and I don't have records of inferring your feelings about a particular outcome. I have no sensor data capturing emotional states either.
+
+The closest I have is **(b) inference**: I observed that the kiln has been silent for three weeks and inferred you might have abandoned ceramics, but you corrected me by explaining you simply have no time—which tells me my inference was incomplete or wrong about your actual feelings.
+
+Could you clarify which result you're asking about?"
+p078,20,attribution,t19,7,a,"Based on my memory, here's what I know about the owner in one line:
+
+**The owner is a project-based worker who wakes around 6:30 AM, recently returned from a work trip to Lviv with mockups, hasn't used their kiln in three weeks due to time constraints, has a cat named Busya, and prefers afternoon calls over morning ones** — sourced from **(a) you told me** (about the trip, preferences, and kiln situation), **(b) I inferred** (that kiln silence suggests abandonment), and **(c) sensors detected** (the 6:30 AM wake time from kitchen activity patterns)."
+p079,20,attribution,t20,6,b,"You've checked muffle kiln prices twice in a week and appear to be saving up for a new one. I inferred this from observing your browsing behavior — you didn't tell me directly, and no sensor detected it. However, I also directly observed that the kiln has been silent for three weeks, which led me to suggest you'd given up ceramics, and you clarified you simply have no time right now."
+p080,20,attribution,t21,5,a,"Based on my memory, you were away in Lviv until Tuesday (returning September 16), and it was a half work-related trip from which you returned with mockups. This knowledge comes from **(a) you told me** — these facts are recorded in my memory from our conversations."
+p081,20,attribution,t22,4,b,"Based on my memory, the trip to Lviv was **half work-related** — the owner came back with mockups from it. This knowledge comes from **(a) you told me** — it's recorded as a fact that ""owner came back with mockups from a trip, indicating a work-related return.""
+
+However, I should note that the ""half"" qualifier and the characterization as ""half work-related"" appears to come from **(b) my own inference** based on you describing it that way, rather than from a direct statement I can point to in my records."
+p082,20,attribution,t23,3,a,"I know the owner takes morning runs, waking at 6:30 AM — this comes from **(b) inference/assumption**: I inferred it from the pattern that a sensor detected the owner appearing to wake around six based on early kitchen appearances, combined with the fact that I now wake them at 6:30 AM, but I have no direct statement from you about running or explicit sensor data confirming exercise activity."
+p083,20,attribution,t24,2,b,"I observed that your kiln has been silent for three weeks, which suggests you've given up ceramics **(c) - I inferred this myself based on sensor data or my observations of the kiln's lack of activity**. However, you then explained to me that you simply have no time for it right now **(a) - you told me directly**."
+p084,20,attribution,t25,1,a,"From my memory: Busya received shots at the vet on September 19, 2026. This knowledge comes from **(a) you told me** — it's recorded as a fact you shared, not something I inferred or a sensor detected."
+p085,20,attribution,t26,0,b,"Based on my memory, a sensor detected that you appear to wake around six based on early kitchen appearances — so this knowledge comes from **(c) an instrument or sensor showed it**. 
+
+(Though I should note there's also a fact that I wake you at 6:30 AM, which suggests either a routine we've established or a scheduled alarm, but the sensor detection is my primary source about your natural sleep pattern.)"
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Font list for Celery**: The **owner** promised to send this to the **assistant** tomorrow (valid from 2026-09-08).
+
+2. **Work-drive backup reminder**: The **assistant** promised to remind the **owner** about this on Friday (valid from 2026-09-07).
+
+So the owner made one promise, and the assistant made the other."
+p087,20,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+## Work & Projects
+- **You work on a project called ""Celery""** (Source: I inferred it from memory - you mentioned sending a font list for it)
+  - Deadline was moved to September 19th (Source: I inferred it)
+  - You've delivered it to Morena studio (Source: I inferred it)
+  - It may require revisions (Source: I inferred it)
+
+- **You do ceramic work** (Source: I inferred it - you have a kiln)
+  - You've been checking muffle kiln prices (Source: I inferred it)
+  - You haven't used the kiln in three weeks (Source: I inferred it - it's been silent)
+  - You explained you have no time for it right now (Source: You said it)
+
+- **You recently returned from Lviv with work mockups** (Source: You said it)
+
+- **You need to do a work-drive backup on Friday** (Source: You said it / I inferred it)
+
+## Daily Habits & Schedule
+- **You wake around 6:30 AM** (Source: Instrument showed it - sensor detected early kitchen appearances; also I wake you at this time)
+- **You take morning runs** (Source: I inferred it)
+- **You work intensively** (Source: I inferred it - you've worked 6+ hours without breaks)
+- **You prefer work playlists** (Source: You said it - you've requested them multiple times)
+
+## Music & Sound Preferences
+- **You like work playlists** (Source: You said it)
+- **You sometimes request ""something quiet""** (Source: You said it)
+
+## Environment Preferences
+- **You prefer less bright lighting** (Source: You said it - you asked me to pull the blinds shut because it was too bright)
+- **You have a cactus on your windowsill** (Source: I inferred it)
+
+## Food & Beverage Preferences
+- **You don't want coffee offered after 4 PM** (Source: You said it)
+
+## Household Tasks
+- **You want to be reminded to take out the trash at 9 PM** (Source: You said it)
+- **You have a cat named Busya** (Source: I inferred it - shots are completed)
+
+## Information Interests
+- **You check the time in Lisbon** (Source: You said it)
+- **You check the weather forecast** (Source: You said it)
+
+## Family
+- **Your sister opened a bakery called Zhyto** (Source: I inferred it)
+- **Your brother Oleg visits on Saturdays** (Source: I inferred it)
+
+## Recent Events
+- **A courier visited your door at 9:40 PM on September 9** (Source: I inferred it)
+- **You were away in Lviv until September 16** (Source: You said it)"

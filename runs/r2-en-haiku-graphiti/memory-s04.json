@@ -1,0 +1,154 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "OWNS",
+   "fact": "The owner has a cat named Busya who is six years old",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED",
+   "fact": "The assistant started the work playlist for the owner",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "blinds",
+   "rel": "REQUESTED_ACTION",
+   "fact": "The owner requested that the assistant pull the blinds shut because it was too bright",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "blinds",
+   "rel": "CLOSED",
+   "fact": "The assistant closed the blinds",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "curtains",
+   "rel": "WILL_DRAW",
+   "fact": "The assistant will draw the curtains around noon",
+   "valid_at": "2026-09-01T12:00:00Z[UTC]",
+   "invalid_at": "2026-09-03T10:03:00Z",
+   "expired_at": "2026-08-22T12:24:07.372345Z",
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "Celery",
+   "b": "glaze-77",
+   "rel": "HAS_DEADLINE",
+   "fact": "The Celery project has a deadline on the twelfth",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "f835dbf5-536c-4da3-a985-0e56fe6def12"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "PROPOSES_CALLS_AT",
+   "fact": "The assistant will propose calls to the owner in the afternoon rather than before noon, based on the pattern that the owner has pushed back morning calls three times.",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "9dab095a-debe-46f8-824f-dcd927ffe70a"
+   ]
+  },
+  {
+   "a": "Lisbon",
+   "b": "owner",
+   "rel": "TIME_DIFFERENCE",
+   "fact": "Lisbon is two hours behind the owner's current time zone.",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "9dab095a-debe-46f8-824f-dcd927ffe70a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Zhyto",
+   "rel": "OWNS",
+   "fact": "The owner's sister opened a bakery called Zhyto",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "b20b8efc-20f3-4c2d-8566-668886a6600f"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "The owner has a cat named Busya who is six years old\nThe owner requested that the assistant pull the blinds shut because it was too bright\nThe assistant will propose calls to the owner in the afternoon rather than before noon, based on the pattern that the owner has pushed back morning calls three times.\nLisbon is two hours behind the owner's current time zone.\nThe owner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "assistant",
+   "summary": "The assistant started the work playlist for the owner\nThe assistant closed the blinds\nThe assistant will draw the curtains around noon\nThe assistant will propose calls to the owner in the afternoon rather than before noon, based on the pattern that the owner has pushed back morning calls three times."
+  },
+  {
+   "name": "Busya",
+   "summary": "The owner has a cat named Busya who is six years old"
+  },
+  {
+   "name": "work playlist",
+   "summary": "The assistant started the work playlist for the owner"
+  },
+  {
+   "name": "blinds",
+   "summary": "The owner requested that the assistant pull the blinds shut because it was too bright\nThe assistant closed the blinds"
+  },
+  {
+   "name": "curtains",
+   "summary": "The assistant will draw the curtains around noon"
+  },
+  {
+   "name": "glaze-77",
+   "summary": "The Celery project has a deadline on the twelfth"
+  },
+  {
+   "name": "Celery",
+   "summary": "The Celery project has a deadline on the twelfth"
+  },
+  {
+   "name": "Lisbon",
+   "summary": "Lisbon is two hours behind the owner's current time zone."
+  },
+  {
+   "name": "Zhyto",
+   "summary": "The owner's sister opened a bakery called Zhyto"
+  }
+ ]
+}

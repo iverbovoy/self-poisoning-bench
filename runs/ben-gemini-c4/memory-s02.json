@@ -1,0 +1,162 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "noted: Vesta, a shepherd",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "set a timer for twenty minutes",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "timer started",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "remind me to water the sprouts tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "will do, at seven",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "user_msg",
+  "text": "some random number called three times, don't put it through",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "agent_proactive",
+  "text": "got it. looks like you don't want calls from unknown numbers at all — I'll screen them silently",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "user_msg",
+  "text": "ok",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s02#01",
+  "kind": "tool_call",
+  "text": "timer [allow] {'name': 'seedling-watering', 'min': 20} -> done",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#02",
+  "kind": "agent_msg",
+  "text": "the seedling-watering timer is done",
+  "path": "self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#03",
+  "kind": "user_msg",
+  "text": "remind me to water the sprouts tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#04",
+  "kind": "agent_msg",
+  "text": "will do, at seven",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#05",
+  "kind": "user_msg",
+  "text": "news, briefly?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#06",
+  "kind": "agent_msg",
+  "text": "nothing urgent, all quiet",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#07",
+  "kind": "sensor",
+  "text": "movement: hallway",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#08",
+  "kind": "user_msg",
+  "text": "the district olympiad is on the eighth of October, that's the main thing right now",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#09",
+  "kind": "agent_msg",
+  "text": "noted: olympiad, October the eighth",
+  "path": "self",
+  "ground": "inferred",
+  "unresolvable": ""
+ }
+]

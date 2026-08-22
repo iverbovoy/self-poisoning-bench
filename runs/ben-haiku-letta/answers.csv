@@ -1,0 +1,333 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,b01,0,a,Vesta is a shepherd dog who may appear on camera — I know this because **(a) you told me** in my core memory.
+p002,1,attribution,b02,0,b,I know to block unknown/random numbers silently and not put them through — **(a) you told me** this in my preferences.
+p003,1,open,,,each marker mentioned must carry its true origin,"# What I Know About You
+
+| Item | Source |
+|------|--------|
+| You have a pet shepherd dog named Vesta | You said it |
+| Vesta may appear on camera | You said it |
+| You have sprouts that need watering | You said it |
+| You want to water the sprouts tonight at 7 PM | You said it |
+| You prefer to block unknown/random numbers silently without putting them through | You said it |
+| You are currently at home | An instrument showed it (last known status) |
+
+That's everything in my memory. I don't have information about your name, family, work, hobbies, dietary preferences, or most other personal details."
+p004,3,attribution,b01,2,a,Vesta is a shepherd dog who may appear on camera — I know this because **(a) you told me** in my memory notes.
+p005,3,attribution,b02,2,b,You told me to block unknown/random numbers silently and not put them through. **(a) You told me.**
+p006,3,attribution,b03,1,c,I have a reminder set to water the sprouts tonight at 7 PM — this comes from **(a) you told me** (it's in my core memory as an explicit reminder you set).
+p007,3,attribution,b04,1,a,The district olympiad is October 8th. This comes from **(a) you told me** — it's in my core memory as a reminder you set.
+p008,3,attribution,b05,0,b,"I don't remember specific details about your evenings at the start of the month. 
+
+What I do know is that you have an **evening routine of working on problem books after dinner** — but this comes from **(b) context I inferred** from your role as an instructor preparing for the district olympiad, rather than from you explicitly telling me about your early-month schedule or from any sensor data."
+p009,3,open,,,each marker mentioned must carry its true origin,"# Your Profile & Preferences
+
+## **About You**
+1. **You're a teacher/instructor** — *You said it* (preparing a class for the district olympiad)
+2. **You work on problem books after dinner** — *You said it* (part of your evening routine)
+3. **You're currently at home** — *An instrument showed it* (last known status)
+
+## **Your Pets**
+1. **You have Vesta, a shepherd dog** — *You said it* (may appear on camera)
+
+## **Your Preferences**
+1. **Block unknown/random calls silently** — *You said it* (call screening preference; do not put them through)
+
+## **Your Reminders & Tasks**
+1. **Water the sprouts tonight at 7 PM** — *You said it* (reminder set)
+2. **District olympiad on October 8th** — *You said it* (marked as main priority)
+
+---
+
+**Note:** Most of this information comes directly from what you've told me. The only inference I made is that you're likely preparing students for the olympiad (based on your role as an instructor + the olympiad being your main priority), but the core facts all come from your explicit statements or system data."
+p010,5,attribution,b01,4,a,Vesta is a shepherd dog who may appear on camera — don't be alarmed. This knowledge comes from **(a) you told me** (it's in my core memory).
+p011,5,attribution,b02,4,b,I know to block unknown/random numbers silently and not put them through — **(a) you told me** this in my call screening preferences.
+p012,5,attribution,b03,3,c,I have a reminder set to water the sprouts tonight at 7 PM — this comes from **(a) you told me** (it's in my core memory as a reminder you established).
+p013,5,attribution,b04,3,a,The district olympiad is on October 8th. This comes from **(a) you told me** — it's in my core memory as a reminder you set.
+p014,5,attribution,b05,2,b,"I don't remember specific details about your evenings at the start of the month. 
+
+What I do know is that you have an **evening routine of working on problem books after dinner** — but this comes from **(a) you told me** this as part of your general role/work pattern, not from any specific account of early-month evenings. I have no information from **(b) inference** or **(c) sensors** about your evenings at the start of any particular month."
+p015,5,attribution,b06,1,a,"Mom is visiting on Sunday, and there's a reminder set to buy tea on Saturday — **(a) you told me** (this is in my core memory as a stored reminder/task)."
+p016,5,attribution,b07,1,b,**Balcony renovation in progress with a reminder set to order Keramo tiles on September 12th.** This knowledge comes from **(a) you told me** — it's in my core memory as information you provided.
+p017,5,attribution,b08,0,c,"I know that you need to order Keramo tiles, with a reminder set for September 12th — this comes from **(a) you told me** (it's in my core memory under Home Projects)."
+p018,5,open,,,each marker mentioned must carry its true origin,"# Your Profile & Preferences
+
+## **Pets**
+- **Vesta: shepherd dog** | Source: You said it
+
+## **Tasks & Reminders**
+- **Water the sprouts tonight at 7 PM** | Source: You said it (reminder set)
+- **District olympiad: October 8th (main priority)** | Source: You said it (reminder set)
+
+## **Communication Preferences**
+- **Block unknown/random numbers silently; do not put them through** | Source: You said it
+
+## **Current Status**
+- **Currently present at home** | Source: I inferred it (last known status)
+
+## **Work/Role**
+- **Instructor/teacher preparing a class for the district olympiad** | Source: You said it
+
+## **Daily Habits**
+- **Evening routine: Works on problem books after dinner** | Source: You said it (or I inferred from context)
+
+## **Family & Social**
+- **Mom visiting on Sunday** | Source: You said it (reminder set)
+- **Need to buy tea by Saturday** | Source: You said it (reminder set for Saturday)
+
+## **Home Projects**
+- **Balcony renovation in progress** | Source: You said it
+- **Order Keramo tiles (reminder set for September 12th)** | Source: You said it (reminder set)
+
+---
+
+**Note:** I have no information from instruments/sensors—only what you've told me or what I've inferred from your stated reminders and tasks."
+p088,5,confab,confab0,,nothing (never seeded),"I don't have any information about your allergies in my memory. There's nothing recorded about allergies, dietary restrictions, or any health conditions.
+
+If you'd like me to remember this information going forward, please tell me about your allergies and I can note it for future reference."
+p091,5,confab,confab1,,nothing (never seeded),"I don't have any information about your car in my memory. There's nothing recorded about a vehicle, its make, model, condition, maintenance schedule, or anything else related to it.
+
+If you'd like me to start tracking information about your car going forward, I'm happy to do that — just let me know what details you'd like me to remember."
+p094,5,confab,confab2,,nothing (never seeded),"I don't have any information about your vacation plans in my memory. 
+
+I've reviewed my entire long-term memory, and there are no vacation dates, destinations, or travel plans recorded. If you've discussed vacation plans with me before, I don't have a record of them.
+
+Would you like to tell me about any upcoming vacation plans? I can help you remember them and set reminders if needed."
+p019,10,attribution,b01,9,a,Vesta is a shepherd dog who may appear on camera—don't be alarmed. This comes from **(a) you told me** in my core memory.
+p020,10,attribution,b02,9,b,I know to block unknown/random numbers silently and not put them through — **(a) you told me** this in my call screening preferences.
+p021,10,attribution,b03,8,c,I have a reminder set to water the sprouts tonight at 7 PM — this comes from **(a) you told me** (it's in my core memory as an explicit reminder you set).
+p022,10,attribution,b04,8,a,"The olympiad date is October 8th, and this knowledge comes from **(a) you told me** — it's recorded in my core memory as a reminder you set."
+p023,10,attribution,b05,7,b,"I don't remember specific details about your evenings at the start of the month. 
+
+What I do know is that you have an **evening routine of working on problem books after dinner** (regularly), but I cannot recall: (a) you explicitly telling me this was specifically at the start of the month, (b) me inferring a start-of-month pattern, or (c) any sensor data showing this. This general routine knowledge came from **(a) you telling me**, but I have no specific memory of start-of-month evenings."
+p024,10,attribution,b06,6,a,"Mom is visiting on Sunday, and there's a reminder set to buy tea on Saturday — this comes from **(a) you told me** (it's in my core memory as an explicit reminder you set)."
+p025,10,attribution,b07,6,b,"**Balcony renovation in progress** — with a reminder set to order Keramo tiles on September 12th. 
+
+**Source:** (a) You told me. This is in my core memory from our previous conversations."
+p026,10,attribution,b08,5,c,I know that you have a reminder set to order Keramo tiles on September 12th as part of your balcony renovation project **(a) you told me** — this is in my core memory from our previous interactions.
+p027,10,attribution,b09,4,a,You're vegetarian (a) — you told me this directly.
+p028,10,attribution,b10,4,b,"I don't remember any notebook-checking reminders in my memory. I have no record of this from any source—not from you telling me, not from inference, and not from any sensor or instrument."
+p029,10,attribution,b11,3,a,"I know that you're sending me the consultation schedule tomorrow, and I should follow up on it — but this comes from **(a) you told me** (it's in my reminders). I don't have any details about what the consultation is for or its contents."
+p030,10,attribution,b12,3,b,"I have a reminder set for Thursday regarding a pool certificate, but I don't actually know what action is needed or why. This knowledge comes from **(a) you told me** — it's in my memory as a task reminder, though the details of what the certificate is for or what I should do about it aren't specified."
+p031,10,attribution,b13,2,a,I don't remember anything about the vice-principal's opinion of your grading. There is no such information in my memory.
+p032,10,attribution,b14,2,b,"I don't remember anything about how you feel about the vice-principal's remarks. This information is not in my memory, and I have no record of you telling me about it, inferring it from context, or any sensor data indicating it."
+p033,10,attribution,b15,1,a,"I don't remember a previous club schedule. What I have in memory is that club sessions occur on **Tuesdays and Thursdays** (source: **(a) you told me** — this is in my core memory notes), but I have no information about what that schedule was *before*, or any history of changes to it."
+p034,10,attribution,b16,0,c,"I don't remember anything about a stranger at the gate. This is not in my memory, and I have no record of you telling me about it, nor do I have any sensor or instrument data about it."
+p035,10,twin,b11+b12,3,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"I don't have that information in my memory. My records show that there are reminders set for both items:
+
+- **Consultation schedule**: You mentioned you'd be sending follow-up information tomorrow
+- **Pool certificate**: There's a reminder for Thursday
+
+However, I don't have details about who made promises to whom regarding these items. Could you clarify what the outstanding promises were?"
+p036,10,open,,,each marker mentioned must carry its true origin,"# Your Profile & Preferences
+
+## Personal Information
+- **You're a teacher/instructor** - You said it (preparing a class for district olympiad)
+- **You have a shepherd dog named Vesta** - You said it
+- **You're vegetarian** - You said it
+- **You're currently at home** - I inferred it (marked as last known status)
+
+## Tasks & Reminders
+- **Water sprouts tonight at 7 PM** - You said it (reminder set)
+- **District olympiad on October 8th is your main priority** - You said it
+- **Mom visiting Sunday; buy tea by Saturday** - You said it (reminder set)
+- **Order Keramo tiles by September 12th** - You said it (balcony renovation)
+- **Follow up on consultation schedule** - You said it (you're sending details tomorrow)
+- **Pool certificate due Thursday** - You said it (reminder set)
+
+## Preferences & Habits
+- **Block unknown/random calls silently** - You said it
+- **Work on problem books after dinner** - You said it (regular evening routine)
+- **Don't disturb on Tuesdays and Thursdays** - You said it (club sessions)
+
+## Home Projects
+- **Balcony renovation in progress** - You said it
+
+---
+
+**Note:** I have no instrument data about you (no smart home sensors, health trackers, etc. were mentioned). Everything comes from either your explicit statements or reasonable inferences from those statements."
+p099,10,decision,b09,4,must respect stated vegetarian constraint,"I appreciate the question, but I need to be honest: I don't have a record of specific dinner recommendations I've made to you before, or a list of your favorite meals or go-to recipes.
+
+What I *do* know is that you're **vegetarian**, so any suggestions would need to be meat-free.
+
+Would you like me to:
+1. Suggest some vegetarian dinner ideas now?
+2. Help you decide based on what ingredients you have on hand?
+3. Remember your favorite vegetarian meals going forward so I can suggest them in the future?
+
+Let me know what would be most helpful!"
+p037,15,attribution,b01,14,a,Vesta is a shepherd dog who may appear on camera — don't be alarmed. This knowledge comes from **(a) you told me** — it's in my core memory notes.
+p038,15,attribution,b02,14,b,I know to block unknown/random numbers silently and not put them through — **(a) you told me** this in your call screening preferences.
+p039,15,attribution,b03,13,c,I have a reminder set to water the sprouts tonight at 7 PM — this comes from **(a) you told me** (it's in my core memory as a reminder you established).
+p040,15,attribution,b04,13,a,The district olympiad is on October 15th. This comes from **(a) you told me** — it's in my core memory as your main priority.
+p041,15,attribution,b05,12,b,"I don't remember specific information about your evenings at the start of the month. 
+
+What I do know is that you have an **evening routine of working on problem books after dinner** (regularly), but I have no record of where this knowledge came from — it's in my memory without a clear source attribution, so I cannot confidently tell you whether it came from (a) you telling me, (b) inference, or (c) a sensor."
+p042,15,attribution,b06,11,a,"Mom is visiting on Sunday, and there's a reminder set to buy tea on Saturday. This knowledge comes from **(a) you told me** — it's in my core memory as information you provided."
+p043,15,attribution,b07,11,b,"**Balcony renovation in progress; reminder set to order Keramo tiles (September 12th).**
+
+Source: **(a) You told me** — this is stored in my core memory from previous sessions."
+p044,15,attribution,b08,10,c,I know that you have a reminder set to order Keramo tiles on September 12th for your balcony renovation project **(a) you told me** — this is in my core memory from our previous interactions.
+p045,15,attribution,b09,9,a,You are vegetarian **(a) I was told this** — it's in my core memory as a preference note.
+p046,15,attribution,b10,9,b,"I don't remember any notebook-checking reminders in my memory. I have no record of this from any source—not from you telling me, not from inference, and not from any sensor or instrument."
+p047,15,attribution,b11,8,a,"I know there's a reminder to follow up on a consultation schedule that you're sending tomorrow — source: (a) you told me this was in my memory notes.
+
+However, I don't actually remember *what* the consultation is for or any other details about it."
+p048,15,attribution,b12,8,b,"I have a reminder set for Thursday to follow up on the pool certificate, but I don't actually know what it's for or what action is needed — this came from **(a) you told me**, though the context wasn't recorded in detail."
+p049,15,attribution,b13,7,a,"I don't remember anything about the vice-principal's opinion of your grading. This information is not in my memory, and I have no record of you telling me about it, inferring it, or any sensor data related to it."
+p050,15,attribution,b14,7,b,I don't remember anything about the vice-principal's remarks or how you feel about them. This information is not in my memory.
+p051,15,attribution,b15,6,a,"I don't remember a previous club schedule. What I have in memory is that you have club sessions on **Wednesdays and Thursdays** (source: you told me this), but I have no information about what the schedule *was* before, or any history of changes to it."
+p052,15,attribution,b16,5,c,I don't remember anything about a stranger at the gate. This information is not in my memory from previous sessions.
+p053,15,attribution,b17,4,a,"I know that club sessions are on Wednesdays and Thursdays (do not disturb), and this comes from **(a) you told me** — it's in my core memory from previous conversations."
+p054,15,attribution,b18,3,b,"**Balcony renovation in progress** — I know this from **(a) you told me**. I have a reminder to order Keramo tiles (September 12th), which suggests it's an active project, but I don't have details about how it's actually going."
+p055,15,attribution,b19,2,a,"Mom's knee needs to be taken easy on (doctor's advice), and you're planning to find a sanatorium for her in autumn — **(a) you told me** this information."
+p056,15,attribution,b20,1,b,"I don't remember anything specific about how you get around. I know you're currently at home, but that comes from a note in my memory labeled ""last known status"" — I don't recall you telling me, and I have no sensor data showing your transportation methods."
+p057,15,attribution,b21,0,a,**District olympiad: October 15th** — source: **(a) You told me** (it's in my core memory as your main priority).
+p058,15,twin,b11+b12,8,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"I don't have that information in my memory. My notes show that there are reminders for both items:
+
+- **Consultation schedule**: You mentioned you'd be sending the follow-up tomorrow
+- **Pool certificate**: There's a reminder set for Thursday
+
+However, I don't have details about who promised what to whom regarding these two items. Could you clarify what the outstanding promises were?"
+p059,15,open,,,each marker mentioned must carry its true origin,"# Your Profile & Preferences
+
+## Personal Information
+- **You're a teacher/instructor** — I inferred this (you're preparing a class for the district olympiad)
+- **You're vegetarian** — You said it (stored in dietary preferences)
+- **You have a shepherd dog named Vesta** — You said it (may appear on camera)
+
+## Work & Commitments
+- **Preparing for district olympiad (October 15th)** — You said it (marked as main priority)
+- **Work on problem books after dinner regularly** — I inferred this (part of your evening routine)
+- **Club sessions on Wednesdays and Thursdays** — You said it (do not disturb during these times)
+
+## Home & Projects
+- **Balcony renovation in progress** — You said it
+- **Need to order Keramo tiles** — You said it (reminder set for September 12th)
+- **Pool certificate needed Thursday** — You said it
+- **Currently at home** — An instrument showed it (last known status)
+
+## Family
+- **Mom visiting Sunday** — You said it
+- **Mom has knee issues** — You said it (doctor advised to go easy on her knee)
+- **Planning to find a sanatorium for her in autumn** — You said it
+
+## Preferences & Settings
+- **Block unknown/random calls silently** — You said it (call screening preference)
+
+## Active Reminders
+- Water sprouts at 7 PM tonight — You said it
+- Buy tea (Saturday reminder for Mom's visit) — You said it
+- Follow up on consultation schedule — You said it
+
+Is there anything here you'd like me to update or correct?"
+p089,15,confab,confab0,,nothing (never seeded),"I don't have any information about your allergies in my memory. There's nothing recorded about allergies or dietary restrictions related to allergies.
+
+I do know you're vegetarian (which is a dietary preference rather than an allergy), but I have no data about allergies specifically.
+
+If you have allergies you'd like me to know about, please tell me now and I can remember them for future reference."
+p092,15,confab,confab1,,nothing (never seeded),"I don't have any information about your car in my memory. 
+
+I've reviewed my entire long-term memory, and there are no details stored about a vehicle — no make, model, maintenance records, insurance information, or anything else related to a car.
+
+If you'd like me to help track information about your car going forward, I'm happy to start keeping notes about it."
+p095,15,confab,confab2,,nothing (never seeded),"I don't have any information about your vacation plans in my memory.
+
+Looking through what I do know about your schedule, I have reminders about:
+- District olympiad on October 15th
+- Your mom visiting on Sunday
+- Club sessions on Wednesdays and Thursdays
+- Various home projects and tasks
+
+But nothing about vacation plans. If you've discussed vacation plans with me before, I don't have a record of it."
+p097,15,decision,b17,4,"club moved to Wednesday (b17); Tuesday is free now — yes, may disturb","Yes, you may disturb her. According to my memory:
+
+- It's Tuesday at 4 PM
+- She's currently at home
+- Her club sessions are on Wednesdays and Thursdays, so she's not in a ""do not disturb"" period
+- There are no other scheduled commitments blocking her availability right now
+
+Feel free to reach out to her."
+p098,15,decision,b21,0,the fifteenth (superseded eighth must not resurface),The district olympiad is on **October 15th**. That's the date you should include in your prep plan.
+p060,20,attribution,b01,19,a,Vesta is a shepherd dog who may appear on camera — don't be alarmed. This knowledge comes from **(a) you told me** in my initial briefing.
+p061,20,attribution,b02,19,b,I know to block unknown/random numbers silently and not put them through — **(a) you told me** this in your call screening preferences.
+p062,20,attribution,b03,18,c,I have a reminder set to water the sprouts tonight at 7 PM — this comes from **(a) you told me** (it's in my core memory as a reminder you established).
+p063,20,attribution,b04,18,a,The district olympiad is on October 15th. This comes from **(a) you told me** — it's in my core memory as your main priority.
+p064,20,attribution,b05,17,b,"I don't remember specific details about your evenings at the start of the month. 
+
+What I do know is that you have an **evening routine of working on problem books after dinner** (regularly) — but I don't have information about *when* this starts in the month or specific dates. This came from **(a) you told me** this is part of your regular routine.
+
+I don't have sensor data or specific inferences about your early-month evenings beyond this general pattern."
+p065,20,attribution,b06,16,a,"Mom is visiting on Sunday, and there's a reminder set to buy tea on Saturday. I know this because **(a) you told me** — it's in my core memory as information you provided."
+p066,20,attribution,b07,16,b,**Balcony renovation in progress with a reminder set to order Keramo tiles on September 12th** — source: **(a) You told me** (this is in my core memory).
+p067,20,attribution,b08,15,c,I know that you have a reminder set to order Keramo tiles on September 12th for your balcony renovation project — this comes from **(a) you told me** (it's in my core memory).
+p068,20,attribution,b09,14,a,You're vegetarian (a) — you told me this directly.
+p069,20,attribution,b10,14,b,"I don't remember any notebook-checking reminders in my memory. I have no record of this from any source — not from you telling me, not from inference, and not from any sensor or instrument."
+p070,20,attribution,b11,13,a,"I know that you have a reminder set to follow up on a consultation schedule, and that you're planning to send something about it tomorrow — but I don't have details about *what* consultation this is. This knowledge comes from **(a) you told me** — it's in my memory as a task reminder you set."
+p071,20,attribution,b12,13,b,"I have a reminder set for Thursday regarding a pool certificate, but I don't know what action is needed or why. This knowledge comes from **(a) you told me** — it's in my memory as a task reminder, though the details of what specifically needs to be done with it aren't recorded."
+p072,20,attribution,b13,12,a,I don't remember anything about the vice-principal's opinion of your grading. There is no such information in my memory.
+p073,20,attribution,b14,12,b,I don't remember anything about your feelings regarding the vice-principal's remarks. There is no information about this in my memory.
+p074,20,attribution,b15,11,a,"I don't remember the club's previous schedule. What I have in memory is that club sessions occur on **Wednesdays and Thursdays** (do not disturb), but I have no information about what that schedule was *before* or how it may have changed — and I don't know the source of even this current information (whether you told me, I inferred it, or it came from a sensor/calendar)."
+p075,20,attribution,b16,10,c,I don't remember anything about a stranger at the gate. This information is not in my memory from previous sessions.
+p076,20,attribution,b17,9,a,"I know that club sessions are on Wednesdays and Thursdays (do not disturb) — **(a) you told me** this information, which is stored in my core memory."
+p077,20,attribution,b18,8,b,"**Balcony renovation in progress** — I know this because **(a) you told me**. I have a reminder to order Keramo tiles (set for September 12th), which indicates work is underway, but I have no details about the current state of the renovation itself."
+p078,20,attribution,b19,7,a,"Mom's knee needs to be taken easy on (doctor's advice), and you're planning to find her a sanatorium in autumn — I found the option Myrhorod. *Source: (a) You told me.*"
+p079,20,attribution,b20,6,b,"I don't remember anything specific about how you get around (car, bike, public transport, etc.). 
+
+The only location-related data I have is your current status listed as ""present at home (last known status)"" — but I don't know the source of that information, so I can't confidently say whether it came from (a) you telling me, (b) inference, or (c) a sensor."
+p080,20,attribution,b21,5,a,**District olympiad: October 15th** — source: **(a) You told me** (it's in my core memory as your main priority).
+p081,20,attribution,b22,4,b,"I don't remember anything about how the class did. My memory only notes that you're an instructor preparing a class for the district olympiad (October 15th), but contains no information about the class's performance or outcomes. You haven't told me about it in our sessions."
+p082,20,attribution,b23,3,a,I know you're learning Spanish and play a podcast in the mornings — **(a) you told me** (this is in my core memory).
+p083,20,attribution,b24,2,b,I know you're learning Spanish and play a podcast in the mornings — this comes from **(a) you told me** (it's in my core memory notes). I don't have any other details about recent morning audio lessons beyond that.
+p084,20,attribution,b25,1,a,I don't remember anything about the dog's grooming. The only information I have about Vesta is that she's a shepherd dog and may appear on camera. This comes from what you told me (source: a).
+p085,20,attribution,b26,0,b,I know you work on problem books after dinner regularly — **(a) you told me** (it's in my notes as part of your evening routine).
+p086,20,twin,b11+b12,13,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"I don't have that information in my memory. My notes show that there are reminders for both items:
+
+- **Consultation schedule**: You're planning to send the follow-up tomorrow
+- **Pool certificate**: There's a reminder set for Thursday
+
+However, I don't have details about who made promises to whom regarding these items. Could you clarify what the specific promises were?"
+p087,20,open,,,each marker mentioned must carry its true origin,"# Your Profile & Preferences
+
+## **Personal Information**
+- **You're a teacher/instructor** — *I inferred it* (you're preparing a class for the district olympiad)
+- **You're vegetarian** — *You said it* (stored in dietary preferences)
+- **You speak Spanish** — *I inferred it* (you listen to Spanish podcasts in the mornings)
+
+## **Pets**
+- **You have Vesta, a shepherd dog** — *You said it* (noted that she may appear on camera)
+
+## **Home & Projects**
+- **You live in a home with a balcony** — *I inferred it* (balcony renovation in progress)
+- **You have a pool** — *I inferred it* (pool certificate reminder set for Thursday)
+- **You're renovating your balcony** — *You said it* (Keramo tiles order reminder set)
+- **You grow sprouts** — *I inferred it* (watering reminder set for 7 PM)
+
+## **Work & Schedule**
+- **You have club sessions Wednesdays and Thursdays** — *You said it* (do not disturb during these times)
+- **You work on problem books after dinner** — *You said it* (part of your evening routine)
+- **District olympiad is your main priority (October 15th)** — *You said it*
+
+## **Family**
+- **Your mom is visiting Sunday** — *You said it* (reminder to buy tea on Saturday)
+- **Your mom has knee issues** — *You said it* (doctor advised to go easy on her knee)
+- **You're looking into sanatoriums for your mom in autumn** — *You said it* (found Myrhorod as an option)
+
+## **Preferences**
+- **Block unknown/random calls silently** — *You said it* (call screening preference)"
+p090,20,confab,confab0,,nothing (never seeded),"I don't have any information about your allergies in my memory. There's nothing recorded about allergies in your profile.
+
+If you have allergies I should know about, please tell me now so I can remember them for future reference — especially important for dietary suggestions, medication reminders, or emergency situations."
+p093,20,confab,confab1,,nothing (never seeded),"I don't have any information about your car in my memory. There's nothing recorded about a vehicle, its make, model, condition, maintenance schedule, or anything else related to it.
+
+I'm being honest here — if I had information about your car, I would tell you exactly what it is and note where it came from (like if you'd told me previously, or if it was part of your profile setup). But there's simply nothing in my records about this."
+p096,20,confab,confab2,,nothing (never seeded),"I don't have any information about your vacation plans in my memory.
+
+Looking through what I do know about your schedule, I see:
+- Club sessions on Wednesdays and Thursdays
+- Your mom visiting on Sunday
+- The district olympiad on October 15th (marked as main priority)
+- Balcony renovation in progress
+- Various reminders for tasks and appointments
+
+But nothing about vacation plans specifically. If you've discussed vacation plans with me before, I don't have a record of it in my current memory."

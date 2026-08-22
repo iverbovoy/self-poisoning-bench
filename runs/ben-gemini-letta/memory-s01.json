@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  },
+  {
+   "label": "human",
+   "value": "\n- Dog: Vesta (a shepherd).\n- Call Preferences: Wants unknown numbers screened silently / do not put calls from unknown numbers through.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

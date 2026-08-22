@@ -1,0 +1,206 @@
+[
+ {
+  "id": "6384a82a-fea1-4307-9be3-e7ed7fa9b038",
+  "memory": "User has a dog named Vesta, a shepherd breed",
+  "created_at": "2026-08-22T12:20:05.711988+00:00",
+  "updated_at": "2026-08-22T12:20:05.711988+00:00"
+ },
+ {
+  "id": "291dfadf-4cd0-4fc4-9569-78f003749be7",
+  "memory": "User set a 20-minute timer on August 22, 2026",
+  "created_at": "2026-08-22T12:20:05.712024+00:00",
+  "updated_at": "2026-08-22T12:20:05.712024+00:00"
+ },
+ {
+  "id": "1eba9500-9806-4dce-8505-d87f236e8767",
+  "memory": "User wants to be reminded to water the sprouts at 7 PM on August 22, 2026",
+  "created_at": "2026-08-22T12:20:05.712045+00:00",
+  "updated_at": "2026-08-22T12:20:05.712045+00:00"
+ },
+ {
+  "id": "911f8b4f-0b00-4796-ad77-9425bd218beb",
+  "memory": "User received three calls from an unknown number on August 22, 2026 and does not want calls from unknown numbers to be put through; prefers them screened silently",
+  "created_at": "2026-08-22T12:20:05.712062+00:00",
+  "updated_at": "2026-08-22T12:20:05.712062+00:00"
+ },
+ {
+  "id": "5250dbca-50d9-4ccc-9141-c926675db39a",
+  "memory": "User has a district olympiad scheduled for October 8, 2026, which is the main focus right now",
+  "created_at": "2026-08-22T12:20:11.794311+00:00",
+  "updated_at": "2026-08-22T12:20:11.794311+00:00"
+ },
+ {
+  "id": "e47f17ce-9542-4f37-aca2-0b912463cf75",
+  "memory": "User has been working through problem books after dinner for three consecutive days as evening preparation for the district olympiad on October 8, 2026",
+  "created_at": "2026-08-22T12:20:13.961196+00:00",
+  "updated_at": "2026-08-22T12:20:13.961196+00:00"
+ },
+ {
+  "id": "e2507ca4-7d4f-44de-982b-03e8068dcd02",
+  "memory": "The outside temperature on August 22, 2026 is about 15 degrees Celsius and it is windy",
+  "created_at": "2026-08-22T12:20:13.961225+00:00",
+  "updated_at": "2026-08-22T12:20:13.961225+00:00"
+ },
+ {
+  "id": "5e437321-b555-448d-a2d2-4a44558ef9b1",
+  "memory": "User's mother is visiting on Sunday, August 25, 2026, and user needs to buy her tea before the visit",
+  "created_at": "2026-08-22T12:25:28.558207+00:00",
+  "updated_at": "2026-08-22T12:25:28.558207+00:00"
+ },
+ {
+  "id": "b9d495d2-3221-465c-af52-c285840cea68",
+  "memory": "User has recently made purchases suggesting they've started a balcony renovation",
+  "created_at": "2026-08-22T12:25:28.558308+00:00",
+  "updated_at": "2026-08-22T12:25:28.558308+00:00"
+ },
+ {
+  "id": "2d74c482-9dce-461f-9cc0-2659b937aae0",
+  "memory": "User set a reminder to order Keramo tiles for September 12, 2026",
+  "created_at": "2026-08-22T12:25:30.739748+00:00",
+  "updated_at": "2026-08-22T12:25:30.739748+00:00"
+ },
+ {
+  "id": "424d5718-cdf0-4104-bd46-5c424beddf52",
+  "memory": "User set a timer for twenty minutes on August 22, 2026",
+  "created_at": "2026-08-22T12:25:30.739777+00:00",
+  "updated_at": "2026-08-22T12:25:30.739777+00:00"
+ },
+ {
+  "id": "732b0d2b-ddc4-406e-8f5f-28940ecd04ea",
+  "memory": "User is vegetarian and does not want meat-based recipes suggested",
+  "created_at": "2026-08-22T12:25:52.604829+00:00",
+  "updated_at": "2026-08-22T12:25:52.604829+00:00"
+ },
+ {
+  "id": "9036f363-eaa4-4158-a053-2befc546a574",
+  "memory": "User's evening reminders for notebook-checking have been moved to the morning to accommodate olympiad preparation schedule",
+  "created_at": "2026-08-22T12:25:52.604863+00:00",
+  "updated_at": "2026-08-22T12:25:52.604863+00:00"
+ },
+ {
+  "id": "df19aba6-898a-4b78-b632-4ffe232c275c",
+  "memory": "User plans to send a consultation schedule tomorrow (August 23, 2026) and wants to be reminded if they forget to send it",
+  "created_at": "2026-08-22T12:25:55.000568+00:00",
+  "updated_at": "2026-08-22T12:25:55.000568+00:00"
+ },
+ {
+  "id": "3cc9516e-c4b2-4565-a6c1-5a2945f55dd6",
+  "memory": "User needs to be reminded about a pool certificate on Thursday, August 29, 2026",
+  "created_at": "2026-08-22T12:25:55.000597+00:00",
+  "updated_at": "2026-08-22T12:25:55.000597+00:00"
+ },
+ {
+  "id": "fdac12c0-89e3-4b88-b5bd-758ae52b6a0b",
+  "memory": "User is vegetarian and does not want meat-based recipes suggested",
+  "created_at": "2026-08-22T12:25:55.000614+00:00",
+  "updated_at": "2026-08-22T12:25:55.000614+00:00"
+ },
+ {
+  "id": "26988695-ac68-40e0-b1e3-fd9d6f699653",
+  "memory": "User's vice-principal commented that user grades too softly",
+  "created_at": "2026-08-22T12:25:56.486044+00:00",
+  "updated_at": "2026-08-22T12:25:56.486044+00:00"
+ },
+ {
+  "id": "c1804893-fb2e-4c44-9997-c867e4095abb",
+  "memory": "User has club sessions on Tuesdays and Thursdays and does not want to be disturbed during those times",
+  "created_at": "2026-08-22T12:25:58.372736+00:00",
+  "updated_at": "2026-08-22T12:25:58.372736+00:00"
+ },
+ {
+  "id": "d1edcfcc-1aeb-4c09-b9d0-6da0d0dac5d8",
+  "memory": "User identified the stranger at the gate (logged at 19:05 on August 22, 2026) as their new neighbor",
+  "created_at": "2026-08-22T12:25:59.956949+00:00",
+  "updated_at": "2026-08-22T12:25:59.956949+00:00"
+ },
+ {
+  "id": "7b88de23-5ea9-4c00-96cf-56368ad97d11",
+  "memory": "User's club sessions have moved to Wednesdays; Tuesday sessions have been cancelled as of August 22, 2026",
+  "created_at": "2026-08-22T12:26:35.110875+00:00",
+  "updated_at": "2026-08-22T12:26:35.110875+00:00"
+ },
+ {
+  "id": "83eae9e9-49bc-4086-963b-eb3da241dc3d",
+  "memory": "Outside temperature on August 22, 2026 is approximately 15 degrees Celsius and it is windy",
+  "created_at": "2026-08-22T12:26:35.110911+00:00",
+  "updated_at": "2026-08-22T12:26:35.110911+00:00"
+ },
+ {
+  "id": "f93d70d3-1325-4105-a738-971b97ea995a",
+  "memory": "User's balcony renovation has stalled; Keramo tiles ordered for the project have not arrived as of August 22, 2026, now two weeks overdue",
+  "created_at": "2026-08-22T12:26:37.507459+00:00",
+  "updated_at": "2026-08-22T12:26:37.507459+00:00"
+ },
+ {
+  "id": "07f46da9-97d6-4da6-a0a5-2a4995676648",
+  "memory": "User is frustrated about the delayed tile delivery and does not want to be reminded about the stalled renovation",
+  "created_at": "2026-08-22T12:26:37.507484+00:00",
+  "updated_at": "2026-08-22T12:26:37.507484+00:00"
+ },
+ {
+  "id": "aef6e7c0-01b4-4940-820c-8bb261982218",
+  "memory": "User's mother has been advised by her doctor to go easy on her knee and user plans to find a sanatorium for her in autumn 2026",
+  "created_at": "2026-08-22T12:26:39.697671+00:00",
+  "updated_at": "2026-08-22T12:26:39.697671+00:00"
+ },
+ {
+  "id": "cf23cfbf-6213-4758-956e-d7ca8f73bf86",
+  "memory": "User has switched to using a bicycle for transportation, as inferred from their return times and weather patterns on August 22, 2026",
+  "created_at": "2026-08-22T12:26:43.313100+00:00",
+  "updated_at": "2026-08-22T12:26:43.313100+00:00"
+ },
+ {
+  "id": "a240f865-9e4d-4866-8085-f994af0d755b",
+  "memory": "The tile renovation has stalled as of August 22, 2026, with tiles not yet arrived after two weeks of waiting",
+  "created_at": "2026-08-22T12:26:43.313129+00:00",
+  "updated_at": "2026-08-22T12:26:43.313129+00:00"
+ },
+ {
+  "id": "78275085-e00f-46ad-86da-08478167bf7e",
+  "memory": "User's district olympiad has been moved from October 8, 2026 to October 15, 2026",
+  "created_at": "2026-08-22T12:26:45.522269+00:00",
+  "updated_at": "2026-08-22T12:26:45.522269+00:00"
+ },
+ {
+  "id": "91f19b01-b141-4194-adb9-97db5e2ef6d0",
+  "memory": "The temperature outside on August 22, 2026 is about 15 degrees Celsius and it is windy",
+  "created_at": "2026-08-22T12:26:45.522296+00:00",
+  "updated_at": "2026-08-22T12:26:45.522296+00:00"
+ },
+ {
+  "id": "a6f0dcad-812f-4db1-b2b5-8be2037cc1b7",
+  "memory": "User's class performed well on August 22, 2026, and user was humming all evening in response",
+  "created_at": "2026-08-22T12:27:32.954218+00:00",
+  "updated_at": "2026-08-22T12:27:32.954218+00:00"
+ },
+ {
+  "id": "69c596f4-8f68-4b37-8568-c60f89ddae1d",
+  "memory": "User achieved third place in a competition or event on August 22, 2026",
+  "created_at": "2026-08-22T12:27:32.954249+00:00",
+  "updated_at": "2026-08-22T12:27:32.954249+00:00"
+ },
+ {
+  "id": "7b05dd3e-e699-470d-a45e-8ae24f51fae3",
+  "memory": "User has started learning Spanish and wants a podcast played in the mornings as part of their learning routine",
+  "created_at": "2026-08-22T12:27:34.581783+00:00",
+  "updated_at": "2026-08-22T12:27:34.581783+00:00"
+ },
+ {
+  "id": "111780b0-a599-4307-b014-9b0e58892301",
+  "memory": "User hasn't played the Spanish language podcast lessons in a week as of August 22, 2026, despite having started the learning routine",
+  "created_at": "2026-08-22T12:27:36.766388+00:00",
+  "updated_at": "2026-08-22T12:27:36.766388+00:00"
+ },
+ {
+  "id": "d6dabc24-2c26-4673-95e8-b690b131b354",
+  "memory": "User experienced a crunch week around August 22, 2026",
+  "created_at": "2026-08-22T12:27:36.766413+00:00",
+  "updated_at": "2026-08-22T12:27:36.766413+00:00"
+ },
+ {
+  "id": "c1028265-f544-4b6c-8171-8c7ebda893f2",
+  "memory": "User took their dog Vesta to the groomer on August 22, 2026, and had her trimmed",
+  "created_at": "2026-08-22T12:27:38.734759+00:00",
+  "updated_at": "2026-08-22T12:27:38.734759+00:00"
+ }
+]

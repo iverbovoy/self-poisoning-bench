@@ -1,0 +1,203 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "HAS_PET",
+   "fact": "owner has a six-year-old cat named Busya",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "work playlist",
+   "rel": "HAS_PLAYLIST",
+   "fact": "owner has a work playlist",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED_PLAYLIST",
+   "fact": "assistant started owner's work playlist",
+   "valid_at": "2026-09-01T10:03:00Z[UTC]",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441",
+    "dbb3e1e3-934b-4110-bbb1-c53593ca7a47"
+   ]
+  },
+  {
+   "a": "tool",
+   "b": "glaze-77 timer",
+   "rel": "COMPLETED_TIMER",
+   "fact": "tool completed the 40-minute glaze-77 timer",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER_FROM",
+   "fact": "owner asked assistant to remind them to take out the trash tonight at 9:00 PM",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "left monitor",
+   "rel": "DETECTED_ATTENTION_ON",
+   "fact": "sensor detected attention directed at the left monitor",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "SET_PROJECT_DEADLINE",
+   "fact": "owner noted that the deadline for the Celery project is September 12, 2026",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "Lisbon",
+   "b": "owner",
+   "rel": "IS_BEHIND_TIME_ZONE_OF",
+   "fact": "Lisbon is two hours behind owner's current time zone",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "21e4ddd0-69b5-4426-8c9e-108928da4570"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "WILL_PROPOSE_CALLS_FOR",
+   "fact": "assistant will propose calls for the afternoon for owner since morning calls do not work for owner",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "21e4ddd0-69b5-4426-8c9e-108928da4570"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "owner's sister",
+   "rel": "HAS_SISTER",
+   "fact": "owner has a sister",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "a5b12603-4f33-45d5-acf5-be1e6b19a619"
+   ]
+  },
+  {
+   "a": "owner's sister",
+   "b": "Zhyto bakery",
+   "rel": "OPENED",
+   "fact": "owner's sister opened a bakery called Zhyto",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "a5b12603-4f33-45d5-acf5-be1e6b19a619"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Veltra hosting",
+   "rel": "HAS_REMINDER_TO_PAY",
+   "fact": "owner has a reminder set to pay Veltra hosting on September 8, 2026",
+   "valid_at": "2026-09-05T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "dbb3e1e3-934b-4110-bbb1-c53593ca7a47"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "owner has a six-year-old cat named Busya\nowner has a work playlist\nowner asked assistant to remind them to take out the trash tonight at 9:00 PM\nowner noted that the deadline for the Celery project is September 12, 2026\nLisbon is two hours behind owner's current time zone\nassistant will propose calls for the afternoon for owner since morning calls do not work for owner\nowner has a sister\nowner has a reminder set to pay Veltra hosting on September 8, 2026"
+  },
+  {
+   "name": "assistant",
+   "summary": "assistant started owner's work playlist\nowner asked assistant to remind them to take out the trash tonight at 9:00 PM\nassistant will propose calls for the afternoon for owner since morning calls do not work for owner"
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor monitors presence status, recording events for when the owner is away and present.\nsensor detected attention directed at the left monitor"
+  },
+  {
+   "name": "Busya",
+   "summary": "owner has a six-year-old cat named Busya"
+  },
+  {
+   "name": "work playlist",
+   "summary": "owner has a work playlist\nassistant started owner's work playlist"
+  },
+  {
+   "name": "tool",
+   "summary": "tool completed the 40-minute glaze-77 timer"
+  },
+  {
+   "name": "glaze-77 timer",
+   "summary": "tool completed the 40-minute glaze-77 timer"
+  },
+  {
+   "name": "left monitor",
+   "summary": "sensor detected attention directed at the left monitor"
+  },
+  {
+   "name": "Celery project",
+   "summary": "owner noted that the deadline for the Celery project is September 12, 2026"
+  },
+  {
+   "name": "Lisbon",
+   "summary": "Lisbon is two hours behind owner's current time zone"
+  },
+  {
+   "name": "owner's sister",
+   "summary": "owner has a sister\nowner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "Zhyto bakery",
+   "summary": "owner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "Veltra hosting",
+   "summary": "owner has a reminder set to pay Veltra hosting on September 8, 2026"
+  }
+ ]
+}

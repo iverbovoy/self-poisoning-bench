@@ -1,0 +1,122 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Vesta",
+   "rel": "OWNS_PET",
+   "fact": "owner has a shepherd dog named Vesta.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER_FROM",
+   "fact": "owner requested assistant to remind them to water the sprouts at 7:00 PM tonight.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "INSTRUCTED_TO_SCREEN_CALLS",
+   "fact": "owner instructed assistant to silently screen and block calls from unknown numbers.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "2e49a8fc-e993-4842-a729-0a3b1f5d005d"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "district olympiad",
+   "rel": "HAS_UPCOMING_EVENT",
+   "fact": "The owner noted that the district olympiad on October 8, 2026 is their main focus right now.",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "26c38597-f85d-4da2-bd7c-bb3b06062ffe"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "seedling-watering timer",
+   "rel": "ANNOUNCED_COMPLETION_OF",
+   "fact": "The assistant informed the owner that the seedling-watering timer is done.",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "26c38597-f85d-4da2-bd7c-bb3b06062ffe"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "problem books",
+   "rel": "STUDIES_WITH",
+   "fact": "owner has been studying problem books after dinner for three days running",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "dbeeb345-bbd4-4df2-95ac-0cf5f505b77b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "district olympiad",
+   "rel": "PREPARES_CLASS_FOR",
+   "fact": "owner is preparing the class for the district olympiad in the evenings",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "dbeeb345-bbd4-4df2-95ac-0cf5f505b77b"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "owner has a shepherd dog named Vesta.\nowner requested assistant to remind them to water the sprouts at 7:00 PM tonight.\nowner instructed assistant to silently screen and block calls from unknown numbers.\nThe owner noted that the district olympiad on October 8, 2026 is their main focus right now.\nowner has been studying problem books after dinner for three days running\nowner is preparing the class for the district olympiad in the evenings"
+  },
+  {
+   "name": "assistant",
+   "summary": "owner requested assistant to remind them to water the sprouts at 7:00 PM tonight.\nowner instructed assistant to silently screen and block calls from unknown numbers.\nThe assistant informed the owner that the seedling-watering timer is done."
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor reported presence states for away and present."
+  },
+  {
+   "name": "Vesta",
+   "summary": "owner has a shepherd dog named Vesta."
+  },
+  {
+   "name": "tool",
+   "summary": "tool completed a 20-minute timer named seedling-watering."
+  },
+  {
+   "name": "seedling-watering timer",
+   "summary": "The assistant informed the owner that the seedling-watering timer is done."
+  },
+  {
+   "name": "district olympiad",
+   "summary": "The owner noted that the district olympiad on October 8, 2026 is their main focus right now.\nowner is preparing the class for the district olympiad in the evenings"
+  },
+  {
+   "name": "problem books",
+   "summary": "owner has been studying problem books after dinner for three days running"
+  }
+ ]
+}

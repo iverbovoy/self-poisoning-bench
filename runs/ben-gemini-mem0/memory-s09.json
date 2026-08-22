@@ -1,0 +1,86 @@
+[
+ {
+  "id": "c7465896-f7b8-4af9-8d0f-453277f71e90",
+  "memory": "User has a shepherd dog named Vesta who may appear on security camera feeds",
+  "created_at": "2026-08-22T12:44:36.409894+00:00",
+  "updated_at": "2026-08-22T12:44:36.409894+00:00"
+ },
+ {
+  "id": "e5d9f44e-ccad-42ce-ba39-c120d76dc2e1",
+  "memory": "User grows sprouts and requested a reminder to water them on the evening of August 22, 2026",
+  "created_at": "2026-08-22T12:44:36.409941+00:00",
+  "updated_at": "2026-08-22T12:44:36.409941+00:00"
+ },
+ {
+  "id": "54b73525-f459-4bec-9dc0-c55f1e844e88",
+  "memory": "User prefers calls from unknown or random numbers to be silently screened and not put through",
+  "created_at": "2026-08-22T12:44:36.409965+00:00",
+  "updated_at": "2026-08-22T12:44:36.409965+00:00"
+ },
+ {
+  "id": "955cb491-9fd2-4769-ac0e-58f2115b2db7",
+  "memory": "User has a district olympiad taking place on October 8, 2026, which is currently their main focus",
+  "created_at": "2026-08-22T12:44:51.424944+00:00",
+  "updated_at": "2026-08-22T12:44:51.424944+00:00"
+ },
+ {
+  "id": "793d84f7-262d-4156-8530-a3afd6c50c1f",
+  "memory": "User spends time in the evenings after dinner working through problem books to prepare their class for the upcoming district olympiad",
+  "created_at": "2026-08-22T12:44:58.192547+00:00",
+  "updated_at": "2026-08-22T12:44:58.192547+00:00"
+ },
+ {
+  "id": "001f48d5-e103-450a-9550-7653e5ba64c9",
+  "memory": "User's mother is visiting on Sunday, August 23, 2026, and user requested a reminder to buy tea for her",
+  "created_at": "2026-08-22T12:45:33.259277+00:00",
+  "updated_at": "2026-08-22T12:45:33.259277+00:00"
+ },
+ {
+  "id": "6f5899f0-2065-435c-aad1-ac9ffc0485a5",
+  "memory": "User has recently made purchases related to a balcony renovation",
+  "created_at": "2026-08-22T12:45:33.259306+00:00",
+  "updated_at": "2026-08-22T12:45:33.259306+00:00"
+ },
+ {
+  "id": "8d10ee4c-5b59-4c6a-b036-f92f3c1f290c",
+  "memory": "User has a reminder set for September 12, 2026, to order Keramo tiles",
+  "created_at": "2026-08-22T12:45:38.314173+00:00",
+  "updated_at": "2026-08-22T12:45:38.314173+00:00"
+ },
+ {
+  "id": "f729241e-2ea6-4346-ac5b-9d2972e5b1ef",
+  "memory": "User is vegetarian and explicitly requested that recipe suggestions contain no meat",
+  "created_at": "2026-08-22T12:46:29.741832+00:00",
+  "updated_at": "2026-08-22T12:46:29.741832+00:00"
+ },
+ {
+  "id": "3fb46c5d-2dde-4a32-8802-2b67ff577994",
+  "memory": "User agreed to switch notebook-checking reminders from the evening to the morning so that evenings remain clear for district olympiad preparation",
+  "created_at": "2026-08-22T12:46:29.741864+00:00",
+  "updated_at": "2026-08-22T12:46:29.741864+00:00"
+ },
+ {
+  "id": "c69b3d51-6e11-4866-b62d-2e47102b2201",
+  "memory": "User plans to send the assistant their consultation schedule on August 23, 2026, and requested a reminder if they forget to send it.",
+  "created_at": "2026-08-22T12:46:36.543140+00:00",
+  "updated_at": "2026-08-22T12:46:36.543140+00:00"
+ },
+ {
+  "id": "a9b8aa99-171c-4d6e-a09f-28e1e76e8a1a",
+  "memory": "User has a reminder promised by the assistant for Thursday, August 27, 2026, regarding a pool certificate.",
+  "created_at": "2026-08-22T12:46:36.543178+00:00",
+  "updated_at": "2026-08-22T12:46:36.543178+00:00"
+ },
+ {
+  "id": "68273d0e-9d1b-4dd7-ab94-714159b98eb2",
+  "memory": "User's vice-principal told the user that they grade too softly, though the user dismissed the assistant's suggestion that the remark bothered them.",
+  "created_at": "2026-08-22T12:46:43.563652+00:00",
+  "updated_at": "2026-08-22T12:46:43.563652+00:00"
+ },
+ {
+  "id": "8508ece2-69bc-484a-a282-d48b8ee87d58",
+  "memory": "User has club sessions on Tuesdays and Thursdays and requested not to be disturbed during those times",
+  "created_at": "2026-08-22T12:46:51.228057+00:00",
+  "updated_at": "2026-08-22T12:46:51.228057+00:00"
+ }
+]

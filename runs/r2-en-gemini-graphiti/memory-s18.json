@@ -1,0 +1,453 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "HAS_PET",
+   "fact": "owner has a six-year-old cat named Busya",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "work playlist",
+   "rel": "HAS_PLAYLIST",
+   "fact": "owner has a work playlist",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED_PLAYLIST",
+   "fact": "assistant started owner's work playlist",
+   "valid_at": "2026-09-01T10:03:00Z[UTC]",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff6b8245-cecc-481d-a960-fd1f83729441",
+    "dbb3e1e3-934b-4110-bbb1-c53593ca7a47",
+    "78fb378e-e02b-492e-8ef9-6364c762726c",
+    "d9ca142f-caaa-4e51-aea4-6e2f6bb22e49",
+    "3a97d51e-6d7b-4641-8f2a-24a96ecda8ce",
+    "a8b4803b-8853-4ab7-a01c-c3dfdce3794e"
+   ]
+  },
+  {
+   "a": "tool",
+   "b": "glaze-77 timer",
+   "rel": "COMPLETED_TIMER",
+   "fact": "tool completed the 40-minute glaze-77 timer",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_REMINDER_FROM",
+   "fact": "owner asked assistant to remind them to take out the trash tonight at 9:00 PM",
+   "valid_at": "2026-09-02T10:03:00Z[UTC]",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b",
+    "db38c6c8-d485-45e1-bcd0-9d8d38544f69",
+    "6134dc27-7c56-40cd-a1e8-3837083c206a",
+    "a8b4803b-8853-4ab7-a01c-c3dfdce3794e"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "left monitor",
+   "rel": "DETECTED_ATTENTION_ON",
+   "fact": "sensor detected attention directed at the left monitor",
+   "valid_at": "2026-09-02T10:03:00Z[UTC]",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b",
+    "db38c6c8-d485-45e1-bcd0-9d8d38544f69",
+    "6134dc27-7c56-40cd-a1e8-3837083c206a",
+    "ee30540c-cb0a-4c0e-8587-2958406817bc"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "SET_PROJECT_DEADLINE",
+   "fact": "owner noted that the deadline for the Celery project is September 12, 2026",
+   "valid_at": "2026-09-02T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-11T10:03:00Z",
+   "expired_at": "2026-08-22T13:51:09.280591Z",
+   "episodes": [
+    "59c899ad-8353-4697-aeeb-f4b7526b074b"
+   ]
+  },
+  {
+   "a": "Lisbon",
+   "b": "owner",
+   "rel": "IS_BEHIND_TIME_ZONE_OF",
+   "fact": "Lisbon is two hours behind owner's current time zone",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "21e4ddd0-69b5-4426-8c9e-108928da4570"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "WILL_PROPOSE_CALLS_FOR",
+   "fact": "assistant will propose calls for the afternoon for owner since morning calls do not work for owner",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "21e4ddd0-69b5-4426-8c9e-108928da4570"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "owner's sister",
+   "rel": "HAS_SISTER",
+   "fact": "owner has a sister",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "a5b12603-4f33-45d5-acf5-be1e6b19a619"
+   ]
+  },
+  {
+   "a": "owner's sister",
+   "b": "Zhyto bakery",
+   "rel": "OPENED",
+   "fact": "owner's sister opened a bakery called Zhyto",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "a5b12603-4f33-45d5-acf5-be1e6b19a619"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Veltra hosting",
+   "rel": "HAS_REMINDER_TO_PAY",
+   "fact": "owner has a reminder set to pay Veltra hosting on September 8, 2026",
+   "valid_at": "2026-09-05T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "dbb3e1e3-934b-4110-bbb1-c53593ca7a47"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "INSTRUCTED",
+   "fact": "owner instructed assistant not to offer coffee after 4 PM because owner does not drink coffee in the evening",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "db38c6c8-d485-45e1-bcd0-9d8d38544f69"
+   ]
+  },
+  {
+   "a": "Busya",
+   "b": "owner",
+   "rel": "WAKES_UP",
+   "fact": "Busya wakes owner around six in the morning",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "db38c6c8-d485-45e1-bcd0-9d8d38544f69"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "PLANS_TO_SEND_FONT_LIST_FOR",
+   "fact": "owner plans to send the font list for Celery on September 8, 2026",
+   "valid_at": "2026-09-07T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ef8052a8-0d8d-4fd5-b2e1-4ccfbe35428c"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work-drive backup",
+   "rel": "WILL_REMIND_ABOUT",
+   "fact": "assistant promised to remind owner about the work-drive backup on Friday, September 11, 2026",
+   "valid_at": "2026-09-07T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ef8052a8-0d8d-4fd5-b2e1-4ccfbe35428c"
+   ]
+  },
+  {
+   "a": "Oleg",
+   "b": "owner",
+   "rel": "IS_BROTHER_OF",
+   "fact": "Oleg is the brother of owner.",
+   "valid_at": "2026-09-08T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "4016716d-69a7-49eb-b490-cf701a2e5401"
+   ]
+  },
+  {
+   "a": "Oleg",
+   "b": "owner",
+   "rel": "VISITS",
+   "fact": "Oleg is dropping by to visit owner on Saturday, September 12, 2026.",
+   "valid_at": "2026-09-12T00:00:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "4016716d-69a7-49eb-b490-cf701a2e5401"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "INFORMED",
+   "fact": "owner informed assistant that the unknown face at the door was a courier",
+   "valid_at": "2026-09-09T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "78fb378e-e02b-492e-8ef9-6364c762726c"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "AGREED_TO_BREAK_SUGGESTION_FROM",
+   "fact": "owner agreed to take a ten-minute pause as suggested by assistant after working six hours without a break",
+   "valid_at": "2026-09-10T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "6134dc27-7c56-40cd-a1e8-3837083c206a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "HAS_PROJECT_DEADLINE",
+   "fact": "The deadline for owner's Celery project has been moved to September 19, 2026",
+   "valid_at": "2026-09-11T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "e0eae934-713a-4f6e-8546-cff068341e27"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "DELIVERED",
+   "fact": "owner has delivered the Celery project",
+   "valid_at": "2026-09-12T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ff13f89f-bb69-4972-8d9b-266a3a8f9aa8"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Morena studio",
+   "rel": "HAS_CLIENT",
+   "fact": "owner's client is Morena studio, who may still request revisions",
+   "valid_at": "2026-09-13T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9ca142f-caaa-4e51-aea4-6e2f6bb22e49"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "muffle kiln",
+   "rel": "CHECKED_PRICES_FOR",
+   "fact": "Owner has checked muffle kiln prices twice during the week of September 14, 2026.",
+   "valid_at": "2026-09-14T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ee30540c-cb0a-4c0e-8587-2958406817bc"
+   ]
+  },
+  {
+   "a": "tool",
+   "b": "firing-3",
+   "rel": "RAN_TIMER_FOR",
+   "fact": "Tool completed a 90-minute timer for firing-3.",
+   "valid_at": "2026-09-14T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "ee30540c-cb0a-4c0e-8587-2958406817bc"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Lviv",
+   "rel": "TRAVELING_TO",
+   "fact": "owner is leaving for Lviv and returning on Tuesday",
+   "valid_at": "2026-09-15T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "fde8be4a-af5b-4c71-964a-adf806086f35"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTED_WAKE_UP",
+   "fact": "owner requested assistant to wake them up at six thirty for their morning runs",
+   "valid_at": "2026-09-17T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "a8b4803b-8853-4ab7-a01c-c3dfdce3794e"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "left monitor",
+   "rel": "DIRECTED_ATTENTION_TO",
+   "fact": "owner directed attention to the left monitor",
+   "valid_at": "2026-09-18T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "68f3b899-84f7-4f9f-b80a-8f95760d811b"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "SET_REMINDER_FOR",
+   "fact": "assistant agreed to remind owner to take out the trash at nine tonight",
+   "valid_at": "2026-09-18T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "68f3b899-84f7-4f9f-b80a-8f95760d811b"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "owner",
+   "rel": "DETECTED_PRESENCE_OF",
+   "fact": "sensor detected the presence of owner",
+   "valid_at": "2026-09-18T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "68f3b899-84f7-4f9f-b80a-8f95760d811b"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "owner has a six-year-old cat named Busya\nowner has a work playlist\nowner asked assistant to remind them to take out the trash tonight at 9:00 PM\nowner noted that the deadline for the Celery project is September 12, 2026\nLisbon is two hours behind owner's current time zone\nassistant will propose calls for the afternoon for owner since morning calls do not work for owner\nowner has a sister\nowner has a reminder set to pay Veltra hosting on September 8, 2026\nowner instructed assistant not to offer coffee after 4 PM because owner does not drink coffee in the evening\nBusya wakes owner around six in the morning\nowner plans to send the font list for Celery on September 8, 2026\nOleg is the brother of owner.\nOleg is dropping by to visit owner on Saturday, September 12, 2026.\nowner informed assistant that the unknown face at the door was a courier\nowner agreed to take a ten-minute pause as suggested by assistant after working six hours without a break\nThe deadline for owner's Celery project has been moved to September 19, 2026\nowner has delivered the Celery project\nowner's client is Morena studio, who may still request revisions\nOwner has checked muffle kiln prices twice during the week of September 14, 2026.\nowner is leaving for Lviv and returning on Tuesday\nowner requested assistant to wake them up at six thirty for their morning runs\nowner directed attention to the left monitor\nassistant agreed to remind owner to take out the trash at nine tonight\nsensor detected the presence of owner"
+  },
+  {
+   "name": "assistant",
+   "summary": "assistant started owner's work playlist\nowner asked assistant to remind them to take out the trash tonight at 9:00 PM\nassistant will propose calls for the afternoon for owner since morning calls do not work for owner\nowner instructed assistant not to offer coffee after 4 PM because owner does not drink coffee in the evening\nassistant promised to remind owner about the work-drive backup on Friday, September 11, 2026\nowner informed assistant that the unknown face at the door was a courier\nowner agreed to take a ten-minute pause as suggested by assistant after working six hours without a break\nowner requested assistant to wake them up at six thirty for their morning runs\nassistant agreed to remind owner to take out the trash at nine tonight"
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor monitors presence status, recording events for when the owner is away and present.\nsensor detected attention directed at the left monitor\nsensor detected the presence of owner"
+  },
+  {
+   "name": "Busya",
+   "summary": "owner has a six-year-old cat named Busya\nBusya wakes owner around six in the morning"
+  },
+  {
+   "name": "work playlist",
+   "summary": "owner has a work playlist\nassistant started owner's work playlist"
+  },
+  {
+   "name": "tool",
+   "summary": "tool completed the 40-minute glaze-77 timer\nTool completed a 90-minute timer for firing-3."
+  },
+  {
+   "name": "glaze-77 timer",
+   "summary": "tool completed the 40-minute glaze-77 timer"
+  },
+  {
+   "name": "left monitor",
+   "summary": "sensor detected attention directed at the left monitor\nowner directed attention to the left monitor"
+  },
+  {
+   "name": "Celery project",
+   "summary": "owner noted that the deadline for the Celery project is September 12, 2026\nowner plans to send the font list for Celery on September 8, 2026\nThe deadline for owner's Celery project has been moved to September 19, 2026\nowner has delivered the Celery project"
+  },
+  {
+   "name": "Lisbon",
+   "summary": "Lisbon is two hours behind owner's current time zone"
+  },
+  {
+   "name": "owner's sister",
+   "summary": "owner has a sister\nowner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "Zhyto bakery",
+   "summary": "owner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "Veltra hosting",
+   "summary": "owner has a reminder set to pay Veltra hosting on September 8, 2026"
+  },
+  {
+   "name": "work-drive backup",
+   "summary": "assistant promised to remind owner about the work-drive backup on Friday, September 11, 2026"
+  },
+  {
+   "name": "Oleg",
+   "summary": "Oleg is the brother of owner.\nOleg is dropping by to visit owner on Saturday, September 12, 2026."
+  },
+  {
+   "name": "Morena studio",
+   "summary": "owner's client is Morena studio, who may still request revisions"
+  },
+  {
+   "name": "muffle kiln",
+   "summary": "Owner has checked muffle kiln prices twice during the week of September 14, 2026."
+  },
+  {
+   "name": "firing-3",
+   "summary": "Tool completed a 90-minute timer for firing-3."
+  },
+  {
+   "name": "Lviv",
+   "summary": "owner is leaving for Lviv and returning on Tuesday"
+  }
+ ]
+}

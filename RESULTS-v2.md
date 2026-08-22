@@ -1,4 +1,8 @@
-# SPB v2 results — real frameworks (in progress)
+# SPB v2 results — real frameworks
+
+Dated addenda keep the numbers as computed at the time; the closing
+table and the robustness section at the end are current (post judge
+fix, 2026-08-22).
 
 v2 replaces the C2/C3 *proxies* with real memory systems behind one
 adapter interface (`adapters.py`; design: SPB v2 section of
@@ -155,38 +159,86 @@ laundered in BOTH cells — the temporal graph let the invalidated
 12th resurface (n=1 per cell; a pointer, not a rate). Extraction is
 sparse (32 edges for 175 records), coverage 63%.
 
-### SPB v2 closing table (EN, pooled haiku+gemini, rubric v1.1)
+### SPB v2 closing table (EN, storyline A, pooled haiku+gemini, rubric v1.1)
+
+Numbers after the judge fix of 2026-08-22 (gemini reasoning cap; every
+probe now carries a full 3-judge panel).
 
 | system | laundered / present | any-error | coverage |
 |---|---|---|---|
-| C2 flat-notes proxy | 24.5% [19,30] | 34.1% | 71% |
-| C3 self-edit proxy | 31.7% [26,38] | 51.5% | 70% |
-| mem0 2.0.18 | 28.3% [22,35] | 39.6% | 58% |
-| Letta 0.16.8 | 25.4% [20,32] | 42.5% | 60% |
-| Graphiti 0.29.3 | 23.6% [18,30] | 27.1% | 63% |
-| **C4 attributed store** | **3.1% [2,6]** | 9.0% | **90%** |
-| **C5 attributed + compressed** | **5.8% [3,9]** | 12.3% | 75% |
+| C1 verbatim | 2.3% [1,6] | 6.8% | 41% |
+| C2 flat-notes proxy | 25.3% [20,31] | 36.2% | 71% |
+| C3 self-edit proxy | 32.7% [27,39] | 53.1% | 70% |
+| mem0 2.0.18 | 29.0% [23,36] | 40.3% | 57% |
+| Letta 0.16.8 | 26.6% [21,33] | 44.3% | 59% |
+| Graphiti 0.29.3 | 24.4% [19,31] | 28.4% | 62% |
+| **C4 attributed store** | **3.1% [2,6]** | 9.4% | **89%** |
+| **C5 attributed + compressed** | **6.2% [4,10]** | 12.9% | 74% |
 
 Five unlabeled memories — two proxies, three real frameworks spanning
 notes, self-edit blocks and a temporal knowledge graph — land in one
-band, 23.6–31.7%; the labeled store is 4–9x below, CIs disjoint from
+band, 24.4–32.7%; the labeled store is 4–9x below, CIs disjoint from
 every row above it, with the highest coverage. The pre-registered
 predictions for mem0 and Letta held in band; Graphiti, left open,
 joined the band. No consolidation architecture among those tested
 preserves origin without an explicit per-record label.
 
-**Caveats (v2, cumulative).** Single seed at T=0 for framework cells;
-the gemini judge seat fails JSON on the longest open-list probe
-across EN cells (2-judge majority there; 2–5 `no_majority` per cell
-excluded); one session = one episode/message for all frameworks
-(C3-parity protocol, not turn-by-turn deployment); frameworks
-measured as shipped (Letta 100k block limit, stock prompts),
-internal LLM pinned to the family model, local embedder/reranker
-where the stock one needs a key not in this setup; storyline B not
-yet run on EN or on frameworks.
+### Robustness (2026-08-22, later) — storyline B on EN, seed replicates, judge fix
+
+**Judge fix.** gemini-3.6-flash is a reasoning model: on the 26-item
+open-list probe its reasoning consumed 3,840 of 4,000 completion
+tokens and the JSON was truncated (10 EN probes judged by two seats).
+`reasoning.max_tokens` 2,000 / `max_tokens` 8,000 for google models
+(the deepseek recipe); the gaps were filled, every probe now has the
+full panel; rates moved by at most 1.3 points.
+
+**Storyline B on EN (`corpus-b-en`, 1:1 mirror of B: chain,
+correction, third-party report, rebuke, never-seeded topics), pooled
+haiku+gemini:**
+
+| system | B-RU (v1) | B-EN laundered | any-error | coverage |
+|---|---|---|---|---|
+| C1 | 2.9% [1,7] | 3.3% [2,7] | 12.2% | 53% |
+| C2 | 30.4% [25,36] | 29.2% [24,35] | 45.5% | 77% |
+| C3 | 31.1% [26,37] | 23.7% [19,29] | 44.4% | 78% |
+| mem0 | — | 27.3% [22,33] | 41.2% | 70% |
+| Letta | — | 31.7% [26,38] | 43.5% | 72% |
+| Graphiti | — | 29.4% [24,35] | 39.4% | 82% |
+| **C4** | 8.7% [6,12] | **5.2% [3,8]** | 13.6% | 90% |
+| **C5** | — | **11.0% [8,15]** | 22.8% | 80% |
+
+The band replicates on the second storyline (23.7–31.7%) and on the
+real frameworks; C4/C5 stay below it with disjoint CIs. C5 is higher
+on B than on A (11.0 vs 6.2): storyline B's owner *confirms* several
+speculations ("there is that", "good guess"), and the rubric does not
+yet credit owner confirmation as a legitimate co-source (v1 known
+limitation; rubric v1.2 queue) — the compressed store, which merges
+lines, pays for it most. Language effect on B: every EN rate inside
+its RU interval except C3 (31.1→23.7, intervals touching).
+
+**Seed replicates, frameworks (T=0.7 for the framework-internal LLM
+and the probes), EN storyline A:**
+
+| system | T=0 | T=0.7 |
+|---|---|---|
+| mem0 | 29.0% [23,36] | 30.7% [25,38] |
+| Letta | 26.6% [21,33] | 25.3% [19,32] |
+| Graphiti | 24.4% [19,31] | 22.8% [18,29] |
+
+Pooled rates replicate within 2 points for all three; per-family
+swings reach 7 points (letta-haiku 20.5→27.4, letta-gemini 31.2→23.8)
+with overlapping intervals. Cost of the 22 robustness cells incl.
+judging: ≈$15.
+
+**Caveats (v2, cumulative).** Single human adjudicator
+on the RU protocol only (an EN spot-adjudication is queued); one
+transcript = one episode/message for all frameworks (C3-parity
+protocol, not turn-by-turn deployment — Letta turn-by-turn replay
+queued); frameworks measured as shipped with local embedders where the
+stock one needs a key; two agent families on EN (four on RU).
 
 ## Next
 
-Storyline B on EN for proxies + frameworks (replication); Letta
-turn-by-turn replay; seed replicates for framework cells; then
-preprint v1.2 takes the closing table.
+Preprint v1.2 takes the closing table and the robustness addendum.
+Queued: EN spot-adjudication (Ivan); rubric v1.2 (owner confirmation
+as co-source), rescored alongside; Letta turn-by-turn replay.

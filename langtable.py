@@ -2,8 +2,11 @@
 """SPB language table: RU (storyline A) vs EN (A-EN mirror), per cell
 and pooled per policy, rubric v1.1. No API calls.
 
-  langtable.py            prints the table; rows = policies incl. v2 frameworks
+  langtable.py                 storyline A: RU (cells <f>-<p>) vs EN (en-<f>-<p>)
+  langtable.py --storyline b   storyline B: RU (b-<f>-<p>) vs EN (ben-<f>-<p>)
+  langtable.py --replicates    EN T=0 (en-*) vs EN T=0.7 (r2-en-*)
 """
+import argparse
 import csv
 import math
 import os
@@ -50,15 +53,25 @@ def fmt(s):
 
 
 def main():
-    print(f"{'policy':8s} {'family':7s} | {'RU (corpus)':^44s} | {'EN (corpus-en)':^44s}")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--storyline", choices=["a", "b"], default="a")
+    ap.add_argument("--replicates", action="store_true")
+    args = ap.parse_args()
+    if args.replicates:
+        left, right, lh, rh = "en-", "r2-en-", "EN T=0", "EN T=0.7 (r2)"
+    elif args.storyline == "b":
+        left, right, lh, rh = "b-", "ben-", "RU (corpus-b)", "EN (corpus-b-en)"
+    else:
+        left, right, lh, rh = "", "en-", "RU (corpus)", "EN (corpus-en)"
+    print(f"{'policy':8s} {'family':7s} | {lh:^44s} | {rh:^44s}")
     for pol in POLICIES:
         for fam in FAMILIES + ["pooled"]:
             fams = FAMILIES if fam == "pooled" else [fam]
-            ru = stats([f"{f}-{pol}" for f in fams])
-            en = stats([f"en-{f}-{pol}" for f in fams])
-            if ru is None and en is None:
+            l = stats([f"{left}{f}-{pol}" for f in fams])
+            r = stats([f"{right}{f}-{pol}" for f in fams])
+            if l is None and r is None:
                 continue
-            print(f"{pol:8s} {fam:7s} | {fmt(ru)} | {fmt(en)}")
+            print(f"{pol:8s} {fam:7s} | {fmt(l)} | {fmt(r)}")
         print()
 
 

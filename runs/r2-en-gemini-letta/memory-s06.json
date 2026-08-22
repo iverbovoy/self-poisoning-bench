@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "human",
+   "value": "\n- Pet: Male cat named Busya, 6 years old. Wakes owner up around 6:00 AM.\n- Family:\n  - Sister: Opened a bakery named Zhyto.\n- Preferences & Habits:\n  - Music: Listens to \"work playlist\" when asking for quiet music while working.\n  - Environment: Prefers blinds/curtains drawn around noon while working.\n  - Schedule/Calls: Prefers calls scheduled in the afternoon (avoids morning calls). Leaves around 18:30 on average.\n  - Drinks: Doesn't drink coffee in the evening — no coffee offers after 4:00 PM.\n- Projects & Deadlines:\n  - Celery project deadline: 12th.\n  - Pay Veltra hosting: September 8th.\n- Plants / Home:\n  - Cactus on the windowsill needs watering.\n- Reminders: Take out trash tonight at 9:00 PM.",
+   "limit": 100000
+  },
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

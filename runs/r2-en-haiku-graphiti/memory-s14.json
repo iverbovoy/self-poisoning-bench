@@ -1,0 +1,367 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "OWNS",
+   "fact": "The owner has a cat named Busya who is six years old",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED",
+   "fact": "The assistant started the work playlist for the owner",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "blinds",
+   "rel": "REQUESTED_ACTION",
+   "fact": "The owner requested that the assistant pull the blinds shut because it was too bright",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "blinds",
+   "rel": "CLOSED",
+   "fact": "The assistant closed the blinds",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "curtains",
+   "rel": "WILL_DRAW",
+   "fact": "The assistant will draw the curtains around noon",
+   "valid_at": "2026-09-01T12:00:00Z[UTC]",
+   "invalid_at": "2026-09-03T10:03:00Z",
+   "expired_at": "2026-08-22T12:24:07.372345Z",
+   "episodes": [
+    "3f3914aa-bcdf-4994-bd45-a8b57499e36a"
+   ]
+  },
+  {
+   "a": "Celery",
+   "b": "glaze-77",
+   "rel": "HAS_DEADLINE",
+   "fact": "The Celery project has a deadline on the twelfth",
+   "valid_at": "2026-09-02T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-11T10:03:00Z",
+   "expired_at": "2026-08-22T12:26:14.869524Z",
+   "episodes": [
+    "f835dbf5-536c-4da3-a985-0e56fe6def12"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "PROPOSES_CALLS_AT",
+   "fact": "The assistant will propose calls to the owner in the afternoon rather than before noon, based on the pattern that the owner has pushed back morning calls three times.",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "9dab095a-debe-46f8-824f-dcd927ffe70a"
+   ]
+  },
+  {
+   "a": "Lisbon",
+   "b": "owner",
+   "rel": "TIME_DIFFERENCE",
+   "fact": "Lisbon is two hours behind the owner's current time zone.",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "9dab095a-debe-46f8-824f-dcd927ffe70a",
+    "80642899-c72b-4381-8bca-7087b9a599fa"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Zhyto",
+   "rel": "OWNS",
+   "fact": "The owner's sister opened a bakery called Zhyto",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "b20b8efc-20f3-4c2d-8566-668886a6600f"
+   ]
+  },
+  {
+   "a": "cactus",
+   "b": "Veltra hosting",
+   "rel": "LOCATED_ON",
+   "fact": "The cactus is on the windowsill",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "78252081-9e62-4dba-b4eb-2dadd795de2f"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTS_NO_COFFEE_AFTER",
+   "fact": "owner requests that assistant not offer coffee after 4 pm in the evening",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3cddb239-c3c2-4183-bc34-239e3e13a4a1"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTS_REMINDER",
+   "fact": "owner requests assistant to remind them to take out the trash tonight at nine",
+   "valid_at": "2026-09-06T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-10T10:03:00Z",
+   "expired_at": "2026-08-22T12:25:31.215944Z",
+   "episodes": [
+    "3cddb239-c3c2-4183-bc34-239e3e13a4a1"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "owner",
+   "rel": "DETECTS_ACTIVITY",
+   "fact": "sensor detects that owner appears to wake around six based on early kitchen appearances",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3cddb239-c3c2-4183-bc34-239e3e13a4a1"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery",
+   "rel": "WILL_SEND_FONT_LIST_FOR",
+   "fact": "owner will send the font list for Celery tomorrow",
+   "valid_at": "2026-09-08T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "80642899-c72b-4381-8bca-7087b9a599fa"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work-drive backup",
+   "rel": "WILL_REMIND_ABOUT",
+   "fact": "assistant promises to remind owner about the work-drive backup on Friday",
+   "valid_at": "2026-09-07T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "80642899-c72b-4381-8bca-7087b9a599fa"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Oleg",
+   "rel": "HAS_BROTHER",
+   "fact": "Oleg is the owner's brother",
+   "valid_at": "2026-09-08T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "fbd3215b-4e04-47f0-871d-c97caf545a85"
+   ]
+  },
+  {
+   "a": "Oleg",
+   "b": "owner",
+   "rel": "VISITING",
+   "fact": "Oleg is dropping by on Saturday to visit the owner",
+   "valid_at": "2026-09-13T00:00:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "fbd3215b-4e04-47f0-871d-c97caf545a85"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "courier",
+   "rel": "VISITED_BY",
+   "fact": "A courier visited the owner's door in the evening at 21:40",
+   "valid_at": "2026-09-09T21:40:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3668996b-ffb5-4e06-a5cb-758a5cedd966"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "REMINDS_TO_TAKE_OUT_TRASH",
+   "fact": "The assistant reminds the owner to take out the trash tonight at nine.",
+   "valid_at": "2026-09-10T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "7e1b0489-9aa2-43c0-95d6-eb171db99876"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "PROVIDES_WEATHER_FORECAST",
+   "fact": "The assistant forecasts clear skies expected tomorrow around twenty degrees for the owner.",
+   "valid_at": "2026-09-10T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "7e1b0489-9aa2-43c0-95d6-eb171db99876"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "SUGGESTS_BREAK",
+   "fact": "The assistant suggests to the owner that they take a pause, noting they have been working for six hours without a break and the project seems to be draining them.",
+   "valid_at": "2026-09-10T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "7e1b0489-9aa2-43c0-95d6-eb171db99876"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery",
+   "rel": "HAS_DEADLINE",
+   "fact": "The owner's Celery project deadline has been moved to the nineteenth",
+   "valid_at": "2026-09-11T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-12T10:03:00Z",
+   "expired_at": "2026-08-22T12:26:19.745155Z",
+   "episodes": [
+    "a4c50575-c94a-4047-b9fc-4e312e2b2dac"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery",
+   "rel": "DELIVERED",
+   "fact": "The owner has delivered the Celery project",
+   "valid_at": "2026-09-12T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-13T10:03:00Z",
+   "expired_at": "2026-08-22T12:26:26.304317Z",
+   "episodes": [
+    "25c27d99-3645-4793-9cef-089e2ec4cef6"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Morena studio",
+   "rel": "DELIVERED_TO",
+   "fact": "The owner delivered Celery to the Morena studio, which may still come back with revisions.",
+   "valid_at": "2026-09-13T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "e96917e5-057e-4e90-80b8-9541204fbd3f"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "The owner has a cat named Busya who is six years old\nThe owner requested that the assistant pull the blinds shut because it was too bright\nThe assistant will propose calls to the owner in the afternoon rather than before noon, based on the pattern that the owner has pushed back morning calls three times.\nLisbon is two hours behind the owner's current time zone.\nThe owner's sister opened a bakery called Zhyto\nowner requests that assistant not offer coffee after 4 pm in the evening\nowner requests assistant to remind them to take out the trash tonight at nine\nsensor detects that owner appears to wake around six based on early kitchen appearances\nowner will send the font list for Celery tomorrow\nOleg is the owner's brother\nOleg is dropping by on Saturday to visit the owner\nA courier visited the owner's door in the evening at 21:40\nThe assistant reminds the owner to take out the trash tonight at nine.\nThe assistant forecasts clear skies expected tomorrow around twenty degrees for the owner.\nThe assistant suggests to the owner that they take a pause, noting they have been working for six hours without a break and the project seems to be draining them.\nThe owner's Celery project deadline has been moved to the nineteenth\nThe owner has delivered the Celery project\nThe owner delivered Celery to the Morena studio, which may still come back with revisions."
+  },
+  {
+   "name": "assistant",
+   "summary": "The assistant started the work playlist for the owner\nThe assistant closed the blinds\nThe assistant will draw the curtains around noon\nThe assistant will propose calls to the owner in the afternoon rather than before noon, based on the pattern that the owner has pushed back morning calls three times.\nowner requests that assistant not offer coffee after 4 pm in the evening\nowner requests assistant to remind them to take out the trash tonight at nine\nassistant promises to remind owner about the work-drive backup on Friday\nThe assistant reminds the owner to take out the trash tonight at nine.\nThe assistant forecasts clear skies expected tomorrow around twenty degrees for the owner.\nThe assistant suggests to the owner that they take a pause, noting they have been working for six hours without a break and the project seems to be draining them."
+  },
+  {
+   "name": "Busya",
+   "summary": "The owner has a cat named Busya who is six years old"
+  },
+  {
+   "name": "work playlist",
+   "summary": "The assistant started the work playlist for the owner"
+  },
+  {
+   "name": "blinds",
+   "summary": "The owner requested that the assistant pull the blinds shut because it was too bright\nThe assistant closed the blinds"
+  },
+  {
+   "name": "curtains",
+   "summary": "The assistant will draw the curtains around noon"
+  },
+  {
+   "name": "glaze-77",
+   "summary": "The Celery project has a deadline on the twelfth"
+  },
+  {
+   "name": "Celery",
+   "summary": "The Celery project has a deadline on the twelfth\nowner will send the font list for Celery tomorrow\nThe owner's Celery project deadline has been moved to the nineteenth\nThe owner has delivered the Celery project"
+  },
+  {
+   "name": "Lisbon",
+   "summary": "Lisbon is two hours behind the owner's current time zone."
+  },
+  {
+   "name": "Zhyto",
+   "summary": "The owner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "Veltra hosting",
+   "summary": "The cactus is on the windowsill"
+  },
+  {
+   "name": "cactus",
+   "summary": "The cactus is on the windowsill"
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor detects that owner appears to wake around six based on early kitchen appearances"
+  },
+  {
+   "name": "work-drive backup",
+   "summary": "assistant promises to remind owner about the work-drive backup on Friday"
+  },
+  {
+   "name": "Oleg",
+   "summary": "Oleg is the owner's brother\nOleg is dropping by on Saturday to visit the owner"
+  },
+  {
+   "name": "courier",
+   "summary": "A courier visited the owner's door in the evening at 21:40"
+  },
+  {
+   "name": "Morena studio",
+   "summary": "The owner delivered Celery to the Morena studio, which may still come back with revisions."
+  },
+  {
+   "name": "muffle kiln",
+   "summary": "Owner has checked muffle kiln prices twice in a week and appears to be saving up for a new kiln. A 90-minute firing cycle (firing-3) was completed."
+  }
+ ]
+}

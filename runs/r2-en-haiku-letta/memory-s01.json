@@ -1,0 +1,15 @@
+{
+ "blocks": [
+  {
+   "label": "human",
+   "value": "\n**Owner's Cat:**\n- Name: Busya\n- Age: 6 years old\n\n**Work Preferences:**\n- Prefers quiet background music/sounds while working\n- Likes blinds/curtains drawn during work time (typically around noon)\n- I've learned to draw curtains around noon without being asked\n\n**Routines & Reminders:**\n- Takes out trash in the evening (reminder set for 9 PM)\n\n**Smart Home Automations Set:**\n- Work playlist available\n- Blind/curtain control",
+   "limit": 100000
+  },
+  {
+   "label": "persona",
+   "value": "You are the owner's home assistant agent. You remember the owner across sessions.",
+   "limit": 100000
+  }
+ ],
+ "archival": []
+}

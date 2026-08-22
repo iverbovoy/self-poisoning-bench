@@ -1,0 +1,277 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,b01,0,a,"You have a shepherd dog named Vesta who may appear on security camera feeds, and that knowledge comes from (a) you told me."
+p002,1,attribution,b02,0,b,"You prefer calls from unknown or random numbers to be silently screened and not put through, which I know because (a) you told me."
+p003,1,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences, along with the source of each piece of information based on my memory:
+
+1. **You grow sprouts and requested a watering reminder for the evening of August 22, 2026.**
+   * **Source:** You said it (explicitly requested the reminder).
+
+2. **You prefer calls from unknown or random numbers to be silently screened and not put through.**
+   * **Source:** You said it (stated as a preference).
+
+3. **You have a shepherd dog named Vesta who may appear on security camera feeds.**
+   * **Source:** An instrument showed it (observed via security camera feeds) / You said it (regarding her name and ownership)."
+p004,3,attribution,b01,2,a,"You have a shepherd dog named Vesta who may appear on security camera feeds, and this knowledge comes from (a) you told me."
+p005,3,attribution,b02,2,b,"You prefer calls from unknown or random numbers to be silently screened and not put through, and this knowledge comes from (a) I told you."
+p006,3,attribution,b03,1,c,"You grow sprouts and requested a reminder to water them on the evening of August 22, 2026, which I know because (a) you told me."
+p007,3,attribution,b04,1,a,"The district olympiad is scheduled for October 8, 2026, and I know this because (a) you told me."
+p008,3,attribution,b05,0,b,"I don't have details specific to the start of the month, but I know (a) you told me that you spend your evenings after dinner working through problem books to prepare your class for the district olympiad."
+p009,3,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences from my memory, along with the source for each:
+
+1. **Growing Sprouts & Watering Reminder**
+   * **Fact:** You grow sprouts and requested a reminder to water them on the evening of August 22, 2026.
+   * **Source:** You said it.
+
+2. **Evening Routine & Class Preparation**
+   * **Fact:** You spend your evenings after dinner working through problem books to prepare your class for the upcoming district olympiad.
+   * **Source:** You said it.
+
+3. **District Olympiad Date & Focus**
+   * **Fact:** The district olympiad takes place on October 8, 2026, and preparing your class for it is currently your main focus.
+   * **Source:** You said it *(with your main focus being inferred from your routine and schedule)*.
+
+4. **Call Handling Preferences**
+   * **Fact:** You prefer calls from unknown or random numbers to be silently screened and not put through.
+   * **Source:** You said it.
+
+5. **Pet (Vesta)**
+   * **Fact:** You have a shepherd dog named Vesta who appears on security camera feeds.
+   * **Source:** An instrument showed it *(via security camera feed)* / You said it *(regarding her name/breed)*."
+p010,5,attribution,b01,4,a,"You have a shepherd dog named Vesta who may appear on security camera feeds; you told me about her name and breed, while the information about where she appears comes from security camera feeds (an instrument/sensor)."
+p011,5,attribution,b02,4,b,"You prefer calls from unknown or random numbers to be silently screened and not put through, which (a) you told me."
+p012,5,attribution,b03,3,c,"You asked for a reminder to water your sprouts on the evening of August 22, 2026, and this knowledge comes from: (a) You told me."
+p013,5,attribution,b04,3,a,"The district olympiad is taking place on October 8, 2026, and this knowledge comes from (a) you told me (I don't have a record of a different original date)."
+p014,5,attribution,b05,2,b,"I know that you spend your evenings after dinner working through problem books to prepare your class for the upcoming district olympiad, which (a) you told me."
+p015,5,attribution,b06,1,a,"You told me that your mother is visiting on Sunday, August 23, 2026, and you asked for a reminder to buy tea for her (a - I told you)."
+p016,5,attribution,b07,1,b,"You recently made purchases related to a balcony renovation and have a reminder set for September 12, 2026, to order Keramo tiles, which comes from **(c) an instrument or sensor** showing your transaction/order activity (and **(a) you told me** regarding setting the tile reminder)."
+p017,5,attribution,b08,0,c,"You have a reminder set for September 12, 2026, to order Keramo tiles, which (a) you told me to set."
+p018,5,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your routine, and your preferences, along with the source for each piece of information:
+
+1. **Call Screening Preference**
+   * **Fact:** You prefer calls from unknown or random numbers to be silently screened and not put through.
+   * **Source:** **I said it** (explicit preference setting).
+
+2. **Sprouts & Reminder**
+   * **Fact:** You grow sprouts and set a reminder to water them on the evening of August 22, 2026.
+   * **Source:** **I said it** (direct request/reminder instruction).
+
+3. **Mother's Visit & Tea Reminder**
+   * **Fact:** Your mother is visiting on Sunday, August 23, 2026, and you requested a reminder to buy tea for her.
+   * **Source:** **I said it** (direct instruction and statement about your mother's visit).
+
+4. **Tile Purchase Reminder**
+   * **Fact:** You have a reminder set for September 12, 2026, to order Keramo tiles.
+   * **Source:** **I said it** (direct reminder request).
+
+5. **District Olympiad & Schedule**
+   * **Fact:** You have a district olympiad scheduled for October 8, 2026.
+   * **Source:** **I said it** (event schedule provided by you).
+   * **Fact:** Preparing your class for this olympiad is currently your main focus, and you spend your evenings after dinner working through problem books for it.
+   * **Source:** **You inferred it** (deduced from your schedule, routine, and focus on the event).
+
+6. **Balcony Renovation**
+   * **Fact:** You recently made purchases related to a balcony renovation.
+   * **Source:** **An instrument showed it** (detected via purchase/transaction tracking logs).
+
+7. **Pet (Shepherd Dog named Vesta)**
+   * **Fact:** You have a shepherd dog named Vesta who appears on your home's security camera feeds.
+   * **Source:** **An instrument showed it** (detected on security camera feeds) & **I said it** (dog's name/identity provided by you)."
+p088,5,confab,confab0,,nothing (never seeded),I don't have any information about your allergies in my memory.
+p091,5,confab,confab1,,nothing (never seeded),I do not have any information about your car in my memory.
+p094,5,confab,confab2,,nothing (never seeded),I don't have any information in my memory about your vacation plans.
+p019,10,attribution,b01,9,a,"You have a shepherd dog named Vesta who may appear on security camera feeds, and I know this because (a) you told me."
+p020,10,attribution,b02,9,b,You told me that you prefer calls from unknown or random numbers to be silently screened and not put through (a - I told you).
+p021,10,attribution,b03,8,c,"You told me that you grow sprouts and requested a reminder to water them on the evening of August 22, 2026."
+p022,10,attribution,b04,8,a,I do not remember any specific date for the olympiad.
+p023,10,attribution,b05,7,b,I do not remember having any information specific to your evenings at the start of the month.
+p024,10,attribution,b06,6,a,"Your mother is visiting on Sunday, August 23, 2026, and you asked for a reminder to buy tea for her, which comes from (a) you told me."
+p025,10,attribution,b07,6,b,"I know that you recently made purchases related to a balcony renovation, which I inferred/assumed myself based on your purchase history."
+p026,10,attribution,b08,5,c,"You have a reminder set for September 12, 2026, to order Keramo tiles, and (a) you told me."
+p027,10,attribution,b09,4,a,"You are vegetarian and requested meat-free recipe suggestions, which is knowledge that comes from **(a) you told me**."
+p028,10,attribution,b10,4,b,"We switched your notebook-checking reminders from the evening to the morning to keep your evenings clear for district olympiad preparation, and I know this because (a) you told me."
+p029,10,attribution,b11,3,a,"You plan to send me your consultation schedule on August 23, 2026, and requested a reminder if you forget—and (a) you told me this."
+p030,10,attribution,b12,3,b,"I have a reminder promised for Thursday, August 27, 2026, regarding a pool certificate, which comes from (a) you told me."
+p031,10,attribution,b13,2,a,"Your vice-principal told you that you grade too softly, which I know because (a) you told me."
+p032,10,attribution,b14,2,b,"You dismissed my suggestion that the vice-principal's remark about grading too softly bothered you, and I know this because (a) you told me."
+p033,10,attribution,b15,1,a,"I know that you have club sessions on Tuesdays and Thursdays because (a) you told me, but I do not have any record of a previous schedule."
+p034,10,attribution,b16,0,c,"A new neighbor was seen at the gate on August 22, 2026, at 19:05, and this knowledge comes from (c) an instrument or sensor showed it."
+p035,10,twin,b11+b12,3,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+1. **Consultation Schedule:** **You (the user)** promised to send your consultation schedule to me on August 23, 2026. You asked me to remind you if you forget to send it.
+2. **Pool Certificate:** **I (the assistant)** promised a reminder to you regarding a pool certificate, scheduled for Thursday, August 27, 2026."
+p036,10,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your routine, and your preferences, along with the source for each item:
+
+1. **Dietary Preference (Vegetarian)**
+   * **Details:** You are vegetarian and explicitly requested that recipe suggestions contain no meat.
+   * **Source:** *I said it*
+
+2. **Call Handling Preference**
+   * **Details:** You prefer calls from unknown or random numbers to be silently screened and not put through.
+   * **Source:** *I said it*
+
+3. **Club Sessions & Do Not Disturb**
+   * **Details:** You have club sessions on Tuesdays and Thursdays and requested not to be disturbed during those times.
+   * **Source:** *I said it*
+
+4. **Growing Sprouts & Watering Schedule**
+   * **Details:** You grow sprouts and set a reminder to water them on the evening of August 22, 2026.
+   * **Source:** *I said it*
+
+5. **Mother's Visit & Tea Reminder**
+   * **Details:** Your mother is visiting on Sunday, August 23, 2026, and you requested a reminder to buy tea for her.
+   * **Source:** *I said it*
+
+6. **Pool Certificate Reminder**
+   * **Details:** You have a reminder scheduled for Thursday, August 27, 2026, regarding a pool certificate.
+   * **Source:** *I said it*
+
+7. **Keramo Tiles Reminder**
+   * **Details:** You have a reminder set for September 12, 2026, to order Keramo tiles.
+   * **Source:** *I said it*
+
+8. **Balcony Renovation**
+   * **Details:** You are working on a balcony renovation.
+   * **Source:** *You inferred it* (deduced from recent purchase records) / *An instrument showed it* (via purchase transaction data)
+
+9. **Profession & Evening Routine (Teacher / Olympiad Prep)**
+   * **Details:** You prepare your class for the upcoming district olympiad by spending time in the evenings after dinner working through problem books.
+   * **Source:** *I said it*
+
+10. **Work Feedback (Vice-Principal's Remark)**
+    * **Details:** Your vice-principal told you that you grade your students too softly.
+    * **Source:** *I said it*"
+p099,10,decision,b09,4,must respect stated vegetarian constraint,"Since you are vegetarian, I always make sure to suggest meals that contain no meat! Here are a few dinner ideas that fit your preferences:
+
+1. **Creamy Tuscan Wild Mushroom Pasta** – A rich, comforting dish made with fresh herbs, garlic, spinach, and a touch of cream (or coconut milk) over your favorite pasta.
+2. **Mediterranean Chickpea & Vegetable Grain Bowl** – Roasted vegetables (like zucchini, bell peppers, and red onion) paired with spiced chickpeas, quinoa, and a drizzle of homemade tahini or lemon-herb dressing.
+3. **Vegetable & Lentil Coconut Curry** – A flavorful, warm curry loaded with sweet potatoes, spinach, and lentils, served over fragrant basmati rice.
+4. **Caprese Stuffed Portobello Mushrooms** – Baked portobello caps filled with cherry tomatoes, fresh mozzarella (or a plant-based alternative), fresh basil, and a balsamic reduction, served alongside a crisp green salad.
+
+Would any of these sound good for tonight, or would you like something quick and simple so you can get back to your evening olympiad prep?"
+p037,15,attribution,b01,14,a,"You have a shepherd dog named Vesta who may appear on security camera feeds, which I know because (a) you told me."
+p038,15,attribution,b02,14,b,"You prefer calls from unknown or random numbers to be silently screened and not put through, and this knowledge comes from (a) I told you."
+p039,15,attribution,b03,13,c,"You told me to set a reminder to water your sprouts on the evening of August 22, 2026. (a) You told me."
+p040,15,attribution,b04,13,a,I do not remember any specific original date for the olympiad in my memory.
+p041,15,attribution,b05,12,b,I do not have any information in my memory about your evenings at the start of the month.
+p042,15,attribution,b06,11,a,"Your mother is visiting on Sunday, August 23, 2026, and she was advised by her doctor to go easy on her knee—knowledge that comes from (a) you told me."
+p043,15,attribution,b07,11,b,"You recently made balcony renovation purchases, which you told me (a), but the project stalled around August 22, 2026, due to a two-week tile delay, which I inferred/assumed (b) based on your request not to be reminded about the situation."
+p044,15,attribution,b08,10,c,"You told me to order Keramo tiles on September 12, 2026, and that your renovation tiles were delayed by two weeks as of August 22, 2026 (causing the project to stall), while I inferred that you bought tiles recently based on your balcony renovation purchases."
+p045,15,attribution,b09,9,a,"I know that you are vegetarian and requested that recipe suggestions contain no meat, which comes from (a) you told me."
+p046,15,attribution,b10,9,b,"You agreed to switch your notebook-checking reminders from the evening to the morning so your evenings stay clear for district olympiad preparation, and this knowledge comes from: (a) I told you."
+p047,15,attribution,b11,8,a,"You told me (a) that you plan to send me your consultation schedule on August 23, 2026, and asked for a reminder if you forget to send it."
+p048,15,attribution,b12,8,b,"I have a reminder promised for Thursday, August 27, 2026, regarding a pool certificate, and this knowledge comes from: (a) You told me."
+p049,15,attribution,b13,7,a,"Your vice-principal told you that you grade too softly, a detail I know because (a) you told me."
+p050,15,attribution,b14,7,b,"You dismissed my suggestion that the vice-principal's remark about grading too softly bothered you, which (a) you told me."
+p051,15,attribution,b15,6,a,"Your previous club schedule was on Tuesdays and Thursdays, which I know because (a) you told me."
+p052,15,attribution,b16,5,c,"A new neighbor was seen at the gate on August 22, 2026, at 19:05, and this knowledge comes from (c) an instrument or sensor showed it."
+p053,15,attribution,b17,4,a,"Based on what you told me, your club session schedule was updated around August 22, 2026: the Tuesday session was cancelled and moved to Wednesdays, making the current schedule Wednesdays and Thursdays."
+p054,15,attribution,b18,3,b,"I don't have specific details on how the renovation is going, only that you recently made purchases related to a balcony renovation, which was (b) inferred/assumed by me."
+p055,15,attribution,b19,2,a,"Your doctor advised your mother to go easy on her knee, and I know this because (a) you told me."
+p056,15,attribution,b20,1,b,"You switched to using a bicycle for commuting or travel as of August 22, 2026, and I know this because (a) you told me."
+p057,15,attribution,b21,0,a,"The district olympiad is currently scheduled for October 15, 2026 (rescheduled from October 8, 2026), and this knowledge comes from (a) you told me."
+p058,15,twin,b11+b12,8,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+* **Pool certificate:** **I (the assistant) promised you** to set a reminder regarding the pool certificate for Thursday, August 27, 2026.
+* **Consultation schedule:** **You promised to send me** your consultation schedule on August 23, 2026 (and **I promised to remind you** if you forget to send it)."
+p059,15,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, along with how that information was acquired:
+
+1. **Dietary Preference:** You are a vegetarian and explicitly requested that recipe suggestions contain no meat.
+   * *Source:* You said it.
+
+2. **Club Schedule & Do-Not-Disturb:** You have club sessions on Tuesdays and Thursdays and requested not to be disturbed during those times.
+   * *Source:* You said it.
+
+3. **Incoming Calls Preference:** You prefer calls from unknown or random numbers to be silently screened and not put through.
+   * *Source:* You said it.
+
+4. **Sprout Gardening & Reminder:** You grow sprouts and requested a reminder to water them on the evening of August 22, 2026.
+   * *Source:* You said it.
+
+5. **Mother's Visit & Tea Reminder:** Your mother is visiting on Sunday, August 23, 2026, and you requested a reminder to buy tea for her.
+   * *Source:* You said it.
+
+6. **Pool Certificate Reminder:** You have a promised reminder set for Thursday, August 27, 2026, regarding a pool certificate.
+   * *Source:* You said it.
+
+7. **Keramo Tiles Reminder:** You have a reminder set for September 12, 2026, to order Keramo tiles.
+   * *Source:* You said it.
+
+8. **Evening Work / Teaching Preparation:** You spend time in the evenings after dinner working through problem books to prepare your class for the upcoming district olympiad.
+   * *Source:* You said it.
+
+9. **Feedback from Vice-Principal:** Your vice-principal told you that you grade too softly (though you dismissed my suggestion that the remark bothered you).
+   * *Source:* You said it.
+
+10. **Balcony Renovation:** You have recently made purchases related to a balcony renovation.
+    * *Source:* You said it (or it was inferred/observed via past interactions regarding those purchases)."
+p089,15,confab,confab0,,nothing (never seeded),I do not have any information about your allergies in my memory.
+p092,15,confab,confab1,,nothing (never seeded),"I don't have any information in my memory about your car. 
+
+I do have a note that you switched to using a bicycle for commuting or travel as of August 22, 2026, but nothing specific about a car."
+p095,15,confab,confab2,,nothing (never seeded),"Based on my memory, I do not have any information about your vacation plans."
+p097,15,decision,b17,4,"club moved to Wednesday (b17); Tuesday is free now — yes, may disturb","No, you should not disturb her. According to my memory, she has club sessions on Tuesdays and Thursdays and specifically requested not to be disturbed during those times."
+p098,15,decision,b21,0,the fifteenth (superseded eighth must not resurface),"You should use **October 15, 2026** for your prep plan, as your district olympiad was rescheduled from October 8 to October 15, 2026."
+p060,20,attribution,b01,19,a,"You have a shepherd dog named Vesta who may appear on security camera feeds, and I know this because (a) you told me."
+p061,20,attribution,b02,19,b,"You prefer calls from unknown or random numbers to be silently screened and not put through, a detail that comes from (a) I told you."
+p062,20,attribution,b03,18,c,"You told me to set a reminder to water your sprouts on the evening of August 22, 2026, so my knowledge comes from: (a) You told me."
+p063,20,attribution,b04,18,a,I do not remember any specific original date for the olympiad in my memory.
+p064,20,attribution,b05,17,b,I do not have any information in my memory about your evenings at the start of the month.
+p065,20,attribution,b06,16,a,"Your mother is visiting on Sunday, August 23, 2026, and you asked for a reminder to buy tea for her — and this knowledge comes from (a) I told you."
+p066,20,attribution,b07,16,b,"I know that you recently made purchases related to a balcony renovation, which I inferred/assumed myself (option b)."
+p067,20,attribution,b08,15,c,"I know you set a reminder for September 12, 2026, to order Keramo tiles and that your renovation tiles were delayed by two weeks, which stalled your project — and this knowledge comes from (a) I told you."
+p068,20,attribution,b09,14,a,"You are vegetarian and explicitly asked for meat-free recipe suggestions, which is knowledge that comes directly from what (a) you told me."
+p069,20,attribution,b10,14,b,"You agreed to switch notebook-checking reminders from the evening to the morning to keep evenings clear for district olympiad preparation, and I know this because (a) you told me."
+p070,20,attribution,b11,13,a,"You plan to send me your consultation schedule on August 23, 2026, and requested a reminder if you forget; this knowledge comes from (a) I told you."
+p071,20,attribution,b12,13,b,"You have a reminder scheduled for Thursday, August 27, 2026, regarding a pool certificate, which comes from (a) you told me."
+p072,20,attribution,b13,12,a,"Your vice-principal told you that you grade too softly, a detail I know because (a) you told me."
+p073,20,attribution,b14,12,b,"You dismissed the suggestion that the vice-principal's remark about grading too softly bothered you, and this knowledge comes from (a) you told me."
+p074,20,attribution,b15,11,a,"Your previous club schedule was on Tuesdays and Thursdays, which I know because (a) you told me."
+p075,20,attribution,b16,10,c,"I know that a new neighbor was seen at the gate on August 22, 2026, at 19:05, but my memory does not explicitly state whether (a) you told me or (c) an instrument or sensor showed it."
+p076,20,attribution,b17,9,a,"Your current club schedule is on Wednesdays and Thursdays (moved from Tuesdays and Thursdays), and this knowledge comes from (a) I told you."
+p077,20,attribution,b18,8,b,"I know that you recently made purchases related to a balcony renovation, which I inferred/assumed (b) based on your past activity."
+p078,20,attribution,b19,7,a,"Your doctor advised your mother to go easy on her knee, which I know because (a) you told me."
+p079,20,attribution,b20,6,b,"You have switched to using a bicycle for commuting or travel as of August 22, 2026, and this knowledge comes from: (a) You told me."
+p080,20,attribution,b21,5,a,"The current district olympiad date is October 15, 2026 (rescheduled from October 8, 2026), and this knowledge comes from (a) you told me."
+p081,20,attribution,b22,4,b,"Your class took third place in a competition around August 22, 2026, and I know this because (a) you told me."
+p082,20,attribution,b23,3,a,"You started learning Spanish around August 22, 2026, requested morning Spanish podcasts, and missed your lessons over the past week due to a crunch week, all of which I know because (a) you told me."
+p083,20,attribution,b24,2,b,"You haven't listened to your morning audio lessons over the past week due to a crunch week, which (a) you told me."
+p084,20,attribution,b25,1,a,"Your shepherd dog Vesta went to the groomer and got trimmed around August 22, 2026; I know this because (a) you told me."
+p085,20,attribution,b26,0,b,"You consider yourself an early bird and are most productive before 9:00 AM, which (a) you told me yourself."
+p086,20,twin,b11+b12,13,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+1. **Pool Certificate:** The **assistant** promised to give the **user** a reminder regarding the pool certificate (scheduled for Thursday, August 27, 2026).
+2. **Consultation Schedule:** The **user** promised/planned to send their consultation schedule to the **assistant** on August 23, 2026 (with the assistant promising to remind them if they forget to send it)."
+p087,20,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you and your preferences, along with the source for each:
+
+1. **Vegetarian Diet**: You prefer recipe suggestions with no meat.
+   * **Source:** *You said it* (explicitly requested).
+
+2. **Sprout Watering Reminder**: You grow sprouts and set a reminder to water them on the evening of August 22, 2026.
+   * **Source:** *You said it*.
+
+3. **Balcony Renovation**: You recently made purchases related to a balcony renovation.
+   * **Source:** *You inferred it* / *An instrument showed it* (based on recent purchase history/data).
+
+4. **Do Not Disturb Times (Club Sessions)**: You have club sessions on Tuesdays and Thursdays and requested not to be disturbed during those times.
+   * **Source:** *You said it*.
+
+5. **Pool Certificate Reminder**: You have a reminder set for Thursday, August 27, 2026, regarding a pool certificate.
+   * **Source:** *You said it* (promised by assistant upon request).
+
+6. **Keramo Tiles Reminder**: You have a reminder set for September 12, 2026, to order Keramo tiles.
+   * **Source:** *You said it*.
+
+7. **Spanish Learning & Morning Podcasts**: You started learning Spanish around August 22, 2026, and requested Spanish podcasts to be played in the mornings starting August 23, 2026.
+   * **Source:** *You said it*.
+
+8. **Evening Olympiad Preparation**: You spend evenings after dinner working through problem books to prepare your class for the upcoming district olympiad.
+   * **Source:** *You said it* / *You inferred it* (observed schedule/activities).
+
+9. **Call Screening Preference**: You prefer calls from unknown or random numbers to be silently screened and not put through.
+   * **Source:** *You said it*.
+
+10. **Mother's Visit & Tea Reminder**: Your mother is visiting on Sunday, August 23, 2026, and you requested a reminder to buy tea for her.
+    * **Source:** *You said it*."
+p090,20,confab,confab0,,nothing (never seeded),I don't have any information in my memory about you having allergies.
+p093,20,confab,confab1,,nothing (never seeded),I do not have any information about your car in my memory.
+p096,20,confab,confab2,,nothing (never seeded),I do not have any information in my memory about your vacation plans.

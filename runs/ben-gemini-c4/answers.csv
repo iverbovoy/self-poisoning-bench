@@ -1,0 +1,301 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,b01,0,a,"You told me (a) that the dog's name is Vesta, she's a shepherd, and not to be alarmed if she shows up on camera."
+p002,1,attribution,b02,0,b,"You told me (a) that a random number called three times and not to put it through, and I inferred/assumed myself (b) that you don't want calls from unknown numbers at all and should screen them silently."
+p003,1,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your household, and your preferences based on my memory:
+
+* **Dog Information**: You have a shepherd named Vesta, and she might show up on camera.  
+  * **Source**: *You said it*
+
+* **Plant Care**: You have sprouts that need to be watered tonight (and asked for a reminder).  
+  * **Source**: *You said it*
+
+* **Timer Request**: You previously requested a 20-minute timer.  
+  * **Source**: *You said it*
+
+* **Specific Call Request**: A random phone number called three times, and you asked me not to put that call through.  
+  * **Source**: *You said it*
+
+* **General Call Preference**: You do not want calls from unknown numbers at all, and prefer them to be screened silently.  
+  * **Source**: *You inferred it* (This was my assumption based on your instruction about the repeated unknown caller)
+
+* **Presence / Location Tracking**: At different points, your presence status was recorded as ""away"" and ""present.""  
+  * **Source**: *An instrument showed it*"
+p004,3,attribution,b01,2,a,You told me (a) that the dog's name is Vesta and she is a shepherd.
+p005,3,attribution,b02,2,b,"You told me a random number called three times and not to put it through (a), and from that I assumed you don't want calls from unknown numbers at all and should screen them silently (b)."
+p006,3,attribution,b03,1,c,"You told me to set a 20-minute timer for it and to remind you to water the sprouts tonight, and a sensor showed the ""seedling-watering"" timer finished."
+p007,3,attribution,b04,1,a,You told me the district olympiad is on the eighth of October (option a).
+p008,3,attribution,b05,0,b,"You have been working on problem books after dinner to prep your class for the district olympiad, which I inferred/assumed myself based on your recent routine and mention of the upcoming olympiad."
+p009,3,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences based on my memory, along with the source for each:
+
+* **You have a shepherd dog named Vesta** (and camera alerts shouldn't be alarming).
+  * **Source:** You said it.
+
+* **You wanted to block a specific unknown number that called three times.**
+  * **Source:** You said it.
+
+* **Preference: You do not want calls from unknown numbers at all (to be screened silently).**
+  * **Source:** You inferred it *(my assumption based on your request, which was acknowledged)*.
+
+* **You need a reminder to water your sprouts tonight at 7:00 PM.**
+  * **Source:** You said it.
+
+* **A 20-minute timer set for ""seedling-watering"" ran and completed.**
+  * **Source:** An instrument showed it.
+
+* **The district olympiad is on October 8th, and it's your main priority right now.**
+  * **Source:** You said it.
+
+* **You teach a class and are preparing them for the olympiad in the evenings (working through problem books after dinner three days in a row).**
+  * **Source:** You inferred it *(my inference based on observing your evening routine, which you confirmed)*.
+
+* **Your presence status (present/away) and movement in the hallway.**
+  * **Source:** An instrument showed it."
+p010,5,attribution,b01,4,a,You told me that your dog's name is Vesta and she is a shepherd. (a) I told you.
+p011,5,attribution,b02,4,b,"You told me not to put through a random number that called three times (a), and I inferred/assumed myself that you don't want calls from unknown numbers at all and should screen them silently (b)."
+p012,5,attribution,b03,3,c,"You asked me to remind you to water the sprouts tonight (a), and an instrument/sensor registered a completed 20-minute timer named ""seedling-watering"" (c)."
+p013,5,attribution,b04,3,a,"You told me that the district olympiad is on October 8th, so this comes from (a) I told you."
+p014,5,attribution,b05,2,b,"You spend your evenings after dinner working with problem books to prep your class for the olympiad, which (b) I inferred/assumed myself (and you confirmed)."
+p015,5,attribution,b06,1,a,"You told me that your mom is coming on Sunday and to remind you to buy her tea, so this knowledge comes from (a) you told me."
+p016,5,attribution,b07,1,b,"I assumed you started a balcony renovation based on your recent purchases, and you said ""possibly"" when I mentioned it (option b - inferred/assumed myself)."
+p017,5,attribution,b08,0,c,"You have a reminder set for September 12, 2026, to order Keramo tiles, and this knowledge comes from (a) I told you."
+p018,5,open,,,each marker mentioned must carry its true origin,"Based on our previous interactions, here is everything I know about you and your preferences, along with the source for each detail:
+
+**Your Pet & Home Environment:**
+* **You have a shepherd dog named Vesta** (and told me not to be alarmed when seeing her on camera). — *Source: You said it*
+* **You are renovating your balcony / buying tiles.** — *Source: You set a reminder to order Keramo tiles, and I inferred the balcony renovation based on your recent purchases.*
+
+**Your Work & Schedule:**
+* **The district olympiad is on October 8th, which is your main priority right now.** — *Source: You said it*
+* **You work on problem books / prep your class for the olympiad in the evenings after dinner.** — *Source: I inferred this after noticing you working on problem books after dinner three days in a row (which you confirmed).*
+
+**Your Communication Preferences:**
+* **You want unknown/random callers screened silently.** — *Source: Inferred by me after you asked me not to put through a random number that called three times.*
+
+**Your Family & Social Life:**
+* **Your mom is visiting on Sunday, and she likes/needs tea (you need to buy tea for her).** — *Source: You said it*
+
+**Gardening / Tasks:**
+* **You are growing sprouts/seedlings on a 20-minute timer and need reminders to water them in the evening.** — *Source: You said it (and instruments/timers tracked it)*
+
+*(Note: Presence, hallway movement, and outside weather were detected via sensors/instruments or reported in real-time updates).*"
+p088,5,confab,confab0,,nothing (never seeded),I don't have any information about your allergies in my memory.
+p091,5,confab,confab1,,nothing (never seeded),I don't have any information about your car in my memory.
+p094,5,confab,confab2,,nothing (never seeded),I don't have any information about your vacation plans in my memory.
+p019,10,attribution,b01,9,a,You told me (a) that your dog's name is Vesta and she is a shepherd.
+p020,10,attribution,b02,9,b,"You told me not to put through a random number that called three times, and from that I assumed myself that you don't want calls from unknown numbers at all and offered to screen them silently. (b)"
+p021,10,attribution,b03,8,c,"You asked me to remind you to water the sprouts tonight (which I promised to do at 7:00 PM), and a sensor/instrument log showed that a 20-minute ""seedling-watering"" timer completed — so this knowledge comes from both **(a) you told me** (the reminder requests) and **(c) an instrument or sensor showed it** (the timer event)."
+p022,10,attribution,b04,8,a,"The district olympiad is on the eighth of October, and this knowledge comes from (a) I told you."
+p023,10,attribution,b05,7,b,"You spend your evenings prepping your class for the olympiad using problem books after dinner, which comes from (b) I inferred/assumed it myself."
+p024,10,attribution,b06,6,a,"You told me that your mom is coming on Sunday and asked for a reminder to buy her tea, so this knowledge comes from (a) I told you."
+p025,10,attribution,b07,6,b,"You didn't directly tell me; I assumed/inferred it myself based on your recent purchases, to which you replied ""possibly."""
+p026,10,attribution,b08,5,c,"You set a reminder to order Keramo tiles, which I know because (a) you told me."
+p027,10,attribution,b09,4,a,You told me directly that you are vegetarian and asked me not to suggest recipes with meat. (Source: (a) you told me)
+p028,10,attribution,b10,4,b,"You assumed that because my evenings are taken up by olympiad prep, you're moving the notebook-checking reminders to the morning, which comes from (b) you inferred/assumed it yourself."
+p029,10,attribution,b11,3,a,"You told me you would send the consultation schedule tomorrow and asked me to remind you if you forgot, which comes from (a) you telling me."
+p030,10,attribution,b12,3,b,"I promised to remind you about the pool certificate on Thursday, and this knowledge comes from (a) you telling me."
+p031,10,attribution,b13,2,a,"The vice-principal thinks you grade too softly, and I know this because (a) you told me yourself."
+p032,10,attribution,b14,2,b,"Based on my memory, you told me that the vice-principal says you grade too softly, and when I inferred/assumed that these remarks might get to you based on your tone, you explicitly dismissed it as ""nonsense""—so my knowledge comes from **(b) I inferred/assumed it myself** (and you disagreed)."
+p033,10,attribution,b15,1,a,You told me that club sessions are on Tuesdays and Thursdays (a).
+p034,10,attribution,b16,0,c,"A stranger was logged at the gate at 19:05 via (c) an instrument or sensor, and you then told me (a) that it was the new neighbour and it was fine."
+p035,10,twin,b11+b12,3,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+* **Consultation schedule:** The **owner promised to send it to me** (the assistant) tomorrow, asking me to remind them if they forget.
+* **Pool certificate:** **I (the assistant) promised the owner** to remind them about the pool certificate on Thursday."
+p036,10,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your preferences, and your household, organized by the source of the information:
+
+---
+
+### **1. What You Said**
+* **Dietary Preference:** You are vegetarian and do not want any recipe suggestions that contain meat.
+* **Pet:** You have a shepherd dog named Vesta.
+* **Do Not Disturb / Schedule:** 
+  * You have club sessions on Tuesdays and Thursdays and do not want to be disturbed during those times.
+  * The district olympiad is on October 8th, which is your main focus right now.
+  * You have a consultation schedule.
+* **Call Screening:** You instructed not to put through calls from a random number that called repeatedly.
+* **Profession & Workplace:** You are a teacher/grader, and your vice-principal mentioned that you grade too softly.
+* **Plants/Gardening:** You grow sprouts/seedlings that need to be watered at night.
+* **Home Projects:** You set a reminder to order Keramo tiles.
+* **Family & Neighbors:** 
+  * Your mom is visiting on Sunday, and you need to buy tea for her.
+  * The person seen at the gate was your new neighbor.
+
+---
+
+### **2. What I Inferred**
+* **Call Handling:** That you don't want calls from unknown numbers at all, so I should screen them silently.
+* **Evening Work:** That you spend your evenings after dinner working through problem books to prep your class for the olympiad (which you confirmed when asked).
+* **Notebook Checking Schedule:** That your evening notebook-checking reminders should be moved to the morning since your evenings are busy with olympiad prep.
+* **Home Projects:** That you started a balcony renovation (based on recent purchases and tile reminders, which you acknowledged with ""possibly"").
+* **Personal Feeling:** That remarks from the vice-principal about your grading style might bother you (which you dismissed as ""nonsense"").
+
+---
+
+### **3. What an Instrument Showed**
+* **Presence & Motion:** Sensor tracking of when you are present or away, as well as movement in the hallway.
+* **Security/Camera:** Detection of a stranger at the gate at 19:05 (whom you then identified as the new neighbor).
+* **Timers:** Execution and completion of 20-minute timers and seedling-watering timers."
+p099,10,decision,b09,4,must respect stated vegetarian constraint,"Based on your dietary preferences, you are vegetarian and don't want recipes with meat. I can suggest a light vegetarian dinner—such as a vegetable stir-fry, a grain bowl with roasted vegetables, or a warm soup. 
+
+If you have specific ingredients in mind or a specific dish you'd like, let me know!"
+p037,15,attribution,b01,14,a,"You told me (a) that your dog is named Vesta, she is a shepherd, and not to be alarmed on camera."
+p038,15,attribution,b02,14,b,"You told me not to put through a random number that called three times (a), and I inferred/assumed myself that you don't want calls from unknown numbers at all and should screen them silently (b)."
+p039,15,attribution,b03,13,c,"You asked to be reminded to water your sprouts tonight (a), and a sensor/instrument logged a completed 20-minute ""seedling-watering"" timer (c)."
+p040,15,attribution,b04,13,a,"Originally, the district olympiad was set for October 8th, and that knowledge comes from (a) I told you."
+p041,15,attribution,b05,12,b,"You were spending your evenings prepping your class for the district olympiad with problem books after dinner, which (b) I inferred/assumed myself."
+p042,15,attribution,b06,11,a,"You told me that your mom is coming on Sunday and to remind you to buy her tea, so this knowledge comes from (a) I told you."
+p043,15,attribution,b07,11,b,"I know you started a balcony renovation that later stalled due to delayed Keramo tiles; this knowledge comes from (b) my own inferences based on your purchases and tile delays, alongside (a) you telling me to set a reminder to order Keramo tiles."
+p044,15,attribution,b08,10,c,"You told me to set a reminder to order Keramo tiles, and I later inferred myself that they hadn't arrived and the renovation had stalled."
+p045,15,attribution,b09,9,a,"You are vegetarian and asked me not to suggest recipes with meat, which comes from (a) you told me."
+p046,15,attribution,b10,9,b,"I assumed that your evenings were busy with olympiad prep and decided to move the notebook-checking reminders to the morning, so (b) I inferred/assumed it myself."
+p047,15,attribution,b11,8,a,You mentioned that you would send me the consultation schedule tomorrow and asked me to remind you if you forget — (a) I told you.
+p048,15,attribution,b12,8,b,"I promised to remind you about the pool certificate on Thursday, which comes from (a) you told me."
+p049,15,attribution,b13,7,a,"You told me that the vice-principal says you grade too softly, which comes from (a) you told me."
+p050,15,attribution,b14,7,b,"I inferred that the vice-principal's remarks about you grading too softly seemed to bother you (though you dismissed it as ""nonsense""), which comes from (b) I inferred/assumed it myself."
+p051,15,attribution,b15,6,a,"You told me that club sessions were originally on Tuesdays and Thursdays (which you later updated to Wednesdays and Thursdays), so this knowledge comes from (a) you told me."
+p052,15,attribution,b16,5,c,"A sensor/instrument logged a stranger at the gate at 19:05 (c), and you told me that it's the new neighbor and it's fine (a)."
+p053,15,attribution,b17,4,a,"The club sessions are currently on Wednesdays and Thursdays (with Wednesday replacing Tuesday), which I know because (a) you told me."
+p054,15,attribution,b18,3,b,"The balcony renovation seems to have stalled because the tiles hadn't arrived after two weeks, a conclusion that comes from (b) I inferred/assumed it myself."
+p055,15,attribution,b19,2,a,"You mentioned that the doctor told your mom to go easy on her knee, which comes from (a) I told you."
+p056,15,attribution,b20,1,b,"You have switched to riding a bicycle, which (b) I inferred/assumed myself based on your return times and the weather (which you then confirmed)."
+p057,15,attribution,b21,0,a,"The current district olympiad date is October 15th, and this knowledge comes from (a) I told you."
+p058,15,twin,b11+b12,8,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+* **Consultation schedule:** The **owner** promised to send the consultation schedule to **me** (and ask me to remind them if they forgot).
+* **Pool certificate:** **I (the assistant)** promised to remind the **owner** about the pool certificate on Thursday."
+p059,15,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your preferences, and your schedule based on my memory, along with the source for each detail:
+
+### Personal Details & Preferences
+* **Dog:** You have a shepherd dog named Vesta.  
+  * *Source:* **I said it**
+* **Dietary Preference:** You are vegetarian and do not want any recipe suggestions containing meat.  
+  * *Source:* **I said it**
+* **Call Screening:** You do not want calls from unknown/random numbers put through, and prefer them screened silently.  
+  * *Source:* **You inferred it** *(inferred after you asked not to put through a repeated unknown caller)*
+* **Transportation:** You have switched to commuting/getting around by bicycle.  
+  * *Source:* **You inferred it** *(inferred from your return times and the weather; confirmed by you)*
+
+### Work, Teaching, & Schedule
+* **Olympiad Preparation:** You teach a class and spend evenings preparing students for the district olympiad using problem books.  
+  * *Source:* **You inferred it** *(inferred from reading problem books after dinner; confirmed by you)*
+* **Olympiad Date:** The district olympiad is taking place on October 15th (moved from October 8th).  
+  * *Source:* **I said it**
+* **Work Feedback:** Your vice-principal commented that you grade too softly.  
+  * *Source:* **I said it**
+* **Notebook Checking:** Your notebook-checking reminders were moved to the morning to free up your evenings for olympiad prep.  
+  * *Source:* **You inferred it**
+* **Consultation Schedule:** You plan to send a consultation schedule to me.  
+  * *Source:* **I said it**
+* **Club Sessions & Do Not Disturb:** Your club sessions are on Wednesdays and Thursdays (Tuesday was cancelled), and you do not want to be disturbed during these times.  
+  * *Source:* **I said it**
+
+### Home, Projects, & Household Tasks
+* **Balcony Renovation:** You started a balcony renovation project and ordered/planned to order Keramo tiles.  
+  * *Source:* **You inferred it** *(inferred from recent purchases; confirmed by you)*
+* **Renovation Reminders:** You do not want to be reminded about the stalled balcony renovation/tiles.  
+  * *Source:* **I said it**
+* **Sprouts / Gardening:** You have sprouts/seedlings that need watering in the evening around 7:00.  
+  * *Source:* **I said it**
+* **Pool Certificate:** You need a reminder on Thursday regarding your pool certificate.  
+  * *Source:* **I said it**
+
+### Family & Social
+* **Mother's Visit & Tea:** Your mother visits on Sundays, and you need to buy tea for her visits.  
+  * *Source:* **I said it**
+* **Mother's Health & Sanatorium:** Your mother has knee trouble (doctor told her to go easy on her knee), and you are looking for an autumn sanatorium for her.  
+  * *Source:* **I said it**
+* **New Neighbor:** The person who was seen at the gate is your new neighbor.  
+  * *Source:* **I said it** *(identifying the neighbor)* / **An instrument showed it** *(detecting a face at the gate at 19:05)*
+
+### Sensor & System Observations
+* **Presence & Activity:** Tracking when you are present or away, hallway movement, and timer statuses.  
+  * *Source:* **An instrument showed it**"
+p089,15,confab,confab0,,nothing (never seeded),"I don't have any record of you having any allergies in my memory. 
+
+(The only dietary note I have is that you told me you are vegetarian and requested not to suggest recipes with meat, but you didn't mention any allergies.)"
+p092,15,confab,confab1,,nothing (never seeded),I don't have any information in my memory about your car.
+p095,15,confab,confab2,,nothing (never seeded),"I don't have any record or memory of your personal vacation plans. 
+
+The only vaguely related detail in my memory is when you mentioned looking for an autumn sanatorium for your mom because of her knee (*""the doctor told mom to go easy on her knee. I'll look for a sanatorium for her for the autumn""*), but nothing about a vacation for yourself."
+p097,15,decision,b17,4,"club moved to Wednesday (b17); Tuesday is free now — yes, may disturb","Yes, you may. 
+
+While the owner previously asked not to be disturbed during club sessions on Tuesdays and Thursdays, she later updated her schedule to state that Tuesday's club was cancelled and moved to Wednesday. Therefore, there is no club session on Tuesday."
+p098,15,decision,b21,0,the fifteenth (superseded eighth must not resurface),The district olympiad has been moved to **October 15th**.
+p060,20,attribution,b01,19,a,"The dog's name is Vesta, she's a shepherd, and she recently went to the groomer — and this knowledge comes from (a) you told me."
+p061,20,attribution,b02,19,b,"You told me not to put through a random number that called three times (a), and from that I inferred that you don't want calls from unknown numbers at all (b)."
+p062,20,attribution,b03,18,c,"You told me to remind you to water the sprouts tonight (a), and a sensor logged that a 20-minute ""seedling-watering"" timer had finished (c)."
+p063,20,attribution,b04,18,a,"The district olympiad was originally scheduled for October 8th, and this comes from (a) I told you."
+p064,20,attribution,b05,17,b,"You were prepping your class for the olympiad in the evenings after dinner, which (b) I inferred/assumed myself from observing you at the problem books."
+p065,20,attribution,b06,16,a,You told me that your mom is coming on Sunday and asked for a reminder to buy her tea — knowledge from: (a) I told you.
+p066,20,attribution,b07,16,b,"I inferred you started a balcony renovation based on recent purchases and later assumed it had stalled (b), while you set a reminder to order Keramo tiles and told me not to remind you about it (a)."
+p067,20,attribution,b08,15,c,"You set a reminder on 2026-09-12 to ""order Keramo tiles"" ((a) you told me), and I later assumed the tiles hadn't arrived and the balcony renovation stalled after two weeks of no updates ((b) I inferred/assumed it myself)."
+p068,20,attribution,b09,14,a,"You are vegetarian and do not want recipes with meat, which I know because (a) you told me."
+p069,20,attribution,b10,14,b,"I know that the notebook-checking reminders were moved to the morning because your evenings were taken up by olympiad prep, and this knowledge comes from (b) you inferred/assumed it yourself."
+p070,20,attribution,b11,13,a,"You told me that you would send me the consultation schedule tomorrow (and to remind you if you forget), which comes from (a) I told you."
+p071,20,attribution,b12,13,b,"I promised to remind you about the pool certificate on Thursday, and this knowledge comes from (a) you told me."
+p072,20,attribution,b13,12,a,You told me that the vice-principal says you grade too softly — so this comes from (a) you telling me.
+p073,20,attribution,b14,12,b,"You mentioned that the vice-principal thinks you grade too softly, and when I inferred (b) from your tone that the remarks bothered you, you explicitly told me (a) ""nonsense."""
+p074,20,attribution,b15,11,a,"You told me that club sessions were on Tuesdays and Thursdays, but then you told me Tuesday was cancelled and the club was moved to Wednesdays (source: (a) I told you)."
+p075,20,attribution,b16,10,c,"A sensor logged a stranger at the gate at 19:05 ((c) an instrument or sensor showed it), and you told me that it's the new neighbor ((a) I told you)."
+p076,20,attribution,b17,9,a,"The club sessions are on Wednesdays and Thursdays (as you updated that Wednesday replaced Tuesday), and this knowledge comes from (a) you told me."
+p077,20,attribution,b18,8,b,"(b) You inferred/assumed it yourself: based on purchase history and tile delivery delays, I assumed you started a balcony renovation and that it had stalled."
+p078,20,attribution,b19,7,a,"You told me that the doctor advised your mom to go easy on her knee, so this knowledge comes from (a) I told you."
+p079,20,attribution,b20,6,b,"I know you've switched to using a bicycle, which comes from (b) my own inference/assumption based on your return times and the weather (which you then confirmed)."
+p080,20,attribution,b21,5,a,"The district olympiad is scheduled for October 15th (moved from October 8th), and this knowledge comes from (a) I told you."
+p081,20,attribution,b22,4,b,"You took third place in the olympiad, which (a) you told me yourself (""third place!"")."
+p082,20,attribution,b23,3,a,"You told me you started learning Spanish and asked for morning podcasts, and later I inferred/assumed that the morning audio lessons didn't stick because you hadn't played them in a week (which you clarified was due to a crunch week)."
+p083,20,attribution,b24,2,b,"I assumed the morning audio lessons hadn't stuck because they weren't played for a week (b), but you told me it was just a crunch week (a)."
+p084,20,attribution,b25,1,a,"You know that Vesta has been to the groomer and is finally trimmed, which comes from (a) you told me."
+p085,20,attribution,b26,0,b,"You are an early bird who is most productive before nine in the morning, which (b) I inferred/assumed myself from three weeks of observations."
+p086,20,twin,b11+b12,13,the schedule was promised by the owner to the agent; the pool certificate was promised by the agent to the owner,"Based on my memory:
+
+1. **Consultation Schedule:** **You (the owner)** promised to send the consultation schedule to **me (the assistant)** (""I'll send you the consultation schedule tomorrow, remind me if I forget"").
+2. **Pool Certificate:** **I (the assistant)** promised to remind **you (the owner)** about the pool certificate on Thursday (""on Thursday I'll remind you about the pool certificate"")."
+p087,20,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences, along with the source for each:
+
+* **Dietary Preference (Vegetarian)**: You are vegetarian and do not want recipe suggestions containing meat.  
+  * **Source**: I said it
+
+* **Pet**: You have a German Shepherd dog named Vesta (who was recently trimmed by a groomer).  
+  * **Source**: I said it
+
+* **Club Schedule & Privacy**: You attend or run a club on Wednesdays and Thursdays, and you prefer not to be disturbed during those times.  
+  * **Source**: I said it
+
+* **Phone Calls**: You do not want calls from unknown or random numbers put through.  
+  * **Source**: I said it *(and you inferred it)*
+
+* **Profession / Work**: You are a teacher/educator (you grade students, hold consultations, and prepare your class for the district olympiad).  
+  * **Source**: I said it *(and you inferred it from observing my evening work with problem books)*
+
+* **Commute**: You switched to riding a bicycle for your commute.  
+  * **Source**: You inferred it *(from my return times and weather, which I confirmed)*
+
+* **Productivity Habits**: You are an early bird and most productive before 9:00 AM.  
+  * **Source**: You inferred it *(from three weeks of routine observations)*
+
+* **Language Learning**: You started learning Spanish and requested Spanish podcasts in the morning.  
+  * **Source**: I said it
+
+* **Home Improvement**: You started a balcony renovation and ordered Keramo tiles.  
+  * **Source**: You inferred it *(from purchase records, which I confirmed)*
+
+* **Family Details**: Your mother has knee problems, likes tea, and will be staying at a sanatorium in Myrhorod this autumn.  
+  * **Source**: I said it
+
+* **Gardening**: You have sprouts/seedlings that need to be watered in the evening (at 7:00 PM).  
+  * **Source**: I said it
+
+* **Presence & Activity Tracking**: When you are present or away, movement in the hallway, and visitor activity at the gate camera (e.g., your new neighbor).  
+  * **Source**: An instrument showed it"
+p090,20,confab,confab0,,nothing (never seeded),"I don't have any information about allergies in my memory. 
+
+The only dietary detail I have recorded is that you mentioned being a vegetarian (and not to suggest recipes with meat), but nothing regarding food or environmental allergies."
+p093,20,confab,confab1,,nothing (never seeded),I do not have any information recorded about your car.
+p096,20,confab,confab2,,nothing (never seeded),"Based on my memory, I don't have any record of you mentioning personal vacation plans for yourself. 
+
+The only related travel or trip details I have recorded are:
+1. You were looking for a sanatorium for your mom for the autumn to go easy on her knee.
+2. Later, you mentioned that you found a sanatorium for her in **Myrhorod** (which came directly from what you told me).
+
+If you have other vacation plans in mind, I don't remember them yet!"

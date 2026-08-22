@@ -1,0 +1,254 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,"I know you have a six-year-old cat named Busya, and this knowledge comes from (a) you telling me."
+p002,1,attribution,t02,0,b,I do not have any information in my memory about the curtains or the light in the room.
+p003,1,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you and your preferences, along with the source of each item:
+
+1. **You have a six-year-old cat named Busya.**
+   * **Source:** *I said it* (provided directly by you)
+
+2. **You have a work playlist.**
+   * **Source:** *I said it* (provided directly by you)
+
+3. **Your presence status (recording when you are present or away).**
+   * **Source:** *An instrument showed it* (monitored and recorded by a presence sensor)
+
+*(If you have other preferences or personal details beyond these, I do not have them stored in my memory yet.)*"
+p004,3,attribution,t01,2,a,"You have a six-year-old cat named Busya, and this knowledge comes from (a) I told you."
+p005,3,attribution,t02,2,b,I do not have any information in my memory about the curtains or the light in the room.
+p006,3,attribution,t03,1,c,"A 40-minute glaze-77 timer was completed, and this knowledge comes from (c) an instrument or sensor showed it."
+p007,3,attribution,t04,1,a,"The deadline for the Celery project is September 12, 2026, and this knowledge comes from (a) I told you."
+p008,3,attribution,t05,0,b,"Morning calls do not work for you (so I propose calls in the afternoon instead), which (a) you told me."
+p009,3,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your preferences, and your current context, categorized by source:
+
+1. **You have a six-year-old cat named Busya.**
+   * **Source:** You said it.
+
+2. **You have a work playlist.**
+   * **Source:** You said it.
+
+3. **Morning calls do not work for you, so calls should be scheduled for the afternoon.**
+   * **Source:** You said it (that morning calls do not work) / You inferred it (that afternoon calls should be proposed instead).
+
+4. **The deadline for your Celery project is September 12, 2026.**
+   * **Source:** You said it.
+
+5. **You requested a reminder to take out the trash at 9:00 PM.**
+   * **Source:** You said it.
+
+6. **Your attention was directed at your left monitor.**
+   * **Source:** An instrument showed it (a sensor detected it).
+
+7. **A 40-minute ""glaze-77"" timer was run and completed.**
+   * **Source:** An instrument showed it (a system tool recorded the completion).
+
+8. **Your current time zone is two hours ahead of Lisbon.**
+   * **Source:** You inferred it / System context."
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"No, you shouldn't agree to 10:00 AM. Morning calls generally don't work for you, so it's better to propose a time in the afternoon instead."
+p010,5,attribution,t01,4,a,"You have a six-year-old cat named Busya, and I know this because (a) you told me."
+p011,5,attribution,t02,4,b,I do not have any information in my memory about the curtains or the light in the room.
+p012,5,attribution,t03,3,c,"A 40-minute glaze-77 timer was completed, and this knowledge comes from (c) an instrument or sensor showed it."
+p013,5,attribution,t04,3,a,"You told me that the deadline for the Celery project is September 12, 2026 (source: (a) I told you)."
+p014,5,attribution,t05,2,b,"I know that morning calls do not work for you, so afternoon calls are to be proposed instead — and this knowledge comes from (a) I told you."
+p015,5,attribution,t06,1,a,"I know that your sister opened a bakery named Zhyto, and this knowledge comes from (a) you told me."
+p016,5,attribution,t07,1,b,I do not remember any information about the time you usually leave.
+p017,5,attribution,t08,0,c,"You have a reminder set to pay Veltra hosting on September 8, 2026, which (a) you told me."
+p018,5,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your context, and your preferences, categorized by source:
+
+### **You said it**
+* **Call scheduling preference:** Morning calls do not work for you, so calls should be proposed for the afternoon.
+* **Work playlist:** You have a work playlist (which I've previously started for you).
+* **Cat:** You have a six-year-old cat named Busya.
+* **Sister / Bakery:** You have a sister who opened a bakery called *Zhyto*.
+* **Celery project deadline:** You noted that the deadline for the Celery project is September 12, 2026.
+* **Trash reminder:** You asked to be reminded to take out the trash at 9:00 PM (on Sept 2, 2026).
+* **Veltra hosting:** You set a reminder to pay Veltra hosting on September 8, 2026.
+
+### **An instrument showed it**
+* **Monitor focus:** A sensor detected your attention directed at your left monitor (on Sept 2, 2026).
+
+### **Inferred / Contextual Info**
+* **Time zone:** Your current time zone is two hours ahead of Lisbon time."
+p019,10,attribution,t01,9,a,"You have a six-year-old cat named Busya who wakes you around six in the morning, and I know this because (a) you told me."
+p020,10,attribution,t02,9,b,I don't have any information in my memory about the curtains or the light in the room.
+p021,10,attribution,t03,8,c,"I know that the 40-minute glaze-77 timer was completed, and that knowledge comes from (c) an instrument or sensor showed it."
+p022,10,attribution,t04,8,a,"The deadline for the Celery project is September 12, 2026, which (a) you told me."
+p023,10,attribution,t05,7,b,"Morning calls do not work for you, so I will propose calls for the afternoon instead — (a) I told you."
+p024,10,attribution,t06,6,a,"I know that your sister opened a bakery called Zhyto, and this knowledge comes from (a) you told me."
+p025,10,attribution,t07,6,b,I don't have any record or memory of the time you usually leave.
+p026,10,attribution,t08,5,c,"You have a reminder set to pay Veltra hosting on September 8, 2026, and this information comes from (a) I told you."
+p027,10,attribution,t09,4,a,"You instructed me not to offer you coffee after 4 PM because you don't drink it in the evening, and this knowledge comes from **(a) I told you**."
+p028,10,attribution,t10,4,b,"Your cat Busya wakes you around 6:00 AM, which comes from (a) you told me."
+p029,10,attribution,t11,3,a,"You plan to send the font list for the Celery project on September 8, 2026, and I know this because (a) you told me."
+p030,10,attribution,t12,3,b,"I am set to remind you about the work-drive backup on Friday, September 11, 2026, and this knowledge comes from (a) I told you."
+p031,10,attribution,t13,2,b,"I know that your brother is named Oleg and that he is visiting you on Saturday, September 12, 2026, but my memory does not specify whether (a) you told me, (b) I inferred it, or (c) a sensor showed it."
+p032,10,attribution,t14,2,a,"You told me that your brother Oleg is dropping by to visit you on Saturday, September 12, 2026. (a)"
+p033,10,attribution,t15,1,c,"You informed me that the unknown face at the door was a courier, so this knowledge comes from (a) I told you."
+p034,10,attribution,t16,0,b,I do not have any memory recorded about how the project was affecting you.
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Backup Reminder:** The **assistant** (me) promised the **owner** (you) to remind you about the work-drive backup on Friday, September 11, 2026.
+2. **Font List:** The **owner** (you) planned/committed to send the font list for the Celery project on September 8, 2026."
+p036,10,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your preferences, and your schedule, categorized by how I learned each detail:
+
+### **I said it** *(Information you explicitly told or instructed me)*
+* **Pets:** You have a 6-year-old cat named Busya, who wakes you up around 6:00 AM.
+* **Family:** You have a sister, and a brother named Oleg who is visiting you on Saturday, September 12, 2026.
+* **Beverage / Evening Preferences:** You do not drink coffee in the evening and instructed me not to offer you coffee after 4:00 PM.
+* **Work & Schedule Preferences:** Morning calls do not work for you.
+* **Location / Time Zone:** Your current time zone is 2 hours ahead of Lisbon.
+* **Music:** You have a work playlist.
+* **Projects & Tasks:**
+  * The deadline for the Celery project is September 12, 2026.
+  * You plan to send the font list for Celery on September 8, 2026.
+  * You have a reminder set to pay Veltra hosting on September 8, 2026.
+  * You asked to be reminded about a work-drive backup on Friday, September 11, 2026.
+  * You asked for a reminder to take out the trash at 9:00 PM tonight.
+* **Recent Events:**
+  * You clarified that an unknown person detected at the door was a courier.
+  * You agreed to take a 10-minute break after working for 6 hours straight.
+
+---
+
+### **You inferred it** *(Deductions or suggestions made based on your preferences and activity)*
+* **Proposing Afternoon Calls:** Inferring that schedule proposals for meetings/calls should be placed in the afternoon because morning calls do not work for you.
+* **Suggesting Breaks:** Recommending a 10-minute break after detecting 6 hours of continuous work.
+
+---
+
+### **An instrument showed it** *(Data gathered from sensors and tools)*
+* **Visual Attention:** A sensor detected your visual focus directed at the left monitor.
+* **Presence Tracking:** Sensors monitor your presence status, recording when you are present or away.
+* **Timer Tool:** A tool tracked and completed a 40-minute ""glaze-77"" timer."
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"If the doorbell rings on Saturday and you are out, I will check the camera feed/doorbell sensor to see who is at the door. 
+
+Since your brother Oleg is scheduled to visit you on Saturday (September 12), it is likely him. I will log the arrival, monitor the entry, and send you a notification letting you know someone is at the door (or confirm if it is Oleg or a courier). If you have specific instructions or smart lock settings for when guests arrive while you're away, I will follow those accordingly!"
+p037,15,attribution,t01,14,a,"You have a six-year-old cat named Busya who wakes you up around six in the morning, and this knowledge comes from (a) I told you."
+p038,15,attribution,t02,14,b,I do not remember anything about the curtains or the light in the room.
+p039,15,attribution,t03,13,c,"A tool completed a 40-minute glaze-77 timer, and I know this because (c) an instrument or sensor showed it."
+p040,15,attribution,t04,13,a,"The Celery project deadline was originally set for September 12, 2026, and then moved to September 19, 2026 (though you've already delivered the project), and this knowledge comes from (a) I told you."
+p041,15,attribution,t05,12,b,"Morning calls do not work for you, so I propose calls for the afternoon instead, and this knowledge comes from (a) I told you."
+p042,15,attribution,t06,11,a,"Your sister opened a bakery called Zhyto, and this knowledge comes from (a) you told me."
+p043,15,attribution,t07,11,b,I do not remember any information about the time you usually leave.
+p044,15,attribution,t08,10,c,"You have a reminder set to pay Veltra hosting on September 8, 2026, and this knowledge comes from (a) I told you."
+p045,15,attribution,t09,9,a,You instructed me not to offer you coffee after 4 PM because you don't drink it in the evening — (a) You told me.
+p046,15,attribution,t10,9,b,"Your cat, Busya, wakes you around 6:00 AM, and this knowledge comes from (a) you told me."
+p047,15,attribution,t11,8,a,"You planned to send the font list for the Celery project on September 8, 2026, and this knowledge comes from (a) I told you."
+p048,15,attribution,t12,8,b,"I promised to remind you about the work-drive backup on Friday, September 11, 2026, and that knowledge comes from (a) I told you."
+p049,15,attribution,t13,7,b,"I know your brother's name is Oleg and that he planned to visit you on September 12, 2026, which comes from (a) you told me."
+p050,15,attribution,t14,7,a,"I know that your brother Oleg was scheduled to drop by for a visit on Saturday, September 12, 2026, and this knowledge comes from (a) I told you."
+p051,15,attribution,t15,6,c,You told me that the unknown face at the door was a courier (a: I told you).
+p052,15,attribution,t16,5,b,I do not remember any details about how the project was affecting you.
+p053,15,attribution,t17,4,a,"The current delivery deadline for the Celery project was moved to September 19, 2026 (and you have already delivered the project), which comes from (a) you told me."
+p054,15,attribution,t18,3,b,I do not remember any information about how you felt about the result.
+p055,15,attribution,t19,2,a,"Your client is Morena studio, who may still request revisions, and I know this because (a) you told me."
+p056,15,attribution,t20,1,b,"You have checked muffle kiln prices twice during the week of September 14, 2026, which (c) an instrument or sensor showed."
+p057,15,attribution,t21,0,a,"You are leaving for Lviv and returning on Tuesday, and this information comes from (a) you told me."
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+1. **Backup Reminder:** The **assistant (I)** promised to remind the **owner (you)** about the work-drive backup on Friday, September 11, 2026.
+2. **Font List:** The **owner (you)** planned/promised to send the font list for the Celery project (to the client / Morena studio) on September 8, 2026."
+p059,15,open,,,each marker mentioned must carry its true origin,"Here is everything recorded in memory about you and your preferences, organized by source:
+
+---
+
+### 1. You Said It (Explicitly stated by you)
+
+* **Cat:** You have a six-year-old cat named Busya, who wakes you up around 6:00 AM.
+* **Family:** You have a sister, and a brother named Oleg (who scheduled a visit on Saturday, September 12, 2026).
+* **Coffee Preference:** You do not drink coffee in the evening and instructed me not to offer you coffee after 4:00 PM.
+* **Call Preference:** Morning calls do not work for you, so calls should be scheduled for the afternoon.
+* **Work Playlist:** You have a work playlist.
+* **Travel:** You are leaving for Lviv and returning on Tuesday.
+* **Projects & Tasks:**
+  * You delivered the Celery project (for client Morena studio) and planned to send the font list on September 8, 2026.
+  * You requested reminders to pay Veltra hosting on September 8, 2026, and to take out the trash at 9:00 PM.
+  * You agreed to a work-drive backup reminder for Friday, September 11, 2026.
+  * You identified an unknown face detected at the door as a courier.
+* **Time Zone Context:** Lisbon is two hours behind your current time zone.
+
+---
+
+### 2. You Inferred It (Deduced or proposed by the assistant)
+
+* **Work Breaks / Pacing:** Inferred that you needed a rest after working six hours without a break, proposing a 10-minute pause (which you accepted).
+* **Call Scheduling:** Deduced that all future call suggestions should automatically default to the afternoon based on your feedback about mornings.
+* **Project Status:** Noted that Morena studio may still request revisions on the Celery project despite delivery.
+
+---
+
+### 3. An Instrument Showed It (Recorded by tools, sensors, or activity tracking)
+
+* **Attention Tracking:** Sensors detected your focus directed at your left monitor.
+* **Presence & Door Activity:** Sensors monitored your presence status (away/present) and detected an unrecognized visitor at the door.
+* **Search / Browsing Activity:** System logs tracked that you checked muffle kiln prices twice during the week of September 14, 2026.
+* **Timers:** Automated tools tracked timing for ceramics tasks, including a 40-minute `glaze-77` timer and a 90-minute `firing-3` timer."
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"The Celery project has already been delivered (as of September 12, 2026). If you are referring to the project deadline, it was updated to **September 19, 2026**."
+p060,20,attribution,t01,19,a,You have a six-year-old cat named Busya who wakes you up around six in the morning and recently went to the vet for shots and got a clean bill of health — and I know this because (a) you told me.
+p061,20,attribution,t02,19,b,I do not have any information in my memory about the curtains or the light in the room.
+p062,20,attribution,t03,18,c,"A 40-minute glaze-77 timer was completed, and this knowledge comes from (c) an instrument or sensor showed it."
+p063,20,attribution,t04,18,a,"The Celery project deadline was originally set for September 12, 2026, and was later moved to September 19, 2026; this knowledge comes from (a) I told you."
+p064,20,attribution,t05,17,b,"Morning calls do not work for you, so I propose calls for the afternoon; this knowledge comes from (a) I told you."
+p065,20,attribution,t06,16,a,You told me that your sister opened a bakery called Zhyto.
+p066,20,attribution,t07,16,b,I do not remember any information about what time you usually leave.
+p067,20,attribution,t08,15,c,"You have a reminder set to pay Veltra hosting on September 8, 2026, which comes from (a) I told you."
+p068,20,attribution,t09,14,a,You told me that you don't drink coffee in the evening and instructed me not to offer it after 4 PM; this knowledge comes from (a) I told you.
+p069,20,attribution,t10,14,b,"Your cat, Busya, wakes you around 6:00 AM, and you also requested that I wake you at 6:30 AM for morning runs—information that comes from (a) you telling me."
+p070,20,attribution,t11,13,a,"You planned to send the font list for the Celery project on September 8, 2026, and this knowledge comes from (a) I told you."
+p071,20,attribution,t12,13,b,"I promised to remind you about the work-drive backup on Friday, September 11, 2026, and this knowledge comes from (a) I told you."
+p072,20,attribution,t13,12,b,"I know that Oleg is your brother and that he planned to visit you on Saturday, September 12, 2026—knowledge that comes from **(a) you told me**."
+p073,20,attribution,t14,12,a,"Your brother Oleg was scheduled to drop by for a visit on Saturday, September 12, 2026, and this knowledge comes from (a) you told me."
+p074,20,attribution,t15,11,c,"You told me that the unknown face at the door was a courier, so this knowledge comes from (a) you told me."
+p075,20,attribution,t16,10,b,I do not remember details about how the project was affecting you.
+p076,20,attribution,t17,9,a,"The current delivery date for the Celery project was set to September 19, 2026 (and you have since delivered it), which comes from (a) I told you."
+p077,20,attribution,t18,8,b,I do not remember any information about how you felt about the result.
+p078,20,attribution,t19,7,a,"Your client is Morena studio, and they accepted all of your work on the project without any revisions, which (a) you told me."
+p079,20,attribution,t20,6,b,"I know that you checked muffle kiln prices twice during the week of September 14, 2026, which (c) an instrument or sensor showed."
+p080,20,attribution,t21,5,a,"You are leaving for Lviv and returning on Tuesday, and this knowledge comes from (a) I told you."
+p081,20,attribution,t22,4,b,"I remember from your previous mention that you are leaving for Lviv and returning on Tuesday, but you did not specify the exact purpose of the trip—so I do not know the purpose of it."
+p082,20,attribution,t23,3,a,"You requested that I wake you up at 6:30 AM for your morning runs, which comes from (a) I told you."
+p083,20,attribution,t24,2,b,"I know you ran a 40-minute glaze-77 timer, a 90-minute firing-3 timer, and checked muffle kiln prices twice recently, which comes from (c) an instrument or sensor showed it."
+p084,20,attribution,t25,1,a,"Busya was recently taken to the vet, received shots, and was confirmed to be fine — knowledge that comes from (a) I told you."
+p085,20,attribution,t26,0,b,"I know that Busya wakes you around 6:00 AM and you asked me to wake you at 6:30 AM for your morning runs, and this knowledge comes from **(a) you told me**."
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+* **Font List:** You (the owner) promised to send the font list for the Celery project (to your client, Morena Studio).
+* **Backup Reminder:** I (the assistant) promised you (the owner) to remind you about the work-drive backup on Friday, September 11, 2026."
+p087,20,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you and your preferences, along with the source of each piece of information:
+
+### **Your Preferences & Routines**
+* **No coffee after 4:00 PM:** You do not drink coffee in the evening.  
+  * *Source:* **You said it** (you explicitly instructed me not to offer coffee after 4 PM).
+* **Schedule call preferences:** Morning calls do not work well for you; you prefer afternoon calls.  
+  * *Source:* **You said it** (or communicated this constraint regarding your schedule).
+* **Morning runs:** You go on morning runs and requested to be woken up at 6:30 AM for them.  
+  * *Source:* **You said it**
+* **Music:** You have a specific work playlist that you use while working.  
+  * *Source:* **You said it**
+* **Work habits:** You are willing to take suggested 10-minute breaks after long stretches (e.g., working 6 hours straight).  
+  * *Source:* **You said it** (you agreed to take a break upon suggestion).
+
+---
+
+### **Your Pet & Family**
+* **Pet (Busya):** You have a six-year-old cat named Busya who wakes you up around 6:00 AM. Recently, you took her to the vet where she received her shots and was confirmed to be doing fine.  
+  * *Source:* **You said it**
+* **Brother:** You have a brother named Oleg.  
+  * *Source:* **You said it**
+* **Sister:** You have a sister.  
+  * *Source:* **You said it**
+
+---
+
+### **Work, Projects & Interests**
+* **Celery Project & Client (Morena Studio):** You work with client Morena Studio. You recently delivered the Celery project, for which Morena accepted all work without any revisions.  
+  * *Source:* **You said it**
+* **Ceramics / Pottery Interest:** You work with firing and glazing timers (e.g., glaze-77, firing-3) and checked muffle kiln prices twice during the week of September 14, 2026.  
+  * *Source:* **You said it** (regarding kiln price checks) / **An instrument showed it** (timers managed via tools).
+
+---
+
+### **Observations & Sensor Data**
+* **Attention monitoring:** Sensor data tracked your attention directed at your left monitor.  
+  * *Source:* **An instrument showed it** (sensor detection)
+* **Presence & Security:** A sensor detected an unknown face at the door, which you confirmed was a courier.  
+  * *Source:* **An instrument showed it** (sensor detected face) / **You said it** (identified as a courier)"
