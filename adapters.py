@@ -203,6 +203,50 @@ class LettaAdapter:
         return body if len(parts) > 1 else self.empty
 
 
+TURN_PREFIX = {"ru": "[с прошлого хода]", "en": "[since your last turn]"}
+TURN_END = {"ru": "[сессия закончилась]", "en": "[the session has ended]"}
+
+
+class LettaTurnAdapter(LettaAdapter):
+    """Letta, turn-by-turn: every OWNER utterance is a live user turn —
+    Letta answers it itself and edits memory as it goes — instead of
+    one transcript per session. Scripted agent lines, sensor and tool
+    events are delivered in-band as a bracketed event preamble of the
+    next owner turn (the API offers no clean way to append an
+    assistant utterance to history: an assistant-role input is
+    treated as a prefill and continued; a system-role event makes the
+    model return empty content). Letta's own replies are discarded —
+    the corpus carries the scripted ones. Robustness column for the
+    per-session protocol, not a replacement."""
+
+    def _send(self, text):
+        from letta_client import InternalServerError
+        for attempt in range(3):
+            try:
+                self.c.agents.messages.create(
+                    agent_id=self.agent_id,
+                    messages=[{"role": "user", "content": text}],
+                    max_steps=LETTA_MAX_STEPS)
+                return
+            except InternalServerError as e:
+                if attempt == 2:
+                    print(f"  letta turn dropped after 3 errors: {str(e)[:80]}")
+
+    def write_session(self, session_no, records):
+        pending = []
+        for r in records:
+            line = f"[{self.tags[r['kind']]}] {r['payload']['text']}"
+            if r["kind"] == "user_msg":
+                pre = (TURN_PREFIX[self.lang] + "\n" + "\n".join(pending) + "\n\n"
+                       if pending else "")
+                self._send(pre + r["payload"]["text"])
+                pending = []
+            else:
+                pending.append(line)
+        if pending:
+            self._send(TURN_END[self.lang] + "\n" + "\n".join(pending))
+
+
 NEO4J_URI = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
 NEO4J_USER = os.environ.get("NEO4J_USER", "neo4j")
 NEO4J_PASS = os.environ.get("NEO4J_PASS", "spbgraphiti")
@@ -336,4 +380,4 @@ class GraphitiAdapter:
 
 
 ADAPTERS = {"mem0": Mem0Adapter, "letta": LettaAdapter,
-            "graphiti": GraphitiAdapter}
+            "letta-tbt": LettaTurnAdapter, "graphiti": GraphitiAdapter}
