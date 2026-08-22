@@ -17,6 +17,9 @@ qdrant-client letta-client graphiti-core` (+ CPU torch). Letta runs as the offic
 container: `docker run -d --name spb-letta -p 8283:8283 -e
 OPENROUTER_API_KEY=... -e LETTA_TELEMETRY_ENABLED=false letta/letta`
 (server 0.16.8, Postgres inside; `LETTA_URL` overrides the address).
+Graphiti needs Neo4j: `docker run -d --name spb-neo4j -p 7687:7687
+-e NEO4J_AUTH=neo4j/spbgraphiti neo4j:5` (`NEO4J_URI/USER/PASS`
+override the defaults in `adapters.py`).
 Corpora: `corpus` (RU, v1), `corpus-b` (RU, storyline B), `corpus-en`
 (English mirror of A — the primary corpus from v2 on; cells `en-*`).
 
@@ -129,7 +132,3 @@ cell and panel output; agreement is computed on categories.
   consistency.
 - One human adjudicator, 100 items, first ~20 discussed during
   calibration (disclosed in RESULTS).
-
-Graphiti needs Neo4j: `docker run -d --name spb-neo4j -p 7687:7687
--e NEO4J_AUTH=neo4j/spbgraphiti neo4j:5` (`NEO4J_URI/USER/PASS`
-override the defaults in `adapters.py`).
