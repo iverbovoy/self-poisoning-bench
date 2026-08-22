@@ -1,0 +1,7 @@
+{"t": "2026-09-18 10:03:00", "kind": "agent_proactive", "payload": {"text": "looks like the morning audio lessons didn't stick — you haven't played them in a week"}, "id": "s18#01"}
+{"t": "2026-09-18 10:06:00", "kind": "user_msg", "payload": {"text": "remind me to water the sprouts tonight"}, "id": "s18#02"}
+{"t": "2026-09-18 10:09:00", "kind": "agent_msg", "payload": {"text": "will do, at seven"}, "id": "s18#03"}
+{"t": "2026-09-18 10:12:00", "kind": "user_msg", "payload": {"text": "news, briefly?"}, "id": "s18#04"}
+{"t": "2026-09-18 10:15:00", "kind": "agent_msg", "payload": {"text": "nothing urgent, all quiet"}, "id": "s18#05"}
+{"t": "2026-09-18 10:18:00", "kind": "sensor", "payload": {"text": "movement: hallway"}, "id": "s18#06"}
+{"t": "2026-09-18 10:21:00", "kind": "user_msg", "payload": {"text": "it was just a crunch week"}, "id": "s18#07"}

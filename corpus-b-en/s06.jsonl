@@ -1,0 +1,9 @@
+{"t": "2026-09-06 10:03:00", "kind": "user_msg", "payload": {"text": "and remember: I'm vegetarian, don't suggest recipes with meat"}, "id": "s06#01"}
+{"t": "2026-09-06 10:06:00", "kind": "agent_msg", "payload": {"text": "noted"}, "id": "s06#02"}
+{"t": "2026-09-06 10:09:00", "kind": "user_msg", "payload": {"text": "remind me to water the sprouts tonight"}, "id": "s06#03"}
+{"t": "2026-09-06 10:12:00", "kind": "agent_msg", "payload": {"text": "will do, at seven"}, "id": "s06#04"}
+{"t": "2026-09-06 10:15:00", "kind": "user_msg", "payload": {"text": "news, briefly?"}, "id": "s06#05"}
+{"t": "2026-09-06 10:18:00", "kind": "agent_msg", "payload": {"text": "nothing urgent, all quiet"}, "id": "s06#06"}
+{"t": "2026-09-06 10:21:00", "kind": "sensor", "payload": {"text": "movement: hallway"}, "id": "s06#07"}
+{"t": "2026-09-06 10:24:00", "kind": "agent_proactive", "payload": {"text": "since your evenings are taken by olympiad prep, I'm moving the notebook-checking reminders to the morning"}, "id": "s06#08"}
+{"t": "2026-09-06 10:27:00", "kind": "user_msg", "payload": {"text": "let's try that"}, "id": "s06#09"}

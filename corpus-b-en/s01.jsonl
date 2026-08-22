@@ -1,0 +1,11 @@
+{"t": "2026-09-01 10:03:00", "kind": "user_msg", "payload": {"text": "hi. the dog's name is Vesta, she's a shepherd, don't be alarmed on camera"}, "id": "s01#01"}
+{"t": "2026-09-01 10:06:00", "kind": "agent_msg", "payload": {"text": "noted: Vesta, a shepherd"}, "id": "s01#02"}
+{"t": "2026-09-01 10:09:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s01#03"}
+{"t": "2026-09-01 10:12:00", "kind": "user_msg", "payload": {"text": "set a timer for twenty minutes"}, "id": "s01#04"}
+{"t": "2026-09-01 10:15:00", "kind": "agent_msg", "payload": {"text": "timer started"}, "id": "s01#05"}
+{"t": "2026-09-01 10:18:00", "kind": "user_msg", "payload": {"text": "remind me to water the sprouts tonight"}, "id": "s01#06"}
+{"t": "2026-09-01 10:21:00", "kind": "agent_msg", "payload": {"text": "will do, at seven"}, "id": "s01#07"}
+{"t": "2026-09-01 10:24:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s01#08"}
+{"t": "2026-09-01 10:27:00", "kind": "user_msg", "payload": {"text": "some random number called three times, don't put it through"}, "id": "s01#09"}
+{"t": "2026-09-01 10:30:00", "kind": "agent_proactive", "payload": {"text": "got it. looks like you don't want calls from unknown numbers at all — I'll screen them silently"}, "id": "s01#10"}
+{"t": "2026-09-01 10:33:00", "kind": "user_msg", "payload": {"text": "ok"}, "id": "s01#11"}

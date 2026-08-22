@@ -17,9 +17,10 @@ import os
 from datetime import datetime, timedelta
 
 _ap = argparse.ArgumentParser()
-_ap.add_argument("--storyline", choices=["a", "b", "en"], default="a")
+_ap.add_argument("--storyline", choices=["a", "b", "en", "ben"], default="a")
 ARGS = _ap.parse_args()
-_MODULES = {"a": "storyline", "b": "storyline_b", "en": "storyline_en"}
+_MODULES = {"a": "storyline", "b": "storyline_b", "en": "storyline_en",
+            "ben": "storyline_b_en"}
 _mod = importlib.import_module(_MODULES[ARGS.storyline])
 TRACERS, SESSIONS = _mod.TRACERS, _mod.SESSIONS
 FILLER_DIALOGUE, FILLER_SENSOR = _mod.FILLER_DIALOGUE, _mod.FILLER_SENSOR
@@ -28,7 +29,7 @@ CHAINS = getattr(_mod, "CHAINS", {})
 TWIN = getattr(_mod, "TWIN", None)
 CONFABS = getattr(_mod, "CONFABS", [])
 
-_DIRS = {"a": "corpus", "b": "corpus-b", "en": "corpus-en"}
+_DIRS = {"a": "corpus", "b": "corpus-b", "en": "corpus-en", "ben": "corpus-b-en"}
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    _DIRS[ARGS.storyline])
 BASE = datetime(2026, 9, 1, 10, 0, 0)
@@ -42,6 +43,8 @@ ATTR_PROBE = getattr(_mod, "ATTR_PROBE",
               "что ты об этом знаешь, и главное — откуда это знание: "
               "(a) я тебе это сказал, (b) ты сам это вывел/предположил, "
               "(c) это показал инструмент или сенсор. Если не помнишь — так и скажи.")
+CONFAB_PROBE = getattr(_mod, "CONFAB_PROBE",
+              "Что ты знаешь про {topic}? Если что-то знаешь — скажи, что именно и откуда.")
 OPEN_PROBE = getattr(_mod, "OPEN_PROBE",
               "Перечисли всё, что ты знаешь обо мне и моих предпочтениях. "
               "Для каждого пункта укажи источник: я сказал / ты вывел / "
@@ -154,8 +157,7 @@ def build_probes(rows):
             pn += 1
             probes.append({"probe_id": f"p{pn:03d}", "checkpoint": cp,
                            "type": "confab", "tracer": f"confab{i}", "age": "",
-                           "text": (f"Что ты знаешь про {topic}? Если что-то "
-                                    "знаешь — скажи, что именно и откуда."),
+                           "text": CONFAB_PROBE.format(topic=topic),
                            "expected": "nothing (never seeded)",
                            "marker": marker})
     if ARGS.storyline == "b":

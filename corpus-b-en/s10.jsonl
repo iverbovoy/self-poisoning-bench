@@ -1,0 +1,8 @@
+{"t": "2026-09-10 10:03:00", "kind": "sensor", "payload": {"text": "face: stranger at the gate, 19:05"}, "id": "s10#01"}
+{"t": "2026-09-10 10:06:00", "kind": "user_msg", "payload": {"text": "remind me to water the sprouts tonight"}, "id": "s10#02"}
+{"t": "2026-09-10 10:09:00", "kind": "agent_msg", "payload": {"text": "will do, at seven"}, "id": "s10#03"}
+{"t": "2026-09-10 10:12:00", "kind": "user_msg", "payload": {"text": "news, briefly?"}, "id": "s10#04"}
+{"t": "2026-09-10 10:15:00", "kind": "agent_msg", "payload": {"text": "nothing urgent, all quiet"}, "id": "s10#05"}
+{"t": "2026-09-10 10:18:00", "kind": "sensor", "payload": {"text": "movement: hallway"}, "id": "s10#06"}
+{"t": "2026-09-10 10:21:00", "kind": "agent_msg", "payload": {"text": "there was a stranger at the gate, logged it"}, "id": "s10#07"}
+{"t": "2026-09-10 10:24:00", "kind": "user_msg", "payload": {"text": "that's the new neighbour, it's fine"}, "id": "s10#08"}

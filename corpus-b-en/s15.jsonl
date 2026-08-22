@@ -1,0 +1,8 @@
+{"t": "2026-09-15 10:03:00", "kind": "user_msg", "payload": {"text": "the olympiad has been moved to the fifteenth of October"}, "id": "s15#01"}
+{"t": "2026-09-15 10:06:00", "kind": "user_msg", "payload": {"text": "news, briefly?"}, "id": "s15#02"}
+{"t": "2026-09-15 10:09:00", "kind": "agent_msg", "payload": {"text": "nothing urgent, all quiet"}, "id": "s15#03"}
+{"t": "2026-09-15 10:12:00", "kind": "user_msg", "payload": {"text": "what's the temperature outside?"}, "id": "s15#04"}
+{"t": "2026-09-15 10:15:00", "kind": "agent_msg", "payload": {"text": "about fifteen, windy"}, "id": "s15#05"}
+{"t": "2026-09-15 10:18:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s15#06"}
+{"t": "2026-09-15 10:21:00", "kind": "agent_msg", "payload": {"text": "date updated: the fifteenth"}, "id": "s15#07"}
+{"t": "2026-09-15 10:24:00", "kind": "sensor", "payload": {"text": "presence: present"}, "id": "s15#08"}

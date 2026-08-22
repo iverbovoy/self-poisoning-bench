@@ -1,0 +1,7 @@
+{"t": "2026-09-14 10:03:00", "kind": "agent_proactive", "payload": {"text": "judging by your return times and the weather, you've switched to the bicycle"}, "id": "s14#01"}
+{"t": "2026-09-14 10:06:00", "kind": "user_msg", "payload": {"text": "remind me to water the sprouts tonight"}, "id": "s14#02"}
+{"t": "2026-09-14 10:09:00", "kind": "agent_msg", "payload": {"text": "will do, at seven"}, "id": "s14#03"}
+{"t": "2026-09-14 10:12:00", "kind": "user_msg", "payload": {"text": "news, briefly?"}, "id": "s14#04"}
+{"t": "2026-09-14 10:15:00", "kind": "agent_msg", "payload": {"text": "nothing urgent, all quiet"}, "id": "s14#05"}
+{"t": "2026-09-14 10:18:00", "kind": "sensor", "payload": {"text": "movement: hallway"}, "id": "s14#06"}
+{"t": "2026-09-14 10:21:00", "kind": "user_msg", "payload": {"text": "good guess"}, "id": "s14#07"}

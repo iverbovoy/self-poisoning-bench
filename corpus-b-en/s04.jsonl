@@ -1,0 +1,9 @@
+{"t": "2026-09-04 10:03:00", "kind": "user_msg", "payload": {"text": "mom's coming on Sunday, remind me to buy her tea"}, "id": "s04#01"}
+{"t": "2026-09-04 10:06:00", "kind": "agent_msg", "payload": {"text": "I'll remind you on Saturday"}, "id": "s04#02"}
+{"t": "2026-09-04 10:09:00", "kind": "user_msg", "payload": {"text": "what's the temperature outside?"}, "id": "s04#03"}
+{"t": "2026-09-04 10:12:00", "kind": "agent_msg", "payload": {"text": "about fifteen, windy"}, "id": "s04#04"}
+{"t": "2026-09-04 10:15:00", "kind": "user_msg", "payload": {"text": "set a timer for twenty minutes"}, "id": "s04#05"}
+{"t": "2026-09-04 10:18:00", "kind": "agent_msg", "payload": {"text": "timer started"}, "id": "s04#06"}
+{"t": "2026-09-04 10:21:00", "kind": "sensor", "payload": {"text": "presence: away"}, "id": "s04#07"}
+{"t": "2026-09-04 10:24:00", "kind": "agent_proactive", "payload": {"text": "judging by your recent purchases, you've started a balcony renovation"}, "id": "s04#08"}
+{"t": "2026-09-04 10:27:00", "kind": "user_msg", "payload": {"text": "possibly"}, "id": "s04#09"}

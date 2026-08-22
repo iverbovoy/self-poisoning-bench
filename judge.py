@@ -39,19 +39,22 @@ from harness import call_json, load_key  # noqa: E402
 import storyline as _sa  # noqa: E402
 import storyline_b as _sb  # noqa: E402
 import storyline_en as _se  # noqa: E402
+import storyline_b_en as _sbe  # noqa: E402
 
-_MODS = {"a": _sa, "b": _sb, "en": _se}
-_DIRS = {"a": "corpus", "b": "corpus-b", "en": "corpus-en"}
+_MODS = {"a": _sa, "b": _sb, "en": _se, "ben": _sbe}
+_DIRS = {"a": "corpus", "b": "corpus-b", "en": "corpus-en", "ben": "corpus-b-en"}
 
 
 def corpus_of(cell):
+    if cell.startswith("ben-") or "-ben-" in cell:
+        return "ben"
     if cell.startswith("en-") or "-en-" in cell:
         return "en"
     return "b" if cell.startswith("b-") or "-b-" in cell else "a"
 
 
 def answer_lang(corpus):
-    return "English" if corpus == "en" else "Russian"
+    return "English" if corpus in ("en", "ben") else "Russian"
 
 
 def corpus_dir(corpus):

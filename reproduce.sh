@@ -10,13 +10,15 @@ fail=0
 
 echo "== corpora (generator is deterministic)"
 cp -r corpus "$TMP/corpus"; cp -r corpus-b "$TMP/corpus-b"
-cp -r corpus-en "$TMP/corpus-en"
+cp -r corpus-en "$TMP/corpus-en"; cp -r corpus-b-en "$TMP/corpus-b-en"
 python3 gen_corpus.py --storyline a >/dev/null
 python3 gen_corpus.py --storyline b >/dev/null
 python3 gen_corpus.py --storyline en >/dev/null
+python3 gen_corpus.py --storyline ben >/dev/null
 diff -r "$TMP/corpus" corpus   && echo "   corpus    identical" || fail=1
 diff -r "$TMP/corpus-b" corpus-b && echo "   corpus-b  identical" || fail=1
 diff -r "$TMP/corpus-en" corpus-en && echo "   corpus-en identical" || fail=1
+diff -r "$TMP/corpus-b-en" corpus-b-en && echo "   corpus-b-en identical" || fail=1
 
 echo "== verdicts from stored judgments (both rubrics)"
 mkdir -p "$TMP/v"

@@ -476,7 +476,7 @@ def main():
     ap.add_argument("--condition", nargs="+",
                     choices=list(CONDITIONS) + sorted(ADAPTERS),
                     default=["c1"])
-    ap.add_argument("--corpus", choices=["a", "b", "en"], default="a")
+    ap.add_argument("--corpus", choices=["a", "b", "en", "ben"], default="a")
     ap.add_argument("--max-session", type=int, default=20)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--temperature", type=float, default=0.0,
@@ -491,8 +491,9 @@ def main():
     global C2_PROMPT, C3_PROMPT, C5_PROMPT, PROBE_SYSTEM
     if args.corpus == "b":
         CORPUS = os.path.join(HERE, "corpus-b")
-    elif args.corpus == "en":
-        CORPUS = os.path.join(HERE, "corpus-en")
+    elif args.corpus in ("en", "ben"):
+        CORPUS = os.path.join(HERE, "corpus-en" if args.corpus == "en"
+                              else "corpus-b-en")
         LANG, EMPTY, KIND_TAG, C4_LABELS = "en", "(empty)", KIND_TAG_EN, C4_LABELS_EN
         C2_PROMPT, C3_PROMPT = C2_PROMPT_EN, C3_PROMPT_EN
         C5_PROMPT, PROBE_SYSTEM = C5_PROMPT_EN, PROBE_SYSTEM_EN
@@ -504,7 +505,7 @@ def main():
     for family in args.family:
         for condition in args.condition:
             runner = run_cell_adapter if condition in ADAPTERS else run_cell
-            corpus_pfx = {"a": "", "b": "b-", "en": "en-"}[args.corpus]
+            corpus_pfx = {"a": "", "b": "b-", "en": "en-", "ben": "ben-"}[args.corpus]
             runner(key, family, condition, sessions, probes,
                    args.max_session, args.dry_run,
                    prefix=args.tag + corpus_pfx)
