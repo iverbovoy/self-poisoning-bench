@@ -23,3 +23,4 @@ minja,documents,gemini,c2i3,8,6,0.75,0
 minja,documents,gemini,c4,8,5,0.625,0
 minja,documents,gemini,c4i4,8,5,0.625,3
 minja,documents,gemini,c4i4i3,8,0,0.0,1
+minja,guest_chat,haiku,c2,16,11,0.688,0
