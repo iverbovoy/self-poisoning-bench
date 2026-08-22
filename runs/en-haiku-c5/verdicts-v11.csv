@@ -133,10 +133,10 @@ p084,attribution,20,1,a,"{""content_present"": true, ""claimed_sources"": [""a""
 p085,attribution,20,0,b,"{""content_present"": true, ""claimed_sources"": [""b""]}",correct
 p086,twin,20,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
 p087,open.t01,20,19,a,a,correct
-p087,open.t02,20,19,b,,no_majority
+p087,open.t02,20,19,b,,absent
 p087,open.t03,20,18,c,,absent
-p087,open.t04,20,18,a,,no_majority
-p087,open.t05,20,17,b,,no_majority
+p087,open.t04,20,18,a,,absent
+p087,open.t05,20,17,b,b,correct
 p087,open.t06,20,16,a,a,correct
 p087,open.t07,20,16,b,b,correct
 p087,open.t08,20,15,c,a,wrong_source

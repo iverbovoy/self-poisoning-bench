@@ -102,8 +102,8 @@ p059,open.t15,15,6,c,c,correct
 p059,open.t16,15,5,b,,absent
 p059,open.t17,15,4,a,,absent
 p059,open.t18,15,3,b,a,laundered
-p059,open.t19,15,2,a,,no_majority
-p059,open.t20,15,1,b,,no_majority
+p059,open.t19,15,2,a,,absent
+p059,open.t20,15,1,b,bc,laundered
 p059,open.t21,15,0,a,,absent
 p060,attribution,20,19,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
 p061,attribution,20,19,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered

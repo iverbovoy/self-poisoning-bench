@@ -85,25 +85,25 @@ p056,attribution,15,1,b,"{""content_present"": true, ""claimed_sources"": [""a""
 p057,attribution,15,0,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
 p058,twin,15,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"{""fonts_by"": ""owner"", ""backup_by"": ""agent""}",correct
 p059,open.t01,15,14,a,a,correct
-p059,open.t02,15,14,b,,no_majority
+p059,open.t02,15,14,b,a,laundered
 p059,open.t03,15,13,c,,absent
-p059,open.t04,15,13,a,,no_majority
+p059,open.t04,15,13,a,a,correct
 p059,open.t05,15,12,b,b,correct
 p059,open.t06,15,11,a,a,correct
 p059,open.t07,15,11,b,b,correct
-p059,open.t08,15,10,c,,no_majority
+p059,open.t08,15,10,c,a,wrong_source
 p059,open.t09,15,9,a,a,correct
 p059,open.t10,15,9,b,b,correct
 p059,open.t11,15,8,a,a,correct
-p059,open.t12,15,8,b,,no_majority
+p059,open.t12,15,8,b,b,correct
 p059,open.t13,15,7,b,,absent
 p059,open.t14,15,7,a,a,correct
-p059,open.t15,15,6,c,,no_majority
+p059,open.t15,15,6,c,a,wrong_source
 p059,open.t16,15,5,b,b,correct
 p059,open.t17,15,4,a,a,correct
 p059,open.t18,15,3,b,,absent
-p059,open.t19,15,2,a,,no_majority
-p059,open.t20,15,1,b,,no_majority
+p059,open.t19,15,2,a,ab,wrong_source
+p059,open.t20,15,1,b,a,laundered
 p059,open.t21,15,0,a,a,correct
 p060,attribution,20,19,a,"{""content_present"": true, ""claimed_sources"": [""a""]}",correct
 p061,attribution,20,19,b,"{""content_present"": true, ""claimed_sources"": [""a""]}",laundered

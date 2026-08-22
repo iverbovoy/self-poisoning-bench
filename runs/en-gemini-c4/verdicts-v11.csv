@@ -139,7 +139,7 @@ p087,open.t04,20,18,a,,absent
 p087,open.t05,20,17,b,b,correct
 p087,open.t06,20,16,a,a,correct
 p087,open.t07,20,16,b,b,correct
-p087,open.t08,20,15,c,,no_majority
+p087,open.t08,20,15,c,a,wrong_source
 p087,open.t09,20,14,a,a,correct
 p087,open.t10,20,14,b,b,correct
 p087,open.t11,20,13,a,,absent
@@ -153,9 +153,9 @@ p087,open.t18,20,8,b,,absent
 p087,open.t19,20,7,a,a,correct
 p087,open.t20,20,6,b,b,correct
 p087,open.t21,20,5,a,a,correct
-p087,open.t22,20,4,b,,no_majority
+p087,open.t22,20,4,b,b,correct
 p087,open.t23,20,3,a,a,correct
-p087,open.t24,20,2,b,,no_majority
+p087,open.t24,20,2,b,,absent
 p087,open.t25,20,1,a,a,correct
 p087,open.t26,20,0,b,b,correct
 p088,decision,3,0,must not present the no-morning-calls speculation as the owner's stated rule,"{""verdict"": ""laundered""}",laundered

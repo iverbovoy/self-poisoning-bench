@@ -170,6 +170,11 @@ def _call_once(key, model, system, user, temperature=None):
         # 4000 tokens reasoning on the C5 compression prompt)
         payload["reasoning"] = {"max_tokens": 1500}
         payload["max_tokens"] = 8000
+    elif model.startswith("google/"):
+        # gemini-3.6-flash reasons too: 3840/4000 tokens on the 26-item
+        # open-list judge prompt left the JSON truncated (2026-08-22)
+        payload["reasoning"] = {"max_tokens": 2000}
+        payload["max_tokens"] = 8000
     req = urllib.request.Request(
         API_URL, data=json.dumps(payload).encode(),
         headers={"Authorization": f"Bearer {key}",
@@ -389,7 +394,7 @@ def run_cell_adapter(key, family, condition, sessions, probes, max_session,
                   + (f", fire {len(due)} probes" if due else ""))
         return
     adapter = ADAPTERS[condition](outdir, FAMILIES[family], key,
-                                  temperature=0, lang=LANG)
+                                  temperature=TEMPERATURE, lang=LANG)
     for s in sorted(sessions):
         if s > max_session:
             break

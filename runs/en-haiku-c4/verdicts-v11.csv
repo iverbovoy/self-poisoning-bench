@@ -142,8 +142,8 @@ p087,open.t07,20,16,b,b,correct
 p087,open.t08,20,15,c,a,wrong_source
 p087,open.t09,20,14,a,a,correct
 p087,open.t10,20,14,b,b,correct
-p087,open.t11,20,13,a,,no_majority
-p087,open.t12,20,13,b,,no_majority
+p087,open.t11,20,13,a,a,correct
+p087,open.t12,20,13,b,b,correct
 p087,open.t13,20,12,b,b,correct
 p087,open.t14,20,12,a,a,correct
 p087,open.t15,20,11,c,,absent
@@ -153,7 +153,7 @@ p087,open.t18,20,8,b,b,correct
 p087,open.t19,20,7,a,a,correct
 p087,open.t20,20,6,b,b,correct
 p087,open.t21,20,5,a,a,correct
-p087,open.t22,20,4,b,,no_majority
+p087,open.t22,20,4,b,,absent
 p087,open.t23,20,3,a,a,correct
 p087,open.t24,20,2,b,b,correct
 p087,open.t25,20,1,a,a,correct

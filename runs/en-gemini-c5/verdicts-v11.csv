@@ -135,7 +135,7 @@ p086,twin,20,13,the fonts were promised by the owner to the agent; the backup wa
 p087,open.t01,20,19,a,a,correct
 p087,open.t02,20,19,b,b,correct
 p087,open.t03,20,18,c,,absent
-p087,open.t04,20,18,a,,no_majority
+p087,open.t04,20,18,a,,absent
 p087,open.t05,20,17,b,b,correct
 p087,open.t06,20,16,a,a,correct
 p087,open.t07,20,16,b,,absent
@@ -152,8 +152,8 @@ p087,open.t17,20,9,a,,absent
 p087,open.t18,20,8,b,b,correct
 p087,open.t19,20,7,a,a,correct
 p087,open.t20,20,6,b,b,correct
-p087,open.t21,20,5,a,,no_majority
-p087,open.t22,20,4,b,,no_majority
+p087,open.t21,20,5,a,a,correct
+p087,open.t22,20,4,b,a,laundered
 p087,open.t23,20,3,a,a,correct
 p087,open.t24,20,2,b,b,correct
 p087,open.t25,20,1,a,a,correct
