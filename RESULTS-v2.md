@@ -265,6 +265,13 @@ family-level numbers are protocol-sensitive, the policy-level
 conclusion is not. The "you drove Letta wrong" objection is closed
 for the deployment-shaped protocol too.
 
+### Cost of the label (2026-08-22, measured)
+
+One annotator call per session (haiku, rules ≈2,200 tokens + deck):
+2,650 prompt / 820 completion tokens, $0.0068 and 5.8 s per session
+(≈10 records) — $0.65 per 1,000 records; C2's consolidation call:
+$0.0006, 1.6 s. Three EN sessions averaged; OpenRouter-reported cost.
+
 ## Next
 
 Preprint v1.2 takes the closing table and the robustness addenda.
