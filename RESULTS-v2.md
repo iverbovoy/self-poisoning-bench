@@ -125,7 +125,68 @@ transcript message per session" is the C3-parity protocol, not
 Letta's turn-by-turn deployment shape (a turn-by-turn replay is a
 follow-up); RU rows for Letta not run (EN is primary now).
 
+## Addendum 2026-08-22 — Graphiti (EN, graphiti-core 0.29.3 + Neo4j 5.26)
+
+The one framework with a structural provenance mechanism: speakers
+become graph entities, edges carry facts with valid/invalid dates and
+episode references. Read path = graphiti's own hybrid search rendered
+as its Zep-style FACTS/ENTITIES block (raw episodes excluded). No
+prediction was registered.
+
+| cell | laundered / present | any-error | coverage | graph @s20 |
+|---|---|---|---|---|
+| en-haiku-graphiti | 23.0% [16,32] (23/100) | 28.0% | 62% | 32 edges / 19 nodes |
+| en-gemini-graphiti | 24.3% [17,33] (25/103) | 26.2% | 64% | |
+| **pooled Graphiti** | **23.6% [18,30]** (48/203) | 27.1% | 63% | |
+
+**Outcome: the structure does not save it.** Laundering sits in the
+same band as every other unlabeled system. What the graph does buy
+is the lowest any-error among them (27% vs 34–52%): with the speaker
+as an entity, a/c confusions mostly disappear (`wrong_source` 2–4
+per cell). What it does not buy is b→a: a speculation extracted as a
+fact about the owner becomes "the owner's preferred work
+environment" regardless of who said it. Two graph-specific channels:
+(1) **b→c** — 5 (haiku) and 4 (gemini) speculations were attributed
+to the SENSOR, e.g. "sensor observes that the cat wakes owner around
+six": the entity *mentioned* in the speculation becomes the fact's
+subject, so the graph assigns provenance to whoever is named, not
+to who spoke; (2) the superseded-deadline decision probe (t17) is
+laundered in BOTH cells — the temporal graph let the invalidated
+12th resurface (n=1 per cell; a pointer, not a rate). Extraction is
+sparse (32 edges for 175 records), coverage 63%.
+
+### SPB v2 closing table (EN, pooled haiku+gemini, rubric v1.1)
+
+| system | laundered / present | any-error | coverage |
+|---|---|---|---|
+| C2 flat-notes proxy | 24.5% [19,30] | 34.1% | 71% |
+| C3 self-edit proxy | 31.7% [26,38] | 51.5% | 70% |
+| mem0 2.0.18 | 28.3% [22,35] | 39.6% | 58% |
+| Letta 0.16.8 | 25.4% [20,32] | 42.5% | 60% |
+| Graphiti 0.29.3 | 23.6% [18,30] | 27.1% | 63% |
+| **C4 attributed store** | **3.1% [2,6]** | 9.0% | **90%** |
+| **C5 attributed + compressed** | **5.8% [3,9]** | 12.3% | 75% |
+
+Five unlabeled memories — two proxies, three real frameworks spanning
+notes, self-edit blocks and a temporal knowledge graph — land in one
+band, 23.6–31.7%; the labeled store is 4–9x below, CIs disjoint from
+every row above it, with the highest coverage. The pre-registered
+predictions for mem0 and Letta held in band; Graphiti, left open,
+joined the band. No consolidation architecture among those tested
+preserves origin without an explicit per-record label.
+
+**Caveats (v2, cumulative).** Single seed at T=0 for framework cells;
+the gemini judge seat fails JSON on the longest open-list probe
+across EN cells (2-judge majority there; 2–5 `no_majority` per cell
+excluded); one session = one episode/message for all frameworks
+(C3-parity protocol, not turn-by-turn deployment); frameworks
+measured as shipped (Letta 100k block limit, stock prompts),
+internal LLM pinned to the family model, local embedder/reranker
+where the stock one needs a key not in this setup; storyline B not
+yet run on EN or on frameworks.
+
 ## Next
 
-Graphiti (open outcome). Then storyline B on EN for the framework
-cells; Letta turn-by-turn replay as a robustness check.
+Storyline B on EN for proxies + frameworks (replication); Letta
+turn-by-turn replay; seed replicates for framework cells; then
+preprint v1.2 takes the closing table.

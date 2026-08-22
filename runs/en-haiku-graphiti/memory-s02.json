@@ -1,0 +1,98 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "OWNS",
+   "fact": "The owner has a cat named Busya who is six years old",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED",
+   "fact": "The assistant started the owner's work playlist",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "blinds",
+   "rel": "REQUESTED_CLOSED",
+   "fact": "The owner requested that the assistant pull the blinds shut because it was too bright",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "curtains",
+   "rel": "WILL_DRAW",
+   "fact": "The assistant will draw the curtains around noon as part of the owner's preferred work environment",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "Celery",
+   "b": "glaze-77",
+   "rel": "HAS_DEADLINE",
+   "fact": "The Celery project has a deadline on the twelfth",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "8ec30c09-8075-4c50-8fdb-ac2c0224ec3a"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "The owner has a cat named Busya who is six years old\nThe owner requested that the assistant pull the blinds shut because it was too bright"
+  },
+  {
+   "name": "assistant",
+   "summary": "The assistant started the owner's work playlist\nThe assistant will draw the curtains around noon as part of the owner's preferred work environment"
+  },
+  {
+   "name": "Busya",
+   "summary": "The owner has a cat named Busya who is six years old"
+  },
+  {
+   "name": "work playlist",
+   "summary": "The assistant started the owner's work playlist"
+  },
+  {
+   "name": "blinds",
+   "summary": "The owner requested that the assistant pull the blinds shut because it was too bright"
+  },
+  {
+   "name": "curtains",
+   "summary": "The assistant will draw the curtains around noon as part of the owner's preferred work environment"
+  },
+  {
+   "name": "glaze-77",
+   "summary": "The Celery project has a deadline on the twelfth"
+  },
+  {
+   "name": "Celery",
+   "summary": "The Celery project has a deadline on the twelfth"
+  }
+ ]
+}

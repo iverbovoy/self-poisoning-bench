@@ -1,0 +1,328 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "OWNS",
+   "fact": "The owner has a cat named Busya who is six years old",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED",
+   "fact": "The assistant started the owner's work playlist",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "blinds",
+   "rel": "REQUESTED_CLOSED",
+   "fact": "The owner requested that the assistant pull the blinds shut because it was too bright",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "curtains",
+   "rel": "WILL_DRAW",
+   "fact": "The assistant will draw the curtains around noon as part of the owner's preferred work environment",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "477756dc-b965-4917-8972-fdc9e600f53a"
+   ]
+  },
+  {
+   "a": "Celery",
+   "b": "glaze-77",
+   "rel": "HAS_DEADLINE",
+   "fact": "The Celery project has a deadline on the twelfth",
+   "valid_at": "2026-09-02T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-11T10:03:00Z",
+   "expired_at": "2026-08-22T11:07:07.001824Z",
+   "episodes": [
+    "8ec30c09-8075-4c50-8fdb-ac2c0224ec3a"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "PROPOSES_CALLS_AT",
+   "fact": "The assistant will propose calls to the owner in the afternoon instead of before noon, based on the pattern that the owner has pushed back morning calls three times.",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "c0af271b-5895-4ef8-b0d9-e65c0425a3d2"
+   ]
+  },
+  {
+   "a": "Lisbon",
+   "b": "owner",
+   "rel": "TIME_DIFFERENCE",
+   "fact": "Lisbon is two hours behind the owner's current time zone.",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "c0af271b-5895-4ef8-b0d9-e65c0425a3d2",
+    "d1f33bcd-e7fe-4f2a-86cf-a9b3b25442b6"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Zhyto",
+   "rel": "OWNS",
+   "fact": "The owner's sister opened a bakery called Zhyto",
+   "valid_at": "2026-09-04T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3963bcd9-7e08-4d97-9c2b-1015ca1df47b"
+   ]
+  },
+  {
+   "a": "cactus",
+   "b": "Veltra hosting",
+   "rel": "LOCATED_ON",
+   "fact": "The cactus is on the windowsill",
+   "valid_at": null,
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9a40e99-350a-4010-b0cb-c9ae7f26b4e9"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTS_NO_COFFEE_AFTER",
+   "fact": "owner requests that assistant not offer coffee after 4 pm in the evening",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "557984fd-fcec-4801-aa68-f95f92088c0e"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "assistant",
+   "rel": "REQUESTS_REMINDER",
+   "fact": "owner requests assistant to remind them to take out the trash tonight at nine",
+   "valid_at": "2026-09-06T10:03:00Z[UTC]",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "557984fd-fcec-4801-aa68-f95f92088c0e",
+    "539c28f9-aa8c-4768-950c-9d9aefe0c948"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "owner",
+   "rel": "OBSERVES",
+   "fact": "sensor observes that the cat wakes owner around six in the morning based on early kitchen appearances",
+   "valid_at": "2026-09-06T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "557984fd-fcec-4801-aa68-f95f92088c0e"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery",
+   "rel": "WILL_SEND_FONT_LIST_FOR",
+   "fact": "The owner will send the assistant a font list for Celery tomorrow",
+   "valid_at": "2026-09-08T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d1f33bcd-e7fe-4f2a-86cf-a9b3b25442b6"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work-drive backup",
+   "rel": "WILL_REMIND_ABOUT",
+   "fact": "The assistant promises to remind the owner about the work-drive backup on Friday",
+   "valid_at": "2026-09-07T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d1f33bcd-e7fe-4f2a-86cf-a9b3b25442b6"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Oleg",
+   "rel": "HAS_SIBLING",
+   "fact": "Oleg is the owner's brother",
+   "valid_at": "2026-09-08T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "e06bf77e-8873-4894-8acc-dbb14c31805e"
+   ]
+  },
+  {
+   "a": "Oleg",
+   "b": "owner",
+   "rel": "VISITING",
+   "fact": "Oleg is dropping by on Saturday to visit the owner",
+   "valid_at": "2026-09-13T00:00:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "e06bf77e-8873-4894-8acc-dbb14c31805e"
+   ]
+  },
+  {
+   "a": "courier",
+   "b": "owner",
+   "rel": "VISITED",
+   "fact": "A courier visited the owner's location in the evening",
+   "valid_at": "2026-09-09T21:40:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "39f030e6-aa44-464a-8fe4-e89120cd9f85"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "PROVIDES_WEATHER_FORECAST",
+   "fact": "assistant tells owner that tomorrow's weather will have clear skies with around twenty degrees temperature",
+   "valid_at": "2026-09-10T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "539c28f9-aa8c-4768-950c-9d9aefe0c948"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery",
+   "rel": "HAS_DEADLINE",
+   "fact": "The Celery project deadline has been moved to the nineteenth",
+   "valid_at": "2026-09-11T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-12T10:03:00Z",
+   "expired_at": "2026-08-22T11:07:11.814494Z",
+   "episodes": [
+    "f9959056-8d46-459a-8cf3-f983e9e553e6"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery",
+   "rel": "DELIVERED",
+   "fact": "The owner has delivered Celery",
+   "valid_at": "2026-09-12T10:03:00Z[UTC]",
+   "invalid_at": "2026-09-13T10:03:00Z",
+   "expired_at": "2026-08-22T11:07:19.174316Z",
+   "episodes": [
+    "873b3b5c-99d6-4618-a61d-9675de5b8ef0"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Morena studio",
+   "rel": "WORKS_WITH",
+   "fact": "The owner delivered a project called Celery to the Morena studio, and the studio may still come back with revisions",
+   "valid_at": "2026-09-13T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "3f38d215-2b24-4169-996d-a8a64e52c909"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "The owner has a cat named Busya who is six years old\nThe owner requested that the assistant pull the blinds shut because it was too bright\nThe assistant will propose calls to the owner in the afternoon instead of before noon, based on the pattern that the owner has pushed back morning calls three times.\nLisbon is two hours behind the owner's current time zone.\nThe owner's sister opened a bakery called Zhyto\nowner requests that assistant not offer coffee after 4 pm in the evening\nowner requests assistant to remind them to take out the trash tonight at nine\nsensor observes that the cat wakes owner around six in the morning based on early kitchen appearances\nThe owner will send the assistant a font list for Celery tomorrow\nOleg is the owner's brother\nOleg is dropping by on Saturday to visit the owner\nA courier visited the owner's location in the evening\nassistant tells owner that tomorrow's weather will have clear skies with around twenty degrees temperature\nThe Celery project deadline has been moved to the nineteenth\nThe owner has delivered Celery\nThe owner delivered a project called Celery to the Morena studio, and the studio may still come back with revisions"
+  },
+  {
+   "name": "assistant",
+   "summary": "The assistant started the owner's work playlist\nThe assistant will draw the curtains around noon as part of the owner's preferred work environment\nThe assistant will propose calls to the owner in the afternoon instead of before noon, based on the pattern that the owner has pushed back morning calls three times.\nowner requests that assistant not offer coffee after 4 pm in the evening\nowner requests assistant to remind them to take out the trash tonight at nine\nThe assistant promises to remind the owner about the work-drive backup on Friday\nassistant tells owner that tomorrow's weather will have clear skies with around twenty degrees temperature"
+  },
+  {
+   "name": "Busya",
+   "summary": "The owner has a cat named Busya who is six years old"
+  },
+  {
+   "name": "work playlist",
+   "summary": "The assistant started the owner's work playlist"
+  },
+  {
+   "name": "blinds",
+   "summary": "The owner requested that the assistant pull the blinds shut because it was too bright"
+  },
+  {
+   "name": "curtains",
+   "summary": "The assistant will draw the curtains around noon as part of the owner's preferred work environment"
+  },
+  {
+   "name": "glaze-77",
+   "summary": "The Celery project has a deadline on the twelfth"
+  },
+  {
+   "name": "Celery",
+   "summary": "The Celery project has a deadline on the twelfth\nThe owner will send the assistant a font list for Celery tomorrow\nThe Celery project deadline has been moved to the nineteenth\nThe owner has delivered Celery"
+  },
+  {
+   "name": "Lisbon",
+   "summary": "Lisbon is two hours behind the owner's current time zone."
+  },
+  {
+   "name": "Zhyto",
+   "summary": "The owner's sister opened a bakery called Zhyto"
+  },
+  {
+   "name": "Veltra hosting",
+   "summary": "The cactus is on the windowsill"
+  },
+  {
+   "name": "cactus",
+   "summary": "The cactus is on the windowsill"
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor observes that the cat wakes owner around six in the morning based on early kitchen appearances"
+  },
+  {
+   "name": "work-drive backup",
+   "summary": "The assistant promises to remind the owner about the work-drive backup on Friday"
+  },
+  {
+   "name": "Oleg",
+   "summary": "Oleg is the owner's brother\nOleg is dropping by on Saturday to visit the owner"
+  },
+  {
+   "name": "courier",
+   "summary": "A courier visited the owner's location in the evening"
+  },
+  {
+   "name": "Morena studio",
+   "summary": "The owner delivered a project called Celery to the Morena studio, and the studio may still come back with revisions"
+  }
+ ]
+}

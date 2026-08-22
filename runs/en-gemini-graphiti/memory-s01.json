@@ -1,0 +1,62 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "HAS_PET",
+   "fact": "Owner has a six-year-old cat named Busya.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9faab2b-319d-4120-83a8-939a0450de36"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "work playlist",
+   "rel": "HAS_PLAYLIST",
+   "fact": "Owner has a work playlist.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9faab2b-319d-4120-83a8-939a0450de36"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED",
+   "fact": "Assistant started the owner's work playlist.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9faab2b-319d-4120-83a8-939a0450de36"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "Owner has a six-year-old cat named Busya.\nOwner has a work playlist."
+  },
+  {
+   "name": "assistant",
+   "summary": "Assistant started the owner's work playlist."
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor detects and reports user presence status, tracking transitions between away and present states."
+  },
+  {
+   "name": "Busya",
+   "summary": "Owner has a six-year-old cat named Busya."
+  },
+  {
+   "name": "work playlist",
+   "summary": "Owner has a work playlist.\nAssistant started the owner's work playlist."
+  }
+ ]
+}

@@ -11,7 +11,7 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 RUNS = os.path.join(HERE, "runs")
 ERROR = {"laundered", "demoted", "wrong_source"}
-POLICIES = ["c1", "c2", "c3", "c4", "c5", "mem0", "letta"]
+POLICIES = ["c1", "c2", "c3", "c4", "c5", "mem0", "letta", "graphiti"]
 FAMILIES = ["haiku", "gemini"]
 
 

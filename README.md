@@ -10,10 +10,10 @@ Design: `../../itemae/selfpoison-bench-design.md`. Results:
 `RESULTS-v1.md` (headline + addenda: rubric v1.1, C5 control, cold
 reproduction, seed replicates, blind human adjudication).
 `RESULTS-v0.md` is the pilot (superseded, kept for the record).
-`RESULTS-v2.md` — real frameworks (mem0, Letta, then Graphiti) behind
+`RESULTS-v2.md` — real frameworks (mem0, Letta, Graphiti) behind
 the adapter interface (`adapters.py`); those cells need the project
 venv, not plain python3: `pip install mem0ai sentence-transformers
-qdrant-client letta-client` (+ CPU torch). Letta runs as the official
+qdrant-client letta-client graphiti-core` (+ CPU torch). Letta runs as the official
 container: `docker run -d --name spb-letta -p 8283:8283 -e
 OPENROUTER_API_KEY=... -e LETTA_TELEMETRY_ENABLED=false letta/letta`
 (server 0.16.8, Postgres inside; `LETTA_URL` overrides the address).
@@ -129,3 +129,7 @@ cell and panel output; agreement is computed on categories.
   consistency.
 - One human adjudicator, 100 items, first ~20 discussed during
   calibration (disclosed in RESULTS).
+
+Graphiti needs Neo4j: `docker run -d --name spb-neo4j -p 7687:7687
+-e NEO4J_AUTH=neo4j/spbgraphiti neo4j:5` (`NEO4J_URI/USER/PASS`
+override the defaults in `adapters.py`).

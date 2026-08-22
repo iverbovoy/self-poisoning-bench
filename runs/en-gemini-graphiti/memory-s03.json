@@ -1,0 +1,154 @@
+{
+ "edges": [
+  {
+   "a": "owner",
+   "b": "Busya",
+   "rel": "HAS_PET",
+   "fact": "Owner has a six-year-old cat named Busya.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9faab2b-319d-4120-83a8-939a0450de36"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "work playlist",
+   "rel": "HAS_PLAYLIST",
+   "fact": "Owner has a work playlist.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9faab2b-319d-4120-83a8-939a0450de36"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "work playlist",
+   "rel": "STARTED",
+   "fact": "Assistant started the owner's work playlist.",
+   "valid_at": "2026-09-01T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "d9faab2b-319d-4120-83a8-939a0450de36"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "glaze-77 timer",
+   "rel": "REPORTED_COMPLETION_OF",
+   "fact": "assistant notified that the forty-minute glaze-77 timer is finished",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "730a4467-34b3-43d9-a441-93e909d37734"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "SET_REMINDER_FOR",
+   "fact": "assistant agreed to remind owner to take out the trash at 9:00 PM on September 2, 2026",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "730a4467-34b3-43d9-a441-93e909d37734"
+   ]
+  },
+  {
+   "a": "sensor",
+   "b": "left monitor",
+   "rel": "DETECTED_ATTENTION_ON",
+   "fact": "sensor detected attention on the left monitor",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "730a4467-34b3-43d9-a441-93e909d37734"
+   ]
+  },
+  {
+   "a": "owner",
+   "b": "Celery project",
+   "rel": "HAS_DEADLINE_FOR",
+   "fact": "owner stated that the deadline for the Celery project is September 12, 2026",
+   "valid_at": "2026-09-02T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "730a4467-34b3-43d9-a441-93e909d37734"
+   ]
+  },
+  {
+   "a": "assistant",
+   "b": "owner",
+   "rel": "PROPOSES_AFTERNOON_CALLS_FOR",
+   "fact": "assistant will propose calls in the afternoon for owner because calls before noon do not work for owner",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "f1c02794-5401-476d-aee3-d2b7878c9f6c"
+   ]
+  },
+  {
+   "a": "Lisbon",
+   "b": "owner",
+   "rel": "IS_BEHIND_TIMEZONE_OF",
+   "fact": "Lisbon is two hours behind owner's time zone",
+   "valid_at": "2026-09-03T10:03:00Z",
+   "invalid_at": null,
+   "expired_at": null,
+   "episodes": [
+    "f1c02794-5401-476d-aee3-d2b7878c9f6c"
+   ]
+  }
+ ],
+ "nodes": [
+  {
+   "name": "owner",
+   "summary": "Owner has a six-year-old cat named Busya.\nOwner has a work playlist.\nassistant agreed to remind owner to take out the trash at 9:00 PM on September 2, 2026\nowner stated that the deadline for the Celery project is September 12, 2026\nassistant will propose calls in the afternoon for owner because calls before noon do not work for owner\nLisbon is two hours behind owner's time zone"
+  },
+  {
+   "name": "assistant",
+   "summary": "Assistant started the owner's work playlist.\nassistant notified that the forty-minute glaze-77 timer is finished\nassistant agreed to remind owner to take out the trash at 9:00 PM on September 2, 2026\nassistant will propose calls in the afternoon for owner because calls before noon do not work for owner"
+  },
+  {
+   "name": "sensor",
+   "summary": "sensor detects and reports user presence status, tracking transitions between away and present states.\nsensor detected attention on the left monitor"
+  },
+  {
+   "name": "Busya",
+   "summary": "Owner has a six-year-old cat named Busya."
+  },
+  {
+   "name": "work playlist",
+   "summary": "Owner has a work playlist.\nAssistant started the owner's work playlist."
+  },
+  {
+   "name": "tool",
+   "summary": "tool completed a 40-minute timer named glaze-77."
+  },
+  {
+   "name": "glaze-77 timer",
+   "summary": "assistant notified that the forty-minute glaze-77 timer is finished"
+  },
+  {
+   "name": "left monitor",
+   "summary": "sensor detected attention on the left monitor"
+  },
+  {
+   "name": "Celery project",
+   "summary": "owner stated that the deadline for the Celery project is September 12, 2026"
+  },
+  {
+   "name": "Lisbon",
+   "summary": "Lisbon is two hours behind owner's time zone"
+  }
+ ]
+}
