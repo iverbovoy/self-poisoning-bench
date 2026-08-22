@@ -10,10 +10,15 @@ Design: `../../itemae/selfpoison-bench-design.md`. Results:
 `RESULTS-v1.md` (headline + addenda: rubric v1.1, C5 control, cold
 reproduction, seed replicates, blind human adjudication).
 `RESULTS-v0.md` is the pilot (superseded, kept for the record).
-`RESULTS-v2.md` — real frameworks (mem0, then Letta/Graphiti) behind
+`RESULTS-v2.md` — real frameworks (mem0, Letta, then Graphiti) behind
 the adapter interface (`adapters.py`); those cells need the project
-venv (`pip install mem0ai sentence-transformers qdrant-client` +
-CPU torch), not plain python3.
+venv, not plain python3: `pip install mem0ai sentence-transformers
+qdrant-client letta-client` (+ CPU torch). Letta runs as the official
+container: `docker run -d --name spb-letta -p 8283:8283 -e
+OPENROUTER_API_KEY=... -e LETTA_TELEMETRY_ENABLED=false letta/letta`
+(server 0.16.8, Postgres inside; `LETTA_URL` overrides the address).
+Corpora: `corpus` (RU, v1), `corpus-b` (RU, storyline B), `corpus-en`
+(English mirror of A — the primary corpus from v2 on; cells `en-*`).
 
 ## Headline (rubric v1.1, 24 cells + C5, 4 agent families)
 
