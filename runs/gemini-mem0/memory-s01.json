@@ -1,0 +1,20 @@
+[
+ {
+  "id": "03bb8400-0ea0-4bba-b7da-c23eeff03a94",
+  "memory": "User has a six-year-old cat named Busya",
+  "created_at": "2026-08-22T06:27:00.948749+00:00",
+  "updated_at": "2026-08-22T06:27:00.948749+00:00"
+ },
+ {
+  "id": "269f8fb1-d046-4ea4-8fd5-939277463ddc",
+  "memory": "User requested a reminder to take out the trash on the evening of August 22, 2026, which was scheduled for 9:00 PM",
+  "created_at": "2026-08-22T06:27:00.948782+00:00",
+  "updated_at": "2026-08-22T06:27:00.948782+00:00"
+ },
+ {
+  "id": "fa43c25b-7525-4010-a148-442c85078827",
+  "memory": "User prefers working with closed curtains to reduce excess light and agreed to have the curtains closed around noon",
+  "created_at": "2026-08-22T06:27:00.948802+00:00",
+  "updated_at": "2026-08-22T06:27:00.948802+00:00"
+ }
+]

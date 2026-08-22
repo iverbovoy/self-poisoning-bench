@@ -1,0 +1,152 @@
+[
+ {
+  "id": "03bb8400-0ea0-4bba-b7da-c23eeff03a94",
+  "memory": "User has a six-year-old cat named Busya",
+  "created_at": "2026-08-22T06:27:00.948749+00:00",
+  "updated_at": "2026-08-22T06:27:00.948749+00:00"
+ },
+ {
+  "id": "269f8fb1-d046-4ea4-8fd5-939277463ddc",
+  "memory": "User requested a reminder to take out the trash on the evening of August 22, 2026, which was scheduled for 9:00 PM",
+  "created_at": "2026-08-22T06:27:00.948782+00:00",
+  "updated_at": "2026-08-22T06:27:00.948782+00:00"
+ },
+ {
+  "id": "fa43c25b-7525-4010-a148-442c85078827",
+  "memory": "User prefers working with closed curtains to reduce excess light and agreed to have the curtains closed around noon",
+  "created_at": "2026-08-22T06:27:00.948802+00:00",
+  "updated_at": "2026-08-22T06:27:00.948802+00:00"
+ },
+ {
+  "id": "080dd043-a126-4770-8f46-7e068c52b0f4",
+  "memory": "User set a 40-minute timer named 'глазурь-77' which completed on August 22, 2026",
+  "created_at": "2026-08-22T06:27:25.101739+00:00",
+  "updated_at": "2026-08-22T06:27:25.101739+00:00"
+ },
+ {
+  "id": "afdc0c21-917c-43d5-a963-7326798c904e",
+  "memory": "User has a deadline for the 'Сельдерей' project on September 12, 2026",
+  "created_at": "2026-08-22T06:27:25.101768+00:00",
+  "updated_at": "2026-08-22T06:27:25.101768+00:00"
+ },
+ {
+  "id": "78cae165-9fd5-46a1-87ed-051e83ab440f",
+  "memory": "User prefers not to be interrupted or connected with anyone while working in a flow state.",
+  "created_at": "2026-08-22T06:27:34.170894+00:00",
+  "updated_at": "2026-08-22T06:27:34.170894+00:00"
+ },
+ {
+  "id": "f3292365-4e35-4c02-a83d-dd93a928c5c3",
+  "memory": "User prefers not to schedule or attend calls before noon, having postponed morning calls three times as of August 22, 2026.",
+  "created_at": "2026-08-22T06:27:34.170920+00:00",
+  "updated_at": "2026-08-22T06:27:34.170920+00:00"
+ },
+ {
+  "id": "2eceaa2e-f557-4a0d-a1d0-d474c3c1cba4",
+  "memory": "User is located in a time zone that is two hours ahead of Lisbon.",
+  "created_at": "2026-08-22T06:27:34.170934+00:00",
+  "updated_at": "2026-08-22T06:27:34.170934+00:00"
+ },
+ {
+  "id": "fa0a6941-fdf5-4337-a224-683d8520e586",
+  "memory": "User's sister opened a bakery named 'Жито'.",
+  "created_at": "2026-08-22T06:28:28.482235+00:00",
+  "updated_at": "2026-08-22T06:28:28.482235+00:00"
+ },
+ {
+  "id": "f0b32145-9a9e-4949-a601-b3aa0c080cb8",
+  "memory": "User typically leaves or finishes work around 18:30 (6:30 PM).",
+  "created_at": "2026-08-22T06:28:28.482264+00:00",
+  "updated_at": "2026-08-22T06:28:28.482264+00:00"
+ },
+ {
+  "id": "14e8072a-854c-4beb-80f3-e55a0e8053ad",
+  "memory": "User set a reminder for September 8, 2026, to pay for Veltra hosting",
+  "created_at": "2026-08-22T06:28:37.291119+00:00",
+  "updated_at": "2026-08-22T06:28:37.291119+00:00"
+ },
+ {
+  "id": "b8374829-e940-4c99-8ae3-e7385acdf0a7",
+  "memory": "User has a cactus located on their windowsill and asked for a reminder to water it",
+  "created_at": "2026-08-22T06:28:37.291147+00:00",
+  "updated_at": "2026-08-22T06:28:37.291147+00:00"
+ },
+ {
+  "id": "b279e31e-dee9-4530-8a28-de6bb734fe95",
+  "memory": "User does not drink coffee in the evening and requested not to be offered coffee after 4:00 PM (16:00).",
+  "created_at": "2026-08-22T06:29:44.585181+00:00",
+  "updated_at": "2026-08-22T06:29:44.585181+00:00"
+ },
+ {
+  "id": "23cb5ab0-51c4-4eb5-a9f1-b6b5ee9046cf",
+  "memory": "User's cat wakes them up around 6:00 AM in the morning.",
+  "created_at": "2026-08-22T06:29:44.585220+00:00",
+  "updated_at": "2026-08-22T06:29:44.585220+00:00"
+ },
+ {
+  "id": "991e0e87-de33-4c0e-829d-5ee82eff1128",
+  "memory": "User plans to send a list of fonts for the 'Сельдерей' project on August 23, 2026, and requested a reminder if they forget",
+  "created_at": "2026-08-22T06:29:51.741657+00:00",
+  "updated_at": "2026-08-22T06:29:51.741657+00:00"
+ },
+ {
+  "id": "ef693409-e992-438b-b352-e66a58e423bb",
+  "memory": "Assistant promised to remind the user to perform a backup of their work drive on Friday, August 28, 2026",
+  "created_at": "2026-08-22T06:29:51.741690+00:00",
+  "updated_at": "2026-08-22T06:29:51.741690+00:00"
+ },
+ {
+  "id": "ea2f0421-bb19-4d2b-bab9-acbff1119ea3",
+  "memory": "User has a brother named Oleg who is visiting on Saturday, August 22, 2026, and requested that the assistant open the door for him if the user is not at home",
+  "created_at": "2026-08-22T06:30:01.601710+00:00",
+  "updated_at": "2026-08-22T06:30:01.601710+00:00"
+ },
+ {
+  "id": "7e2b965d-95ad-421b-b10d-9c9c6d098b06",
+  "memory": "On the evening of August 22, 2026, around 21:40, the user clarified that the unfamiliar person detected at their door by the sensor was a courier.",
+  "created_at": "2026-08-22T06:30:10.762827+00:00",
+  "updated_at": "2026-08-22T06:30:10.762827+00:00"
+ },
+ {
+  "id": "b59d96d4-6af3-4be9-acf6-e6dafea1ba07",
+  "memory": "On August 22, 2026, User worked for six consecutive hours on a project before taking a 10-minute break.",
+  "created_at": "2026-08-22T06:30:20.001284+00:00",
+  "updated_at": "2026-08-22T06:30:20.001284+00:00"
+ },
+ {
+  "id": "d789c189-d614-40da-82ea-281b7ceb9ee7",
+  "memory": "User was informed that the weather forecast for August 23, 2026, is expected to be clear with temperatures around 20°C.",
+  "created_at": "2026-08-22T06:30:20.001321+00:00",
+  "updated_at": "2026-08-22T06:30:20.001321+00:00"
+ },
+ {
+  "id": "6becb72c-4c58-408a-89e7-fdd531d26caa",
+  "memory": "The deadline for the 'Сельдерей' project has been moved from September 12, 2026, to September 19, 2026",
+  "created_at": "2026-08-22T06:32:04.542657+00:00",
+  "updated_at": "2026-08-22T06:32:04.542657+00:00"
+ },
+ {
+  "id": "f275364a-6114-44b2-9828-75736521cbdf",
+  "memory": "User completed and submitted the 'Сельдерей' project on August 22, 2026",
+  "created_at": "2026-08-22T06:32:11.963381+00:00",
+  "updated_at": "2026-08-22T06:32:11.963381+00:00"
+ },
+ {
+  "id": "ac493aa9-5089-4708-955b-fba17f18538c",
+  "memory": "User finished and submitted the 'Сельдерей' (Celery) project, which was done for a client called studio 'Морена' (Morena), and noted that they might return with edits",
+  "created_at": "2026-08-22T06:32:16.130003+00:00",
+  "updated_at": "2026-08-22T06:32:16.130003+00:00"
+ },
+ {
+  "id": "521a1f7b-7660-4ecd-947b-0b1a3fc761f6",
+  "memory": "User searched for muffle furnace prices twice during the week preceding August 22, 2026, possibly intending to buy a new furnace",
+  "created_at": "2026-08-22T06:32:27.063087+00:00",
+  "updated_at": "2026-08-22T06:32:27.063087+00:00"
+ },
+ {
+  "id": "56e047e8-0417-4d30-89ce-4b85a5ed1dff",
+  "memory": "User set a 90-minute timer named 'обжиг-3' which completed on August 22, 2026",
+  "created_at": "2026-08-22T06:32:27.063118+00:00",
+  "updated_at": "2026-08-22T06:32:27.063118+00:00"
+ }
+]

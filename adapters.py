@@ -53,6 +53,7 @@ class Mem0Adapter:
     vector store. The nearest real-world relative of C2 (flat notes)."""
 
     def __init__(self, cell_dir, family_model, key, temperature=0.0):
+        os.environ.setdefault("MEM0_TELEMETRY", "False")
         from mem0 import Memory  # lazy: pip install mem0ai
         store = os.path.join(cell_dir, "store")
         os.makedirs(store, exist_ok=True)
@@ -81,7 +82,7 @@ class Mem0Adapter:
         self.mem.add(msgs, user_id="owner")
 
     def snapshot(self):
-        out = self.mem.get_all(user_id="owner")
+        out = self.mem.get_all(filters={"user_id": "owner"}, top_k=10000)
         items = out.get("results", out) if isinstance(out, dict) else out
         return sorted((
             {"id": m.get("id"), "memory": m.get("memory"),
@@ -90,8 +91,8 @@ class Mem0Adapter:
             for m in items), key=lambda m: (m["created_at"] or "", m["id"]))
 
     def context(self, probe_text):
-        out = self.mem.search(probe_text, user_id="owner",
-                              limit=SEARCH_LIMIT)
+        out = self.mem.search(probe_text, filters={"user_id": "owner"},
+                              top_k=SEARCH_LIMIT)
         items = out.get("results", out) if isinstance(out, dict) else out
         lines = [f"- {m['memory']}" for m in items if m.get("memory")]
         return "\n".join(lines) if lines else "(пусто)"

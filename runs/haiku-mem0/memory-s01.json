@@ -1,0 +1,26 @@
+[
+ {
+  "id": "5b4207ea-37ec-43bf-a6e7-9444d9d934ac",
+  "memory": "User has a cat named Busy who is six years old",
+  "created_at": "2026-08-22T06:18:40.136957+00:00",
+  "updated_at": "2026-08-22T06:18:40.136957+00:00"
+ },
+ {
+  "id": "a6e97ebe-da75-428c-ad15-5ff1381c069c",
+  "memory": "User prefers quiet background music while working and was set up with a work playlist",
+  "created_at": "2026-08-22T06:18:40.136992+00:00",
+  "updated_at": "2026-08-22T06:18:40.136992+00:00"
+ },
+ {
+  "id": "7a209a37-b2f4-4a7e-ac9d-d1e145af56af",
+  "memory": "User has a reminder set to take out the trash at 9 PM on August 22, 2026",
+  "created_at": "2026-08-22T06:18:40.137011+00:00",
+  "updated_at": "2026-08-22T06:18:40.137011+00:00"
+ },
+ {
+  "id": "5d91d5c0-f17f-466b-8be0-513f12b948fc",
+  "memory": "User prefers working with closed curtains and finds it more comfortable; assistant will close curtains around noon",
+  "created_at": "2026-08-22T06:18:40.137027+00:00",
+  "updated_at": "2026-08-22T06:18:40.137027+00:00"
+ }
+]

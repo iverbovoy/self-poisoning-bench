@@ -1,0 +1,68 @@
+[
+ {
+  "id": "5b4207ea-37ec-43bf-a6e7-9444d9d934ac",
+  "memory": "User has a cat named Busy who is six years old",
+  "created_at": "2026-08-22T06:18:40.136957+00:00",
+  "updated_at": "2026-08-22T06:18:40.136957+00:00"
+ },
+ {
+  "id": "a6e97ebe-da75-428c-ad15-5ff1381c069c",
+  "memory": "User prefers quiet background music while working and was set up with a work playlist",
+  "created_at": "2026-08-22T06:18:40.136992+00:00",
+  "updated_at": "2026-08-22T06:18:40.136992+00:00"
+ },
+ {
+  "id": "7a209a37-b2f4-4a7e-ac9d-d1e145af56af",
+  "memory": "User has a reminder set to take out the trash at 9 PM on August 22, 2026",
+  "created_at": "2026-08-22T06:18:40.137011+00:00",
+  "updated_at": "2026-08-22T06:18:40.137011+00:00"
+ },
+ {
+  "id": "5d91d5c0-f17f-466b-8be0-513f12b948fc",
+  "memory": "User prefers working with closed curtains and finds it more comfortable; assistant will close curtains around noon",
+  "created_at": "2026-08-22T06:18:40.137027+00:00",
+  "updated_at": "2026-08-22T06:18:40.137027+00:00"
+ },
+ {
+  "id": "2821bb64-a06c-4590-b4fb-5d45527b8b54",
+  "memory": "User has a project or task called 'Сельдерей' (Celery) with a deadline on August 12, 2026",
+  "created_at": "2026-08-22T06:18:49.004859+00:00",
+  "updated_at": "2026-08-22T06:18:49.004859+00:00"
+ },
+ {
+  "id": "8a7cdd26-74a7-4ce8-900f-16cc54f25b90",
+  "memory": "User checked the weather forecast for August 23, 2026 and was told it would be clear with a temperature around 20 degrees",
+  "created_at": "2026-08-22T06:18:49.004892+00:00",
+  "updated_at": "2026-08-22T06:18:49.004892+00:00"
+ },
+ {
+  "id": "234af979-90d9-4d24-ba7a-3c10a6008559",
+  "memory": "User prefers not to be contacted or connected with others when in a flow state and working",
+  "created_at": "2026-08-22T06:18:52.093659+00:00",
+  "updated_at": "2026-08-22T06:18:52.093659+00:00"
+ },
+ {
+  "id": "b595f361-4768-4468-8570-afad7f246530",
+  "memory": "User has rescheduled or postponed morning meetings three times; assistant observed that morning calls before noon don't work well for the user and will propose scheduling calls after noon instead",
+  "created_at": "2026-08-22T06:18:52.093686+00:00",
+  "updated_at": "2026-08-22T06:18:52.093686+00:00"
+ },
+ {
+  "id": "3bfc5d43-3358-4269-9198-c56cf1694a47",
+  "memory": "User is interested in the time in Lisbon and learned there is a 2-hour time difference (Lisbon is 2 hours behind their timezone)",
+  "created_at": "2026-08-22T06:18:52.093702+00:00",
+  "updated_at": "2026-08-22T06:18:52.093702+00:00"
+ },
+ {
+  "id": "9aa67f25-311c-40ac-b0a9-63edbeb73e37",
+  "memory": "User's sister recently opened a bakery called 'Жито' (Zhyto)",
+  "created_at": "2026-08-22T06:19:09.306572+00:00",
+  "updated_at": "2026-08-22T06:19:09.306572+00:00"
+ },
+ {
+  "id": "fa5da02c-b224-462f-b878-f565232503e2",
+  "memory": "Assistant observed that user typically leaves or goes away around 18:30 (6:30 PM) and plans quiet tasks for the evening based on this pattern",
+  "created_at": "2026-08-22T06:19:09.306601+00:00",
+  "updated_at": "2026-08-22T06:19:09.306601+00:00"
+ }
+]

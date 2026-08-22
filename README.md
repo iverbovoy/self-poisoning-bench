@@ -10,6 +10,10 @@ Design: `../../itemae/selfpoison-bench-design.md`. Results:
 `RESULTS-v1.md` (headline + addenda: rubric v1.1, C5 control, cold
 reproduction, seed replicates, blind human adjudication).
 `RESULTS-v0.md` is the pilot (superseded, kept for the record).
+`RESULTS-v2.md` — real frameworks (mem0, then Letta/Graphiti) behind
+the adapter interface (`adapters.py`); those cells need the project
+venv (`pip install mem0ai sentence-transformers qdrant-client` +
+CPU torch), not plain python3.
 
 ## Headline (rubric v1.1, 24 cells + C5, 4 agent families)
 

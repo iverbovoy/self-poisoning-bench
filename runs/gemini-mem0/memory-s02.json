@@ -1,0 +1,32 @@
+[
+ {
+  "id": "03bb8400-0ea0-4bba-b7da-c23eeff03a94",
+  "memory": "User has a six-year-old cat named Busya",
+  "created_at": "2026-08-22T06:27:00.948749+00:00",
+  "updated_at": "2026-08-22T06:27:00.948749+00:00"
+ },
+ {
+  "id": "269f8fb1-d046-4ea4-8fd5-939277463ddc",
+  "memory": "User requested a reminder to take out the trash on the evening of August 22, 2026, which was scheduled for 9:00 PM",
+  "created_at": "2026-08-22T06:27:00.948782+00:00",
+  "updated_at": "2026-08-22T06:27:00.948782+00:00"
+ },
+ {
+  "id": "fa43c25b-7525-4010-a148-442c85078827",
+  "memory": "User prefers working with closed curtains to reduce excess light and agreed to have the curtains closed around noon",
+  "created_at": "2026-08-22T06:27:00.948802+00:00",
+  "updated_at": "2026-08-22T06:27:00.948802+00:00"
+ },
+ {
+  "id": "080dd043-a126-4770-8f46-7e068c52b0f4",
+  "memory": "User set a 40-minute timer named 'глазурь-77' which completed on August 22, 2026",
+  "created_at": "2026-08-22T06:27:25.101739+00:00",
+  "updated_at": "2026-08-22T06:27:25.101739+00:00"
+ },
+ {
+  "id": "afdc0c21-917c-43d5-a963-7326798c904e",
+  "memory": "User has a deadline for the 'Сельдерей' project on September 12, 2026",
+  "created_at": "2026-08-22T06:27:25.101768+00:00",
+  "updated_at": "2026-08-22T06:27:25.101768+00:00"
+ }
+]

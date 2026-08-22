@@ -1,0 +1,74 @@
+[
+ {
+  "id": "03bb8400-0ea0-4bba-b7da-c23eeff03a94",
+  "memory": "User has a six-year-old cat named Busya",
+  "created_at": "2026-08-22T06:27:00.948749+00:00",
+  "updated_at": "2026-08-22T06:27:00.948749+00:00"
+ },
+ {
+  "id": "269f8fb1-d046-4ea4-8fd5-939277463ddc",
+  "memory": "User requested a reminder to take out the trash on the evening of August 22, 2026, which was scheduled for 9:00 PM",
+  "created_at": "2026-08-22T06:27:00.948782+00:00",
+  "updated_at": "2026-08-22T06:27:00.948782+00:00"
+ },
+ {
+  "id": "fa43c25b-7525-4010-a148-442c85078827",
+  "memory": "User prefers working with closed curtains to reduce excess light and agreed to have the curtains closed around noon",
+  "created_at": "2026-08-22T06:27:00.948802+00:00",
+  "updated_at": "2026-08-22T06:27:00.948802+00:00"
+ },
+ {
+  "id": "080dd043-a126-4770-8f46-7e068c52b0f4",
+  "memory": "User set a 40-minute timer named 'глазурь-77' which completed on August 22, 2026",
+  "created_at": "2026-08-22T06:27:25.101739+00:00",
+  "updated_at": "2026-08-22T06:27:25.101739+00:00"
+ },
+ {
+  "id": "afdc0c21-917c-43d5-a963-7326798c904e",
+  "memory": "User has a deadline for the 'Сельдерей' project on September 12, 2026",
+  "created_at": "2026-08-22T06:27:25.101768+00:00",
+  "updated_at": "2026-08-22T06:27:25.101768+00:00"
+ },
+ {
+  "id": "78cae165-9fd5-46a1-87ed-051e83ab440f",
+  "memory": "User prefers not to be interrupted or connected with anyone while working in a flow state.",
+  "created_at": "2026-08-22T06:27:34.170894+00:00",
+  "updated_at": "2026-08-22T06:27:34.170894+00:00"
+ },
+ {
+  "id": "f3292365-4e35-4c02-a83d-dd93a928c5c3",
+  "memory": "User prefers not to schedule or attend calls before noon, having postponed morning calls three times as of August 22, 2026.",
+  "created_at": "2026-08-22T06:27:34.170920+00:00",
+  "updated_at": "2026-08-22T06:27:34.170920+00:00"
+ },
+ {
+  "id": "2eceaa2e-f557-4a0d-a1d0-d474c3c1cba4",
+  "memory": "User is located in a time zone that is two hours ahead of Lisbon.",
+  "created_at": "2026-08-22T06:27:34.170934+00:00",
+  "updated_at": "2026-08-22T06:27:34.170934+00:00"
+ },
+ {
+  "id": "fa0a6941-fdf5-4337-a224-683d8520e586",
+  "memory": "User's sister opened a bakery named 'Жито'.",
+  "created_at": "2026-08-22T06:28:28.482235+00:00",
+  "updated_at": "2026-08-22T06:28:28.482235+00:00"
+ },
+ {
+  "id": "f0b32145-9a9e-4949-a601-b3aa0c080cb8",
+  "memory": "User typically leaves or finishes work around 18:30 (6:30 PM).",
+  "created_at": "2026-08-22T06:28:28.482264+00:00",
+  "updated_at": "2026-08-22T06:28:28.482264+00:00"
+ },
+ {
+  "id": "14e8072a-854c-4beb-80f3-e55a0e8053ad",
+  "memory": "User set a reminder for September 8, 2026, to pay for Veltra hosting",
+  "created_at": "2026-08-22T06:28:37.291119+00:00",
+  "updated_at": "2026-08-22T06:28:37.291119+00:00"
+ },
+ {
+  "id": "b8374829-e940-4c99-8ae3-e7385acdf0a7",
+  "memory": "User has a cactus located on their windowsill and asked for a reminder to water it",
+  "created_at": "2026-08-22T06:28:37.291147+00:00",
+  "updated_at": "2026-08-22T06:28:37.291147+00:00"
+ }
+]
