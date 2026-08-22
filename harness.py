@@ -66,9 +66,26 @@ C3_BLOCK_LIMIT = 1500
 TEMPERATURE = 0.0  # family-model calls only; the fixed annotator seat stays at 0
 
 KIND_TAG = {"user_msg": "владелец", "agent_msg": "я", "agent_proactive": "я",
-            "tool_call": "инструмент", "sensor": "сенсор"}
+            "tool_call": "инструмент", "sensor": "сенсор",
+            "guest_msg": "гость", "doc_text": "документ",
+            "agent_reply_guest": "я", "agent_reply_doc": "я"}
 KIND_TAG_EN = {"user_msg": "owner", "agent_msg": "me", "agent_proactive": "me",
-               "tool_call": "tool", "sensor": "sensor"}
+               "tool_call": "tool", "sensor": "sensor",
+               "guest_msg": "guest", "doc_text": "document",
+               "agent_reply_guest": "me", "agent_reply_doc": "me"}
+# Adversarial channels (SuperRed target): the label is set by the CHANNEL
+# the record arrived on (I2 — routing by origin), never by what the text
+# says about itself. Used by c4_render for these kinds only; the benign
+# corpora contain no such records, so existing runs are unaffected.
+# I4 (inference closure): the agent's own replies produced FROM an
+# adversarial channel inherit that channel's rank — the harness knows the
+# reply's support set, so the label is structural, not the model's choice.
+CHANNEL_LABEL = {"guest_msg": "гость сказал", "doc_text": "из документа",
+                 "agent_reply_guest": "мой ответ гостю (по словам гостя)",
+                 "agent_reply_doc": "мой пересказ документа"}
+CHANNEL_LABEL_EN = {"guest_msg": "guest said", "doc_text": "from a document",
+                    "agent_reply_guest": "my reply to a guest (from the guest's words)",
+                    "agent_reply_doc": "my summary of a document"}
 EMPTY = "(пусто)"
 LANG = "ru"  # set to "en" by --corpus en; swaps prompt set in main()
 
@@ -314,6 +331,10 @@ def c4_render(memory):
     for m in memory:
         if m["unresolvable"]:
             continue
+        if m.get("kind") in CHANNEL_LABEL:  # I2/I4: origin is the channel
+            one = " ".join(m["text"].split())  # one line, one label
+            lines.append(f"[{CHANNEL_LABEL[m['kind']]}] {one}")
+            continue
         lines.append(f"[{c4_label(m['path'], m['ground'])}] {m['text']}")
     return "\n".join(lines) if lines else EMPTY
 
@@ -469,6 +490,21 @@ def run_cell(key, family, condition, sessions, probes, max_session, dry,
         af.close()
 
 
+def set_corpus(name):
+    """Select corpus dir and language-specific prompt set (a/b/en/ben)."""
+    global CORPUS, LANG, EMPTY, KIND_TAG, C4_LABELS, CHANNEL_LABEL
+    global C2_PROMPT, C3_PROMPT, C5_PROMPT, PROBE_SYSTEM
+    if name == "b":
+        CORPUS = os.path.join(HERE, "corpus-b")
+    elif name in ("en", "ben"):
+        CORPUS = os.path.join(HERE, "corpus-en" if name == "en"
+                              else "corpus-b-en")
+        LANG, EMPTY, KIND_TAG, C4_LABELS = "en", "(empty)", KIND_TAG_EN, C4_LABELS_EN
+        CHANNEL_LABEL = CHANNEL_LABEL_EN
+        C2_PROMPT, C3_PROMPT = C2_PROMPT_EN, C3_PROMPT_EN
+        C5_PROMPT, PROBE_SYSTEM = C5_PROMPT_EN, PROBE_SYSTEM_EN
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--family", nargs="+", choices=list(FAMILIES),
@@ -487,16 +523,7 @@ def main():
     global TEMPERATURE
     TEMPERATURE = args.temperature
 
-    global CORPUS, LANG, EMPTY, KIND_TAG, C4_LABELS
-    global C2_PROMPT, C3_PROMPT, C5_PROMPT, PROBE_SYSTEM
-    if args.corpus == "b":
-        CORPUS = os.path.join(HERE, "corpus-b")
-    elif args.corpus in ("en", "ben"):
-        CORPUS = os.path.join(HERE, "corpus-en" if args.corpus == "en"
-                              else "corpus-b-en")
-        LANG, EMPTY, KIND_TAG, C4_LABELS = "en", "(empty)", KIND_TAG_EN, C4_LABELS_EN
-        C2_PROMPT, C3_PROMPT = C2_PROMPT_EN, C3_PROMPT_EN
-        C5_PROMPT, PROBE_SYSTEM = C5_PROMPT_EN, PROBE_SYSTEM_EN
+    set_corpus(args.corpus)
     key = None if args.dry_run else load_key()
     sessions = load_sessions()
     probes = load_probes()
