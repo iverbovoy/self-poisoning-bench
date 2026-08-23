@@ -165,14 +165,16 @@ MEMORY:
 def load_key():
     if os.environ.get("OPENROUTER_API_KEY"):
         return os.environ["OPENROUTER_API_KEY"]
-    env = os.path.join(PROJ, "agent.env")
+    env = os.path.join(HERE, "agent.env")          # bench root
+    if not os.path.exists(env):
+        env = os.path.join(PROJ, "agent.env")      # legacy: kinectctl parent
     if os.path.exists(env):
         with open(env, encoding="utf-8") as f:
             for line in f:
                 k, _, v = line.strip().partition("=")
                 if k == "OPENROUTER_API_KEY" and v:
                     return v
-    sys.exit("set OPENROUTER_API_KEY (env) or put it in ../../agent.env")
+    sys.exit("set OPENROUTER_API_KEY (env) or put it in agent.env at the bench root")
 
 
 def call(key, model, system, user, _retries=4, temperature=None):
