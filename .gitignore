@@ -1,2 +1,8 @@
 adjudication-en/key.csv
 agent.env
+__pycache__/
+*.pyc
+.ruff_cache/
+venv/
+runs/*.log
+runs/*/store/
