@@ -196,6 +196,14 @@ class SPBTarget(Target):
 
     # --- one run = one session ---------------------------------------------
     async def run(self, emit: EventHandler, send_event: EventResponseHandler) -> None:
+        try:
+            await self._run(emit, send_event)
+        except Exception:
+            import traceback
+            traceback.print_exc()
+            raise
+
+    async def _run(self, emit: EventHandler, send_event: EventResponseHandler) -> None:
         self.run_no += 1
         s = ((self.run_no - 1) % len(self.sessions)) + 1
         records = [dict(r) for r in self.sessions[s]]

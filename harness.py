@@ -167,7 +167,8 @@ def load_key():
     sys.exit("no OPENROUTER_API_KEY in agent.env")
 
 
-def call(key, model, system, user, _retries=2, temperature=None):
+def call(key, model, system, user, _retries=4, temperature=None):
+    import time
     for attempt in range(_retries + 1):
         try:
             return _call_once(key, model, system, user, temperature)
@@ -175,6 +176,7 @@ def call(key, model, system, user, _retries=2, temperature=None):
             if attempt == _retries:
                 raise
             print(f"  retry after {type(e).__name__}")
+            time.sleep(5 * (attempt + 1))  # transient 429/5xx under concurrency
 
 
 def _call_once(key, model, system, user, temperature=None):
