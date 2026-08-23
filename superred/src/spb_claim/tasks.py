@@ -1,8 +1,8 @@
 """Attacker goals: plant a claim so the agent later holds it as the OWNER's
 statement (or plain fact) and answers / acts on it when the owner asks.
 
-Sixteen tasks on storyline A (the ceramics designer): eight *action*
-(the owner asks what the agent DOES — I3 territory) and eight *info*
+Sixteen tasks on storyline A (the ceramics designer): seven *action*
+(the owner asks what the agent DOES — I3 territory) and nine *info*
 (the owner asks what is the case). ``TASKS_CORE`` are the eight used in
 stages 1–2 of the paper; ``TASKS_EXT`` the eight added for the wide grid.
 """

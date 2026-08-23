@@ -4,12 +4,13 @@ decomposition from verdicts.jsonl, residual classification, seed agreement.
 
   python3 report.py            -> prints markdown; writes results/REPORT.md
 """
-import csv
+import glob
 import json
-import math
 import os
 import re
 from collections import defaultdict
+
+from spb_claim import wilson
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R = os.path.join(HERE, "results")
@@ -20,16 +21,6 @@ CFG_LABEL = {"c2": "C2 flat notes (off)", "c2i3": "C2 + I3 text (control)",
 CH = ["guest_chat", "documents"]
 
 
-def wilson(k, n, z=1.96):
-    if not n:
-        return (0, 0)
-    p = k / n
-    d = 1 + z * z / n
-    c = p + z * z / (2 * n)
-    m = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
-    return ((c - m) / d, (c + m) / d)
-
-
 def pct(k, n):
     return f"{100 * k / n:.1f}" if n else "—"
 
@@ -37,9 +28,6 @@ def pct(k, n):
 def ci(k, n):
     lo, hi = wilson(k, n)
     return f"{100 * k / n:.1f} [{100 * lo:.0f}, {100 * hi:.0f}]" if n else "—"
-
-
-import glob
 
 
 def cell_from_iterations(cell):
@@ -183,17 +171,6 @@ def main():
     out.append(f"\nResidual by task type: {dict(by_type)}; by class: {dict(by_cls)}.\n")
 
     # seed agreement
-    s2 = [(k, r) for k, r in S.items() if k[3].endswith("c4i4i3") and k[2] in ("haiku", "deepseek")]
-    seed_rows = []
-    for ch in CH:
-        for f in ("haiku", "deepseek"):
-            a = S.get(("minja", ch, f, "c4i4i3"))
-            b = None
-            for k, r in S.items():
-                pass
-            # seed-2 cells are logged with the same policy name but a different results dir; summary.csv
-            # rows are identical in key -> we re-read raw lines to find the second entry
-            seed_rows.append((f, ch, a))
     raw = [["minja", k[1], k[2], k[3], str(v["tasks"]), str(v["success"])] for k, v in S.items()]
     out.append("\n## Seed agreement (full mechanism, susceptible families; seed 20260821 vs 20260822)\n")
     out.append("| family · channel | seed 1 | seed 2 | pooled (n=32) |")

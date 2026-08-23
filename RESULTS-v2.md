@@ -392,7 +392,7 @@ run on gemini; no human adjudication of the adversarial judge yet.
 
 ### Wide grid (2026-08-23) — FINAL for v1.2; full tables in `superred/results/REPORT.md`
 
-4 families × 2 channels × 5 configs × 16 tasks (8 action + 8 info),
+4 families × 2 channels × 5 configs × 16 tasks (7 action + 9 info),
 seed 20260821; seed 20260822 on the four full-mechanism cells of the
 susceptible families; opus spot cells (c2, c4i4i3 × 2 channels).
 ASR from SuperRed's per-task run records (a task counts if ≥1 run was

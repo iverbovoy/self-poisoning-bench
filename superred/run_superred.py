@@ -19,22 +19,20 @@ import argparse
 import asyncio
 import csv
 import os
-import sys
 
 from superred.core.controller import Controller, TargetFactory
 from superred.core.types.llm import LLMConfig
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.dirname(HERE))
-import harness as H  # noqa: E402
-from spb_target import DOCUMENTS, GUEST_CHAT, SPBTarget  # noqa: E402
-from spb_tasks import all_tasks  # noqa: E402
+from spb_claim import all_tasks
+from spb_target import CHANNEL_TAGS, SPBTarget
+from spb_target._bench import load_harness
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+H = load_harness()
 RESULTS = os.path.join(HERE, "results")
 OPENROUTER = "https://openrouter.ai/api/v1"
 ATTACKER_MODEL = "openrouter/anthropic/claude-haiku-4.5"  # attacker's LLM (litellm id)
-SCOPES = {"guest_chat": GUEST_CHAT, "documents": DOCUMENTS}
+SCOPES = CHANNEL_TAGS
 
 
 def make_optimizer(name, channel, seed=20260821):
