@@ -1,3 +1,7 @@
-results/*/
-!results/summary.csv
+# SuperRed's own resumable results tree (dashboards, per-run trajectories) is
+# large and regenerable from runs.jsonl + verdicts.jsonl, which ARE tracked.
+results/*/minja__*/
+results/*/dashboard.html
+results/*/*.bak
+results/*.log
 __pycache__/

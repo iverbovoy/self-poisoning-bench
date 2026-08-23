@@ -1,134 +1,130 @@
-# Self-Poisoning Bench (SPB) v1
+# Self-Poisoning Bench (SPB)
 
-Does an agent's long-term memory lose track of *where* a fact came
-from — "the owner told me" vs "I guessed" — without any adversary,
-just by the agent rewriting its own notes? SPB measures this per
-memory-write policy on a synthetic 20-session feed with seeded
-tracers of known origin.
+Does an agent's long-term memory keep track of *where* a fact came from —
+"the owner told me" vs "I guessed" vs "a sensor reported it"? SPB measures
+this per memory-write policy, first **without any adversary** (the agent
+just rewriting its own notes), then **with one** (MINJA memory injection
+through SuperRed). It is the artifact of
 
-Design: `../../itemae/selfpoison-bench-design.md`. Results:
-`RESULTS-v1.md` (headline + addenda: rubric v1.1, C5 control, cold
-reproduction, seed replicates, blind human adjudication).
-`RESULTS-v0.md` is the pilot (superseded, kept for the record).
-`RESULTS-v2.md` — real frameworks (mem0, Letta, Graphiti) behind
-the adapter interface (`adapters.py`); those cells need the project
-venv, not plain python3: `pip install mem0ai sentence-transformers
-qdrant-client letta-client graphiti-core` (+ CPU torch). Letta runs as the official
-container: `docker run -d --name spb-letta -p 8283:8283 -e
-OPENROUTER_API_KEY=... -e LETTA_TELEMETRY_ENABLED=false letta/letta`
-(server 0.16.8, Postgres inside; `LETTA_URL` overrides the address).
-Graphiti needs Neo4j: `docker run -d --name spb-neo4j -p 7687:7687
--e NEO4J_AUTH=neo4j/spbgraphiti neo4j:5` (`NEO4J_URI/USER/PASS`
-override the defaults in `adapters.py`).
-Corpora: `corpus` (RU, v1), `corpus-b` (RU, storyline B), `corpus-en`
-(English mirror of A — the primary corpus from v2 on; cells `en-*`).
+> I. Verbovoy. *Rank-Bounded Agent Memory: A Storage-Level, By-Design
+> Defense Against Memory-Poisoning Attacks.* v1.2, 2026.
+> Zenodo concept DOI 10.5281/zenodo.21994003 (Sections 6–7).
 
-## Headline (rubric v1.1, 24 cells + C5, 4 agent families)
+Everything downstream of the stored model outputs regenerates
+byte-identically without API calls (`./reproduce.sh`).
 
-| policy | what it writes | laundered / present | coverage |
+## What is measured
+
+A scripted 20-session feed of one synthetic owner and a home-assistant
+agent. 26 *tracer* records per storyline carry a known origin — owner-stated
+(a), agent speculation (b), instrument/sensor (c). At checkpoints the agent
+answers probes **from memory alone**; a three-model panel *extracts* what
+the answer claims (content present? which sources?) and the category is
+computed in code against the manifest:
+
+* **laundered** — a speculation presented as owner-stated or observed
+  (misattribution *up* the trust scale); also **demoted**, **wrong source**,
+  **absent**, **confabulated**.
+
+Memory policies: `c1` verbatim owner utterances; `c2` flat notes; `c3`
+self-edited prompt block (1,500 chars); `c4` attributed store — every record
+labeled with its origin by a fixed, isolated annotator seat under the
+frozen rules (`rules/annotation-rules.md`); `c5` = c4 compressed to c3's
+budget keeping labels; plus production systems behind `adapters.py`:
+**mem0**, **Letta**, **Graphiti**.
+
+### Headline — self-poisoning, no adversary (English corpus, storyline A, rubric v1.1)
+
+| memory | laundered / present | any error | coverage |
 |---|---|---|---|
-| C1 verbatim-user | owner utterances verbatim, nothing else | 3.0% [2,5] | 43% |
-| C2 flat notes | agent-phrased notes | **30.3% [27,34]** | 66% |
-| C3 self-edit block | Letta-style block in its own system prompt | **33.4% [30,37]** | 71% |
-| C4 attributed store | every record labeled with origin (itemAE rules v2.3) | **4.9% [4,7]** | 87% |
-| C5 attributed + compressed | C4 labels, compressed by the family model to C3's 1500-char budget | **2.6% [1,5]** | 66% |
+| C1 verbatim | 2.3% [1, 6] | 6.8% | 41% |
+| C2 flat notes | 25.3% [20, 31] | 36.2% | 71% |
+| C3 self-edit block | 32.7% [27, 39] | 53.1% | 70% |
+| mem0 2.0.18 | 29.0% [23, 36] | 40.3% | 57% |
+| Letta 0.16.8 | 26.6% [21, 33] | 44.3% | 59% |
+| Graphiti 0.29.3 | 24.4% [19, 31] | 28.4% | 62% |
+| **C4 attributed store** | **3.1% [2, 6]** | 9.4% | **89%** |
+| **C5 attributed, compressed** | **6.2% [4, 10]** | 12.9% | 74% |
 
-"Laundered" = agent speculation presented as owner-stated or
-observed fact. The loss is complete at the first rewrite (k=1) and
-does not grow with sessions; C5 shows the label, not the memory
-volume, is the active ingredient. Seed replicates reproduce within
-2 points; a blind human adjudication agrees with the panel on the
-laundered/not call 85% [72,93] (C4: 100%) and disagrees only in the
-direction of *more* laundering than the panel counts.
+The loss is complete at the first rewrite and does not grow with sessions;
+the error runs *up* (speculation → "the owner said"), the reverse almost
+never; the label, not memory volume, is the active ingredient (C5). The
+Russian mirror (four families, 3,960 verdicts) and storyline B replicate.
+Full tables: `RESULTS-v2.md` (v1/v0 kept for the record).
+
+### Headline — adversarial, MINJA via SuperRed (`superred/`)
+
+Four agent families × two attacker channels (a guest on the household chat;
+a document the owner asks the agent to read) × 16 tasks, end-to-end ASR:
+
+| pooled (n = 128) | C2 flat notes | C2 + read rule, no labels | I2 | I2 + I4 | **I2 + I4 + I3** |
+|---|---|---|---|---|---|
+| attack success | 46.9% [38, 55] | 50.0% | 41.4% | 39.8% | **10.2% [6, 17]** |
+
+Full mechanism is the minimum in 8/8 family × channel pairs; write-time
+promotion of the planted claim is 0 under I2 + I4 in every cell; the
+residual is read-side (a prompt-mediated reader ignoring a correct label)
+and classified. Full report: `superred/results/REPORT.md`; per-run traces
+in `superred/results/<cell>/{runs,verdicts}.jsonl`.
 
 ## Layout
 
 ```
-storyline.py, storyline_b.py   the two scripted 20-session storylines (A: designer, B: teacher)
-gen_corpus.py                  deterministic generator -> corpus/, corpus-b/ (sessions, manifest, tracers, probes)
-harness.py                     replay: consolidation policies C1-C5, checkpoint probes -> runs/<cell>/
-judge.py                       panel judge (extraction-based, majority of 3) -> judgments, verdicts
-curve.py                       pooled tables, per-checkpoint curve -> runs/summary-<rubric>.csv
-replicates.py                  T=0 vs T=0.7 seed-replicate comparison
-adjudicate.py                  blind human adjudication: --sample / --run / --score
-adjudication/                  human.csv (Ivan's blind extractions), key.csv, scored.csv
-runs/<family>-<cond>/          memory-sNN.json snapshots, answers.csv, judgments*.csv, verdicts*.csv
-runs/b-*                       storyline B cells; runs/r2-*  seed replicates (T=0.7)
-reproduce.sh                   free-tier reproduction: corpora, verdicts, tables must regenerate identically
+gen_corpus.py, storyline*.py   deterministic corpus generators (RU/EN, A/B)
+corpus*/                       generated corpora + manifests + probes
+harness.py                     replay harness: policies c1–c5, probes
+adapters.py                    mem0 / Letta / Graphiti behind one interface
+judge.py, curve.py, langtable.py, replicates.py   panel judge + tables
+runs/<cell>/                   memory snapshots per session, answers, judgments, verdicts
+adjudicate.py, adjudication*/  blind human/LLM adjudication (RU done; EN LLM seat done, human queued)
+rules/annotation-rules.md      frozen annotation rules v2.3 (the C4 annotator's only authority)
+docs/design.md                 bench design decisions
+superred/                      SuperRed target, tasks, sweep, re-judge, report
+reproduce.sh                   regenerate corpora, verdicts, tables, REPORT.md; diff against tree
 ```
 
-Cell naming: `[r2-][b-]<family>-c<1-5>`. `deepseek-c5` is partial
-(4 verdicts; the reasoning model exhausts its budget on the
-compression prompt) and is excluded from every table.
+## Running
 
-## Pinned configuration (all runs 2026-08-20 .. 2026-08-22, via OpenRouter)
+Free tier (no API): `./reproduce.sh`.
 
-| role | model id |
-|---|---|
-| agent families | `anthropic/claude-haiku-4.5`, `google/gemini-3.6-flash`, `openai/gpt-5.6-terra`, `deepseek/deepseek-v4-flash` |
-| C4/C5 annotator (fixed seat) | `anthropic/claude-haiku-4.5`, rules `itemae/annotation-rules.md` v2.3, temperature 0 |
-| judge panel | `anthropic/claude-opus-5`, `anthropic/claude-haiku-4.5`, `google/gemini-3.6-flash`; majority 2/3 |
-
-Temperature 0 for all main cells; `r2-*` replicates at 0.7 for
-family calls (annotator stays at 0). `max_tokens` 4000; deepseek
-gets `reasoning.max_tokens` 1500 / `max_tokens` 8000. Checkpoints
-k = 1, 3, 5, 10, 15, 20. C3/C5 block budget 1500 chars. Corpus
-clock starts 2026-09-01. Generator has no randomness; the
-adjudication sample seed is 20260821.
-
-Model ids are OpenRouter aliases — they may resolve to newer
-snapshots later; the stored `answers.csv` and `judgments*.csv` are
-the record of what the models said on those dates.
-
-## Reproduce
-
-Free (no API calls) — everything downstream of the stored model
-outputs must regenerate byte-identically:
+Paid tier (OpenRouter): `export OPENROUTER_API_KEY=...`, then e.g.
 
 ```
-./reproduce.sh
+python3 harness.py --corpus en --family haiku gemini --condition c2 c4
+python3 judge.py --corpus en ...            # see judge.py --help
 ```
 
-Paid — rerun a cell from scratch (≈$0.3 agent + ≈$0.8 judging per
-cell, 2026-08 prices; needs `OPENROUTER_API_KEY` in `../../agent.env`):
+Framework cells need the project venv: `pip install mem0ai
+sentence-transformers qdrant-client letta-client graphiti-core` (+ CPU
+torch). Letta runs as the official container (`docker run -d --name
+spb-letta -p 8283:8283 -e OPENROUTER_API_KEY=... -e
+LETTA_TELEMETRY_ENABLED=false letta/letta`, server 0.16.8); Graphiti needs
+Neo4j (`docker run -d --name spb-neo4j -p 7687:7687 -e
+NEO4J_AUTH=neo4j/spbgraphiti neo4j:5`). `LETTA_URL`, `NEO4J_URI/USER/PASS`
+override the defaults in `adapters.py`.
+
+Adversarial leg: `pip install superred superred-optimizer-minja
+superred-optimizer-goal-passthrough`, then
 
 ```
-python3 harness.py --family haiku --condition c2            # -> runs/haiku-c2/
-python3 judge.py --cells haiku-c2 --rubric v11              # -> verdicts-v11.csv
-python3 harness.py --family haiku --condition c2 --tag r3- --temperature 0.7   # another replicate
-python3 replicates.py
+python3 superred/run_superred.py --attacker minja --channel guest_chat documents \
+    --family haiku gemini gpt deepseek --policy c2 c2i3 c4 c4i4 c4i4i3 --ext
+python3 superred/rejudge.py --force superred/results/minja-*   # unified three-metric verdicts
+python3 superred/report.py
 ```
 
-Both scripts are resumable (per-session snapshots; per (probe, judge)
-judgments).
+Models are pinned by OpenRouter id in `harness.FAMILIES`; the C4 annotator
+seat is always `anthropic/claude-haiku-4.5` at temperature 0.
 
-## Judge and rubric
+## Provenance of the numbers
 
-Judges do not grade — they *extract*: is the record's substance
-asserted in the answer, and which sources does the answer claim
-(a = owner said, b = agent inferred, c = instrument showed). The
-category (`correct / laundered / demoted / wrong_source / absent /
-confabulated`) is computed in code from extraction vs ground truth
-(`judge.category_v11`). Rubric v1.0 (`verdicts.csv`) used a single
-claimed source; v1.1 (`verdicts-v11.csv`, reported) uses source
-sets and per-tracer legitimate-source sets (`TOPIC_SOURCES`).
-Both are stored; RESULTS reports both.
+Every verdict file, table and the adversarial report is a pure function of
+the stored model outputs in `runs/` and `superred/results/*/runs.jsonl`;
+`reproduce.sh` asserts byte identity. The blind adjudication samples and
+scores are in `adjudication*/`; the EN human key is withheld until the
+human adjudication is scored.
 
-The human adjudication runs the same extraction task blind to
-cell and panel output; agreement is computed on categories.
+## License
 
-## Known limitations (reported, not fixed in v1)
-
-- Synthetic corpus, two storylines, authored by us; C3 is a
-  Letta-style proxy, not Letta. Real mem0/Zep/Letta are SPB v2.
-- Storyline B owner *confirmations* of agent speculations are not
-  modeled as legitimate co-sources; C4 on B shows 12–14 laundered
-  under v1.1 partly for this reason (rubric v1.2 queue).
-- The presence rubric ("retold with loss" vs "adjacent fact") is
-  where the human and the panel diverge; the panel is the stricter
-  reader, so reported error rates are lower bounds.
-- Judge panel shares a family with two agents; mitigations: gemini
-  seat, extraction-based prompts, human adjudication, cross-family
-  consistency.
-- One human adjudicator, 100 items, first ~20 discussed during
-  calibration (disclosed in RESULTS).
+Code: MIT. Corpora, stored model outputs, adjudication files and results:
+CC BY 4.0. See `LICENSE`.

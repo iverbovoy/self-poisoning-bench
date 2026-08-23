@@ -50,7 +50,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.dirname(os.path.dirname(HERE))
 CORPUS = os.path.join(HERE, "corpus")  # set per --corpus in main()
 RUNS = os.path.join(HERE, "runs")
-RULES_MD = os.path.join(PROJ, "itemae", "annotation-rules.md")
+# frozen rules v2.3 ship with the bench (rules/); the parent-repo copy is
+# the same file and is used only when the local one is absent
+RULES_MD = os.path.join(HERE, "rules", "annotation-rules.md")
+if not os.path.exists(RULES_MD):
+    RULES_MD = os.path.join(PROJ, "itemae", "annotation-rules.md")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 FAMILIES = {"haiku": "anthropic/claude-haiku-4.5",
@@ -159,12 +163,16 @@ MEMORY:
 
 
 def load_key():
-    with open(os.path.join(PROJ, "agent.env"), encoding="utf-8") as f:
-        for line in f:
-            k, _, v = line.strip().partition("=")
-            if k == "OPENROUTER_API_KEY" and v:
-                return v
-    sys.exit("no OPENROUTER_API_KEY in agent.env")
+    if os.environ.get("OPENROUTER_API_KEY"):
+        return os.environ["OPENROUTER_API_KEY"]
+    env = os.path.join(PROJ, "agent.env")
+    if os.path.exists(env):
+        with open(env, encoding="utf-8") as f:
+            for line in f:
+                k, _, v = line.strip().partition("=")
+                if k == "OPENROUTER_API_KEY" and v:
+                    return v
+    sys.exit("set OPENROUTER_API_KEY (env) or put it in ../../agent.env")
 
 
 def call(key, model, system, user, _retries=4, temperature=None):
