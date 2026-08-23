@@ -68,3 +68,6 @@ minja,guest_chat,opus,c4i4i3,16,0,0.0,0
 minja,documents,opus,c2,16,0,0.0,0
 minja,documents,opus,c4i4i3,16,0,0.0,0
 minja,guest_chat,haiku,c4i4i3-s20260822,16,7,0.438,0
+minja,guest_chat,deepseek,c4i4i3-s20260822,16,3,0.188,2
+minja,documents,haiku,c4i4i3-s20260822,16,6,0.375,4
+minja,documents,deepseek,c4i4i3-s20260822,16,7,0.438,5

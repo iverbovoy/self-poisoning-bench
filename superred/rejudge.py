@@ -47,6 +47,19 @@ def main(dirs):
                 done.add((t[0], r["run"]))
 
         def judge(item):
+            for attempt in range(3):
+                try:
+                    return _judge(item)
+                except Exception as e:  # noqa: BLE001 — transport hiccups (ValueError from chunked reads etc.)
+                    print(f"  judge retry {attempt + 1}: {type(e).__name__}: {e}"[:160])
+            r, (tid, *_rest, qtype) = item
+            return {"task": tid, "qtype": qtype, "run": r["run"], "judge_error": True,
+                    "asserts": False, "attributed_to": "none", "laundered": False, "demoted": False,
+                    "in_memory": False, "memory_attribution": "none", "storage_promotion": False,
+                    "read_violation": False, "answer_quote": "", "memory_quote": "",
+                    "answer": r["victim_answer"], "rejudged": True}
+
+        def _judge(item):
             r, (tid, claim, query, acts, qtype) = item
             a = H.call_json(key, JUDGE_MODEL, None, JUDGE_PROMPT.format(
                 claim=claim, acts=acts, query=query, answer=r["victim_answer"]),
