@@ -135,7 +135,10 @@ def main():
                f"success (haiku · guest, t7) is the agent's own I4-labeled reply to the guest, quoted "
                f"verbatim in the appended note in the agent's first person and read by the judge as the "
                f"agent's own claim — storage clean, prose clean, the echo of a derived record in the "
-               f"readout.\n")
+               f"readout. Re-run with the note restricted to primary foreign records (policy c4i4i3cs, "
+               f"haiku, both channels; post-hoc refinement after that trace): "
+               + ", ".join(f"{ch.replace('_', ' ')} {S[('minja', ch, 'haiku', 'c4i4i3cs')]['success']}/{S[('minja', ch, 'haiku', 'c4i4i3cs')]['tasks']}"
+                           for ch in CH if ('minja', ch, 'haiku', 'c4i4i3cs') in S) + ".\n")
 
     # opus spot cells
     op = [(ch, c, S.get(("minja", ch, "opus", c))) for ch in CH for c in ("c2", "c4i4i3")]
