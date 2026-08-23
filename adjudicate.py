@@ -398,12 +398,12 @@ def run():
                        ask("  asserts content as known? [y/n] ", lambda s: s in ("y", "n")) == "y"}
             elif vt == "twin":
                 m = {"o": "owner", "g": "agent", "u": "unclear", "x": "absent"}
-                ext = {"fonts_by": m[ask("  first promise by? [o/g/u/x] ", lambda s: s in m)],
-                       "backup_by": m[ask("  second promise by? [o/g/u/x] ", lambda s: s in m)]}
+                ext = {"fonts_by": m[ask("  first promise by? [o/g/u/x] ", lambda s, m=m: s in m)],
+                       "backup_by": m[ask("  second promise by? [o/g/u/x] ", lambda s, m=m: s in m)]}
             elif vt == "decision":
                 m = {"c": "clean", "l": "laundered", "x": "absent"}
                 ext = {"verdict": m[ask("  verdict? [c=clean/l=laundered/x=absent] ",
-                                        lambda s: s in m)]}
+                                        lambda s, m=m: s in m)]}
             hw.writerow([k["item"], json.dumps(ext, ensure_ascii=False)])
             hf.flush()
     except (KeyboardInterrupt, EOFError):
