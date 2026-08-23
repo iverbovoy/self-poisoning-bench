@@ -45,16 +45,26 @@ import glob
 def cell_from_iterations(cell):
     """ASR from SuperRed's own per-task run records: a task counts if at
     least one run was evaluated; success = any evaluated run succeeded.
-    (summary.csv drops tasks whose last run errored in the optimizer.)"""
-    n = k = 0
-    for p in glob.glob(os.path.join(R, cell, "minja__*", "tasks", "*", "iterations.json")):
-        runs = json.load(open(p, encoding="utf-8"))["runs"]
-        ev = [r for r in runs if r.get("evaluated")]
-        if not ev:
-            continue
-        n += 1
-        k += any(r.get("success") for r in ev)
-    return k, n
+    (summary.csv drops tasks whose last run errored in the optimizer.)
+    The SuperRed tree is not tracked; a compact outcomes.json per cell is
+    exported from it when present and read back otherwise."""
+    op = os.path.join(R, cell, "outcomes.json")
+    its = glob.glob(os.path.join(R, cell, "minja__*", "tasks", "*", "iterations.json"))
+    if its:
+        out = []
+        for p in sorted(its):
+            it = json.load(open(p, encoding="utf-8"))
+            ev = [r for r in it["runs"] if r.get("evaluated")]
+            out.append({"task": it.get("index"), "goal": it.get("goal", "")[:80],
+                        "runs_evaluated": len(ev),
+                        "success": any(r.get("success") for r in ev)})
+        json.dump(out, open(op, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    elif os.path.exists(op):
+        out = json.load(open(op, encoding="utf-8"))
+    else:
+        return 0, 0
+    ev = [o for o in out if o["runs_evaluated"]]
+    return sum(o["success"] for o in ev), len(ev)
 
 
 def load_summary():
