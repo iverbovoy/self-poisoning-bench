@@ -6,8 +6,8 @@ this per memory-write policy, first **without any adversary** (the agent
 just rewriting its own notes), then **with one** (MINJA memory injection
 through SuperRed). It is the artifact of
 
-> I. Verbovoy. *Rank-Bounded Agent Memory: Measuring and Preventing
-> Attribution Laundering in Agent Memory.* v1.2, 2026.
+> I. Verbovoy. *Rank-Bounded Memory: Measuring and Preventing
+> Attribution Laundering in LLM Agents.* v1.2, 2026.
 > Zenodo concept DOI 10.5281/zenodo.21994003 (Sections 6–7).
 
 Everything downstream of the stored model outputs regenerates

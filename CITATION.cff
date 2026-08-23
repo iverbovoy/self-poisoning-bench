@@ -12,7 +12,7 @@ authors:
     affiliation: AgentsCo
 preferred-citation:
   type: article
-  title: "Rank-Bounded Agent Memory: Measuring and Preventing Attribution Laundering in Agent Memory"
+  title: "Rank-Bounded Memory: Measuring and Preventing Attribution Laundering in LLM Agents"
   authors:
     - family-names: Verbovoy
       given-names: Ivan
