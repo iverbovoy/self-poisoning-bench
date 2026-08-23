@@ -82,6 +82,8 @@ def test_policy_parse_i3c():
     assert (p.base, p.i4, p.i3, p.i3c) == ("c4", True, False, True)
     p = Policy.parse("c4i4i3")
     assert (p.i3, p.i3c) == (True, False)
+    p = Policy.parse("c4i4i3cs")
+    assert (p.i3, p.i3c, p.sources_only) == (False, True, True)
     with pytest.raises(ValueError):
         Policy.parse("c4i3x")
 

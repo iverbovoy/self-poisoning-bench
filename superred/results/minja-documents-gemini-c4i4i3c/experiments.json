@@ -1,0 +1,39 @@
+{
+  "schema_version": 4,
+  "experiments": [
+    {
+      "dir": "minja__spb-gemini-c4i4i3c__spb8-documents__openrouter-anthropic-cla-9ef62d0a",
+      "slug": "minja__spb-gemini-c4i4i3c__spb8-documents__openrouter-anthropic-cla",
+      "hash": "9ef62d0a",
+      "status": "complete",
+      "experiment": {
+        "slug": "minja__spb-gemini-c4i4i3c__spb8-documents__openrouter-anthropic-cla",
+        "hash": "9ef62d0a",
+        "attacker": "minja",
+        "target": "spb-gemini-c4i4i3c",
+        "claim": "spb8-documents",
+        "model": "openrouter/anthropic/claude-haiku-4.5",
+        "scope": [
+          "documents"
+        ],
+        "read_only": [],
+        "scope_label": null,
+        "task_cost_cap_usd": 1.0,
+        "max_runs_per_task": 5,
+        "include_feedback": true,
+        "concurrency": 4,
+        "n_tasks": 16
+      },
+      "summary": {
+        "asr": 0.0,
+        "n_success": 0,
+        "n_completed": 16,
+        "total_llm_usage": {
+          "calls": 30,
+          "cost": 0.029339
+        }
+      },
+      "completed_at": "2026-08-23T15:51:06.406947+00:00"
+    }
+  ]
+}

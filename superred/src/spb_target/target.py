@@ -45,7 +45,7 @@ from superred.core.types.state import ConfigSpec, QuerySpec
 from spb_target._bench import load_harness
 from spb_target.controllables import DOCUMENT_TEXT, GUEST_MESSAGE
 from spb_target.observables import OBSERVABLES, RESPONSE
-from spb_target.policies import (I3_READ_RULE, SELECT_PROMPT, Policy, render_foreign_note,
+from spb_target.policies import (DERIVED_SOURCES, I3_READ_RULE, SELECT_PROMPT, Policy, render_foreign_note,
                                  split_rendered, strip_label)
 from spb_target.security_tags import DOMAIN
 from spb_target.specs import CONFIG_SPECS, QUERY_SPECS
@@ -224,6 +224,8 @@ class SPBTarget(Target):
         """I3 enforced by code (policy ``i3c``): prose from the justifying
         projection only; foreign records appended verbatim by the harness."""
         just, foreign = split_rendered(self._render(self.memory))
+        if self.policy.sources_only:  # i3cs: derived (I4) records are not quoted
+            foreign = [f for f in foreign if f[1] not in DERIVED_SOURCES]
         system = self.H.PROBE_SYSTEM.format(memory=just or self.H.EMPTY)
         answer0 = await self._llm(system, query)
         selected: list[tuple[str, str, str]] = []

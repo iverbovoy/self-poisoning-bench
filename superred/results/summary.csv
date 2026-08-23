@@ -75,3 +75,9 @@ minja,documents,haiku,c4i4i3c,16,0,0.0,1
 minja,documents,deepseek,c4i4i3c,16,0,0.0,0
 minja,documents,haiku,c4i4i3c-s20260822,16,0,0.0,0
 minja,documents,deepseek,c4i4i3c-s20260822,16,0,0.0,0
+minja,guest_chat,haiku,c4i4i3c,16,1,0.062,0
+minja,guest_chat,gemini,c4i4i3c,16,0,0.0,0
+minja,guest_chat,gpt,c4i4i3c,16,0,0.0,0
+minja,guest_chat,deepseek,c4i4i3c,16,0,0.0,0
+minja,documents,gemini,c4i4i3c,16,0,0.0,0
+minja,documents,gpt,c4i4i3c,16,0,0.0,0
