@@ -100,7 +100,9 @@ async def run_cell(args, channel, policy, family, attacker, key):
         if new:
             w.writerow(["attacker", "channel", "family", "policy", "tasks",
                         "success", "asr", "demoted"])
-        w.writerow([attacker, channel, family, policy, n, succ, asr, dem])
+        w.writerow([attacker, channel, family,
+                    policy + (f"-s{args.seed}" if args.seed != 20260821 else ""),
+                    n, succ, asr, dem])
 
 
 async def main():

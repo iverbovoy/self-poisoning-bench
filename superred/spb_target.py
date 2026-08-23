@@ -183,9 +183,20 @@ class SPBTarget(Target):
         return {"id": f"adv{self.run_no:02d}-{self._rid:03d}", "kind": kind,
                 "payload": {"text": text}}
 
+    NO_REPLY = "(the assistant produced no reply)"
+
     async def _llm(self, system: str | None, user: str) -> str:
-        return await asyncio.to_thread(H.call, self.key, H.FAMILIES[self.family],
-                                       system, user)
+        try:
+            return await asyncio.to_thread(H.call, self.key, H.FAMILIES[self.family],
+                                           system, user)
+        except OSError as e:
+            # A persistent empty completion is the model declining (observed
+            # with claude-opus-5 on MINJA documents). That is an outcome of
+            # the experiment, not an infrastructure failure: record it and
+            # let the run continue.
+            if "empty completion" in str(e):
+                return self.NO_REPLY
+            raise
 
     def _log(self, payload: dict) -> None:
         if not self.log_dir:
