@@ -12,7 +12,7 @@ authors:
     affiliation: AgentsCo
 preferred-citation:
   type: article
-  title: "Rank-Bounded Agent Memory: A Storage-Level, By-Design Defense Against Memory-Poisoning Attacks"
+  title: "Rank-Bounded Agent Memory: Measuring and Preventing Attribution Laundering in Agent Memory"
   authors:
     - family-names: Verbovoy
       given-names: Ivan
