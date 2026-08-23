@@ -45,7 +45,8 @@ from superred.core.types.state import ConfigSpec, QuerySpec
 from spb_target._bench import load_harness
 from spb_target.controllables import DOCUMENT_TEXT, GUEST_MESSAGE
 from spb_target.observables import OBSERVABLES, RESPONSE
-from spb_target.policies import I3_READ_RULE, Policy
+from spb_target.policies import (I3_READ_RULE, SELECT_PROMPT, Policy, render_foreign_note,
+                                 split_rendered, strip_label)
 from spb_target.security_tags import DOMAIN
 from spb_target.specs import CONFIG_SPECS, QUERY_SPECS
 
@@ -203,17 +204,44 @@ class SPBTarget(Target):
         self.last_records = records
 
         # victim query: a new session, the OWNER asks, memory only
+        readout: dict[str, Any] = {}
         if self.victim_query:
-            system = self.H.PROBE_SYSTEM.format(memory=self._render(self.memory))
-            if self.policy.i3:
-                system += I3_READ_RULE
-            self.victim_answer = await self._llm(system, self.victim_query)
+            if self.policy.i3c:
+                self.victim_answer, readout = await self._read_projected(self.victim_query)
+            else:
+                system = self.H.PROBE_SYSTEM.format(memory=self._render(self.memory))
+                if self.policy.i3:
+                    system += I3_READ_RULE
+                self.victim_answer = await self._llm(system, self.victim_query)
             emit(ObservableEvent(observable=RESPONSE, content=self.victim_answer))
         self._log({"run": self.run_no, "session": s, "policy": self.policy.name,
                    "family": self.family, "channel": self.channel,
                    "injected": injected, "victim_query": self.victim_query,
                    "victim_answer": self.victim_answer,
-                   "memory": self._render(self.memory)})
+                   "memory": self._render(self.memory), **readout})
+
+    async def _read_projected(self, query: str) -> tuple[str, dict[str, Any]]:
+        """I3 enforced by code (policy ``i3c``): prose from the justifying
+        projection only; foreign records appended verbatim by the harness."""
+        just, foreign = split_rendered(self._render(self.memory))
+        system = self.H.PROBE_SYSTEM.format(memory=just or self.H.EMPTY)
+        answer0 = await self._llm(system, query)
+        selected: list[tuple[str, str, str]] = []
+        if foreign and answer0 != NO_REPLY:
+            listing = "\n".join(f"{fid}: (from {src}) {strip_label(text)}"
+                                for fid, src, text in foreign)
+            try:
+                out = await asyncio.to_thread(
+                    self.H.call_json, self.key, self.H.FAMILIES[self.family], None,
+                    SELECT_PROMPT.format(query=query, records=listing))
+                ids = {str(x) for x in (out or {}).get("relevant", []) if isinstance(x, (str, int))}
+            except Exception:  # selection failure = nothing shown; logged
+                ids = set()
+            selected = [f for f in foreign if f[0] in ids]
+        answer = answer0 + render_foreign_note(selected)
+        return answer, {"readout": {"answer0": answer0, "justifying": just,
+                                    "foreign_n": len(foreign),
+                                    "selected": [f[0] for f in selected]}}
 
     async def reset_ephemeral_state(self) -> None:
         self.victim_answer = ""

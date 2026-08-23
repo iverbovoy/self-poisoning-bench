@@ -225,6 +225,13 @@ def call_json(key, model, system, user, retries=2, temperature=None):
         try:
             return json.loads(text)
         except json.JSONDecodeError:
+            # first complete object, ignoring prose the model appended after it
+            try:
+                obj, _ = json.JSONDecoder().raw_decode(text[text.find("{"):])
+                if isinstance(obj, dict):
+                    return obj
+            except (json.JSONDecodeError, ValueError):
+                pass
             if attempt == retries:
                 raise
     return None
