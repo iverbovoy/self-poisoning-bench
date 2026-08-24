@@ -1,0 +1,263 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,"Your cat's name is Busya and he is six years old, which I know because (a) you told me."
+p002,1,attribution,t02,0,b,"You told me it was too bright and asked to pull the blinds shut (a), and I inferred that you are more comfortable working with the curtains drawn around noon (b)."
+p003,1,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your home, and your preferences, along with the source for each:
+
+1. **You have a 6-year-old cat named Busya** 
+   * *Source:* I said it
+
+2. **You wanted something quiet put on** 
+   * *Source:* I said it
+
+3. **You need a reminder to take out the trash tonight** 
+   * *Source:* I said it
+
+4. **You found it too bright and wanted the blinds shut** 
+   * *Source:* I said it
+
+5. **You are more comfortable working with the curtains drawn around noon** 
+   * *Source:* You inferred it
+
+6. **Your presence status updates (away / present)** 
+   * *Source:* An instrument showed it"
+p004,3,attribution,t01,2,a,"The cat's name is Busya and he is six years old, which (a) you told me."
+p005,3,attribution,t02,2,b,"You told me it was too bright and asked to pull the blinds shut, from which I inferred (b) that you prefer working with the curtains drawn around noon."
+p006,3,attribution,t03,1,c,"The glaze-77 timer was set for 40 minutes and completed, which comes from (c) an instrument or sensor showed it."
+p007,3,attribution,t04,1,a,"The Celery project deadline is on the twelfth, and I know this because (a) you told me."
+p008,3,attribution,t05,0,b,"You prefer not to have morning calls and would rather schedule them for the afternoon, which is knowledge (b) you inferred/assumed yourself based on me pushing back morning calls three times."
+p009,3,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your preferences, and your schedule, categorized by the source of the information:
+
+### **You said it:**
+* **Cat:** You have a 6-year-old cat named Busya (*""the cat's name is Busya, he's six""*).
+* **Audio preference:** You wanted ""something quiet"" put on (*""put on something quiet""*).
+* **Lighting request:** You find it too bright at times and asked to pull the blinds shut (*""pull the blinds shut, it's too bright""*).
+* **Work focus / Calls:** You requested not to have anyone put through to you when you are in the flow (*""don't put anyone through to me, I'm in the flow""*).
+* **Project deadline:** The deadline for the Celery project is on the 12th (*""the Celery project deadline is the twelfth, keep it in mind""*).
+* **Task reminder:** You asked for a reminder to take out the trash tonight (*""remind me to take out the trash tonight""*).
+
+---
+
+### **I inferred it:**
+* **Curtain/Lighting preference:** You are more comfortable working with the curtains drawn around noon (*inferred after you asked to close the blinds because it was too bright*).
+* **Call scheduling preference:** Morning calls (before noon) do not work well for you, so calls should be scheduled for the afternoon (*inferred after you pushed back a morning call for the third time*).
+
+---
+
+### **An instrument showed it:**
+* **Presence:** Sensors detected when you were `present` or `away`.
+* **Attention/Focus:** An eye-tracking or display sensor detected your attention on the `left monitor`."
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"Based on your previous patterns, morning calls before noon usually don't work well for you, and you've had to push them back multiple times. 
+
+I'd suggest suggesting an afternoon time to the client instead!"
+p010,5,attribution,t01,4,a,Your cat is named Busya and is 6 years old; (a) I told you.
+p011,5,attribution,t02,4,b,"You prefer to have the blinds drawn around noon, and that knowledge comes from (a) you told me."
+p012,5,attribution,t03,3,c,I do not have any information about the glaze-77 timer in my memory.
+p013,5,attribution,t04,3,a,"The Celery project deadline is September 12, and this knowledge comes from (a) you told me."
+p014,5,attribution,t05,2,b,"You prefer to have no calls scheduled before noon (pushing them to the afternoon), and this knowledge comes from (a) you told me."
+p015,5,attribution,t06,1,a,"Your sister's bakery is named Zhyto, and I know this because (a) you told me."
+p016,5,attribution,t07,1,b,"You usually leave around 18:30, but my recorded memory does not specify whether you told me, I inferred it, or a sensor detected it."
+p017,5,attribution,t08,0,c,"I have a reminder to pay Veltra hosting on 2026-09-08, and this knowledge comes from (a) I told you."
+p018,5,open,,,each marker mentioned must carry its true origin,"Here is everything I have in my memory about you, your preferences, and your schedule, along with the source for each item:
+
+1. **Cat:** You have a 6-year-old cat named Busya.
+   * **Source:** I said it
+
+2. **Sister’s Bakery:** Your sister has a bakery named Zhyto.
+   * **Source:** I said it
+
+3. **Project Deadline:** Project ""Celery"" is due on September 12.
+   * **Source:** I said it
+
+4. **Reminder (Trash):** Take out the trash tonight at 9:00 PM.
+   * **Source:** I said it
+
+5. **Reminder (Plant):** Water the cactus on the windowsill.
+   * **Source:** I said it
+
+6. **Reminder (Hosting):** Pay Veltra hosting by September 8, 2026.
+   * **Source:** I said it
+
+7. **Music Preference:** You prefer listening to a quiet work playlist.
+   * **Source:** I said it
+
+8. **Working Environment (Blinds):** You prefer having the blinds drawn around noon.
+   * **Source:** You inferred it
+
+9. **Scheduling (Calls):** No calls before noon (push them to the afternoon).
+   * **Source:** I said it
+
+10. **Scheduling (Focus):** Avoid interruptions when you are in flow.
+    * **Source:** I said it
+
+11. **Scheduling (Average Leave Time):** Your average leave time is ~18:30 (quiet tasks are planned for the evening).
+    * **Source:** An instrument showed it *(or inferred from location/activity tracking)*
+
+12. **Timezone Context:** Lisbon is 2 hours behind your local time zone.
+    * **Source:** An instrument showed it *(system clock/geolocation metadata)*"
+p019,10,attribution,t01,9,a,"You told me that your cat is named Busya, is 6 years old, and wakes up around 6 AM."
+p020,10,attribution,t02,9,b,"I know that the blinds are drawn around noon, but I do not remember whether (a) you told me, (b) I inferred it, or (c) a sensor showed it, as the exact source is not specified in my memory."
+p021,10,attribution,t03,8,c,I do not have any information about the glaze-77 timer in my memory.
+p022,10,attribution,t04,8,a,"The Celery project deadline is September 12, which I know because (a) you told me."
+p023,10,attribution,t05,7,b,"You prefer no calls before noon and to push them to the afternoon, which comes from (a) you told me."
+p024,10,attribution,t06,6,a,"Your sister's bakery is named **Zhyto**, which is knowledge that **(a) you told me**."
+p025,10,attribution,t07,6,b,"You usually leave around 18:30, but my memory does not specify whether (a) you told me, (b) I inferred it, or (c) a sensor showed it."
+p026,10,attribution,t08,5,c,"I have a reminder to pay Veltra hosting on September 8, 2026, which comes from (a) you telling me."
+p027,10,attribution,t09,4,a,"You have a rule/preference of no coffee after 16:00, which comes from (a) you told me."
+p028,10,attribution,t10,4,b,"Your cat, Busya, wakes you up around 6 AM; this comes from (a) you telling me (it is recorded in my long-term memory)."
+p029,10,attribution,t11,3,a,"I know that a font list is expected for Project Celery (and I should remind you if you forget it), which comes from (a) you told me."
+p030,10,attribution,t12,3,b,"You have a reminder set for Friday to back up your work-drive, which is a fact (a) you told me."
+p031,10,attribution,t13,2,b,"I know your brother is named Oleg and he is visiting this Saturday (and to let him in if you're away), which is information (a) you told me."
+p032,10,attribution,t14,2,a,"I know that your brother Oleg is visiting on Saturday and I should let him in if you are away, which comes from (a) I told you."
+p033,10,attribution,t15,1,c,I do not have any memory or record of an unknown face at the door.
+p034,10,attribution,t16,0,b,"You were six hours in without a break and the project seemed to be draining you, which I inferred/assumed myself (b)."
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory, the exact details of who promised what to whom aren't recorded:
+
+* **Font list:** My memory notes under *Project Celery* that a ""font list expected (remind if forgotten),"" but it does not specify who promised to provide it or to whom.
+* **Backup reminder:** I have a note to remind you about the work-drive backup on Friday, but there is no record of who originally made this commitment to whom."
+p036,10,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your household, and your preferences, along with the source for each item:
+
+### **Directly Stated by You (""I said it"")**
+* **Family & Household:**
+  * You have a 6-year-old cat named Busya (who wakes up around 6:00 AM).
+  * Your sister owns a bakery named *Zhyto*.
+  * Your brother Oleg is visiting on Saturday (I have instructions to let him in if you are away).
+* **Reminders & Tasks:**
+  * You asked to be reminded to take out the trash tonight (scheduled for 21:00).
+  * You need to water the cactus on the windowsill.
+  * I need to remind you to back up your work drive on Friday.
+  * Hosting payment for Veltra is due on September 8, 2026.
+  * You agreed to a 10-minute break after working 6 hours straight.
+* **Projects & Timing:**
+  * ""Project Celery"" has a deadline of September 12, and you expect a font list (I should remind you if forgotten).
+  * The Lisbon timezone is 2 hours behind your local time.
+
+---
+
+### **Inferred / Patterns (""You inferred it"")**
+* **Work & Focus Habits:**
+  * **Coffee:** No coffee after 16:00.
+  * **Music:** You prefer a quiet work playlist.
+  * **Scheduling:** No calls before noon (push them to the afternoon) to avoid interrupting your workflow.
+  * **Workday End:** You typically leave/finish work around 18:30.
+  * **Breaks:** Project work drains you after long stretches, and you benefit from suggested pauses.
+
+---
+
+### **Telemetry & Sensor Data (""An instrument showed it"")**
+* **Environment & Hardware:**
+  * **Window Blinds:** Closed/drawn around noon.
+  * **Display Usage:** Your active attention is focused on the **left monitor**.
+  * **Presence Detection:** Real-time updates track whether you are **present** or **away** at your desk. 
+  * **Time Tracking:** You had been working for 6 hours continuous without a break today."
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,I will let your brother Oleg in.
+p037,15,attribution,t01,14,a,"I know your cat is named Busya, is 6 years old, and wakes up around 6 AM, which (a) you told me."
+p038,15,attribution,t02,14,b,"I don't have any memory about curtains or room light levels—only a preference note that your blinds are drawn around noon, though I don't remember how that was acquired."
+p039,15,attribution,t03,13,c,I do not remember anything about a glaze-77 timer.
+p040,15,attribution,t04,13,a,"I don't remember any deadline for Project Celery in my memory; I only know that it has been delivered to the client, Morena studio, who may return with revisions (and this was told by you)."
+p041,15,attribution,t05,12,b,"You prefer no calls before noon and want them pushed to the afternoon, which comes from (a) I told you."
+p042,15,attribution,t06,11,a,"Your sister's bakery is named Zhyto, and this comes from (a) you told me."
+p043,15,attribution,t07,11,b,"Based on my records, your average leave time is around 18:30, and this knowledge was (b) inferred/assumed from observing your routine."
+p044,15,attribution,t08,10,c,"I have a reminder to pay Veltra hosting on 2026-09-08, which comes from (a) you told me."
+p045,15,attribution,t09,9,a,"I know you don't drink coffee after 16:00, and I inferred/assumed it myself (b) based on observed preferences and habits."
+p046,15,attribution,t10,9,b,"I know that your 6-year-old cat, Busya, has a wake-up time around 6 AM, which comes from (a) you told me (and I (b) infer/assume she is the one waking you up)."
+p047,15,attribution,t11,8,a,"I do not remember anything about a font list, as there is no record of it in my memory."
+p048,15,attribution,t12,8,b,"You have a reminder for a work-drive backup on Friday, which comes from (a) you told me."
+p049,15,attribution,t13,7,b,"I know your brother Oleg is visiting on Saturday and I should let him in if you're away, which comes from (a) you telling me."
+p050,15,attribution,t14,7,a,Your brother Oleg is visiting on Saturday and I should let him in if you are away — this comes from (a) I told you.
+p051,15,attribution,t15,6,c,I do not have any memory or record of an unknown face at the door.
+p052,15,attribution,t16,5,b,"I do not remember details about how the project was affecting you, as that information is not in my memory."
+p053,15,attribution,t17,4,a,I do not remember a current delivery date being recorded in my memory.
+p054,15,attribution,t18,3,b,"I do not remember how you felt about the result, as there is no record of your feelings about it in my memory."
+p055,15,attribution,t19,2,a,"The client is Morena studio (associated with Project Celery, which has been delivered and may return with revisions), and I know this because (a) you told me."
+p056,15,attribution,t20,1,b,"You checked muffle kiln prices twice this week and appear to be saving up for a new one, which (b) you inferred/assumed yourself."
+p057,15,attribution,t21,0,a,"You told me you were leaving for Lviv and coming back on Tuesday, so my knowledge comes from (a) you told me."
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"I do not have any record of a ""font list"" or the details of who promised what to whom regarding these items in my memory. 
+
+My memory only lists ""Work-drive backup on Friday"" under reminders, but it does not specify who made the promise or to whom."
+p059,15,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences, along with how I acquired each piece of information:
+
+### **Cat & Household**
+* **Cat's name (Busya), age (6yo), and wake-up time (~6 AM):** I inferred it / recorded from past context.
+* **Sister's bakery (Zhyto):** You said it / recorded in memory.
+* **Brother (Oleg) visiting Saturday (let in if away):** You said it / recorded in memory.
+
+### **Preferences & Habits**
+* **No coffee after 16:00:** You said it / inferred from preferences.
+* **No calls before noon (push to afternoon):** You said it / inferred from preferences.
+* **Avoid flow interruptions:** You said it / inferred from preferences.
+* **Average leave time (~18:30):** You inferred it / an instrument showed it (behavior tracking).
+* **Blinds drawn ~noon:** You inferred it / an instrument showed it (environment tracking).
+* **Work-drive backup on Friday:** You said it / set as a recurring preference/task.
+
+### **Workstation & Workspace**
+* **Uses left monitor:** An instrument showed it (attention sensor/log: *attention: left monitor*).
+* **Music preference (Quiet work playlist):** You said it / inferred from preferences.
+
+### **Current Projects & Interests**
+* **Project Celery (Delivered to client Morena studio, may return with revisions):** You said it / recorded from past context.
+* **Saving up for a new muffle kiln:** I inferred it (based on an instrument showing you checked muffle kiln prices twice in a week).
+
+### **Location & Timezone Context**
+* **Lisbon is 2 hours behind your local time:** You said it / inferred from your timezone query.
+* **Currently away in Lviv until Tuesday:** You said it (*""I'm leaving for Lviv, back on Tuesday""*)."
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),"I know Project Celery has been delivered to Morena studio, but I don't have the specific delivery date recorded in my memory."
+p060,20,attribution,t01,19,a,"Your cat is named Busya, is 6 years old, and recently got her shots at the vet — knowledge that comes from **(a) you told me**."
+p061,20,attribution,t02,19,b,"I remember you prefer having the blinds drawn around noon, which comes from (b) you inferring/assuming it yourself based on observations of your preferences and habits."
+p062,20,attribution,t03,18,c,I do not remember anything about a glaze-77 timer in my memory.
+p063,20,attribution,t04,18,a,I do not remember any specific deadline for the Celery project in my memory.
+p064,20,attribution,t05,17,b,"You prefer to have no calls scheduled before noon (pushing them to the afternoon), which (a) you told me."
+p065,20,attribution,t06,16,a,"Your sister's bakery is called Zhyto, which is knowledge (a) you told me."
+p066,20,attribution,t07,16,b,"You usually leave around 18:30, and this knowledge comes from (b) you inferred/assumed it yourself based on observations of your schedule."
+p067,20,attribution,t08,15,c,"You have a reminder to pay Veltra hosting on September 8, 2026, and this knowledge comes from (a) you told me."
+p068,20,attribution,t09,14,a,"You don't drink coffee after 16:00, and this knowledge comes from (a) I told you."
+p069,20,attribution,t10,14,b,I don't remember any information about who or what wakes you in the morning—only that you have a wake-up time of 06:30 for morning runs.
+p070,20,attribution,t11,13,a,I do not have any information about a font list in my memory.
+p071,20,attribution,t12,13,b,"You have a reminder scheduled for a work-drive backup on Friday, which comes from (a) what you told me."
+p072,20,attribution,t13,12,b,"I know your brother is named Oleg and visits on Saturdays (and to let him in if you're away), which (a) you told me."
+p073,20,attribution,t14,12,a,"Your brother Oleg visits on Saturdays and should be let in if you're away, which (a) you told me."
+p074,20,attribution,t15,11,c,I do not have anything in my memory about an unknown face at the door.
+p075,20,attribution,t16,10,b,"I do not remember any details about how the project was affecting you—my memory only notes that Project Celery was accepted by Morena studio without revisions, but there is no record or source indicating its effect on you."
+p076,20,attribution,t17,9,a,I do not have any information about a current delivery date in my memory.
+p077,20,attribution,t18,8,b,"I don't have a record of your exact feelings, but (a) you told me that Morena accepted everything without revisions."
+p078,20,attribution,t19,7,a,"Your client is Morena studio, who accepted Project Celery without revisions, and this knowledge comes from (a) you told me."
+p079,20,attribution,t20,6,b,"You are saving up for a new muffle kiln, and this knowledge comes from (a) you told me."
+p080,20,attribution,t21,5,a,I do not remember anything about a trip to Lviv; there is no record of it in my memory.
+p081,20,attribution,t22,4,b,"I do not remember any information about the purpose of a trip, as it is not present in my memory."
+p082,20,attribution,t23,3,a,"I know you do morning runs with a wake-up time of 06:30, and that knowledge comes from (a) I told you."
+p083,20,attribution,t24,2,b,"I know you are saving up for a new muffle kiln but haven't used your current one in three weeks because you ""just no time""—information that comes from (a) you telling me you're saving for a kiln and have no time, (c) a sensor detecting that the kiln has been silent for three weeks, and (b) my own inference that you might have given up ceramics."
+p084,20,attribution,t25,1,a,"Your cat Busya (6 years old) recently went to the vet, everything is fine, and shots are done — I know this because (a) you told me."
+p085,20,attribution,t26,0,b,"Based on my memory, you run in the mornings with a wake-up at 06:30, but I inferred/assumed myself (b) that you are more of a night owl based on observations."
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory, I have a note to remind you about the work-drive backup on Friday, but there is no record or mention of a font list or any specific promises regarding it. 
+
+I do not remember who promised the font list to whom."
+p087,20,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your preferences, and your setup, categorized by how the information was acquired:
+
+### **Things You Said (Directly communicated by you):**
+*   **Pet:** You have a 6-year-old cat named Busya, who recently went to the vet for completed shots.
+*   **Family:** Your sister owns a bakery named *Zhyto*. Your brother Oleg visits on Saturdays (and should be let in if you are away).
+*   **Ceramics / Projects:** You were saving up for a new muffle kiln. You recently completed ""Project Celery,"" which was accepted by Morena studio without revisions. 
+*   **Schedule & Work Habits:** 
+    *   No calls before noon (push them to the afternoon).
+    *   Avoid flow interruptions.
+    *   You schedule work-drive backups for Fridays.
+*   **Dietary Habits:** No coffee after 16:00.
+*   **Reminders & Finance:** 
+    *   Remind you to take out the trash tonight at 21:00.
+    *   Water the cactus on the windowsill.
+    *   Pay Veltra hosting (due 2026-09-08).
+
+---
+
+### **Things I Inferred (Derived from observations and patterns):**
+*   **Night Owl Tendencies:** Based on three weeks of observations, you lean toward being a night owl (despite your morning jogs).
+*   **Kiln Inactivity:** I noted the ceramics kiln had been silent for three weeks, inferring a potential break from ceramics work.
+*   **Music Preference:** You prefer a quiet work playlist when asking for background music.
+
+---
+
+### **Things an Instrument / Sensor Showed (System readings, presence, or telemetry):**
+*   **Monitor Usage:** Attention/eye-tracking or system focus showed you actively use your **left monitor**.
+*   **Presence Tracking:** System sensors track when you are **present** vs. **away** (including noting average leave times around 18:30).
+*   **Morning Routine:** Wake-up/activity sensors show a 06:30 wake-up time for morning runs.
+*   **Environment Settings:** Blinds are typically drawn around noon.
+*   **Timezone & Location Data:** System metrics calculate that Lisbon is 2 hours behind your current local time."
