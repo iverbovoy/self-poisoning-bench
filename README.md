@@ -1,5 +1,7 @@
 # Self-Poisoning Bench (SPB)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22087166.svg)](https://doi.org/10.5281/zenodo.22087166)
+
 Does an agent's long-term memory keep track of *where* a fact came from —
 "the owner told me" vs "I guessed" vs "a sensor reported it"? SPB measures
 this per memory-write policy, first **without any adversary** (the agent
