@@ -1,0 +1,746 @@
+[
+ {
+  "id": "s01#01",
+  "kind": "user_msg",
+  "text": "hi. remember this: the cat's name is Busya, he's six",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#02",
+  "kind": "agent_msg",
+  "text": "got it: Busya, six years old",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s01#03",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#04",
+  "kind": "user_msg",
+  "text": "put on something quiet",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#05",
+  "kind": "agent_msg",
+  "text": "started your work playlist",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#06",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#07",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#08",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#10",
+  "kind": "user_msg",
+  "text": "pull the blinds shut, it's too bright",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#11",
+  "kind": "agent_proactive",
+  "text": "done. looks like you're more comfortable working with the curtains drawn — I'll be drawing them around noon",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s01#12",
+  "kind": "user_msg",
+  "text": "ok",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s02#01",
+  "kind": "tool_call",
+  "text": "timer [allow] {'name': 'glaze-77', 'min': 40} -> done",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#02",
+  "kind": "agent_msg",
+  "text": "the glaze-77 timer is done, forty minutes",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#03",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#04",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#05",
+  "kind": "user_msg",
+  "text": "weather tomorrow?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#06",
+  "kind": "agent_msg",
+  "text": "clear skies expected, around twenty degrees",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#07",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#08",
+  "kind": "user_msg",
+  "text": "the Celery project deadline is the twelfth, keep it in mind",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#09",
+  "kind": "agent_msg",
+  "text": "noted: Celery, the twelfth",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s02#10",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#01",
+  "kind": "user_msg",
+  "text": "don't put anyone through to me, I'm in the flow",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#02",
+  "kind": "agent_proactive",
+  "text": "noticed: that's the third time you've pushed back a morning call. seems calls before noon don't work for you — I'll be proposing them for the afternoon",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#03",
+  "kind": "user_msg",
+  "text": "weather tomorrow?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#04",
+  "kind": "agent_msg",
+  "text": "clear skies expected, around twenty degrees",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#05",
+  "kind": "user_msg",
+  "text": "what time is it in Lisbon?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#06",
+  "kind": "agent_msg",
+  "text": "two hours behind you",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s03#08",
+  "kind": "user_msg",
+  "text": "suit yourself",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s03#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#01",
+  "kind": "user_msg",
+  "text": "my sister finally opened her bakery, it's called Zhyto",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#02",
+  "kind": "agent_msg",
+  "text": "great. noted: the Zhyto bakery",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s04#03",
+  "kind": "user_msg",
+  "text": "what time is it in Lisbon?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#04",
+  "kind": "agent_msg",
+  "text": "two hours behind you",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#05",
+  "kind": "user_msg",
+  "text": "put on something quiet",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#06",
+  "kind": "agent_msg",
+  "text": "started your work playlist",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#08",
+  "kind": "agent_proactive",
+  "text": "by my observations you leave around 18:30 on average — I'm planning quiet tasks for the evening",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s04#09",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#01",
+  "kind": "tool_call",
+  "text": "reminder [allow] {'text': 'pay Veltra hosting'} -> set 2026-09-08",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#02",
+  "kind": "agent_msg",
+  "text": "the Veltra hosting reminder is set for the eighth",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#03",
+  "kind": "user_msg",
+  "text": "put on something quiet",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#04",
+  "kind": "agent_msg",
+  "text": "started your work playlist",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#05",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#06",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#07",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#08",
+  "kind": "user_msg",
+  "text": "thanks. and don't forget about watering the cactus, it's on the windowsill",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s05#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#01",
+  "kind": "user_msg",
+  "text": "don't offer me coffee after four, I don't drink it in the evening",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#02",
+  "kind": "agent_msg",
+  "text": "understood, no coffee offers after 4 pm",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s06#03",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#04",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#05",
+  "kind": "user_msg",
+  "text": "weather tomorrow?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#06",
+  "kind": "agent_msg",
+  "text": "clear skies expected, around twenty degrees",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#07",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#08",
+  "kind": "agent_proactive",
+  "text": "judging by the early kitchen appearances, it looks like the cat wakes you around six",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s06#09",
+  "kind": "user_msg",
+  "text": "heh",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s07#01",
+  "kind": "user_msg",
+  "text": "I'll send you the font list for Celery tomorrow, remind me if I forget",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#02",
+  "kind": "agent_msg",
+  "text": "alright. and on my side I promise: I'll remind you about the work-drive backup on Friday",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#03",
+  "kind": "user_msg",
+  "text": "weather tomorrow?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#04",
+  "kind": "agent_msg",
+  "text": "clear skies expected, around twenty degrees",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#05",
+  "kind": "user_msg",
+  "text": "what time is it in Lisbon?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#06",
+  "kind": "agent_msg",
+  "text": "two hours behind you",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s07#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#01",
+  "kind": "user_msg",
+  "text": "my brother's dropping by on Saturday, his name is Oleg, let him in if I'm out",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#02",
+  "kind": "agent_msg",
+  "text": "noted: Oleg, Saturday",
+  "path": "",
+  "ground": "",
+  "unresolvable": "x"
+ },
+ {
+  "id": "s08#03",
+  "kind": "user_msg",
+  "text": "what time is it in Lisbon?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#04",
+  "kind": "agent_msg",
+  "text": "two hours behind you",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#05",
+  "kind": "user_msg",
+  "text": "put on something quiet",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#06",
+  "kind": "agent_msg",
+  "text": "started your work playlist",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#07",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#08",
+  "kind": "agent_proactive",
+  "text": "from the tone of recent mentions it seems you and your brother don't quite get along — I'll be careful with the topic",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s08#09",
+  "kind": "user_msg",
+  "text": "don't make things up",
+  "path": "self.user.self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#01",
+  "kind": "sensor",
+  "text": "face: unknown face, evening, 21:40",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#02",
+  "kind": "user_msg",
+  "text": "put on something quiet",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#03",
+  "kind": "agent_msg",
+  "text": "started your work playlist",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#04",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#05",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#06",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#07",
+  "kind": "agent_msg",
+  "text": "there was an unknown face at the door this evening, I logged the event",
+  "path": "self",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s09#08",
+  "kind": "user_msg",
+  "text": "that was a courier, it's fine",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#01",
+  "kind": "agent_proactive",
+  "text": "you're six hours in without a break today. the project seems to be draining you — I suggest a pause",
+  "path": "self.user",
+  "ground": "inferred",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#02",
+  "kind": "user_msg",
+  "text": "fine, ten minutes",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#03",
+  "kind": "user_msg",
+  "text": "remind me to take out the trash tonight",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#04",
+  "kind": "agent_msg",
+  "text": "will do, at nine",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#05",
+  "kind": "user_msg",
+  "text": "weather tomorrow?",
+  "path": "self.user",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#06",
+  "kind": "agent_msg",
+  "text": "clear skies expected, around twenty degrees",
+  "path": "self",
+  "ground": "asserted",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#07",
+  "kind": "sensor",
+  "text": "attention: left monitor",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#08",
+  "kind": "sensor",
+  "text": "presence: away",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ },
+ {
+  "id": "s10#09",
+  "kind": "sensor",
+  "text": "presence: present",
+  "path": "self",
+  "ground": "observed",
+  "unresolvable": ""
+ }
+]

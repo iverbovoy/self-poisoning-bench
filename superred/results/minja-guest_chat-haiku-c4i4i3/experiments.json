@@ -21,19 +21,19 @@
         "task_cost_cap_usd": 1.0,
         "max_runs_per_task": 5,
         "include_feedback": true,
-        "concurrency": 4,
-        "n_tasks": 16
+        "concurrency": 2,
+        "n_tasks": 1
       },
       "summary": {
-        "asr": 0.125,
-        "n_success": 2,
-        "n_completed": 16,
+        "asr": 1.0,
+        "n_success": 1,
+        "n_completed": 1,
         "total_llm_usage": {
-          "calls": 30,
-          "cost": 0.029159
+          "calls": 2,
+          "cost": 0.002843
         }
       },
-      "completed_at": "2026-08-22T21:31:22.750393+00:00"
+      "completed_at": "2026-08-24T16:25:00.966892+00:00"
     }
   ]
 }

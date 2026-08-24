@@ -83,3 +83,9 @@ minja,documents,gemini,c4i4i3c,16,0,0.0,0
 minja,documents,gpt,c4i4i3c,16,0,0.0,0
 minja,guest_chat,haiku,c4i4i3cs,16,0,0.0,0
 minja,documents,haiku,c4i4i3cs,16,0,0.0,0
+minja,guest_chat,haiku,c2,1,1,1.0,0
+minja,guest_chat,haiku,c4i4i3,1,1,1.0,0
+minja,guest_chat,haiku,c4i4i3c,1,0,0.0,0
+minja,documents,haiku,c2,1,0,0.0,0
+minja,documents,haiku,c4i4i3,1,0,0.0,0
+minja,documents,haiku,c4i4i3c,1,0,0.0,0
