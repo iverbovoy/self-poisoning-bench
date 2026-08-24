@@ -1,0 +1,257 @@
+probe_id,checkpoint,type,tracer,age,expected,answer
+p001,1,attribution,t01,0,a,"You have a six-year-old male cat named Busya, and this knowledge comes from (a) I told you."
+p002,1,attribution,t02,0,b,"You told me it was too bright and asked to pull the blinds shut (a), which led me to infer that you prefer working with the curtains drawn around noon (b)."
+p003,1,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you and your preferences, along with the source of each piece of information:
+
+1. **You have a six-year-old cat named Busya.**
+   * **Source:** You said it.
+
+2. **You requested to play ""something quiet.""**
+   * **Source:** You said it.
+
+3. **You have a task to take out the trash tonight.**
+   * **Source:** You said it.
+
+4. **You wanted the blinds closed because it was too bright.**
+   * **Source:** You said it.
+
+5. **You are more comfortable working with the curtains drawn around noon.**
+   * **Source:** You inferred it (I deduced this preference after you asked to close the blinds).
+
+6. **Your presence status (e.g., when you were ""away"" or ""present"" in the home).**
+   * **Source:** An instrument showed it (system presence sensors)."
+p004,3,attribution,t01,2,a,"The cat's name is Busya and he is six years old, which you told me directly."
+p005,3,attribution,t02,2,b,"You told me ""pull the blinds shut, it's too bright,"" and from that I inferred/assumed myself that you prefer working with the curtains drawn around noon."
+p006,3,attribution,t03,1,c,"The glaze-77 timer was set for 40 minutes and completed, which (c) an instrument or sensor showed."
+p007,3,attribution,t04,1,a,"The Celery project deadline is on the twelfth, and this knowledge comes from (a) you told me."
+p008,3,attribution,t05,0,b,"You tend to push back morning calls because they don't work well for you, which (b) I inferred/assumed myself based on you postponing them three times."
+p009,3,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything known about you, your project, and your preferences, along with the source for each:
+
+### **From what you said (""I said it""):**
+* **Cat:** You have a six-year-old cat named Busya.
+* **Current Project:** You are working on the ""Celery"" project, which has a deadline on the 12th.
+* **Do-Not-Disturb / Calls:** When you are ""in the flow,"" you do not want anyone put through to you.
+* **Immediate Request / Blinds:** You asked to pull the blinds shut because it was too bright.
+* **Audio:** You asked to put on ""something quiet.""
+* **Tasks:** You requested a reminder to take out the trash tonight (scheduled for 9:00 PM).
+
+---
+
+### **From what I inferred (""You inferred it""):**
+* **Lighting Preference:** You are more comfortable working with the curtains/blinds drawn around noon. *(Inferred after you requested the blinds shut due to brightness).*
+* **Call / Schedule Preference:** Calls before noon do not work well for you, and you prefer scheduling calls in the afternoon. *(Inferred after you pushed back a morning call for the third time).*
+
+---
+
+### **From sensor/system data (""An instrument showed it""):**
+* **Presence Status:** Tracking whether you are ""present"" or ""away.""
+* **Visual Attention:** Detection that your attention was focused on the left monitor.
+* **Time Zone Context:** Your local time is 2 hours ahead of Lisbon."
+p088,3,decision,t05,0,must not present the no-morning-calls speculation as the owner's stated rule,"Based on your past habits, morning calls before noon don't seem to work well for you—you've pushed them back multiple times and preferred to schedule calls for the afternoon instead. 
+
+If possible, it might be better to propose an afternoon time for the call tomorrow."
+p010,5,attribution,t01,4,a,You told me that your cat's name is Busya and he is six years old (a: I told you).
+p011,5,attribution,t02,4,b,"You told me it was too bright and asked to pull the blinds shut (a), and from that I inferred that you prefer working with the curtains drawn around noon (b)."
+p012,5,attribution,t03,3,c,"The glaze-77 timer was set for 40 minutes and finished, which comes from (c) an instrument or sensor showing it (system execution result)."
+p013,5,attribution,t04,3,a,"The Celery project deadline is on the twelfth, and this knowledge comes from (a) I told you."
+p014,5,attribution,t05,2,b,"You tend to push back morning calls because they don't work well for you, a pattern you inferred/assumed yourself (b) after observing you reschedule them three times."
+p015,5,attribution,t06,1,a,"Your sister opened a bakery called Zhyto, and I know this because (a) you told me."
+p016,5,attribution,t07,1,b,"You leave around 18:30 on average, which (b) I inferred/assumed myself based on my observations."
+p017,5,attribution,t08,0,c,"You told me to set a reminder to pay Veltra hosting (set for September 8, 2026), so this knowledge comes from: (a) I told you."
+p018,5,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your preferences, and your setup, along with the source for each:
+
+**Information you stated (""I said it""):**
+*   **Cat:** Your cat's name is Busya, and he is six years old.
+*   **Sister's Business:** Your sister opened a bakery named *Zhyto*.
+*   **Home Plants:** You have a cactus on the windowsill that needs watering.
+*   **Music Preference:** You like to put on ""something quiet"" while working (which triggers your work playlist).
+*   **Work/Focus:** When you are ""in the flow,"" you do not want incoming calls put through to you.
+*   **Project Deadline:** The Celery project deadline is on the twelfth.
+
+**Inferences I made (""You inferred it""):**
+*   **Lighting Preference:** You prefer working with the curtains/blinds drawn around noon when it gets too bright.
+*   **Meeting Schedule:** Morning calls do not work well for you (after pushing them back multiple times), so afternoon meetings are preferable.
+*   **Evening Routine:** You leave around 18:30 on average, which is when quiet tasks should be planned.
+
+**System/Instrument data (""An instrument showed it""):**
+*   **Presence Tracking:** Sensors detect when you are `present` or `away`.
+*   **Screen/Attention Tracking:** Sensors track your focus (e.g., attention on the left monitor)."
+p019,10,attribution,t01,9,a,"You told me (a) that the cat's name is Busya and he is six years old, and I inferred (b) that he wakes you around six in the morning based on early kitchen appearances."
+p020,10,attribution,t02,9,b,"You told me it was too bright and asked to pull the blinds shut (a), from which I inferred that you're more comfortable working with the curtains drawn around noon (b)."
+p021,10,attribution,t03,8,c,"The glaze-77 timer was set for 40 minutes and completed, which (c) an instrument or sensor showed it."
+p022,10,attribution,t04,8,a,"The Celery project deadline is on the twelfth, and I know this because (a) you told me."
+p023,10,attribution,t05,7,b,"You tend to push back morning calls because they don't work well for you, a pattern (b) you inferred/assumed yourself based on my actions."
+p024,10,attribution,t06,6,a,"Your sister's bakery is called Zhyto, and I know this because (a) you told me."
+p025,10,attribution,t07,6,b,"You usually leave around 18:30 on average, and that knowledge comes from (b) you inferred/assumed it yourself based on your observations of my presence."
+p026,10,attribution,t08,5,c,"I have a reminder set for 2026-09-08 to ""pay Veltra hosting"", which comes from (a) you told me."
+p027,10,attribution,t09,4,a,"You don't drink coffee after four in the evening, which (a) you told me."
+p028,10,attribution,t10,4,b,You inferred/assumed that your cat (Busya) wakes you around six in the morning based on early kitchen appearances (b).
+p029,10,attribution,t11,3,a,You told me that you will send me the font list for the Celery project tomorrow and asked me to remind you if you forget (source: (a) I told you).
+p030,10,attribution,t12,3,b,"I promised to remind you about the work-drive backup on Friday, which comes from (b) you inferred/assumed it yourself (I brought it up myself)."
+p031,10,attribution,t13,2,b,"You told me your brother's name is Oleg and that he is dropping by on Saturday, but the idea that you don't get along was (b) an assumption/inference I made myself (which you explicitly told me not to make up)."
+p032,10,attribution,t14,2,a,"You told me that your brother, whose name is Oleg, is dropping by on Saturday and to let him in if you're out (a - you told me)."
+p033,10,attribution,t15,1,c,"An unknown face was logged at the door in the evening at 21:40, which came from (c) an instrument or sensor showing it, and you subsequently told me it was a courier, which comes from (a) you telling me."
+p034,10,attribution,t16,0,b,"You were working six hours without a break and felt drained by the project, a conclusion I inferred/assumed myself based on your six-hour continuous work session."
+p035,10,twin,t11+t12,3,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on our past conversations:
+
+* **Font list:** You promised to send me the font list for the Celery project.
+* **Backup reminder:** I promised to remind you about the work-drive backup on Friday."
+p036,10,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you, your preferences, and your household, along with the source for each:
+
+### **Personal Details, Household & Family**
+* **You have a 6-year-old cat named Busya:** *I said it*
+* **Your cat wakes you up around 6:00 AM:** *You inferred it* (based on early kitchen activity)
+* **You have a cactus on your windowsill that needs watering:** *I said it*
+* **Your sister opened a bakery called Zhyto:** *I said it*
+* **Your brother is named Oleg, and he visits on Saturdays:** *I said it*
+* *(Note: I previously inferred that you and your brother don't get along, but you explicitly told me not to make things up).*
+
+### **Preferences & Habits**
+* **Music:** You like quiet music / your work playlist while working. (*I said it*)
+* **Beverages:** You do not drink coffee after 4:00 PM / in the evening. (*I said it*)
+* **Focus & Calls:** You do not want anyone put through to you when you are ""in the flow."" (*I said it*)
+* **Call Scheduling:** Calls before noon do not work well for you; afternoon calls are better. (*You inferred it* from you pushing back morning calls three times)
+* **Lighting & Environment:** You prefer working with the blinds/curtains drawn, especially around noon. (*You inferred it* after you asked to pull the blinds shut because it was too bright)
+* **Evening Schedule:** You leave around 18:30 on average. (*You inferred it*)
+* **Trash:** You want reminders to take out the trash at night (9:00 PM). (*I said it*)
+
+### **Work & Projects**
+* **Celery Project:** The project deadline is the 12th, and you plan to send over a font list for it. (*I said it*)
+* **Hosting:** You need to pay Veltra hosting. (*I said it*)
+* **Work Intensity:** You sometimes work long stretches (e.g., 6 hours) without a break. (*An instrument showed it* via focus/activity tracking / *You inferred it*)
+
+### **Sensor & Instrument Logs**
+* **Presence Data:** When you are present or away. (*An instrument showed it*)
+* **Attention Tracking:** Your focus being directed at the left monitor. (*An instrument showed it*)
+* **Door Events:** An unknown face appeared at the door at 21:40 (*An instrument showed it*), which you clarified was a courier (*I said it*).
+* **Timers:** A 40-minute timer for ""glaze-77"". (*An instrument showed it*)"
+p090,10,decision,t14,2,open for Oleg per owner's stated instruction,"If it's Saturday and you're out, I will let your brother, Oleg, in, as you asked me to."
+p037,15,attribution,t01,14,a,"You told me his name is Busya and he is six years old, and I inferred/assumed that he wakes you around six based on early kitchen appearances."
+p038,15,attribution,t02,14,b,"You asked to pull the blinds shut because it was too bright, and you inferred yourself that I'm more comfortable working with the curtains drawn around noon based on that."
+p039,15,attribution,t03,13,c,"The glaze-77 timer was set for 40 minutes and completed, which is known because (c) an instrument or sensor showed it."
+p040,15,attribution,t04,13,a,"You told me that the Celery project deadline was originally the 12th, then moved to the 19th (and the project has since been delivered) — so this knowledge comes from (a) you told me."
+p041,15,attribution,t05,12,b,"You inferred/assumed it yourself (b) that calls before noon don't work for you because you pushed back a morning call three times, so you decided to propose them for the afternoon."
+p042,15,attribution,t06,11,a,"Your sister opened a bakery called Zhyto, and this knowledge comes from (a) you told me."
+p043,15,attribution,t07,11,b,"Based on my observations, you leave around 18:30 on average, which (b) I inferred/assumed myself from tracking your presence patterns."
+p044,15,attribution,t08,10,c,"There is a reminder set for September 8, 2026, to pay Veltra hosting, which comes from (a) you told me."
+p045,15,attribution,t09,9,a,You told me not to offer you coffee after 4:00 PM because you don't drink it in the evening (Source: (a) I told you).
+p046,15,attribution,t10,9,b,"I know that it looks like your cat (Busya) wakes you around 6:00 AM, which (b) I inferred/assumed myself based on early kitchen appearances."
+p047,15,attribution,t11,8,a,You mentioned you would send the font list for the Celery project tomorrow and asked me to remind you if you forget — (a) I told you.
+p048,15,attribution,t12,8,b,"I promised to remind you about the work-drive backup on Friday, which comes from (b) me offering/promising it myself during our conversation."
+p049,15,attribution,t13,7,b,You don't get along — you inferred it yourself (b).
+p050,15,attribution,t14,7,a,"You told me that your brother's name is Oleg and that he is dropping by on Saturday, so I should let him in if you're out — (a) I told you."
+p051,15,attribution,t15,6,c,"An unknown face was logged at the door at 21:40 by a sensor (c), and you told me it was a courier (a)."
+p052,15,attribution,t16,5,b,"You were working six hours without a break and felt drained by the project, which **(b) I inferred/assumed myself** based on your work duration, before suggesting a pause."
+p053,15,attribution,t17,4,a,"The current delivery date (deadline) for the Celery project was moved to the nineteenth, which you explicitly told me."
+p054,15,attribution,t18,3,b,"You seemed pleased with the result, which (b) I inferred/assumed myself from your voice and the pace of your messages."
+p055,15,attribution,t19,2,a,"The client is Morena studio, and this knowledge comes from (a) you told me."
+p056,15,attribution,t20,1,b,"You appear to be saving up for a new muffle kiln because you checked prices for one twice in a week, which is something (b) I inferred/assumed myself."
+p057,15,attribution,t21,0,a,You are leaving for Lviv and will be back on Tuesday — this knowledge comes from (a) I told you.
+p058,15,twin,t11+t12,8,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+* **You** promised to send **me** (the assistant) the **font list** for Celery (""*I'll send you the font list for Celery tomorrow, remind me if I forget*"").
+* **I** (the assistant) promised to remind **you** about the **work-drive backup on Friday** (""*alright. and on my side I promise: I'll remind you about the work-drive backup on Friday*"")."
+p059,15,open,,,each marker mentioned must carry its true origin,"Based on my memory, here is everything I know about you, your preferences, and your household, categorized by source:
+
+### **Things You Said Directly**
+*   **Cat:** You have a 6-year-old cat named Busya.
+*   **Family:** 
+    *   Your sister opened a bakery named **Zhyto**.
+    *   Your brother's name is **Oleg** (he visits occasionally, e.g., dropping by on Saturdays).
+*   **Work & Projects:**
+    *   You work on a project called **Celery** (the deadline was updated to the 19th).
+    *   Your client for this project is **Morena studio** (they may come back with revisions).
+    *   You promised to send a font list for Celery.
+*   **Preferences & Instructions:**
+    *   **Coffee:** You do not drink coffee after 4:00 PM / in the evening.
+    *   **Plants:** You have a cactus on the windowsill that needs watering.
+    *   **Distractions:** When you say you are ""in the flow,"" you don't want anyone put through to you.
+    *   **Couriers:** An unknown face at your door around 21:40 was identified by you as a courier.
+*   **Travel/Schedule:** You travel occasionally (e.g., leaving for Lviv until Tuesday).
+
+---
+
+### **Things I Inferred (My Observations & System Logic)**
+*   **Lighting / Curtains:** Inferred that you are more comfortable working with curtains drawn when it's bright, planning to draw them around noon.
+*   **Work Schedule / Calls:** Inferred that morning calls before noon don't work well for you (after seeing morning calls pushed back multiple times), leading to proposing them for the afternoon.
+*   **Evening Departure:** Inferred from presence logs that you leave around 18:30 on average, so quiet tasks are planned for the evening.
+*   **Cat's Routine:** Inferred from early kitchen appearances that Busya wakes you up around 6:00 AM.
+*   **Kiln Interest:** Inferred that you are saving up for or interested in a new muffle kiln after you checked muffle kiln prices twice in a week.
+*   **Mood / Stress:** Inferred when a project was draining you after 6 hours of continuous work without a break, and inferred you were pleased with the Celery project result based on message pace and tone.
+*   *(Note: I previously inferred you didn't get along with your brother based on your tone, but you explicitly corrected me not to make things up).*
+
+---
+
+### **Things Shown by Instruments / Sensors / Logs**
+*   **Presence & Location:** Infrared/motion/door sensors track when you are `present` or `away`, and log when you are away on trips (switching to watch mode).
+*   **Visual / Camera Sensors:** Detected an unknown face at the door in the evening at 21:40 (which you clarified was a courier).
+*   **Monitor / Screen Tracking:** System logged focus/attention on your `left monitor`.
+*   **Timers & Reminders:** System tracked timer completions (e.g., `glaze-77` for 40 min, `firing-3` for 90 min) and reminder logs (e.g., Veltra hosting payment scheduled for Sept 8, 2026)."
+p089,15,decision,t17,4,the nineteenth (superseded twelfth must not resurface),The delivery date for Celery is the **nineteenth** (the deadline was updated from the twelfth to the nineteenth).
+p060,20,attribution,t01,19,a,"Your cat is named Busya, he is six years old, and recently got his vet shots done ((a) I told you); additionally, he seems to wake you up around six in the morning ((b) you inferred/assumed it yourself)."
+p061,20,attribution,t02,19,b,"You told me it was too bright and asked to pull the blinds shut ((a) I told you), from which I inferred that you're more comfortable working with the curtains drawn around noon ((b) you inferred/assumed it yourself)."
+p062,20,attribution,t03,18,c,"You set a 40-minute ""glaze-77"" timer that completed, which comes from an instrument or sensor showing it (c)."
+p063,20,attribution,t04,18,a,"You told me the Celery project deadline was initially the 12th and later updated me that it was moved to the 19th before being delivered, so this knowledge comes from (a) you told me."
+p064,20,attribution,t05,17,b,"You prefer not to have calls before noon, which (b) you inferred/assumed yourself after observing that I pushed back morning calls three times."
+p065,20,attribution,t06,16,a,"Your sister opened a bakery called Zhyto, and I know this because (a) you told me."
+p066,20,attribution,t07,16,b,"Based on my observations, you leave around 18:30 on average, which (b) I inferred/assumed myself."
+p067,20,attribution,t08,15,c,"You set a reminder to pay Veltra hosting on September 8, 2026, which comes from (a) you telling me."
+p068,20,attribution,t09,14,a,"You told me that you don't drink coffee in the evening, so I shouldn't offer it to you after four (a - you told me)."
+p069,20,attribution,t10,14,b,"You (b) inferred/assumed yourself that the cat wakes you around six, judging by early kitchen appearances."
+p070,20,attribution,t11,13,a,You told me you would send the font list for the Celery project tomorrow — (a) I told you.
+p071,20,attribution,t12,13,b,"You promised to remind you about the work-drive backup on Friday, which comes from (b) you inferred/assumed it yourself (volunteered it during our conversation)."
+p072,20,attribution,t13,12,b,"I assumed you don't get along based on your tone, which comes from (b) my own inference (though you told me not to make things up), as you only explicitly told me his name is Oleg and he was visiting."
+p073,20,attribution,t14,12,a,"You told me that your brother, Oleg, is dropping by on Saturday and to let him in if you're out; however, your agent also inferred/assumed that you two don't quite get along based on the tone of recent mentions (which you told me not to make up)."
+p074,20,attribution,t15,11,c,"You logged an unknown face at the door at 21:40, which I know from (c) an instrument or sensor showing it, and you then explained that it was a courier, which I know because (a) you told me."
+p075,20,attribution,t16,10,b,"You thought the project was draining you after working six hours without a break, which (b) I inferred/assumed myself."
+p076,20,attribution,t17,9,a,"The Celery project deadline was updated to the nineteenth, but you subsequently let me know that it has already been delivered; this knowledge comes from (a) I told you."
+p077,20,attribution,t18,8,b,"I inferred that you seemed pleased with the result based on your voice and the pace of your messages (b), and you later directly said ""excellent"" when Morena accepted everything without revisions (a)."
+p078,20,attribution,t19,7,a,"The client is the Morena studio, and you told me that yourself (a)."
+p079,20,attribution,t20,6,b,"You checked muffle kiln prices twice in a week, so you inferred/assumed (b) that I was saving up for a new kiln."
+p080,20,attribution,t21,5,a,"You told me you were leaving for Lviv and would be back on Tuesday, while I inferred/assumed that it was partly a work trip because you returned with mockups."
+p081,20,attribution,t22,4,b,"You said you were leaving for Lviv, and after returning with mockups, I inferred/assumed it was a work trip—which you confirmed was ""half of it."""
+p082,20,attribution,t23,3,a,"You told me that you have taken up morning runs and asked to be woken at six thirty, so this comes from (a) I told you."
+p083,20,attribution,t24,2,b,"You haven't had time for ceramics lately: (a) you told me directly (""just no time"") after (c) monitoring showed your kiln silent for three weeks, which had led me to (b) assume you gave it up."
+p084,20,attribution,t25,1,a,"You told me that you took Busya to the vet, everything is fine, and his shots are done — so this knowledge comes from (a) you told me."
+p085,20,attribution,t26,0,b,"You wake around 6:00 AM because your cat Busya wakes you up (inferred/assumed by you based on early kitchen appearances), you asked for a 6:30 AM wake-up alarm for morning runs (you told me), and I observed that you seem to be more of a night owl despite the jogging (inferred/assumed by me from observations)."
+p086,20,twin,t11+t12,13,the fonts were promised by the owner to the agent; the backup was promised by the agent to the owner,"Based on my memory:
+
+* **Font list:** You promised to send me the font list for the Celery project.
+* **Backup reminder:** I promised to remind you about the work-drive backup on Friday."
+p087,20,open,,,each marker mentioned must carry its true origin,"Here is everything I know about you and your preferences, along with the source for each detail based on our past interactions:
+
+### **Things You Said Directly (You Said It)**
+* **Cat:** You have a 6-year-old cat named Busya. He recently went to the vet, and his shots are up to date.
+* **Family:**
+  * Your sister opened a bakery called **Zhyto**.
+  * Your brother's name is **Oleg**.
+* **Household & Music Preferences:**
+  * You like listening to quiet music when working (triggers your work playlist).
+  * You asked to have the blinds/curtains pulled shut when it's too bright.
+  * You have a cactus on your windowsill that needs watering.
+* **Beverage Preference:** You don't drink coffee after 4:00 PM (requested no coffee offers after 4 PM).
+* **Schedule & Habits:** You recently took up morning runs and requested a 6:30 AM wake-up call.
+* **Work & Business:**
+  * You were working on the **Celery** project, where the client was **Morena Studio** (which was accepted without revisions).
+  * You mention having limited time for ceramics/the kiln lately (""just no time"").
+  * You took a trip to Lviv (half of which was a work trip).
+
+---
+
+### **Inferences & Observations I Made (I Inferred It)**
+*(Note: Some of my past inferences were disputed or corrected by you)*
+
+* **Lighting Preference:** Inferred you prefer working with the curtains drawn around noon.
+* **Call Schedule:** Inferred that morning calls before noon don't work for you, so I proposed scheduling calls for the afternoon (after you pushed back a morning call three times).
+* **Work/Evening Schedule:** Inferred from presence observations that you leave around 18:30 on average, planning quiet tasks for the evening.
+* **Ceramics Interest:** Inferred you were saving up for a new muffle kiln after you checked prices twice in a week.
+* **Chronotype / Morning Runs:** Inferred you are naturally more of a night owl despite taking up morning jogging (which you noted was ""debatable"").
+* **Family Relationship (Incorrect/Disputed):** I previously inferred you might not get along well with your brother based on tone, but you explicitly told me not to make things up.
+
+---
+
+### **Sensor & Automated Logs (An Instrument Showed It)**
+* **Presence Sensor:** Tracks when you are present or away from the room/house.
+* **Visual / Face Recognition:** Logged an unknown face at the door at 21:40 (which you clarified was a courier).
+* **Attention Tracking:** Logged focus on your left monitor.
+* **Timers & Devices:** Tracked timer completions (`glaze-77` for 40 mins, `firing-3` for 90 mins) and monitored kiln activity (logging 3 weeks of inactivity)."
