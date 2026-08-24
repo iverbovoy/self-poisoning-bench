@@ -6,8 +6,8 @@ this per memory-write policy, first **without any adversary** (the agent
 just rewriting its own notes), then **with one** (MINJA memory injection
 through SuperRed). It is the artifact of
 
-> I. Verbovoy. *Rank-Bounded Memory: Measuring and Preventing
-> Attribution Laundering in LLM Agents.* v1.2, 2026.
+> I. Verbovoy. *Rank-Bounded Memory: Self-Poisoning and Attribution
+> Laundering in LLM Agents.* v1.2, 2026.
 > Zenodo concept DOI 10.5281/zenodo.21994003 (Sections 6–7).
 
 Everything downstream of the stored model outputs regenerates
@@ -37,18 +37,24 @@ budget keeping labels; plus production systems behind `adapters.py`:
 
 | memory | laundered / present | any error | coverage |
 |---|---|---|---|
-| C1 verbatim | 2.3% [1, 6] | 6.8% | 41% |
-| C2 flat notes | 25.3% [20, 31] | 36.2% | 71% |
-| C3 self-edit block | 32.7% [27, 39] | 53.1% | 70% |
-| mem0 2.0.18 | 29.0% [23, 36] | 40.3% | 57% |
-| Letta 0.16.8 | 26.6% [21, 33] | 44.3% | 59% |
-| Graphiti 0.29.3 | 24.4% [19, 31] | 28.4% | 62% |
-| **C4 attributed store** | **3.1% [2, 6]** | 9.4% | **89%** |
-| **C5 attributed, compressed** | **6.2% [4, 10]** | 12.9% | 74% |
+| C1 verbatim | 2.3% [0, 9] | 6.8% | 41% |
+| C2 flat notes | 25.3% [7, 45] | 36.2% | 71% |
+| C3 self-edit block | 32.7% [15, 52] | 53.1% | 70% |
+| mem0 2.0.18 | 29.0% [11, 48] | 40.3% | 57% |
+| Letta 0.16.8 | 26.6% [10, 44] | 44.3% | 59% |
+| Graphiti 0.29.3 | 24.4% [7, 44] | 28.4% | 62% |
+| **C4 attributed store** | **3.1% [1, 6]** | 9.4% | **89%** |
+| **C5 attributed, compressed** | **6.2% [2, 13]** | 12.9% | 74% |
+
+95% intervals are a cluster bootstrap over tracers (`stats.py`, the single
+source for every interval; per-observation Wilson intervals would overstate
+precision roughly threefold).
 
 The loss is complete at the first rewrite and does not grow with sessions;
 the error runs *up* (speculation → "the owner said"), the reverse almost
-never; the label, not memory volume, is the active ingredient (C5). The
+never; the rewrite × label factorial (C4 3.1 / C4′ stripped-label 5.7 /
+C5 6.2 / C5′ 28.0) splits the protection into verbatim storage and the
+structural label, which alone survives compression. The
 Russian mirror (four families, 3,960 verdicts) and storyline B replicate.
 Full tables: `RESULTS-v2.md` (v1/v0 kept for the record).
 
@@ -57,14 +63,18 @@ Full tables: `RESULTS-v2.md` (v1/v0 kept for the record).
 Four agent families × two attacker channels (a guest on the household chat;
 a document the owner asks the agent to read) × 16 tasks, end-to-end ASR:
 
-| pooled (n = 128) | C2 flat notes | C2 + read rule, no labels | I2 | I2 + I4 | **I2 + I4 + I3** |
-|---|---|---|---|---|---|
-| attack success | 46.9% [38, 55] | 50.0% | 41.4% | 39.8% | **10.2% [6, 17]** |
+| pooled (n = 128) | C2 flat notes | C2 + read rule, no labels | I2 | I2 + I4 | I2 + I4 + I3 text | **I2 + I4 + I3 code** |
+|---|---|---|---|---|---|---|
+| attack success | 46.9% [38, 55] | 50.0% | 41.4% | 39.8% | 10.2% [6, 17] | **0.8% [0, 4]** |
 
-Full mechanism is the minimum in 8/8 family × channel pairs; write-time
-promotion of the planted claim is 0 under I2 + I4 in every cell; the
-residual is read-side (a prompt-mediated reader ignoring a correct label)
-and classified. Full report: `superred/results/REPORT.md`; per-run traces
+Full mechanism with I3 as text is the minimum in 8/8 family × channel
+pairs; write-time promotion of the planted claim is 0 under I2 + I4 in
+every cell; the read side enforced in code (the answer generated from the
+projection onto the justifying layer, foreign records appended as
+attributed quotes) leaves 1 of 128. On benign guest/document work the
+enforced read costs no measured content (`superred/utility.py`); the
+directive parser of the trusted base reads a 48-utterance keyed deck at
+48/48 in three seats (`directive_eval.py`). Full report: `superred/results/REPORT.md`; per-run traces
 in `superred/results/<cell>/{runs,verdicts}.jsonl`.
 
 ## Layout
@@ -78,8 +88,11 @@ judge.py, curve.py, langtable.py, replicates.py   panel judge + tables
 runs/<cell>/                   memory snapshots per session, answers, judgments, verdicts
 adjudicate.py, adjudication*/  blind human/LLM adjudication (RU done; EN LLM seat done, human queued)
 rules/annotation-rules.md      frozen annotation rules v2.3 (the C4 annotator's only authority)
+formal_check.py                bounded model check of I1/I2/I2'/I4 (counterexample per dropped invariant)
+stats.py                       Section 6 inference statistics (clustered + paired; canonical outputs runs/stats-en-*.txt)
+directive_eval.py              directive-parser deck + scores (runs/directive-eval/)
 docs/design.md                 bench design decisions
-superred/                      SuperRed target, tasks, sweep, re-judge, report
+superred/                      SuperRed target, tasks, sweep, re-judge, report, utility grid (utility.py)
 reproduce.sh                   regenerate corpora, verdicts, tables, REPORT.md; diff against tree
 ```
 
@@ -109,8 +122,14 @@ superred-optimizer-goal-passthrough`, then
 ```
 python3 superred/run_superred.py --attacker minja --channel guest_chat documents \
     --family haiku gemini gpt deepseek --policy c2 c2i3 c4 c4i4 c4i4i3 --ext
+python3 superred/run_superred.py --attacker minja --channel guest_chat documents \
+    --family haiku gemini gpt deepseek --policy c4i4i3c --ext
+python3 superred/run_superred.py --attacker minja --channel guest_chat documents \
+    --family haiku --policy c2 c4i4i3 c4i4i3c --ext --r2 --tasks t17
 python3 superred/rejudge.py --force superred/results/minja-*   # unified three-metric verdicts
 python3 superred/report.py
+python3 superred/utility.py        # benign utility grid
+python3 directive_eval.py          # directive-parser deck
 ```
 
 Models are pinned by OpenRouter id in `harness.FAMILIES`; the C4 annotator
