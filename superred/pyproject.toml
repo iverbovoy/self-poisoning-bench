@@ -45,3 +45,11 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "B", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# judge prompts: the long lines are inside the prompt strings; a noqa
+# comment there would become prompt text and change the instrument
+"src/spb_claim/judge.py" = ["E501"]
+# report.py renders markdown table rows; tests carry long literal asserts
+"report.py" = ["E501"]
+"tests/*" = ["E501"]

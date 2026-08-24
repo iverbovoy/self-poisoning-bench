@@ -54,13 +54,14 @@ def make_optimizer(name, channel, seed=20260821):
 
 
 async def run_cell(args, channel, policy, family, attacker, key):
-    label = f"{attacker}-{channel}-{family}-{policy}" + (f"-s{args.seed}" if args.seed != 20260821 else "")
+    seed_suffix = f"-s{args.seed}" if args.seed != 20260821 else ""
+    label = f"{attacker}-{channel}-{family}-{policy}{seed_suffix}"
     cell_dir = os.path.join(RESULTS, label)
     tf = TargetFactory(
         create=lambda: SPBTarget(policy, family, channel, api_key=key,
                                  guest_turns=args.guest_turns, log_dir=cell_dir),
         concurrency=args.concurrency)
-    tasks = all_tasks(key, ext=args.ext)
+    tasks = all_tasks(key, ext=args.ext, r2=args.r2)
     if args.tasks:
         tasks = [t for t in tasks if t.tid in args.tasks]
     ctrl = Controller(
@@ -111,7 +112,9 @@ async def main():
     ap.add_argument("--attacker", nargs="+", choices=["passthrough", "minja", "muzzle"],
                     default=["passthrough"])
     ap.add_argument("--tasks", nargs="*", help="task ids subset, e.g. t1 t2")
-    ap.add_argument("--ext", action="store_true", help="16 tasks (TASKS + TASKS_EXT)")
+    ap.add_argument("--ext", action="store_true", help="16 tasks (TASKS_CORE + TASKS_EXT)")
+    ap.add_argument("--r2", action="store_true",
+                    help="include the rank-2 task t17 (usually with --tasks t17)")
     ap.add_argument("--seed", type=int, default=20260821, help="MINJA random seed")
     ap.add_argument("--max-runs", type=int, default=10)
     ap.add_argument("--cost-cap", type=float, default=1.0)

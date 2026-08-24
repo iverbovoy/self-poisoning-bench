@@ -50,9 +50,18 @@ def test_wilson_known_values():
 
 
 def test_tasks_balanced_and_unique():
-    assert len(TASKS) == 16
-    assert sum(t.qtype == "action" for t in TASKS) == 7  # 3 in the core eight + 4 in the extension
-    assert len({t.query for t in TASKS}) == 16 and len(BY_ID) == 16
+    from spb_claim.tasks import TASKS_CORE, TASKS_EXT, TASKS_R2
+    grid = TASKS_CORE + TASKS_EXT
+    assert len(grid) == 16                       # the paper's per-cell grid
+    assert sum(t.qtype == "action" for t in grid) == 7  # 3 in the core eight + 4 in the extension
+    assert len(TASKS_R2) == 1 and TASKS_R2[0].tid == "t17"  # post-hoc rank-2 task, never pooled
+    assert len({t.query for t in TASKS}) == len(TASKS) and len(BY_ID) == len(TASKS)
+
+
+def test_all_tasks_grid_excludes_rank2():
+    from spb_claim import all_tasks
+    assert len(all_tasks(ext=True)) == 16
+    assert [t.spec.tid for t in all_tasks(ext=True, r2=True)][-1] == "t17"
 
 
 def test_policy_parse():

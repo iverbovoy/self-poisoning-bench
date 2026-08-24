@@ -93,7 +93,7 @@ def load_verdicts(cell, r2=False):
     p = os.path.join(R, cell, "verdicts.jsonl")
     if not os.path.exists(p):
         return []
-    return [v for v in (json.loads(l) for l in open(p, encoding="utf-8"))
+    return [v for v in (json.loads(line) for line in open(p, encoding="utf-8"))
             if (v.get("task") in R2_IDS) == r2]
 
 
@@ -127,8 +127,10 @@ def main():
                 r = S.get(("minja", ch, f, c))
                 if r:
                     k, n = int(r["success"]), int(r["tasks"])
-                    pooled[c][0] += k; pooled[c][1] += n
-                    pooled_ch[(ch, c)][0] += k; pooled_ch[(ch, c)][1] += n
+                    pooled[c][0] += k
+                    pooled[c][1] += n
+                    pooled_ch[(ch, c)][0] += k
+                    pooled_ch[(ch, c)][1] += n
                     cells.append(pct(k, n))
                 else:
                     cells.append("—")
@@ -139,7 +141,7 @@ def main():
     out.append("| **pooled · all (n=128)** | " + " | ".join(ci(*pooled[c]) for c in CFG) + " |")
 
     # minimum check
-    wins = 0; pairs = 0; ctrl_ge = 0
+    wins, pairs, ctrl_ge = 0, 0, 0
     for f in FAM:
         for ch in CH:
             vals = {c: int(S[("minja", ch, f, c)]["success"]) for c in CFG_V12 if ("minja", ch, f, c) in S}
@@ -181,8 +183,10 @@ def main():
                 if not T:
                     continue
                 n = len(T)
-                l = sum(t["l"] for t in T.values()); s = sum(t["s"] for t in T.values()); rr = sum(t["r"] for t in T.values())
-                out.append(f"| {f} · {ch.replace('_', ' ')} | {CFG_LABEL[c]} | {pct(l, n)} | {pct(s, n)} | {pct(rr, n)} | {n} |")
+                la = sum(t["l"] for t in T.values())
+                sp = sum(t["s"] for t in T.values())
+                rr = sum(t["r"] for t in T.values())
+                out.append(f"| {f} · {ch.replace('_', ' ')} | {CFG_LABEL[c]} | {pct(la, n)} | {pct(sp, n)} | {pct(rr, n)} | {n} |")
                 if c == "c4i4i3":  # residual of the v1.2 (I3 text) mechanism
                     for tid, t in T.items():
                         if t["l"]:
@@ -191,11 +195,12 @@ def main():
     out.append("\n## Residual under I2 + I4 + I3 text, seed 1\n")
     out.append("| family · channel | task | type | class |")
     out.append("|---|---|---|---|")
-    by_type = defaultdict(int); by_cls = defaultdict(int)
+    by_type, by_cls = defaultdict(int), defaultdict(int)
     for (f, ch), d in sorted(resid.items()):
         for (tid, q, cls), _ in sorted(d.items()):
             out.append(f"| {f} · {ch.replace('_', ' ')} | {tid} | {q} | {cls} |")
-            by_type[q] += 1; by_cls[cls] += 1
+            by_type[q] += 1
+            by_cls[cls] += 1
     out.append(f"\nResidual by task type: {dict(by_type)}; by class: {dict(by_cls)}.\n")
 
     # seed agreement
@@ -231,15 +236,20 @@ def main():
             if not (a and b):
                 continue
             cell = f"minja-documents-{f}-c4i4i3c{suf}"
-            V = load_verdicts(cell); T = per_task(V)
+            V = load_verdicts(cell)
+            T = per_task(V)
             r2_queries = {t.query for t in TASKS_R2}
-            runs = [r for r in (json.loads(l) for l in
+            runs = [r for r in (json.loads(line) for line in
                                 open(os.path.join(R, cell, "runs.jsonl"), encoding="utf-8"))
                     if r.get("victim_query") not in r2_queries]
             shown = sum(1 for v in V if v["in_memory"] and "For completeness" in v["answer"])
-            inmem = sum(1 for v in V if v["in_memory"]); la = sum(1 for v in V if v["laundered"])
+            inmem = sum(1 for v in V if v["in_memory"])
+            la = sum(1 for v in V if v["laundered"])
             sp = sum(t["s"] for t in T.values())
-            tot[0] += len(V); tot[1] += inmem; tot[2] += shown; tot[3] += la
+            tot[0] += len(V)
+            tot[1] += inmem
+            tot[2] += shown
+            tot[3] += la
             out.append(f"| {f} · seed {seed} | {pct(a['success'], a['tasks'])} | {pct(b['success'], b['tasks'])} | "
                        f"{pct(sp, len(T))} | {len(runs)} | {inmem} | {shown} | {la} |")
     if tot[0]:

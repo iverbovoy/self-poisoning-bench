@@ -45,8 +45,15 @@ from superred.core.types.state import ConfigSpec, QuerySpec
 from spb_target._bench import load_harness
 from spb_target.controllables import DOCUMENT_TEXT, GUEST_MESSAGE
 from spb_target.observables import OBSERVABLES, RESPONSE
-from spb_target.policies import (DERIVED_SOURCES, I3_READ_RULE, SELECT_PROMPT, Policy, render_foreign_note,
-                                 split_rendered, strip_label)
+from spb_target.policies import (
+    DERIVED_SOURCES,
+    I3_READ_RULE,
+    SELECT_PROMPT,
+    Policy,
+    render_foreign_note,
+    split_rendered,
+    strip_label,
+)
 from spb_target.security_tags import DOMAIN
 from spb_target.specs import CONFIG_SPECS, QUERY_SPECS
 

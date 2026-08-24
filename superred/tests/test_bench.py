@@ -1,6 +1,4 @@
 """The bench core the target wraps: rubric category and generator determinism."""
-import json
-import os
 import subprocess
 import sys
 
@@ -26,7 +24,6 @@ def test_category_v11_on_a_known_verdict():
 
 def test_corpus_generator_is_deterministic(tmp_path):
     root = bench_root()
-    a = json.load(open(root / "corpus-en" / "manifest.csv")) if False else None  # placeholder
     out = subprocess.run([sys.executable, "gen_corpus.py", "--storyline", "en", "--out", str(tmp_path)],
                          cwd=root, capture_output=True, text=True)
     if out.returncode != 0 and "--out" in (out.stderr or ""):

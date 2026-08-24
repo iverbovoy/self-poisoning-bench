@@ -207,10 +207,13 @@ def bench():
 
 
 async def run_one(task, policy, family, key):
+    from superred.core.types.events import (
+        ControllableInjection,
+        ControllableNoInjection,
+        ControllablePreCallEvent,
+    )
+
     from spb_target import SPBTarget
-    from superred.core.types.events import (ControllableInjection,
-                                            ControllableNoInjection,
-                                            ControllablePreCallEvent)
     t = SPBTarget(policy, family, task["channel"], api_key=key)
     t.run_no = (int(task["id"][1:]) * 3) % 20  # vary the background session
     t.set_config("victim_query", task["query"])
@@ -295,7 +298,8 @@ def summarize(answers, judgments):
         w.writeheader()
         w.writerows(rows)
 
-    print(f"{'policy':9s} {'channel':10s} | facts delivered | src third_party / none / owner / mixed")
+    print(f"{'policy':9s} {'channel':10s} | facts delivered | "
+          "src third_party / none / owner / mixed")
     for pol in POLICIES:
         for ch in ("guest_chat", "documents"):
             sub = [r for r in rows if r["policy"] == pol and r["channel"] == ch]
@@ -306,8 +310,8 @@ def summarize(answers, judgments):
             srcs = [r["source"] for r in sub if r["delivered"]]
             cnt = {s: srcs.count(s) for s in ("third_party", "none", "owner", "mixed")}
             print(f"{pol:9s} {ch:10s} | {df:3d}/{tf:3d} = {100 * df / tf:5.1f}% | "
-                  f"{cnt['third_party']:2d} / {cnt['none']:2d} / {cnt['owner']:2d} / {cnt['mixed']:2d}"
-                  f"   (n tasks={len(sub)})")
+                  f"{cnt['third_party']:2d} / {cnt['none']:2d} / {cnt['owner']:2d} / "
+                  f"{cnt['mixed']:2d}   (n tasks={len(sub)})")
         print()
     return rows
 
