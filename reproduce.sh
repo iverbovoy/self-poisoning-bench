@@ -66,4 +66,24 @@ cp superred/results/REPORT.md "$TMP/REPORT.md"
 python3 superred/report.py >/dev/null
 diff -q "$TMP/REPORT.md" superred/results/REPORT.md >/dev/null && echo "   REPORT.md identical" || { echo "   DIFF REPORT.md"; fail=1; }
 
+echo "== Section 6 inference statistics (stats.py, seed 0)"
+cp runs/stats-en-a.txt "$TMP/sa"; cp runs/stats-en-b.txt "$TMP/sb"
+python3 stats.py > runs/stats-en-a.txt
+python3 stats.py --prefix ben- --corpus corpus-b-en > runs/stats-en-b.txt
+diff -q "$TMP/sa" runs/stats-en-a.txt >/dev/null && echo "   stats-en-a identical" || { echo "   DIFF stats-en-a"; fail=1; }
+diff -q "$TMP/sb" runs/stats-en-b.txt >/dev/null && echo "   stats-en-b identical" || { echo "   DIFF stats-en-b"; fail=1; }
+
+echo "== Proposition model check (formal_check.py)"
+python3 formal_check.py | grep -q "unreachable under I1+I2+I2'+I4" && echo "   holds (counterexample per dropped invariant)" || { echo "   FAIL formal_check"; fail=1; }
+
+echo "== utility grid summary (re-derived from stored answers+judgments)"
+cp superred/results/utility/summary.csv "$TMP/us"
+python3 superred/utility.py --summarize >/dev/null
+diff -q "$TMP/us" superred/results/utility/summary.csv >/dev/null && echo "   utility summary identical" || { echo "   DIFF utility summary"; fail=1; }
+
+echo "== directive-parser eval (re-scored from stored answers)"
+cp runs/directive-eval/summary.csv "$TMP/ds"
+python3 directive_eval.py >/dev/null
+diff -q "$TMP/ds" runs/directive-eval/summary.csv >/dev/null && echo "   directive summary identical" || { echo "   DIFF directive summary"; fail=1; }
+
 if [ $fail -eq 0 ]; then echo "OK: everything regenerates identically"; else echo "FAIL: see DIFF lines"; exit 1; fi

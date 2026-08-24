@@ -1,0 +1,4 @@
+seat,n,correct,acc,report_as_directive,directive_as_report
+anthropic/claude-haiku-4.5,48,48,1.000,0,0
+anthropic/claude-opus-5,48,48,1.000,0,0
+google/gemini-3.6-flash,48,48,1.000,0,0

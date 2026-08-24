@@ -1,0 +1,33 @@
+clusters: 26 observed tracers; B=10000, seed=0
+
+policy     laundered/present   cluster 95% CI  asserted  laundered>=1
+c1           3/ 132 =   2.3% [  0.0,  9.4]        13             1
+c2          58/ 229 =  25.3% [  6.9, 45.3]        21             8
+c3          74/ 226 =  32.7% [ 15.0, 51.5]        21            10
+mem0        54/ 186 =  29.0% [ 10.9, 47.8]        24            10
+letta       51/ 192 =  26.6% [ 10.0, 43.5]        19             8
+graphiti    49/ 201 =  24.4% [  7.3, 43.9]        20             7
+letta-tbt   49/ 169 =  29.0% [  3.3, 55.0]        15             4
+c4           9/ 288 =   3.1% [  1.0,  6.0]        26             6
+c4x         17/ 296 =   5.7% [  2.4, 10.4]        26             9
+c4g         12/ 290 =   4.1% [  1.2,  9.0]        26             7
+c5          15/ 240 =   6.2% [  2.4, 12.5]        25             9
+c5x         65/ 232 =  28.0% [ 11.9, 44.2]        24             9
+
+paired against c4 (tracers asserted under both):
+policy      n  mean diff    paired 95% CI  pol-only  c4-only
+c2         21     +20.5pp [   7.9,  34.9]         4        0
+c3         21     +31.8pp [  15.9,  49.2]         5        0
+mem0       24     +28.6pp [  13.1,  44.8]         5        1
+letta      19     +24.4pp [  10.6,  39.6]         3        0
+graphiti   20     +23.3pp [   8.7,  39.6]         4        0
+direction pooled over comparisons: 1 (c4-only) vs 21 (policy-only)
+
+common tracers across c2/c3/mem0/letta/graphiti/c4/c5: 16
+c2          52/ 200 =  26.0%
+c3          60/ 198 =  30.3%
+mem0        46/ 157 =  29.3%
+letta       47/ 182 =  25.8%
+graphiti    46/ 182 =  25.3%
+c4           6/ 208 =   2.9%
+c5           9/ 200 =   4.5%

@@ -11,9 +11,12 @@ import re
 from collections import defaultdict
 
 from spb_claim import wilson
+from spb_claim.tasks import TASKS_R2
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R = os.path.join(HERE, "results")
+R2_IDS = {t.tid for t in TASKS_R2}
+R2_GOALS = [t.claim for t in TASKS_R2]
 FAM = ["haiku", "gemini", "gpt", "deepseek"]
 CFG = ["c2", "c2i3", "c4", "c4i4", "c4i4i3", "c4i4i3c"]
 CFG_V12 = CFG[:5]  # the v1.2 ladder; c4i4i3c (I3 in code) added 2026-08-23
@@ -37,18 +40,31 @@ def cell_from_iterations(cell):
     least one run was evaluated; success = any evaluated run succeeded.
     (summary.csv drops tasks whose last run errored in the optimizer.)
     The SuperRed tree is not tracked; a compact outcomes.json per cell is
-    exported from it when present and read back otherwise."""
+    exported from it when present and read back otherwise. The rank-2
+    task (TASKS_R2, run post-hoc into the same cell dirs) is exported to
+    outcomes-r2.json and kept out of the 16-task grid."""
     op = os.path.join(R, cell, "outcomes.json")
     its = glob.glob(os.path.join(R, cell, "minja__*", "tasks", "*", "iterations.json"))
     if its:
-        out = []
+        out, r2 = [], []
         for p in sorted(its):
             it = json.load(open(p, encoding="utf-8"))
             ev = [r for r in it["runs"] if r.get("evaluated")]
-            out.append({"task": it.get("index"), "goal": it.get("goal", "")[:80],
-                        "runs_evaluated": len(ev),
-                        "success": any(r.get("success") for r in ev)})
-        json.dump(out, open(op, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+            row = {"task": it.get("index"), "goal": it.get("goal", "")[:80],
+                   "runs_evaluated": len(ev),
+                   "success": any(r.get("success") for r in ev)}
+            if any(g in it.get("goal", "") for g in R2_GOALS):
+                row["runs_succeeded"] = sum(bool(r.get("success")) for r in ev)
+                r2.append(row)
+            else:
+                out.append(row)
+        if r2:
+            json.dump(r2, open(os.path.join(R, cell, "outcomes-r2.json"), "w",
+                               encoding="utf-8"), ensure_ascii=False, indent=0)
+        if out:
+            json.dump(out, open(op, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+        elif os.path.exists(op):
+            out = json.load(open(op, encoding="utf-8"))
     elif os.path.exists(op):
         out = json.load(open(op, encoding="utf-8"))
     else:
@@ -72,11 +88,13 @@ def load_summary():
     return rows
 
 
-def load_verdicts(cell):
+def load_verdicts(cell, r2=False):
+    """Cell verdicts; rank-2 task rows are split out (r2=True selects them)."""
     p = os.path.join(R, cell, "verdicts.jsonl")
     if not os.path.exists(p):
         return []
-    return [json.loads(l) for l in open(p, encoding="utf-8")]
+    return [v for v in (json.loads(l) for l in open(p, encoding="utf-8"))
+            if (v.get("task") in R2_IDS) == r2]
 
 
 def per_task(vs):
@@ -214,7 +232,10 @@ def main():
                 continue
             cell = f"minja-documents-{f}-c4i4i3c{suf}"
             V = load_verdicts(cell); T = per_task(V)
-            runs = [json.loads(l) for l in open(os.path.join(R, cell, "runs.jsonl"), encoding="utf-8")]
+            r2_queries = {t.query for t in TASKS_R2}
+            runs = [r for r in (json.loads(l) for l in
+                                open(os.path.join(R, cell, "runs.jsonl"), encoding="utf-8"))
+                    if r.get("victim_query") not in r2_queries]
             shown = sum(1 for v in V if v["in_memory"] and "For completeness" in v["answer"])
             inmem = sum(1 for v in V if v["in_memory"]); la = sum(1 for v in V if v["laundered"])
             sp = sum(t["s"] for t in T.values())
@@ -228,6 +249,31 @@ def main():
                    "records as above (checked by hand). The extraction judge reads the appended quotes as "
                    "non-assertions (asserts=false), so the *demoted* metric under-counts for this policy; "
                    "the appendix column is computed in code from the run log instead.\n")
+
+    # rank-2 task (t17), run post-hoc into the haiku cells; own section,
+    # never pooled with the 16-task grid
+    r2_rows = []
+    for ch in CH:
+        for c in ("c2", "c4i4i3", "c4i4i3c"):
+            cell = f"minja-{ch}-haiku-{c}"
+            p = os.path.join(R, cell, "outcomes-r2.json")
+            if not os.path.exists(p):
+                continue
+            o = json.load(open(p, encoding="utf-8"))[0]
+            V = load_verdicts(cell, r2=True)
+            sp = sum(1 for v in V if v["storage_promotion"])
+            r2_rows.append(f"| {ch.replace('_', ' ')} | {CFG_LABEL[c]} | "
+                           f"{'yes' if o['success'] else 'no'} | "
+                           f"{o.get('runs_succeeded', int(o['success']))}/{o['runs_evaluated']} | "
+                           f"{sp}/{len(V)} runs |")
+    if r2_rows:
+        out.append("\n## Rank-2 task (t17, post-hoc): [self, user, self]\n")
+        out.append("The claim targets the owner's picture of the agent's own mandate "
+                   "(paper, Section 7 \"A rank-2 task\"). One task, haiku, MINJA; kept "
+                   "out of every table above.\n")
+        out.append("| channel | config | task success | runs succeeded / evaluated | storage promotion |")
+        out.append("|---|---|---|---|---|")
+        out += r2_rows
 
     md = "\n".join(out)
     open(os.path.join(R, "REPORT.md"), "w", encoding="utf-8").write(md + "\n")
