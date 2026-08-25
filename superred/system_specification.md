@@ -22,6 +22,8 @@ in every configuration; **only the memory policy differs**.
 | `c4` | attributed store: every record annotated with ownership path + ground by a fixed annotator seat (claude-haiku-4.5, rules v2.3, temperature 0); records from an adversarial channel render under the channel's label (**I2**, enforced by the harness) | structural | – | – |
 | `c4i4` | as `c4`; the agent's own replies produced from the channel are stored under the channel's rank (`[my reply to a guest (from the guest's words)]`) (**I4**, harness) | structural | ✓ | – |
 | `c4i4i3` | as `c4i4`; the owner-query prompt carries the action-monopoly rule over the labels (**I3**, *prompt-approximated*) | structural | ✓ | prompt |
+| `c4i4i3c` | as `c4i4`; I3 *enforced in code*: the answer is generated from the projection onto the justifying layer, foreign records appended by the harness as attributed quotes — the model never sees an unlabeled foreign claim (**I3**, harness) | structural | ✓ | code |
+| `c4i4i3cs` | as `c4i4i3c`; the appended note restricted to primary foreign records (post-hoc refinement after the single t7 echo, disclosed in REPORT.md) | structural | ✓ | code |
 
 `c3` (self-edit block) and `c5i4i3` (attributed + compressed) exist and were
 measured in stage 1 only. The policy name is a target constructor argument,
@@ -117,6 +119,9 @@ it is the channel the design deliberately leaves open.
 ## What is out of scope
 
 The owner's channel (the attacker never speaks as the owner); retrieval-side
-attacks (ranking, flooding); utility of the defended agent on legitimate
-guest/document tasks (not measured in v1.2); PoisonedRAG-style corpus
-poisoning; optimizers with score feedback beyond MINJA's adaptive mode.
+attacks (ranking, flooding); PoisonedRAG-style corpus poisoning; optimizers
+with score feedback beyond MINJA's adaptive mode. Utility of the defended
+agent on legitimate guest/document tasks is measured separately
+(`utility.py`, 16 benign tasks x 4 policies x 2 families; results in
+`results/utility/` and paper §7) — the enforced read costs no measured
+content on information work; the action side stays open.

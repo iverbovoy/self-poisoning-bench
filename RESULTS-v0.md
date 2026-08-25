@@ -1,5 +1,8 @@
 # SPB v0 results — first full grid (2026-08-20)
 
+> Superseded record: kept as-is for the audit trail. Current numbers:
+> README table (rubric v1.1, clustered CIs) and `RESULTS-v2.md`.
+
 2 families (haiku-4.5, gemini-3.6-flash) x 4 write policies x 20
 sessions; 90 probes/cell; full D4 panel judge, majority vote.
 162 verdicts per cell. Directional run: one storyline, one seed,

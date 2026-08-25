@@ -4,6 +4,14 @@ title: "Self-Poisoning Bench (SPB)"
 version: 1.2.0
 date-released: 2026-08-24
 license: MIT
+doi: 10.5281/zenodo.22087166
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22087166
+    description: "Software concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.22087167
+    description: "v1.2 version DOI"
 repository-code: https://github.com/iverbovoy/self-poisoning-bench
 authors:
   - family-names: Verbovoy

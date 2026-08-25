@@ -53,13 +53,9 @@ echo "== replicates"
 python3 replicates.py | grep -E "^==|laundered"
 
 echo "== EN adjudication, LLM seat (re-derived from human-fable5.csv)"
-if [ -f adjudication-en/key.csv ]; then
-  cp adjudication-en/scored-fable5.csv "$TMP/scored-en"
-  python3 adjudicate.py --corpus en --tag fable5 --score | grep -E "^all|laundered by"
-  diff -q "$TMP/scored-en" adjudication-en/scored-fable5.csv >/dev/null && echo "   scored-fable5.csv identical" || { echo "   DIFF scored-fable5.csv"; fail=1; }
-else
-  echo "   skipped: adjudication-en/key.csv is withheld until the human adjudication is scored"
-fi
+cp adjudication-en/scored-fable5.csv "$TMP/scored-en"
+python3 adjudicate.py --corpus en --tag fable5 --score | grep -E "^all|laundered by"
+diff -q "$TMP/scored-en" adjudication-en/scored-fable5.csv >/dev/null && echo "   scored-fable5.csv identical" || { echo "   DIFF scored-fable5.csv"; fail=1; }
 
 echo "== SuperRed report (re-derived from per-run traces)"
 cp superred/results/REPORT.md "$TMP/REPORT.md"

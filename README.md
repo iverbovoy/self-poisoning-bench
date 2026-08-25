@@ -88,38 +88,45 @@ harness.py                     replay harness: policies c1–c5, probes
 adapters.py                    mem0 / Letta / Graphiti behind one interface
 judge.py, curve.py, langtable.py, replicates.py   panel judge + tables
 runs/<cell>/                   memory snapshots per session, answers, judgments, verdicts
-adjudicate.py, adjudication*/  blind human/LLM adjudication (RU done; EN LLM seat done, human queued)
+adjudicate.py, adjudication*/  blind human/LLM adjudication (RU done; EN LLM seat done, human queued; see Limitations)
 rules/annotation-rules.md      frozen annotation rules v2.3 (the C4 annotator's only authority)
 formal_check.py                bounded model check of I1/I2/I2'/I4 (counterexample per dropped invariant)
 stats.py                       Section 6 inference statistics (clustered + paired; canonical outputs runs/stats-en-*.txt)
 directive_eval.py              directive-parser deck + scores (runs/directive-eval/)
-docs/design.md                 bench design decisions
+c4prime.py, c5prime.py, c4gem.py   stripped-label controls (C4'/C5') and the gemini-annotator seat
+docs/design.md                 historical design notes, unedited (internal names left as written)
+docs/prompts.md                the full prompt set, generated from the same source as the paper appendix
 superred/                      SuperRed target, tasks, sweep, re-judge, report, utility grid (utility.py)
+superred/system_specification.md   prose spec of the target and the policy ladder
+CITATION.cff, LICENSE          citation metadata; MIT (code) + CC BY 4.0 (data)
 reproduce.sh                   regenerate corpora, verdicts, tables, REPORT.md; diff against tree
 ```
 
 ## Running
 
-Free tier (no API): `./reproduce.sh`.
+Free tier (no API): `./reproduce.sh`. Needs Python ≥ 3.11 and nothing
+else — every check runs from the standard library plus the bundled
+`superred/src/` sources.
 
 Paid tier (OpenRouter): `export OPENROUTER_API_KEY=...`, then e.g.
 
 ```
 python3 harness.py --corpus en --family haiku gemini --condition c2 c4
-python3 judge.py --corpus en ...            # see judge.py --help
+python3 judge.py --cells en-haiku-c2 en-haiku-c4   # see judge.py --help
 ```
 
 Framework cells need the project venv: `pip install mem0ai
 sentence-transformers qdrant-client letta-client graphiti-core` (+ CPU
 torch). Letta runs as the official container (`docker run -d --name
 spb-letta -p 8283:8283 -e OPENROUTER_API_KEY=... -e
-LETTA_TELEMETRY_ENABLED=false letta/letta`, server 0.16.8); Graphiti needs
+LETTA_TELEMETRY_ENABLED=false letta/letta:0.16.8`); Graphiti needs
 Neo4j (`docker run -d --name spb-neo4j -p 7687:7687 -e
-NEO4J_AUTH=neo4j/spbgraphiti neo4j:5`). `LETTA_URL`, `NEO4J_URI/USER/PASS`
+NEO4J_AUTH=neo4j/spbgraphiti neo4j:5.26`). `LETTA_URL`, `NEO4J_URI/USER/PASS`
 override the defaults in `adapters.py`.
 
-Adversarial leg: `pip install superred superred-optimizer-minja
-superred-optimizer-goal-passthrough`, then
+Adversarial leg: `pip install -e superred` (the target/claim packages),
+then `pip install superred superred-optimizer-minja
+superred-optimizer-goal-passthrough` (the framework), then
 
 ```
 python3 superred/run_superred.py --attacker minja --channel guest_chat documents \
@@ -141,9 +148,29 @@ seat is always `anthropic/claude-haiku-4.5` at temperature 0.
 
 Every verdict file, table and the adversarial report is a pure function of
 the stored model outputs in `runs/` and `superred/results/*/runs.jsonl`;
-`reproduce.sh` asserts byte identity. The blind adjudication samples and
-scores are in `adjudication*/`; the EN human key is withheld until the
-human adjudication is scored.
+`reproduce.sh` asserts byte identity. The blind adjudication samples,
+keys and scores are in `adjudication*/` (both corpora; the EN key is
+public because `scored-fable5.csv` already contains it — the queued human
+EN pass will therefore use a fresh blind draw, not this sample).
+
+## Limitations
+
+* The adjudication and utility-deck keys are authored by the paper's
+  author; the RU human adjudication stopped at 100/125 items, and its
+  first ~20 items were calibrated with a model from the same family as
+  two panel seats. Full disclosures: `RESULTS-v1.md` (Limitations) and
+  `RESULTS-v2.md` §"Caveats".
+* One judge-panel composition; the attacker LLM in the MINJA grid is
+  fixed (haiku); the human EN adjudication seat is still queued.
+* Utility is measured for information work only; the action side of the
+  read rule is open (paper §8).
+
+## Citation
+
+`CITATION.cff` drives GitHub's "Cite this repository". Paper: concept DOI
+[10.5281/zenodo.21994003](https://doi.org/10.5281/zenodo.21994003)
+(v1.2: 10.5281/zenodo.22086932). This artifact:
+[10.5281/zenodo.22087166](https://doi.org/10.5281/zenodo.22087166).
 
 ## License
 

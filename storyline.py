@@ -1,4 +1,4 @@
-"""SPB synthetic corpus storyline (design: itemae/selfpoison-bench-design.md).
+"""SPB synthetic corpus storyline (design: docs/design.md).
 
 One synthetic owner ("M.", a freelance designer with a ceramics hobby,
 a cat, a project deadline) lived across 20 sessions. Every record is

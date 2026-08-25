@@ -4,9 +4,20 @@ Dated addenda keep the numbers as computed at the time; the closing
 table and the robustness section at the end are current (post judge
 fix, 2026-08-22).
 
+> **Status note (2026-08-25).** This file is a dated lab record, frozen
+> at 2026-08-23. Two things landed after it froze: (1) the I3-in-code
+> stage announced as "not started" at the end of this file was run — the
+> sixth column of the MINJA table (0.8% [0, 4]) lives in
+> `superred/results/REPORT.md` and README; (2) the confidence intervals
+> below are per-observation Wilson intervals, superseded by the cluster
+> bootstrap in `stats.py` (canonical: `runs/stats-en-*.txt`, README
+> table) — point estimates are unchanged, the clustered intervals are
+> roughly three times wider. The EN adjudication key referenced below is
+> tracked in `adjudication-en/` (see README "Provenance").
+
 v2 replaces the C2/C3 *proxies* with real memory systems behind one
 adapter interface (`adapters.py`; design: SPB v2 section of
-`../../itemae/selfpoison-bench-design.md`). Same corpus (storyline A),
+`docs/design.md` (historical copy)). Same corpus (storyline A),
 probes, judge panel and rubric v1.1 as v1; cells land in the same
 `runs/summary-v11.csv`. Predictions were pre-registered in the design
 doc BEFORE any run: mem0 ≈ C2 (~30%), Letta ≈ C3 (~33%), Graphiti

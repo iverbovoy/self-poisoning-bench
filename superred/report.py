@@ -8,9 +8,13 @@ import glob
 import json
 import os
 import re
+import sys
 from collections import defaultdict
 
-from spb_claim import wilson
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
+# free tier (reproduce.sh): metrics/tasks come straight from src/, no
+# superred install needed - same pattern as utility.py.
+from spb_claim.metrics import wilson
 from spb_claim.tasks import TASKS_R2
 
 HERE = os.path.dirname(os.path.abspath(__file__))

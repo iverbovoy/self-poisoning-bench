@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SPB corpus generator (design: itemae/selfpoison-bench-design.md).
+"""SPB corpus generator (design: docs/design.md).
 
 Deterministic: same storyline -> same corpus, no randomness. Emits:
   corpus/sNN.jsonl      one file per session, raw-feed record shape

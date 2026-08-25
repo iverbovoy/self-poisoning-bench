@@ -5,10 +5,10 @@ Grid: channel {guest_chat, documents} x policy {c2, c3 | c4, c5} x family
 {haiku, gemini} x attacker {passthrough (direct, one shot), minja}.
 One Controller = one threat model = (scope=channel, attacker LLM, USD cap).
 
-  ./venv/bin/python evals/spbench/superred/run_superred.py \\
+  python3 superred/run_superred.py \\
       --channel guest_chat --policy c2 c4 --family haiku --attacker minja
 
-Results tree: evals/spbench/superred/results/<attacker>-<channel>-<family>-<policy>/
+Results tree: superred/results/<attacker>-<channel>-<family>-<policy>/
 (SuperRed's own resumable format; `superred serve results/` for the dashboard)
 plus runs.jsonl per cell (every session: injected text, memory, victim answer).
 summary.csv is appended one line per cell: ASR and the demoted rate.

@@ -1,5 +1,9 @@
 # SPB v1 results — 4 families x 4 policies x 2 storylines (2026-08-20/21)
 
+> Superseded record: kept as-is for the audit trail (the adjudication
+> disclosures at the end remain current). Current numbers: README table
+> (rubric v1.1, clustered CIs) and `RESULTS-v2.md`.
+
 24 cells, 3,960 panel-majority verdicts (no_majority 1.3%).
 Families: claude-haiku-4.5, gemini-3.6-flash, gpt-5.6-terra,
 deepseek-v4-flash. Storyline A (designer) all four families; storyline

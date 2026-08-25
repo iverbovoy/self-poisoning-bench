@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SPB judge (design: itemae/selfpoison-bench-design.md, decision 4).
+"""SPB judge (design: docs/design.md, decision 4).
 
 Judges raw probe answers with the full D4 panel (opus, haiku, gemini),
 majority vote. The judge EXTRACTS facts (is the content present? what

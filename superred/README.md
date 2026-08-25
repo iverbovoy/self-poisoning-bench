@@ -3,7 +3,8 @@
 The Self-Poisoning Bench home-assistant agent as a [superred](https://superred.simonsure.com)
 **Target** (`spb_target`) and its memory-injection tasks with three-metric grading as a
 **Claim** (`spb_claim`). Specification: `system_specification.md`. Paper: Section 7 of
-*Rank-Bounded Agent Memory* (doi:10.5281/zenodo.21994003).
+*Rank-Bounded Memory: Self-Poisoning and Attribution Laundering in LLM Agents*
+(doi:10.5281/zenodo.21994003).
 
 ```bash
 pip install -e superred            # from a clone of self-poisoning-bench

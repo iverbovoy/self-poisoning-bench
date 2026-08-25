@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SPB replay harness (design: itemae/selfpoison-bench-design.md).
+"""SPB replay harness (design: docs/design.md).
 
 Replays the synthetic corpus session by session for one (agent family x
 memory condition), consolidating memory between sessions per the
@@ -167,7 +167,7 @@ def load_key():
         return os.environ["OPENROUTER_API_KEY"]
     env = os.path.join(HERE, "agent.env")          # bench root
     if not os.path.exists(env):
-        env = os.path.join(PROJ, "agent.env")      # legacy: kinectctl parent
+        env = os.path.join(PROJ, "agent.env")      # legacy: parent-checkout layout
     if os.path.exists(env):
         with open(env, encoding="utf-8") as f:
             for line in f:
