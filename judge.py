@@ -291,7 +291,8 @@ def judge_cell(key, cell, rubric="v10"):
     for (pid, judge), ext in reuse.items():
         if (pid, judge) not in done:
             ptype = next((a["type"] for a in answers if a["probe_id"] == pid), "")
-            jw.writerow([pid, ptype, judge, ext]); done.add((pid, judge))
+            jw.writerow([pid, ptype, judge, ext])
+            done.add((pid, judge))
     jf.flush()
     tasks = [(a, judge) for a in answers for judge in JUDGES
              if (a["probe_id"], judge) not in done]

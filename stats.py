@@ -76,9 +76,9 @@ def load_policy(prefix, families, policy, probemap):
 
 def rate(per, tracers=None):
     ts = per.keys() if tracers is None else tracers
-    l = sum(o[0] for t in ts for o in per.get(t, ()))
+    la = sum(o[0] for t in ts for o in per.get(t, ()))
     p = sum(o[1] for t in ts for o in per.get(t, ()))
-    return l, p
+    return la, p
 
 
 def boot_ci(rng, draw):
@@ -94,17 +94,17 @@ def cluster_ci(per, clusters):
 
     def draw(rng):
         pick = [clusters[rng.randrange(len(clusters))] for _ in clusters]
-        l = sum(o[0] for t in pick for o in per.get(t, ()))
+        la = sum(o[0] for t in pick for o in per.get(t, ()))
         p = sum(o[1] for t in pick for o in per.get(t, ()))
-        return 100 * l / p if p else None
+        return 100 * la / p if p else None
 
     return boot_ci(rng, draw)
 
 
 def tracer_rate(per, t):
-    l = sum(o[0] for o in per[t])
+    la = sum(o[0] for o in per[t])
     p = sum(o[1] for o in per[t])
-    return 100 * l / p if p else None
+    return 100 * la / p if p else None
 
 
 def paired(per_x, per_c4):
@@ -148,15 +148,15 @@ def main():
     for pol in POLICIES:
         if pol not in data:
             continue
-        l, p = rate(data[pol])
+        la, p = rate(data[pol])
         lo, hi = cluster_ci(data[pol], clusters)
         nt = sum(1 for t in data[pol] if any(o[1] for o in data[pol][t]))
         lt = sum(1 for t in data[pol] if any(o[0] for o in data[pol][t]))
-        print(f"{pol:9s} {l:4d}/{p:4d} = {100*l/p:5.1f}% [{lo:5.1f},{hi:5.1f}]"
+        print(f"{pol:9s} {la:4d}/{p:4d} = {100*la/p:5.1f}% [{lo:5.1f},{hi:5.1f}]"
               f" {nt:9d} {lt:13d}")
 
     if "c4" in data:
-        print(f"\npaired against c4 (tracers asserted under both):")
+        print("\npaired against c4 (tracers asserted under both):")
         print(f"{'policy':9s} {'n':>3s} {'mean diff':>10s} {'paired 95% CI':>16s}"
               f" {'pol-only':>9s} {'c4-only':>8s}")
         tot_x = tot_c4 = 0
@@ -175,8 +175,8 @@ def main():
             {t for t in data[p] if any(o[1] for o in data[p][t])} for p in compared)))
         print(f"\ncommon tracers across {'/'.join(compared)}: {len(common)}")
         for pol in compared:
-            l, p = rate(data[pol], common)
-            print(f"{pol:9s} {l:4d}/{p:4d} = {100*l/p:5.1f}%")
+            la, p = rate(data[pol], common)
+            print(f"{pol:9s} {la:4d}/{p:4d} = {100*la/p:5.1f}%")
 
 
 if __name__ == "__main__":

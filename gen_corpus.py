@@ -58,7 +58,7 @@ def build_records():
     rows, per_session = [], {}
     for s in sorted(SESSIONS):
         t = BASE + timedelta(days=s - 1)
-        recs, n = [], 0
+        n = 0
         script = list(SESSIONS[s])
         # weave filler deterministically: rotate pools by session index
         d0 = (s * 2) % len(FILLER_DIALOGUE)
@@ -199,15 +199,18 @@ def main():
                                        ensure_ascii=False) + "\n")
     with open(os.path.join(OUT, "manifest.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-        w.writeheader(); w.writerows(rows)
+        w.writeheader()
+        w.writerows(rows)
     with open(os.path.join(OUT, "tracers.csv"), "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f); w.writerow(["id", "type", "marker", "note", "chain_parent"])
+        w = csv.writer(f)
+        w.writerow(["id", "type", "marker", "note", "chain_parent"])
         for tid, (ttype, marker, note) in TRACERS.items():
             w.writerow([tid, ttype, marker, note, CHAINS.get(tid, "")])
     probes = build_probes(rows)
     with open(os.path.join(OUT, "probes.csv"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(probes[0].keys()))
-        w.writeheader(); w.writerows(probes)
+        w.writeheader()
+        w.writerows(probes)
 
     kinds = {}
     origins = {}

@@ -74,10 +74,10 @@ def main():
         line = f"{cell:12s}"
         for cp in cps:
             sub = [r for r in rows if int(r["checkpoint"]) == cp]
-            n, p, e, l = stat(sub)
-            cellstr = f"{100*e/p:.0f}/{100*l/p:.0f}% n={p}" if p else "—"
+            n, p, e, la = stat(sub)
+            cellstr = f"{100*e/p:.0f}/{100*la/p:.0f}% n={p}" if p else "—"
             line += f"{cellstr:>16s}"
-            out.append([cell, "checkpoint", cp, p, e, l])
+            out.append([cell, "checkpoint", cp, p, e, la])
         print(line)
 
     print("\n=== attribution error by memory age (pooled) ===")
@@ -89,9 +89,9 @@ def main():
         line = f"{cell:12s}"
         for a in ages:
             sub = [r for r in rows if r["age"] != "" and int(r["age"]) == a]
-            n, p, e, l = stat(sub)
+            n, p, e, la = stat(sub)
             line += f"{(f'{100*e/p:.0f}% n={p}' if p else '—'):>14s}"
-            out.append([cell, "age", a, p, e, l])
+            out.append([cell, "age", a, p, e, la])
         print(line)
 
     print("\n=== category totals ===")

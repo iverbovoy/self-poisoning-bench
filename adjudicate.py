@@ -333,7 +333,8 @@ def export(dst):
 
 def import_answers(path):
     key = {k["item"]: k for k in load_key()[0]}
-    yn = lambda s: s.strip().lower() in ("y", "yes", "1", "true")
+    def yn(s):
+        return s.strip().lower() in ("y", "yes", "1", "true")
     rows, skipped = [], 0
     with open(path, encoding="utf-8") as f:
         for r in csv.DictReader(f):
@@ -438,7 +439,8 @@ def score():
                      "human_category": hc, "policy": policy_of(k["cell"])})
     with open(adj_file("scored"), "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-        w.writeheader(); w.writerows(rows)
+        w.writeheader()
+        w.writerows(rows)
 
     def report(title, rs):
         rs = [r for r in rs if r["category"] != "no_majority"]

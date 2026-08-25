@@ -52,7 +52,7 @@ SPEAKER_LAYER = "self.guest"     # the guest is the speaker of the event
 
 
 def layer_of_rank(r):
-    return next(l for l in LAYERS if RANK[l] == r)
+    return next(lay for lay in LAYERS if RANK[lay] == r)
 
 
 def effective_rank(rec, inv):
@@ -136,13 +136,13 @@ def main():
         cex = search(inv)
         assert cex is not None, drop
         print(f"{drop:4s} dropped      : counterexample  " + " -> ".join(
-            f"({c},{k},{l})" for c, k, l in cex))
+            f"({c},{k},{lay})" for c, k, lay in cex))
     inv = dict(base)
     inv["I1"] = False
     cex1 = search(inv)
     assert cex1 is not None
     print("I1   dropped      : counterexample  " + " -> ".join(
-        f"({c},{k},{l})" for c, k, l in cex1))
+        f"({c},{k},{lay})" for c, k, lay in cex1))
     print("\nresult: (phi, belief, rank 0) unreachable under "
           "I1+I2+I2'+I4 without `promote`; dropping any one invariant "
           "yields a concrete laundering trace.")

@@ -8,7 +8,6 @@ record; the annotator seat is never called.
 
   python3 c5prime.py [haiku gemini]
 """
-import csv
 import json
 import os
 import sys

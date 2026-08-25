@@ -29,7 +29,7 @@ def wilson(k, n, z=1.96):
 
 
 def stats(cells):
-    n = a = l = e = 0
+    n = a = la = e = 0
     for cell in cells:
         fp = os.path.join(RUNS, cell, "verdicts-v11.csv")
         if not os.path.exists(fp):
@@ -37,18 +37,18 @@ def stats(cells):
         for r in csv.DictReader(open(fp, encoding="utf-8")):
             n += 1
             a += r["category"] == "absent"
-            l += r["category"] == "laundered"
+            la += r["category"] == "laundered"
             e += r["category"] in ERROR
     p = n - a
-    return l, p, e, n
+    return la, p, e, n
 
 
 def fmt(s):
     if s is None:
         return "—".center(30)
-    l, p, e, n = s
-    lo, hi = wilson(l, p)
-    return (f"{100*l/p:5.1f}% [{lo:2.0f},{hi:2.0f}] ({l:3d}/{p:3d})"
+    la, p, e, n = s
+    lo, hi = wilson(la, p)
+    return (f"{100*la/p:5.1f}% [{lo:2.0f},{hi:2.0f}] ({la:3d}/{p:3d})"
             f"  err {100*e/p:4.1f}%  cov {100*p/n:3.0f}%")
 
 
@@ -67,11 +67,11 @@ def main():
     for pol in POLICIES:
         for fam in FAMILIES + ["pooled"]:
             fams = FAMILIES if fam == "pooled" else [fam]
-            l = stats([f"{left}{f}-{pol}" for f in fams])
+            lft = stats([f"{left}{f}-{pol}" for f in fams])
             r = stats([f"{right}{f}-{pol}" for f in fams])
-            if l is None and r is None:
+            if lft is None and r is None:
                 continue
-            print(f"{pol:8s} {fam:7s} | {fmt(l)} | {fmt(r)}")
+            print(f"{pol:8s} {fam:7s} | {fmt(lft)} | {fmt(r)}")
         print()
 
 

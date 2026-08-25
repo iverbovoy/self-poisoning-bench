@@ -183,8 +183,8 @@ class LettaAdapter:
         return [p.text for p in self.c.agents.passages.list(**kw) if p.text]
 
     def snapshot(self):
-        return {"blocks": [{"label": l, "value": v, "limit": lim}
-                           for l, v, lim in self._blocks()],
+        return {"blocks": [{"label": lab, "value": v, "limit": lim}
+                           for lab, v, lim in self._blocks()],
                 "archival": self._passages()}
 
     def context(self, probe_text):

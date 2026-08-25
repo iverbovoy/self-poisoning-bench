@@ -39,9 +39,9 @@ def stat(rs):
 
 
 def fmt(rs):
-    n, p, l, e = stat(rs)
-    lo, hi = wilson(l, p)
-    return (f"laundered {100*l/max(p,1):5.1f}% [{100*lo:2.0f},{100*hi:2.0f}] ({l:3d}/{p:3d})"
+    n, p, la, e = stat(rs)
+    lo, hi = wilson(la, p)
+    return (f"laundered {100*la/max(p,1):5.1f}% [{100*lo:2.0f},{100*hi:2.0f}] ({la:3d}/{p:3d})"
             f"  any-err {100*e/max(p,1):5.1f}%  coverage {100*p/max(n,1):3.0f}%")
 
 
